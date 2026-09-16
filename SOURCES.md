@@ -1,15 +1,15 @@
 # Sources and verification
 
-Content checked **16 September 2026**. Dates and times displayed on the site are in **KST (UTC+9)**. The linked Google Calendar displays events in the viewer's selected time zone.
+Content checked **16 September 2026**. Dates and times displayed on the site are shown in both **KST (UTC+9)** and **EEST (Bucharest time, UTC+3)**. Every listed event falls before Romania switches back to EET (UTC+2) on 25 October 2026, so the KST-to-Bucharest offset is a constant six hours. The linked Google Calendar displays events in the viewer's selected time zone.
 
 ## Current competitions
 
 | Subject | Evidence |
 | --- | --- |
-| Google Play ASL Season 22 | [Official 15 September bracket and schedule announcement](https://www.sooplive.com/station/afstar1/post/207233447): quarterfinals on 21, 22, 28 and 29 September, 19:00 KST; semifinals on 5–6 October; final on 17 October, 15:00 KST. The graphics identify all eight quarterfinalists and their races. |
-| KCM Race Survival, 2026 Season 3 | [Official final announcement](https://www.sooplive.com/station/cjfals28/post/207193215): Zerg vs Protoss, 16 September at 19:00 KST. This supersedes stale secondary listings that placed the end of the season on 10 September. |
-| K-Jungman Cup | [Official SOOP schedule](https://esports.sooplive.com/schedule/sc1?date=2026-09-16): K University vs New Castle, 19 September at 19:00 KST. [SOOP's introduction](https://pick.sooplive.com/daily/view/181431) describes the 12-team university competition. |
-| Ultimate Battle / 끝장전 | [Organizer's 18 September announcement](https://www.sooplive.com/station/talent/post/207179635), confirmed by the official SOOP schedule: Mini vs effOrt, 21:00 KST. [10 September organizer VOD](https://vod.sooplive.com/player/206791841) explicitly identifies the current nine-game format. |
+| Google Play ASL Season 22 | [Official 15 September bracket and schedule announcement](https://www.sooplive.com/station/afstar1/post/207233447): quarterfinals on 21, 22, 28 and 29 September, 19:00 KST / 13:00 EEST; semifinals on 5–6 October; final on 17 October, 15:00 KST / 09:00 EEST. The graphics identify all eight quarterfinalists and their races. |
+| KCM Race Survival, 2026 Season 3 | [Official final announcement](https://www.sooplive.com/station/cjfals28/post/207193215): Zerg vs Protoss, 16 September at 19:00 KST / 13:00 EEST. This supersedes stale secondary listings that placed the end of the season on 10 September. |
+| K-Jungman Cup | [Official SOOP schedule](https://esports.sooplive.com/schedule/sc1?date=2026-09-16): K University vs New Castle, 19 September at 19:00 KST / 13:00 EEST. [SOOP's introduction](https://pick.sooplive.com/daily/view/181431) describes the 12-team university competition. |
+| Ultimate Battle / 끝장전 | [Organizer's 18 September announcement](https://www.sooplive.com/station/talent/post/207179635), confirmed by the official SOOP schedule: Mini vs effOrt, 21:00 KST / 15:00 EEST. [10 September organizer VOD](https://vod.sooplive.com/player/206791841) explicitly identifies the current nine-game format. |
 | CK and university challenges | [Korean public competition index](https://www.byeolteo.com/star/tournaments) distinguishes CK and university competitions. No fixed CK season or unverified future date is claimed. |
 
 ## Selected current team members

@@ -12,6 +12,7 @@ Includes selected star-university rosters, player IDs and races, major and recur
 - Edit `docs/style.css` to change the appearance.
 - Recheck current information against the sources in `SOURCES.md`.
 - Update the visible verification date only after checking the corresponding facts.
+- Show every match time in both KST (UTC+9) and Bucharest time: EEST (UTC+3) until 25 October 2026, EET (UTC+2) after that.
 - Push to `main`; GitHub Pages publishes the `/docs` folder automatically.
 
 This is plain static HTML and CSS. No installation, build process, browser scripts, analytics, external fonts, or account keys are required. `.nojekyll` keeps the static files unchanged.
