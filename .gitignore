@@ -5,3 +5,4 @@
 node_modules/
 bot/data/news-queue.json
 bot/data/posted.json
+bot/data/run-state.json
