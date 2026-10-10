@@ -20,6 +20,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { loadQueue, QUEUE_FILE } from './news.mjs'
 import { loadNames, resolve, saveNames } from './lib/names.mjs'
+import { loadWatchlist } from './watchlist.mjs'
 
 export const NEWS_FILE = fileURLToPath(new URL('./data/news.json', import.meta.url))
 const HANGUL = /[ᄀ-ᇿ㄰-㆏가-힯]/
@@ -27,15 +28,15 @@ const HANGUL = /[ᄀ-ᇿ㄰-㆏가-힯]/
 export const SCHEMA = {
     type: 'object', additionalProperties: false, required: ['items'],
     properties: { items: { type: 'array', items: {
-        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'card', 'sources', 'date'],
+        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'sources', 'date'],
         properties: {
-            headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' },
+            headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' }, relevant: { type: 'boolean' },
             card: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
         },
     } } },
 }
 
-export function prompt (items) {
+export function prompt (items, watchlist = loadWatchlist()) {
     return `You write short English news items about Korean StarCraft: Brood War for a group of friends in Romania who follow the Korean scene but do not read Korean.
 
 Below are news items gathered today (Korean and English). Turn them into English items.
@@ -46,8 +47,11 @@ Rules - all of them matter:
 3. "headline": at most 80 characters. "summary": two or three plain sentences. "date": YYYY-MM-DD of the story.
 4. "spoiler": true if the item reveals any match result - a winner, a score, who advanced or was knocked out, who is in a final because of a win.
 5. "card": one line of at most 100 characters for the group chat that reveals NO result at all, even if the item is a spoiler (e.g. "Interviews with both ASL S22 finalists ahead of Saturday's final" is fine; "Rush beats Light 4-2" is not). Use null if the story cannot be told without a result.
-6. Leave out anything not about Brood War (StarCraft II, other games), adverts, and items with nothing new.
-7. Answer with JSON only, in the given shape. No commentary.
+6. "relevant": true when the story matters to people following the Korean Brood War scene - its main leagues and tournaments (ASL, SSL, star university leagues, KCM, Ultimate Battle), or any of these players or teams. False for minor items: small online cups, streamer gossip, unrelated celebrities.
+   Players (by ID; Korean name in brackets where known): ${watchlist.players.map((p) => p.korean ? `${p.id} (${p.korean})` : p.id).join(', ')}
+   Teams: ${watchlist.teams.map((t) => t.korean && t.korean !== t.name ? `${t.name} (${t.korean})` : t.name).join(', ')}
+7. Leave out anything not about Brood War (StarCraft II, other games), adverts, and items with nothing new.
+8. Answer with JSON only, in the given shape. No commentary.
 
 Items:
 ${JSON.stringify(items.map((i) => ({ source: i.source, lang: i.lang, title: i.title, summary: i.summary, link: i.link, at: i.at })), null, 1)}`

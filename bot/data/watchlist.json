@@ -1,0 +1,167 @@
+{
+  "note": "Top players and teams whose news goes to the group (Silviu, 10 Oct 2026). Edit by hand; node bot/watchlist.mjs fills in Korean names.",
+  "players": [
+    {
+      "id": "Rush",
+      "korean": "유영진"
+    },
+    {
+      "id": "Soulkey",
+      "korean": "김민철"
+    },
+    {
+      "id": "Light",
+      "korean": "이재호"
+    },
+    {
+      "id": "soma",
+      "korean": "박상현"
+    },
+    {
+      "id": "Shine",
+      "korean": "이영한"
+    },
+    {
+      "id": "effOrt",
+      "korean": "김정우"
+    },
+    {
+      "id": "Leta",
+      "korean": "신상문"
+    },
+    {
+      "id": "Jaedong",
+      "korean": "이제동"
+    },
+    {
+      "id": "Best",
+      "korean": "도재욱"
+    },
+    {
+      "id": "Bisu",
+      "korean": "김택용"
+    },
+    {
+      "id": "Flash",
+      "korean": "이영호"
+    },
+    {
+      "id": "Mini",
+      "korean": "변현제"
+    },
+    {
+      "id": "Sharp",
+      "korean": "조기석"
+    },
+    {
+      "id": "Action",
+      "korean": "김성대"
+    },
+    {
+      "id": "Larva"
+    },
+    {
+      "id": "Calm",
+      "korean": "김윤환"
+    },
+    {
+      "id": "Queen"
+    },
+    {
+      "id": "Speed",
+      "korean": "이영웅"
+    },
+    {
+      "id": "herO"
+    },
+    {
+      "id": "Mong",
+      "korean": "윤찬희"
+    },
+    {
+      "id": "JyJ",
+      "korean": "정영재"
+    },
+    {
+      "id": "SnOw",
+      "korean": "장윤철"
+    },
+    {
+      "id": "Paralyze",
+      "korean": "정경두"
+    },
+    {
+      "id": "Hm",
+      "korean": "배성흠"
+    },
+    {
+      "id": "Shuttle"
+    },
+    {
+      "id": "Shinee",
+      "korean": "김재현"
+    },
+    {
+      "id": "ggaemo",
+      "korean": "김경모"
+    },
+    {
+      "id": "sSak",
+      "korean": "최호선"
+    },
+    {
+      "id": "Organ",
+      "korean": "임진묵"
+    },
+    {
+      "id": "JD",
+      "korean": "이제동"
+    },
+    {
+      "id": "RoyaL",
+      "korean": "김지성"
+    }
+  ],
+  "teams": [
+    {
+      "name": "JSA",
+      "korean": "JSA"
+    },
+    {
+      "name": "K University",
+      "korean": "케이대"
+    },
+    {
+      "name": "Calm MonstarZ",
+      "korean": "캄몬스타즈"
+    },
+    {
+      "name": "New Castle",
+      "korean": "뉴캣슬"
+    },
+    {
+      "name": "Black Academy",
+      "korean": "흑카데미"
+    },
+    {
+      "name": "MB University",
+      "korean": "엠비대"
+    },
+    {
+      "name": "BGM",
+      "korean": "BGM"
+    },
+    {
+      "name": "DM",
+      "korean": "DM"
+    },
+    {
+      "name": "Waffle University",
+      "korean": "와플대"
+    },
+    {
+      "name": "New World",
+      "korean": "신세계"
+    }
+  ]
+}
