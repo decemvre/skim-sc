@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import {dueReminders, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
+import {competition} from '../lib/competitions.mjs';
+import {blurb, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
 
 // F-236: the group posts. Nothing on a quiet day, never a result, links on their own line.
 const m = (over) => ({key: 'k1', date: '2026-10-17', kst: '15:00', at: '2026-10-17T06:00:00.000Z', bucharest: {time: '09:00', zone: 'EEST'},
@@ -98,4 +99,17 @@ test('weekends: no news at all; the morning post only for a major match', async 
     assert.equal(sent.length, 1);
     assert.match(sent[0], /ASL S22: Rush/);
     assert.doesNotMatch(sent[0], /Saturday news/);
+});
+
+test('news in the chat: a bold title with a short spoiler-free summary under it; TL.net is not Korean news', () => {
+    assert.equal(newsBlock({card: 'ASL S22 final set for Saturday', teaser: 'Both finalists talk about the ice-rink stage.'}), '*ASL S22 final set for Saturday*\nBoth finalists talk about the ice-rink stage.');
+    assert.equal(blurb({spoiler: false, summary: 'EloBoard added an FA tab. More text.'}), 'EloBoard added an FA tab.');
+    assert.equal(blurb({spoiler: true, summary: 'Bisu beat Speed 4-2.'}), '', 'a spoiler without a teaser gets no summary');
+    assert.equal(blurb({teaser: 'Rush won 4-2.'}), '', 'a teaser that gives a result away is dropped');
+    const at = '2026-10-12T05:00:00Z';
+    assert.deepEqual(freshCards({items: [{id: 'tl', addedAt: at, card: 'Rollback thread', sources: ['https://tl.net/forum/x']}]}, {news: {}}, new Date('2026-10-12T06:00:00Z')), []);
+});
+
+test('Ultimate Battle is a big competition: it gets the reminder', () => {
+    assert.equal(competition('스타끝장전 시즌3').big, true);
 });

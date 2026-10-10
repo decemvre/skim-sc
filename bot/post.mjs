@@ -65,8 +65,17 @@ function matchLines (m) {
 // (a Monday morning carries the weekend's), newest first, at most six.
 export function freshCards (news, posted, now = new Date()) {
     return (news.items || []).filter((i) => i.relevant !== false && i.card && !SCORE.test(i.card) && !posted.news[i.id] &&
-        now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
+        !(i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s)) && now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
 }
+
+// The line under a title (Silviu, 10 Oct): the spoiler-free teaser; for a story with no result
+// in it, its summary's first sentence. Nothing when that would give a result away.
+export function blurb (item) {
+    const text = item.teaser || (item.spoiler ? '' : (String(item.summary || '').match(/^.*?[.!?](\s|$)/)?.[0] || '').trim())
+    return text && !SCORE.test(text) ? text : ''
+}
+// One news item in the chat: its title in bold, the short summary below it.
+export const newsBlock = (c) => [`*${c.card}*`, blurb(c)].filter(Boolean).join('\n')
 
 export function morningText (matches, cards, today, { weekend = false } = {}) {
     const todays = matches.filter((m) => m.date === today && m.onSchedule && !m.competition.celebrity && (!weekend || m.competition.big))
@@ -77,14 +86,14 @@ export function morningText (matches, cards, today, { weekend = false } = {}) {
     for (const { lines } of todays) parts.push(lines.join('\n'))
     const watch = [...new Set(todays.map(({ m }) => m.competition.watch).filter(Boolean))]
     if (watch.length) parts.push('Watch live:', ...watch)
-    if (news.length) parts.push(`${todays.length ? 'News:\n' : ''}${news.map((c) => `• ${c.card}`).join('\n')}`)
+    if (news.length) parts.push(...(todays.length ? ['News:'] : []), ...news.map(newsBlock))
     parts.push('More on the page:', SITE)
     return parts.join('\n\n')
 }
 
 export function newsText (cards) {
     if (!cards.length) return null
-    return [`🤖 Skim Bot - Brood War news`, cards.map((c) => `• ${c.card}`).join('\n'), 'More on the page:', `${SITE}#news`].join('\n\n')
+    return [`🤖 Skim Bot - Brood War news`, ...cards.map(newsBlock), 'More on the page:', `${SITE}#news`].join('\n\n')
 }
 
 export function reminderText (m, now = new Date()) {

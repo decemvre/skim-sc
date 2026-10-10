@@ -17,7 +17,7 @@ test('what counts as Brood War news', () => {
 
 test('the watcher queues each story once, whatever the source does', async () => {
     const item = {id: 'naver:1:2', source: 'X', lang: 'ko', title: '[ASL] t', summary: '', link: 'l', at: null};
-    const sources = {naver: async () => [item], teamliquid: async () => []};
+    const sources = {naver: async () => [item]};
     const first = await check({now: new Date('2026-10-10T09:00:00Z'), queue: {seen: {}, items: []}, names: {}, sources});
     assert.equal(first.fresh.length, 1);
     const again = await check({now: new Date('2026-10-10T10:00:00Z'), queue: first.queue, names: {}, sources});

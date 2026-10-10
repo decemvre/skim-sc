@@ -30,10 +30,10 @@ export const SCHEMA = {
     properties: { titles: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['ko', 'en'],
         properties: { ko: { type: 'string' }, en: { type: 'string' } } } },
     items: { type: 'array', items: {
-        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'sources', 'date'],
+        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'teaser', 'sources', 'date'],
         properties: {
             headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' }, relevant: { type: 'boolean' },
-            card: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
+            card: { type: ['string', 'null'] }, teaser: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
         },
     } } },
 }
@@ -48,7 +48,8 @@ Rules - all of them matter:
 2. NEVER write a person's real name, in Korean or romanized (no "Yoo Young-jin", no "유영진"). Wherever the source names a Korean player by real name, write {{name:<that Korean name exactly as written in the source>}} - for example {{name:유영진}} - even if you know the player's ID; the program fills in the ID. A player an English source already calls by ID (Rush, Soulkey, Flash) is written by that ID. Teams, leagues and broadcasters by their usual English names; translate Korean team names when the meaning is plain.
 3. "headline": at most 80 characters. "summary": two or three plain sentences. "date": YYYY-MM-DD of the story.
 4. "spoiler": true if the item reveals any match result - a winner, a score, who advanced or was knocked out, who is in a final because of a win.
-5. "card": one line of at most 100 characters for the group chat that reveals NO result at all, even if the item is a spoiler (e.g. "Interviews with both ASL S22 finalists ahead of Saturday's final" is fine; "Rush beats Light 4-2" is not). Use null if the story cannot be told without a result.
+5. "card": one line of at most 100 characters for the group chat that reveals NO result at all, even if the item is a spoiler (e.g. "Interviews with both ASL S22 finalists ahead of Saturday's final" is fine; "Rush beats Light 4-2" is not). Use null if the story cannot be told without a result. It is the item's title in the group chat.
+5b. "teaser": one or two short sentences (at most 220 characters) shown under the card in the group chat: what the story is about, with enough detail to be worth reading, and again NO result - no winner, score or who advanced. Null when "card" is null.
 6. "relevant": true when the story matters to people following the Korean Brood War scene - its main leagues and tournaments (ASL, SSL, star university leagues, KCM, Ultimate Battle), or any of these players or teams. False for minor items: small online cups, streamer gossip, unrelated celebrities.
    Players (by ID; Korean name in brackets where known): ${watchlist.players.map((p) => p.korean ? `${p.id} (${p.korean})` : p.id).join(', ')}
    Teams: ${watchlist.teams.map((t) => t.korean && t.korean !== t.name ? `${t.name} (${t.korean})` : t.name).join(', ')}
@@ -110,12 +111,13 @@ export async function cleanItem (item, names, { lookup = true, resolveName = res
         }
         return out.replace(/\s+/g, ' ').trim()
     }
-    const clean = { ...item, headline: await fill(item.headline), summary: await fill(item.summary), card: item.card ? await fill(item.card) : null }
-    const text = `${clean.headline} ${clean.summary} ${clean.card || ''}`
+    const clean = { ...item, headline: await fill(item.headline), summary: await fill(item.summary), card: item.card ? await fill(item.card) : null, teaser: item.teaser ? await fill(item.teaser) : null }
+    const text = `${clean.headline} ${clean.summary} ${clean.card || ''} ${clean.teaser || ''}`
     if (HANGUL.test(text) || /\{\{name:/.test(text)) return null
     const romanized = Object.values(names.players || {}).map((p) => p.romanized).filter((r) => r && r.length > 4)
     if (romanized.some((r) => text.toLowerCase().includes(r.toLowerCase()))) return null
     if (clean.card && clean.card.length > 140) clean.card = clean.card.slice(0, 137) + '…'
+    if (clean.teaser && clean.teaser.length > 260) clean.teaser = clean.teaser.slice(0, 257) + '…'
     return clean
 }
 

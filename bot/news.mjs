@@ -3,7 +3,8 @@
 //
 //   Naver Sports esports news - every Korean outlet, as data, one day at a time; kept only when
 //     it is about Brood War (not StarCraft II, not other games' "remasters").
-//   TL.net's news feed - the English-speaking scene's own Brood War news.
+//   EloBoard's daily paper - the star-university scene.
+//   Only news published in Korea (Silviu, 10 Oct): TL.net was dropped.
 //
 // New items go into bot/data/news-queue.json; the twice-daily model run (digest.mjs) turns the
 // queue into English items for the page and the group. Seen items are remembered by id, so a
@@ -56,29 +57,13 @@ export async function naver (day, { names = {}, fetchImpl = fetch } = {}) {
     return out
 }
 
-export async function teamliquid ({ fetchImpl = fetch } = {}) {
-    const r = await fetchImpl('https://tl.net/rss/news.xml', { headers: { 'User-Agent': BROWSER }, signal: AbortSignal.timeout(20000) })
-    if (!r.ok) throw new Error(`tl.net answered ${r.status}`)
-    const xml = await r.text()
-    const items = []
-    for (const block of xml.split('<item>').slice(1)) {
-        const tag = (name) => (new RegExp(`<${name}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${name}>`).exec(block)?.[1] || '').trim()
-        const title = tag('title'), link = tag('link'), category = tag('category')
-        // TL.net's feed mixes games; Brood War items say so in the category or the title.
-        if (!/brood ?war|\bBW\b|ASL|KCM|Remastered/i.test(`${title} ${category}`)) continue
-        items.push({ id: `tl:${link}`, source: 'TL.net', lang: 'en', title, summary: tag('description').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 600),
-            link, at: tag('pubDate') ? new Date(tag('pubDate')).toISOString() : null })
-    }
-    return items
-}
-
-// One watcher pass: today's and yesterday's Korean news (Naver, EloBoard) and TL.net.
-export async function check ({ now = new Date(), queue = loadQueue(), names = loadNames().players, sources = { naver, teamliquid, eloboard: eloboardNews } } = {}) {
+// One watcher pass: today's and yesterday's Korean news (Naver, EloBoard). Korean outlets only (Silviu, 10 Oct).
+export async function check ({ now = new Date(), queue = loadQueue(), names = loadNames().players, sources = { naver, eloboard: eloboardNews } } = {}) {
     const today = inZone(now, 'Asia/Seoul').date
     const yesterday = inZone(new Date(now - 86400000), 'Asia/Seoul').date
     const found = []
     const errors = []
-    const runs = [['naver', () => Promise.all([sources.naver(today, { names }), sources.naver(yesterday, { names })]).then((a) => a.flat())], ['tl', () => sources.teamliquid()]]
+    const runs = [['naver', () => Promise.all([sources.naver(today, { names }), sources.naver(yesterday, { names })]).then((a) => a.flat())]]
     // EloBoard's daily paper is all Brood War; a day not yet published is simply empty.
     if (sources.eloboard) runs.push(['eloboard', () => Promise.all([sources.eloboard(today), sources.eloboard(yesterday)]).then((a) => a.flat())])
     for (const [name, run] of runs) {

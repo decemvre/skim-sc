@@ -6,7 +6,7 @@
 //   step       when                                   model?
 //   pull       every pass (the bot's own clone)       no
 //   schedule   hourly - SOOP, names, calendar sync    no
-//   news       every 30 minutes - Naver, TL.net        no
+//   news       every 30 minutes - Naver, EloBoard      no
 //   digest     queue not empty, weekdays 07:30-16:00   yes - Claude, Grok if it fails; at most 8 a day
 //   results    once a day after 20:00 - Liquipedia     no
 //   publish    when something changed - page, push     no

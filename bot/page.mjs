@@ -70,7 +70,7 @@ export function newsSection (news, { limit = 12 } = {}) {
         : `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.headline)}</h3><p>${esc(i.summary)}</p>${links(i)}</article>`
     return `${NEWS_START}
 <section id="news" class="section" aria-labelledby="news-title">
-  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">Gathered from Korean outlets (via Naver Sports) and TL.net, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
+  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">Gathered from Korean outlets (via Naver Sports) and EloBoard, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
   ${items.length ? `<div class="news-grid">${items.map(article).join('')}</div>` : '<p class="section-note">No news yet.</p>'}
 </section>
 ${NEWS_END}`
