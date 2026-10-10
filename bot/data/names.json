@@ -1,0 +1,58 @@
+{
+  "players": {
+    "김민철": {
+      "id": "Soulkey",
+      "race": "Z",
+      "nicknames": [
+        "Iron Wall"
+      ],
+      "source": "https://liquipedia.net/starcraft/Soulkey",
+      "checked": "2026-10-10"
+    },
+    "김지성": {
+      "id": "RoyaL",
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/RoyaL",
+      "checked": "2026-10-10"
+    },
+    "도재욱": {
+      "id": "Best",
+      "race": "P",
+      "nicknames": [
+        "Doh-men"
+      ],
+      "source": "https://liquipedia.net/starcraft/Best",
+      "checked": "2026-10-10"
+    },
+    "박상현": {
+      "id": "soma",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Soma",
+      "checked": "2026-10-10"
+    },
+    "유영진": {
+      "id": "Rush",
+      "race": "T",
+      "nicknames": [
+        "Future Terran",
+        "ASLCHAMPRush"
+      ],
+      "source": "https://liquipedia.net/starcraft/Rush",
+      "checked": "2026-10-10"
+    },
+    "이재호": {
+      "id": "Light",
+      "race": "T",
+      "nicknames": [
+        "Invisible Terran",
+        "Super Terran",
+        "Moo.howoo"
+      ],
+      "source": "https://liquipedia.net/starcraft/Light",
+      "checked": "2026-10-10"
+    }
+  },
+  "unknown": {}
+}

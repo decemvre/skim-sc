@@ -1,0 +1,340 @@
+{
+  "updated": "2026-10-10T09:32:16.947Z",
+  "matches": [
+    {
+      "key": "2026-10-05 19:00 유영진 vs 이재호",
+      "date": "2026-10-05",
+      "kst": "19:00",
+      "at": "2026-10-05T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-05",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "Google Play ASL Season 22",
+        "name": "ASL Season 22",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/afstar1",
+        "known": true
+      },
+      "a": {
+        "korean": "유영진",
+        "race": "T",
+        "id": "Rush",
+        "nicknames": [
+          "Future Terran",
+          "ASLCHAMPRush",
+          "永镇"
+        ]
+      },
+      "b": {
+        "korean": "이재호",
+        "race": "T",
+        "id": "Light",
+        "nicknames": [
+          "Invisible Terran",
+          "Super Terran",
+          "光哥",
+          "Moo.howoo"
+        ]
+      },
+      "played": true,
+      "status": "Replay",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-05"
+    },
+    {
+      "key": "2026-10-06 19:00 박상현 vs 김민철",
+      "date": "2026-10-06",
+      "kst": "19:00",
+      "at": "2026-10-06T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-06",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "Google Play ASL Season 22",
+        "name": "ASL Season 22",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/afstar1",
+        "known": true
+      },
+      "a": {
+        "korean": "박상현",
+        "race": "Z",
+        "id": "soma",
+        "nicknames": [
+          "짭제",
+          "假解冻",
+          "索玛"
+        ]
+      },
+      "b": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "철벽Iron Wall(铁壁)",
+          "永康"
+        ]
+      },
+      "played": true,
+      "status": "Replay",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06"
+    },
+    {
+      "key": "2026-10-07 20:00 우리할매 러브즈 vs 기영이숯불 킹즈",
+      "date": "2026-10-07",
+      "kst": "20:00",
+      "at": "2026-10-07T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-07",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true
+      },
+      "a": {
+        "team": "우리할매 러브즈"
+      },
+      "b": {
+        "team": "기영이숯불 킹즈"
+      },
+      "played": true,
+      "status": "Replay",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-07"
+    },
+    {
+      "key": "2026-10-07 21:00 김민철 vs 도재욱",
+      "date": "2026-10-07",
+      "kst": "21:00",
+      "at": "2026-10-07T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-07",
+        "time": "15:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle (끝장전)",
+        "big": false,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true
+      },
+      "a": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "철벽Iron Wall(铁壁)",
+          "永康"
+        ]
+      },
+      "b": {
+        "korean": "도재욱",
+        "race": "P",
+        "id": "Best",
+        "nicknames": [
+          "Doh-men",
+          "괴룡(怪龍)",
+          "禽兽"
+        ]
+      },
+      "played": true,
+      "status": "Replay",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-07"
+    },
+    {
+      "key": "2026-10-12 21:00 김민철 vs 김지성",
+      "date": "2026-10-12",
+      "kst": "21:00",
+      "at": "2026-10-12T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-12",
+        "time": "15:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle (끝장전)",
+        "big": false,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true
+      },
+      "a": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "철벽Iron Wall(铁壁)",
+          "永康"
+        ]
+      },
+      "b": {
+        "korean": "김지성",
+        "race": "T",
+        "id": "RoyaL",
+        "nicknames": [
+          "谦皇"
+        ]
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
+    },
+    {
+      "key": "2026-10-14 20:00 비트 리벤저스 vs 메디카 스타즈",
+      "date": "2026-10-14",
+      "kst": "20:00",
+      "at": "2026-10-14T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-14",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true
+      },
+      "a": {
+        "team": "비트 리벤저스"
+      },
+      "b": {
+        "team": "메디카 스타즈"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
+    },
+    {
+      "key": "2026-10-17 15:00 유영진 vs 김민철",
+      "date": "2026-10-17",
+      "kst": "15:00",
+      "at": "2026-10-17T06:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-17",
+        "time": "09:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "Google Play ASL Season 22",
+        "name": "ASL Season 22",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/afstar1",
+        "known": true
+      },
+      "a": {
+        "korean": "유영진",
+        "race": "T",
+        "id": "Rush",
+        "nicknames": [
+          "Future Terran",
+          "ASLCHAMPRush",
+          "永镇"
+        ]
+      },
+      "b": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "철벽Iron Wall(铁壁)",
+          "永康"
+        ]
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
+    },
+    {
+      "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
+      "date": "2026-10-21",
+      "kst": "20:00",
+      "at": "2026-10-21T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-21",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true
+      },
+      "a": {
+        "team": "SOOP 수퍼즈"
+      },
+      "b": {
+        "team": "기영이숯불 킹즈"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
+    },
+    {
+      "key": "2026-10-28 20:00 우리할매 러브즈 vs 메디카 스타즈",
+      "date": "2026-10-28",
+      "kst": "20:00",
+      "at": "2026-10-28T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-28",
+        "time": "13:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true
+      },
+      "a": {
+        "team": "우리할매 러브즈"
+      },
+      "b": {
+        "team": "메디카 스타즈"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-10T09:31:02.354Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
+    }
+  ]
+}
