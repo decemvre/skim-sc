@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T09:32:16.947Z",
+  "updated": "2026-10-10T09:36:43.432Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -25,8 +25,7 @@
         "id": "Rush",
         "nicknames": [
           "Future Terran",
-          "ASLCHAMPRush",
-          "永镇"
+          "ASLCHAMPRush"
         ]
       },
       "b": {
@@ -36,7 +35,6 @@
         "nicknames": [
           "Invisible Terran",
           "Super Terran",
-          "光哥",
           "Moo.howoo"
         ]
       },
@@ -68,19 +66,14 @@
         "korean": "박상현",
         "race": "Z",
         "id": "soma",
-        "nicknames": [
-          "짭제",
-          "假解冻",
-          "索玛"
-        ]
+        "nicknames": []
       },
       "b": {
         "korean": "김민철",
         "race": "Z",
         "id": "Soulkey",
         "nicknames": [
-          "철벽Iron Wall(铁壁)",
-          "永康"
+          "Iron Wall"
         ]
       },
       "played": true,
@@ -131,7 +124,7 @@
       },
       "competition": {
         "raw": "2026 스타끝장전",
-        "name": "Ultimate Battle (끝장전)",
+        "name": "Ultimate Battle",
         "big": false,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/talent",
@@ -142,8 +135,7 @@
         "race": "Z",
         "id": "Soulkey",
         "nicknames": [
-          "철벽Iron Wall(铁壁)",
-          "永康"
+          "Iron Wall"
         ]
       },
       "b": {
@@ -151,9 +143,7 @@
         "race": "P",
         "id": "Best",
         "nicknames": [
-          "Doh-men",
-          "괴룡(怪龍)",
-          "禽兽"
+          "Doh-men"
         ]
       },
       "played": true,
@@ -174,7 +164,7 @@
       },
       "competition": {
         "raw": "2026 스타끝장전",
-        "name": "Ultimate Battle (끝장전)",
+        "name": "Ultimate Battle",
         "big": false,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/talent",
@@ -185,17 +175,14 @@
         "race": "Z",
         "id": "Soulkey",
         "nicknames": [
-          "철벽Iron Wall(铁壁)",
-          "永康"
+          "Iron Wall"
         ]
       },
       "b": {
         "korean": "김지성",
         "race": "T",
         "id": "RoyaL",
-        "nicknames": [
-          "谦皇"
-        ]
+        "nicknames": []
       },
       "played": false,
       "status": "Upcoming",
@@ -257,8 +244,7 @@
         "id": "Rush",
         "nicknames": [
           "Future Terran",
-          "ASLCHAMPRush",
-          "永镇"
+          "ASLCHAMPRush"
         ]
       },
       "b": {
@@ -266,8 +252,7 @@
         "race": "Z",
         "id": "Soulkey",
         "nicknames": [
-          "철벽Iron Wall(铁壁)",
-          "永康"
+          "Iron Wall"
         ]
       },
       "played": false,
