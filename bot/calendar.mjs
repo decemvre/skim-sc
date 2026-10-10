@@ -100,6 +100,9 @@ export async function sync ({ dryRun = false, today = kstToday() } = {}) {
     const from = new Date(Date.parse(`${today}T00:00:00+09:00`) - 86400000).toISOString()
     const listed = await api('GET', `${API}?singleEvents=true&maxResults=250&timeMin=${encodeURIComponent(from)}`, t)
     const steps = plan(loadMatches().matches, listed.items || [], { today })
+    const canWrite = listed.accessRole === 'writer' || listed.accessRole === 'owner'
+    // Shared read-only (or not yet): the plan is all there is to give.
+    if (!canWrite) dryRun = true
     const done = []
     for (const step of steps) {
         if (!dryRun) {
@@ -108,7 +111,7 @@ export async function sync ({ dryRun = false, today = kstToday() } = {}) {
         }
         done.push(`${dryRun ? 'would ' : ''}${step.do}: ${step.was ? `"${step.was}" -> ` : ''}"${step.body.summary}"`)
     }
-    return { steps: done, canWrite: listed.accessRole === 'writer' || listed.accessRole === 'owner', accessRole: listed.accessRole }
+    return { steps: done, canWrite, accessRole: listed.accessRole }
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
