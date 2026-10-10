@@ -57,6 +57,8 @@ export async function refresh ({ today = kstToday(), read = schedule, names = lo
             a: await side(raw.a), b: await side(raw.b),
             played: raw.played, status: raw.status,
             firstSeen: before.get(key)?.firstSeen || now.toISOString(), onSchedule: true,
+            // Results come from elsewhere (results.mjs) and survive a refresh.
+            ...(before.get(key)?.result ? { result: before.get(key).result } : {}),
             source: `https://esports.sooplive.com/schedule/sc1?date=${raw.date}`,
         }
         if (!before.has(key)) changes.push({ kind: 'new', key })

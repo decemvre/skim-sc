@@ -10,3 +10,12 @@
 @media(max-width:360px){h1{font-size:50px}.shell{padding:0 16px}.site-header nav{flex-wrap:wrap;justify-content:start;gap:10px 20px}.matches td .race{display:none}.calendar-card,.tournament{padding:20px}.team-title{flex-wrap:wrap;gap:2px}.team-title>span{text-align:left}.subscribe{font-size:14px;padding:14px}}
 
 .site-header nav a{padding:4px 0}
+
+/* Skim Bot's section (bot/page.mjs): upcoming matches, and results behind a closed dropdown
+   so nobody opening the page is spoiled. */
+.bot-matches { width: 100%; }
+.bot-matches td.when small, .bot-matches td small { opacity: .75; }
+.team-chip { font-size: .85em; }
+details.spoilers { margin-top: 1rem; }
+details.spoilers > summary { cursor: pointer; font-weight: 600; }
+details.spoilers > summary span { font-weight: 400; opacity: .75; }

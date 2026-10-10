@@ -17,7 +17,8 @@
         "big": true,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/afstar1",
-        "known": true
+        "known": true,
+        "liquipedia": "ASL/22"
       },
       "a": {
         "korean": "유영진",
@@ -42,7 +43,12 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-05"
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-05",
+      "result": {
+        "a": 4,
+        "b": 2,
+        "source": "https://liquipedia.net/starcraft/ASL/22"
+      }
     },
     {
       "key": "2026-10-06 19:00 박상현 vs 김민철",
@@ -60,7 +66,8 @@
         "big": true,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/afstar1",
-        "known": true
+        "known": true,
+        "liquipedia": "ASL/22"
       },
       "a": {
         "korean": "박상현",
@@ -80,7 +87,12 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06"
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06",
+      "result": {
+        "a": 2,
+        "b": 4,
+        "source": "https://liquipedia.net/starcraft/ASL/22"
+      }
     },
     {
       "key": "2026-10-07 20:00 우리할매 러브즈 vs 기영이숯불 킹즈",
@@ -98,7 +110,8 @@
         "big": false,
         "celebrity": true,
         "watch": null,
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "team": "우리할매 러브즈"
@@ -128,7 +141,8 @@
         "big": false,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/talent",
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "korean": "김민철",
@@ -168,7 +182,8 @@
         "big": false,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/talent",
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "korean": "김민철",
@@ -206,7 +221,8 @@
         "big": false,
         "celebrity": true,
         "watch": null,
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "team": "비트 리벤저스"
@@ -236,7 +252,8 @@
         "big": true,
         "celebrity": false,
         "watch": "https://www.sooplive.com/station/afstar1",
-        "known": true
+        "known": true,
+        "liquipedia": "ASL/22"
       },
       "a": {
         "korean": "유영진",
@@ -277,7 +294,8 @@
         "big": false,
         "celebrity": true,
         "watch": null,
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "team": "SOOP 수퍼즈"
@@ -307,7 +325,8 @@
         "big": false,
         "celebrity": true,
         "watch": null,
-        "known": true
+        "known": true,
+        "liquipedia": null
       },
       "a": {
         "team": "우리할매 러브즈"
