@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T15:46:05.083Z",
+  "updated": "2026-10-10T18:01:05.529Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -205,93 +205,19 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
-      "key": "2026-10-10 17:00 eloboard 미니대전 마범대 vs 더블비",
+      "key": "2026-10-11 20:00 eloboard CK 마범대 미니대학대전 2연승 기념 2부",
       "origin": "eloboard",
-      "date": "2026-10-10",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-10T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-10",
-        "time": "11:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "미니대전 마범대 vs 더블비",
-        "name": "Mini-Match MBU vs Double B",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "미니대전 마범대 vs 더블비",
-      "titleEn": "Mini-Match MBU vs Double B",
-      "needsTranslation": false,
-      "duel": [
-        "마범대",
-        "더블비"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
-    },
-    {
-      "key": "2026-10-10 19:00 eloboard 마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
-      "origin": "eloboard",
-      "date": "2026-10-10",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-10T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-10",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
-        "name": "",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
-      "titleEn": null,
-      "needsTranslation": true,
-      "duel": [
-        "마범대",
-        "드림즈"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
-    },
-    {
-      "key": "2026-10-10 20:00 eloboard CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
-      "origin": "eloboard",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "kst": "20:00",
       "allDay": false,
-      "at": "2026-10-10T11:00:00.000Z",
+      "at": "2026-10-11T11:00:00.000Z",
       "bucharest": {
-        "date": "2026-10-10",
+        "date": "2026-10-11",
         "time": "14:00",
         "zone": "EEST"
       },
       "competition": {
-        "raw": "CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
+        "raw": "CK 마범대 미니대학대전 2연승 기념 2부",
         "name": "",
         "big": false,
         "celebrity": false,
@@ -300,7 +226,7 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
+      "titleSource": "CK 마범대 미니대학대전 2연승 기념 2부",
       "titleEn": null,
       "needsTranslation": true,
       "duel": null,
@@ -309,8 +235,8 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
+      "firstSeen": "2026-10-10T18:01:05.529Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-11"
     },
     {
       "key": "2026-10-12 19:00 eloboard CK 더블비 VS 드림즈 교수ck",
