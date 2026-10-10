@@ -49,7 +49,7 @@ export async function resolve (table, korean, race, { lookup = true, today = new
     for (const title of (await search(korean, options)).slice(0, 4)) {
         const box = infobox(await wikitext(title, options))
         if (!matches(box, korean, race)) continue
-        const entry = { id: box.id, race: race || Object.keys(RACES).find((k) => box.race.toLowerCase().startsWith(RACES[k].toLowerCase())) || null,
+        const entry = { id: box.id, romanized: box.romanized || null, race: race || Object.keys(RACES).find((k) => box.race.toLowerCase().startsWith(RACES[k].toLowerCase())) || null,
             nicknames: englishNicknames(box.nicknames).slice(0, 4), source: `https://liquipedia.net/starcraft/${encodeURIComponent(title.replace(/ /g, '_'))}`, checked: today }
         table.players[korean] = entry
         delete table.unknown?.[korean]

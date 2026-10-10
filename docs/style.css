@@ -19,3 +19,6 @@
 details.spoilers { margin-top: 1rem; }
 details.spoilers > summary { cursor: pointer; font-weight: 600; }
 details.spoilers > summary span { font-weight: 400; opacity: .75; }
+.news-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+.news-item h3 { margin: .2rem 0 .4rem; }
+.news-item details.spoilers { margin-top: .4rem; }

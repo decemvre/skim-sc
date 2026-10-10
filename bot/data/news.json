@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "headline": "Community thread discusses rollback netcode for Brood War",
+      "summary": "A new thread on TL.net's Brood War forum is about rollback netcode in Brood War. Rollback is a networking method that keeps online games responsive by predicting inputs and correcting them when they arrive. See the thread for the details and the community discussion.",
+      "spoiler": false,
+      "card": "TL.net thread on bringing rollback netcode to Brood War",
+      "sources": [
+        "https://tl.net/forum/brood-war/646540-rollback-netcode-in-brood-war"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Community thread discusses rollback netcode for Brood War",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 semifinal preview: \"Mirror Mirror\"",
+      "summary": "TL.net has published its preview of the ASL Season 22 Round of 4. The article looks ahead to the semifinal matchups. The title, \"Mirror Mirror\", hints at same-race matchups.",
+      "spoiler": false,
+      "card": "TL.net's preview of the ASL S22 semifinals is up",
+      "sources": [
+        "https://tl.net/forum/brood-war/646492-asl22-ro4-preview-mirror-mirror"
+      ],
+      "date": "2026-10-04",
+      "id": "2026-10-04:ASL Season 22 semifinal preview: \"Mirror Mirror\"",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 Round of 8 preview: \"Within Reach\"",
+      "summary": "TL.net has published another preview of the ASL Season 22 Round of 8. The article looks ahead to the quarterfinal matches being played that week.",
+      "spoiler": false,
+      "card": "TL.net previews the next ASL S22 quarterfinals",
+      "sources": [
+        "https://tl.net/forum/brood-war/646436-asl22-ro8-preview-within-reach"
+      ],
+      "date": "2026-09-27",
+      "id": "2026-09-27:ASL Season 22 Round of 8 preview: \"Within Reach\"",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 Round of 8 preview: \"In A Tizzy\"",
+      "summary": "TL.net has published its first preview of the ASL Season 22 Round of 8. The article looks ahead to the opening quarterfinal matches.",
+      "spoiler": false,
+      "card": "TL.net previews the first ASL S22 quarterfinals",
+      "sources": [
+        "https://tl.net/forum/brood-war/646368-asl22-ro8-preview-in-a-tizzy"
+      ],
+      "date": "2026-09-20",
+      "id": "2026-09-20:ASL Season 22 Round of 8 preview: \"In A Tizzy\"",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 Round of 16 preview: \"Holy Diver\"",
+      "summary": "TL.net has published another preview of the ASL Season 22 Round of 16. The article looks ahead to that week's Ro16 group.",
+      "spoiler": false,
+      "card": "TL.net previews the next ASL S22 Ro16 group",
+      "sources": [
+        "https://tl.net/forum/brood-war/646283-asl22-ro16-preview-holy-diver"
+      ],
+      "date": "2026-09-13",
+      "id": "2026-09-13:ASL Season 22 Round of 16 preview: \"Holy Diver\"",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 Round of 16 preview: \"Rough Waters\"",
+      "summary": "TL.net has published a preview of the ASL Season 22 Round of 16. The article looks ahead to that week's Ro16 group.",
+      "spoiler": false,
+      "card": "TL.net previews an ASL S22 Ro16 group",
+      "sources": [
+        "https://tl.net/forum/brood-war/646222-asl22-ro16-preview-rough-waters"
+      ],
+      "date": "2026-09-06",
+      "id": "2026-09-06:ASL Season 22 Round of 16 preview: \"Rough Waters\"",
+      "addedAt": "2026-10-10T09:42:26.131Z",
+      "by": "claude",
+      "posted": false
+    }
+  ]
+}

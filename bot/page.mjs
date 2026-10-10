@@ -51,3 +51,30 @@ export function inject (html, block) {
     if (anchor < 0) throw new Error('docs/index.html has no "On the circuit" section to go before')
     return html.slice(0, anchor) + block + '\n' + html.slice(anchor)
 }
+
+// The news (F-234), after the schedule, between its own markers. A story that reveals a result
+// shows only its spoiler-free card; its headline and text wait behind a closed <details>.
+export const NEWS_START = '<!-- skim-bot:news:start -->'
+export const NEWS_END = '<!-- skim-bot:news:end -->'
+
+export function newsSection (news, { limit = 12 } = {}) {
+    const items = (news.items || []).slice(0, limit)
+    const links = (i) => i.sources.map((s, n) => `<a class="source-link" href="${esc(s)}">${n ? `source ${n + 1}` : 'Source'} <span aria-hidden="true">↗</span></a>`).join(' ')
+    const article = (i) => i.spoiler
+        ? `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.card || 'A result from the Korean scene')}</h3><details class="spoilers"><summary>Show the story <span>(spoiler)</span></summary><h4>${esc(i.headline)}</h4><p>${esc(i.summary)}</p>${links(i)}</details></article>`
+        : `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.headline)}</h3><p>${esc(i.summary)}</p>${links(i)}</article>`
+    return `${NEWS_START}
+<section id="news" class="section" aria-labelledby="news-title">
+  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">Gathered from Korean outlets (via Naver Sports) and TL.net, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
+  ${items.length ? `<div class="news-grid">${items.map(article).join('')}</div>` : '<p class="section-note">No news yet.</p>'}
+</section>
+${NEWS_END}`
+}
+
+export function injectNews (html, block) {
+    const a = html.indexOf(NEWS_START), b = html.indexOf(NEWS_END)
+    if (a >= 0 && b > a) return html.slice(0, a) + block + html.slice(b + NEWS_END.length)
+    const after = html.indexOf(END)
+    if (after < 0) throw new Error('the schedule section must be in the page before the news')
+    return html.slice(0, after + END.length) + '\n' + block + html.slice(after + END.length)
+}

@@ -1,0 +1,78 @@
+{
+  "seen": {
+    "tl:https://tl.net/forum/brood-war/646540-rollback-netcode-in-brood-war": "2026-10-10T09:41:24.885Z",
+    "tl:https://tl.net/forum/brood-war/646492-asl22-ro4-preview-mirror-mirror": "2026-10-10T09:41:24.885Z",
+    "tl:https://tl.net/forum/brood-war/646436-asl22-ro8-preview-within-reach": "2026-10-10T09:41:24.885Z",
+    "tl:https://tl.net/forum/brood-war/646368-asl22-ro8-preview-in-a-tizzy": "2026-10-10T09:41:24.885Z",
+    "tl:https://tl.net/forum/brood-war/646283-asl22-ro16-preview-holy-diver": "2026-10-10T09:41:24.885Z",
+    "tl:https://tl.net/forum/brood-war/646222-asl22-ro16-preview-rough-waters": "2026-10-10T09:41:24.885Z"
+  },
+  "items": [
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646540-rollback-netcode-in-brood-war",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "Rollback Netcode in Brood War",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646540-rollback-netcode-in-brood-war",
+      "at": "2026-10-09T12:08:49.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    },
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646492-asl22-ro4-preview-mirror-mirror",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "[ASL22] Ro4 Preview: Mirror Mirror",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646492-asl22-ro4-preview-mirror-mirror",
+      "at": "2026-10-04T14:28:07.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    },
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646436-asl22-ro8-preview-within-reach",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "[ASL22] Ro8 Preview: Within Reach",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646436-asl22-ro8-preview-within-reach",
+      "at": "2026-09-27T13:55:26.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    },
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646368-asl22-ro8-preview-in-a-tizzy",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "[ASL22] Ro8 Preview: In A Tizzy",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646368-asl22-ro8-preview-in-a-tizzy",
+      "at": "2026-09-20T12:51:16.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    },
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646283-asl22-ro16-preview-holy-diver",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "[ASL22] Ro16 Preview: Holy Diver",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646283-asl22-ro16-preview-holy-diver",
+      "at": "2026-09-13T14:29:54.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    },
+    {
+      "id": "tl:https://tl.net/forum/brood-war/646222-asl22-ro16-preview-rough-waters",
+      "source": "TL.net",
+      "lang": "en",
+      "title": "[ASL22] Ro16 Preview: Rough Waters",
+      "summary": "",
+      "link": "https://tl.net/forum/brood-war/646222-asl22-ro16-preview-rough-waters",
+      "at": "2026-09-06T15:27:33.000Z",
+      "queuedAt": "2026-10-10T09:41:24.885Z",
+      "done": true
+    }
+  ]
+}
