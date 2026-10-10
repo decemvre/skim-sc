@@ -62,15 +62,19 @@ export function inject (html, block) {
 export const NEWS_START = '<!-- skim-bot:news:start -->'
 export const NEWS_END = '<!-- skim-bot:news:end -->'
 
-export function newsSection (news, { limit = 12 } = {}) {
-    const items = (news.items || []).slice(0, limit)
+// Only the last week's Korean news (Silviu, 10 Oct: old news off the page).
+export const NEWS_DAYS = 7
+const foreign = (i) => (i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s))
+export function newsSection (news, { limit = 12, now = new Date() } = {}) {
+    const since = new Date(now - NEWS_DAYS * 86400000).toISOString().slice(0, 10)
+    const items = (news.items || []).filter((i) => !foreign(i) && String(i.date) >= since).slice(0, limit)
     const links = (i) => i.sources.map((s, n) => `<a class="source-link" href="${esc(s)}">${n ? `source ${n + 1}` : 'Source'} <span aria-hidden="true">↗</span></a>`).join(' ')
     const article = (i) => i.spoiler
         ? `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.card || 'A result from the Korean scene')}</h3><details class="spoilers"><summary>Show the story <span>(spoiler)</span></summary><h4>${esc(i.headline)}</h4><p>${esc(i.summary)}</p>${links(i)}</details></article>`
         : `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.headline)}</h3><p>${esc(i.summary)}</p>${links(i)}</article>`
     return `${NEWS_START}
 <section id="news" class="section" aria-labelledby="news-title">
-  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">Gathered from Korean outlets (via Naver Sports) and EloBoard, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
+  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">The last week's news from Korean outlets (via Naver Sports) and EloBoard, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
   ${items.length ? `<div class="news-grid">${items.map(article).join('')}</div>` : '<p class="section-note">No news yet.</p>'}
 </section>
 ${NEWS_END}`

@@ -22,7 +22,7 @@ const git = (...args) => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8'
 export function render ({ now = new Date() } = {}) {
     const before = readFileSync(PAGE, 'utf8')
     // The "checked" time changes every run; compare without it, so an unchanged schedule is no change.
-    const after = injectNews(inject(before, section(loadMatches(), { today: kstToday(now), now })), newsSection(loadNews()))
+    const after = injectNews(inject(before, section(loadMatches(), { today: kstToday(now), now })), newsSection(loadNews(), { now }))
     const strip = (html) => html.replace(/checked \d{4}-\d{2}-\d{2} \d{2}:\d{2} \w+/, '')
     return { changed: strip(before) !== strip(after), html: after }
 }

@@ -152,7 +152,7 @@ export async function digest ({ queue = loadQueue(), names = loadNames(), news =
     }
     for (const i of waiting) i.done = true
     const known = new Set(news.items.map((i) => i.id))
-    news.items = [...added.filter((i) => !known.has(i.id)), ...news.items].filter((i) => now - Date.parse(i.addedAt) < 60 * 86400000)
+    news.items = [...added.filter((i) => !known.has(i.id)), ...news.items].filter((i) => now - Date.parse(i.addedAt) < 14 * 86400000)
     return { ran: true, by, added, dropped, failures, translated, queue, news, names }
 }
 
