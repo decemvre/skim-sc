@@ -8,6 +8,14 @@
       "source": "https://liquipedia.net/starcraft/ggaemo",
       "checked": "2026-10-10"
     },
+    "김명운": {
+      "id": "Queen",
+      "romanized": "Kim Myung Woon",
+      "race": null,
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/ZerO",
+      "checked": "2026-10-10"
+    },
     "김민철": {
       "id": "Soulkey",
       "race": "Z",
@@ -25,6 +33,27 @@
         "Mafia Zerg"
       ],
       "source": "https://liquipedia.net/starcraft/Action",
+      "checked": "2026-10-10"
+    },
+    "김영진": {
+      "id": "Skey",
+      "romanized": null,
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Skey",
+      "checked": "2026-10-10"
+    },
+    "김윤중": {
+      "id": "Shuttle",
+      "romanized": "Kim Yoon Joong",
+      "race": "P",
+      "nicknames": [
+        "Eyewater",
+        "Elsa Toss",
+        "Mole Toss",
+        "Star Dragon"
+      ],
+      "source": "https://liquipedia.net/starcraft/Shuttle_(Player)",
       "checked": "2026-10-10"
     },
     "김윤환": {
@@ -64,6 +93,16 @@
       "source": "https://liquipedia.net/starcraft/RoyaL",
       "checked": "2026-10-10"
     },
+    "김태영": {
+      "id": "Ample",
+      "romanized": "Kim Tae Young",
+      "race": "T",
+      "nicknames": [
+        "Sashin Terran"
+      ],
+      "source": "https://liquipedia.net/starcraft/Ample",
+      "checked": "2026-10-10"
+    },
     "김택용": {
       "id": "Bisu",
       "romanized": "Kim Taek Yong",
@@ -74,6 +113,14 @@
         "Bee Suit"
       ],
       "source": "https://liquipedia.net/starcraft/Bisu",
+      "checked": "2026-10-10"
+    },
+    "김학수": {
+      "id": "SeCret",
+      "romanized": "Kim Hak Soo",
+      "race": "P",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/SeCret",
       "checked": "2026-10-10"
     },
     "도재욱": {
@@ -90,6 +137,43 @@
       "race": "Z",
       "nicknames": [],
       "source": "https://liquipedia.net/starcraft/Soma",
+      "checked": "2026-10-10"
+    },
+    "박성균": {
+      "id": "Mind",
+      "romanized": "Park Sung Gyoon",
+      "race": "T",
+      "nicknames": [
+        "Rommel",
+        "Scholar Terran",
+        "The Viper",
+        "Mind"
+      ],
+      "source": "https://liquipedia.net/starcraft/Mind",
+      "checked": "2026-10-10"
+    },
+    "박재혁": {
+      "id": "Hyuk",
+      "romanized": "Park Jae Hyuk",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Hyuk",
+      "checked": "2026-10-10"
+    },
+    "박준오": {
+      "id": "Killer",
+      "romanized": "Park Joon Oh",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Killer",
+      "checked": "2026-10-10"
+    },
+    "방태수": {
+      "id": "BTS",
+      "romanized": "Bang Tae Soo",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/BTS",
       "checked": "2026-10-10"
     },
     "배성흠": {
@@ -111,6 +195,17 @@
       "source": "https://liquipedia.net/starcraft/Mini",
       "checked": "2026-10-10"
     },
+    "송병구": {
+      "id": "Stork",
+      "romanized": "Song Byung Goo",
+      "race": "P",
+      "nicknames": [
+        "The Bird",
+        "Dinosaur Toss"
+      ],
+      "source": "https://liquipedia.net/starcraft/Stork",
+      "checked": "2026-10-10"
+    },
     "신상문": {
       "id": "Leta",
       "romanized": "Shin Sang Moon",
@@ -119,6 +214,14 @@
         "Wraith Flaming Skull"
       ],
       "source": "https://liquipedia.net/starcraft/Leta",
+      "checked": "2026-10-10"
+    },
+    "원선재": {
+      "id": "Motive",
+      "romanized": "Won Seon Jae",
+      "race": "P",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Motive",
       "checked": "2026-10-10"
     },
     "유영진": {
@@ -131,6 +234,26 @@
       "source": "https://liquipedia.net/starcraft/Rush",
       "checked": "2026-10-10"
     },
+    "윤수철": {
+      "id": "huro",
+      "romanized": "Yoon Soo Chul",
+      "race": "P",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Huro",
+      "checked": "2026-10-10"
+    },
+    "윤용태": {
+      "id": "free",
+      "romanized": "Yoon Yong Tae",
+      "race": "P",
+      "nicknames": [
+        "Battle God",
+        "God of Thunder",
+        "Million Won Ace"
+      ],
+      "source": "https://liquipedia.net/starcraft/Free",
+      "checked": "2026-10-10"
+    },
     "윤찬희": {
       "id": "Mong",
       "romanized": "Yoon Chan Hee",
@@ -140,6 +263,17 @@
         "Afreecan FlaSh"
       ],
       "source": "https://liquipedia.net/starcraft/Mong",
+      "checked": "2026-10-10"
+    },
+    "이경민": {
+      "id": "Horang2",
+      "romanized": "Lee Kyung Min",
+      "race": "P",
+      "nicknames": [
+        "th Dimension Toss",
+        "Tiger Toss"
+      ],
+      "source": "https://liquipedia.net/starcraft/Horang2",
       "checked": "2026-10-10"
     },
     "이영웅": {
@@ -205,6 +339,18 @@
       "source": "https://liquipedia.net/starcraft/Organ",
       "checked": "2026-10-10"
     },
+    "임홍규": {
+      "id": "Larva",
+      "romanized": "Lim Hong Gyu",
+      "race": "Z",
+      "nicknames": [
+        "McGregor",
+        "Stamina Zerg",
+        "Footstargamer"
+      ],
+      "source": "https://liquipedia.net/starcraft/Larva_(Player)",
+      "checked": "2026-10-10"
+    },
     "장윤철": {
       "id": "SnOw",
       "romanized": "Jang Yoon Chul",
@@ -213,12 +359,44 @@
       "source": "https://liquipedia.net/starcraft/SnOw",
       "checked": "2026-10-10"
     },
+    "전태규": {
+      "id": "Zeus",
+      "romanized": "Jun Tae Gyu",
+      "race": null,
+      "nicknames": [
+        "Ceremony Toss",
+        "Sense Toss",
+        "Comic&nbsp Toss"
+      ],
+      "source": "https://liquipedia.net/starcraft/Zeus",
+      "checked": "2026-10-10"
+    },
     "정경두": {
       "id": "Paralyze",
       "romanized": "Jung Kyung Doo",
       "race": "P",
       "nicknames": [],
       "source": "https://liquipedia.net/starcraft/Paralyze",
+      "checked": "2026-10-10"
+    },
+    "정명훈": {
+      "id": "Fantasy",
+      "romanized": "Jung Myung Hoon",
+      "race": "T",
+      "nicknames": [
+        "Crown Prince",
+        "Jung Laden",
+        "League Terrorist"
+      ],
+      "source": "https://liquipedia.net/starcraft/Fantasy_(Player)",
+      "checked": "2026-10-10"
+    },
+    "정민기": {
+      "id": "BishOp",
+      "romanized": "Jeong Min Ki",
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/BishOp",
       "checked": "2026-10-10"
     },
     "정영재": {
@@ -237,6 +415,22 @@
       "source": "https://liquipedia.net/starcraft/Sharp",
       "checked": "2026-10-10"
     },
+    "조성호": {
+      "id": "Trap",
+      "romanized": "Cho Sung Ho",
+      "race": "P",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Trap",
+      "checked": "2026-10-10"
+    },
+    "지동원": {
+      "id": "kOp",
+      "romanized": "Ji Dong-won",
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/KOp",
+      "checked": "2026-10-10"
+    },
     "최호선": {
       "id": "sSak",
       "romanized": "Choi Ho Seon",
@@ -244,7 +438,33 @@
       "nicknames": [],
       "source": "https://liquipedia.net/starcraft/sSak",
       "checked": "2026-10-10"
+    },
+    "황병영": {
+      "id": "BarrackS",
+      "romanized": "Hwang Byung Yung",
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/BarrackS",
+      "checked": "2026-10-10"
     }
   },
-  "unknown": {}
+  "unknown": {
+    "김세주": "2026-10-10",
+    "다린": "2026-10-10",
+    "더하고배": "2026-10-10",
+    "만개": "2026-10-10",
+    "만개빵": "2026-10-10",
+    "매펀": "2026-10-10",
+    "박수범": "2026-10-10",
+    "사랑": "2026-10-10",
+    "선정은": "2026-10-10",
+    "설영욱": "2026-10-10",
+    "안아": "2026-10-10",
+    "장민철": "2026-10-10",
+    "정중만": "2026-10-10",
+    "주서리": "2026-10-10",
+    "즉흥": "2026-10-10",
+    "천유주": "2026-10-10",
+    "파비지원": "2026-10-10"
+  }
 }

@@ -1,8 +1,9 @@
 {
-  "updated": "2026-10-10T09:36:43.432Z",
+  "updated": "2026-10-10T10:43:01.926Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
+      "origin": "soop",
       "date": "2026-10-05",
       "kst": "19:00",
       "at": "2026-10-05T10:00:00.000Z",
@@ -43,15 +44,16 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-05",
       "result": {
         "a": 4,
         "b": 2,
         "source": "https://liquipedia.net/starcraft/ASL/22"
-      }
+      },
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-05"
     },
     {
       "key": "2026-10-06 19:00 박상현 vs 김민철",
+      "origin": "soop",
       "date": "2026-10-06",
       "kst": "19:00",
       "at": "2026-10-06T10:00:00.000Z",
@@ -87,15 +89,16 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06",
       "result": {
         "a": 2,
         "b": 4,
         "source": "https://liquipedia.net/starcraft/ASL/22"
-      }
+      },
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06"
     },
     {
       "key": "2026-10-07 20:00 우리할매 러브즈 vs 기영이숯불 킹즈",
+      "origin": "soop",
       "date": "2026-10-07",
       "kst": "20:00",
       "at": "2026-10-07T11:00:00.000Z",
@@ -127,6 +130,7 @@
     },
     {
       "key": "2026-10-07 21:00 김민철 vs 도재욱",
+      "origin": "soop",
       "date": "2026-10-07",
       "kst": "21:00",
       "at": "2026-10-07T12:00:00.000Z",
@@ -167,7 +171,187 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-07"
     },
     {
+      "key": "2026-10-08 18:00 eloboard [신세계] 교수ck",
+      "origin": "eloboard",
+      "date": "2026-10-08",
+      "kst": "18:00",
+      "allDay": false,
+      "at": "2026-10-08T09:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-08",
+        "time": "12:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[신세계] 교수ck",
+        "name": "[New World] Professors' CK",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[신세계] 교수ck",
+      "titleEn": "[New World] Professors' CK",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
+    },
+    {
+      "key": "2026-10-10 17:00 eloboard 미니대전 마범대 vs 더블비",
+      "origin": "eloboard",
+      "date": "2026-10-10",
+      "kst": "17:00",
+      "allDay": false,
+      "at": "2026-10-10T08:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-10",
+        "time": "11:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "미니대전 마범대 vs 더블비",
+        "name": "Mini-Match MBU vs Double B",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "미니대전 마범대 vs 더블비",
+      "titleEn": "Mini-Match MBU vs Double B",
+      "needsTranslation": false,
+      "duel": [
+        "마범대",
+        "더블비"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
+    },
+    {
+      "key": "2026-10-10 19:00 eloboard 마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
+      "origin": "eloboard",
+      "date": "2026-10-10",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-10T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-10",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
+        "name": "MBU vs Dreamz impromptu mini university clash (20k balloons)",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "마범대 VS 드림즈 2만개빵 미니대학대전 즉흥",
+      "titleEn": "MBU vs Dreamz impromptu mini university clash (20k balloons)",
+      "needsTranslation": false,
+      "duel": [
+        "마범대",
+        "드림즈"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
+    },
+    {
+      "key": "2026-10-10 20:00 eloboard CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
+      "origin": "eloboard",
+      "date": "2026-10-10",
+      "kst": "20:00",
+      "allDay": false,
+      "at": "2026-10-10T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-10",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
+        "name": "Deohago Cup CK: 20k match fund + 20k prize support from Best",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 더하고배 CK 매펀2만개 +도재욱 파비지원금 2만개",
+      "titleEn": "Deohago Cup CK: 20k match fund + 20k prize support from Best",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-10"
+    },
+    {
+      "key": "2026-10-12 19:00 eloboard CK 더블비 VS 드림즈 교수ck",
+      "origin": "eloboard",
+      "date": "2026-10-12",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-12T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-12",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK 더블비 VS 드림즈 교수ck",
+        "name": "CK Double B vs Dreamz Professors' CK",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 더블비 VS 드림즈 교수ck",
+      "titleEn": "CK Double B vs Dreamz Professors' CK",
+      "needsTranslation": false,
+      "duel": [
+        "더블비",
+        "드림즈"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
+    },
+    {
       "key": "2026-10-12 21:00 김민철 vs 김지성",
+      "origin": "soop",
       "date": "2026-10-12",
       "kst": "21:00",
       "at": "2026-10-12T12:00:00.000Z",
@@ -206,7 +390,45 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
     },
     {
+      "key": "2026-10-13 21:00 eloboard [중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
+      "origin": "eloboard",
+      "date": "2026-10-13",
+      "kst": "21:00",
+      "allDay": false,
+      "at": "2026-10-13T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-13",
+        "time": "15:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
+        "name": "Special Ultimate Battle Light vs soma",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
+      "titleEn": "Special Ultimate Battle Light vs soma",
+      "needsTranslation": false,
+      "duel": [
+        "이재호",
+        "박상현"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
+    },
+    {
       "key": "2026-10-14 20:00 비트 리벤저스 vs 메디카 스타즈",
+      "origin": "soop",
       "date": "2026-10-14",
       "kst": "20:00",
       "at": "2026-10-14T11:00:00.000Z",
@@ -237,7 +459,79 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
     },
     {
+      "key": "2026-10-15 19:00 eloboard [대학대전] 드림즈 vs 캄몬",
+      "origin": "eloboard",
+      "date": "2026-10-15",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-15T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-15",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[대학대전] 드림즈 vs 캄몬",
+        "name": "[University Clash] Dreamz vs Calm MonstarZ",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[대학대전] 드림즈 vs 캄몬",
+      "titleEn": "[University Clash] Dreamz vs Calm MonstarZ",
+      "needsTranslation": false,
+      "duel": [
+        "드림즈",
+        "캄몬"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
+    },
+    {
+      "key": "2026-10-17 all-day eloboard [마범대] 유스 종족최강자전 개최",
+      "origin": "eloboard",
+      "date": "2026-10-17",
+      "kst": null,
+      "allDay": true,
+      "at": "2026-10-16T15:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-16",
+        "time": "18:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[마범대] 유스 종족최강자전 개최",
+        "name": "[MBU] Youth Race Championship",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[마범대] 유스 종족최강자전 개최",
+      "titleEn": "[MBU] Youth Race Championship",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
+    },
+    {
       "key": "2026-10-17 15:00 유영진 vs 김민철",
+      "origin": "soop",
       "date": "2026-10-17",
       "kst": "15:00",
       "at": "2026-10-17T06:00:00.000Z",
@@ -279,7 +573,42 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
     },
     {
+      "key": "2026-10-19 19:00 eloboard [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
+      "origin": "eloboard",
+      "date": "2026-10-19",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-19T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-19",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
+        "name": "[Women's Star Showdown] BGM Ana vs FA Darin, cast by Sarange",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
+      "titleEn": "[Women's Star Showdown] BGM Ana vs FA Darin, cast by Sarange",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-19"
+    },
+    {
       "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
+      "origin": "soop",
       "date": "2026-10-21",
       "kst": "20:00",
       "at": "2026-10-21T11:00:00.000Z",
@@ -310,7 +639,42 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
     },
     {
+      "key": "2026-10-24 all-day eloboard [마범대] 마범컵 5,6 티어 대회",
+      "origin": "eloboard",
+      "date": "2026-10-24",
+      "kst": null,
+      "allDay": true,
+      "at": "2026-10-23T15:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-23",
+        "time": "18:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[마범대] 마범컵 5,6 티어 대회",
+        "name": "[MBU] Ma Beom Cup Tier 5–6 Tournament",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[마범대] 마범컵 5,6 티어 대회",
+      "titleEn": "[MBU] Ma Beom Cup Tier 5–6 Tournament",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-10T10:43:01.926Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-24"
+    },
+    {
       "key": "2026-10-28 20:00 우리할매 러브즈 vs 메디카 스타즈",
+      "origin": "soop",
       "date": "2026-10-28",
       "kst": "20:00",
       "at": "2026-10-28T11:00:00.000Z",

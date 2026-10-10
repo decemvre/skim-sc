@@ -1,6 +1,398 @@
 {
   "items": [
     {
+      "headline": "K-Jungman Cup winner Bakhaak leaves K University for The K",
+      "summary": "K University's tier-5 zerg Bakhaak said goodbye to the team on October 9 and introduced themselves as a new member of The K. They wrote that they won the K-Jungman Cup with a 6-1 record. Bakhaak came back to StarCraft last February and thanked their teachers Seokhyeon, ggaemo and Soyun.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "K University zerg Bakhaak says goodbye and moves to The K",
+      "sources": [
+        "https://eloboard.com/community/posts/677"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:K-Jungman Cup winner Bakhaak leaves K University for The K",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New World signs youth players Ppokkaengi and a player",
+      "summary": "New World officially welcomed two new youth players, Ppokkaengi and a player. Ppokkaengi had been doing music streams for six months and decided after a few days of thought to try the youth program. On the same day, EloBoard's player records also moved Motokei to New World, though no announcement was posted.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "New World adds youth players Ppokkaengi and a player",
+      "sources": [
+        "https://eloboard.com/community/posts/413",
+        "https://eloboard.com/community/posts/573",
+        "https://eloboard.com/news/2026-10-09"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:New World signs youth players Ppokkaengi and a player",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "MBU's Kahiri returns to streaming on October 10",
+      "summary": "MB University's Kahiri announced a return to streaming by 2 pm on October 10. The return is also listed in MBU's published October schedule.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "MBU's Kahiri is back on stream from October 10",
+      "sources": [
+        "https://eloboard.com/community/posts/654"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:MBU's Kahiri returns to streaming on October 10",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Bisu beats Speed 4-2 in long-format PvT",
+      "summary": "Bisu (P) beat Speed (T) 4-2 in a best-of-seven, taking Octagon, Aeolos and Colorless Fate. They then dropped Attitude and Backroom to fall back to 3-2 before closing it out on Odyssey. Bisu also beat soma (Z) 2-1 in a best-of-three, recovering from losing Octagon.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Bisu plays a best-of-seven against Speed and a Bo3 against soma",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:Bisu beats Speed 4-2 in long-format PvT",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Jaedong sweeps Queen 2-0 in ZvZ",
+      "summary": "Jaedong beat Queen 2-0 on Attitude and Colorless Fate, and also won a single game against Stork. Queen beat Best 2-0 and won a single game against huro, but lost Backroom to Speed.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Jaedong faces Queen in a ZvZ series; Queen also takes on Best",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:Jaedong sweeps Queen 2-0 in ZvZ",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Fantasy beats a player 2-0, goes 3-3 in single games",
+      "summary": "Fantasy (T) beat a player (P) 2-0 in a best-of-three but lost both of their single games to them. In other single games Fantasy beat Horang2, BishOp and Trap, and lost to Ample.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Fantasy plays a Bo3 and several single games against a player",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:Fantasy beats a player 2-0, goes 3-3 in single games",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "a player and a player trade 2-1 series wins",
+      "summary": "a player (T) and a player (P) played two best-of-threes and each won one 2-1. a player won only one of five games against Iakkaeng (T).",
+      "spoiler": true,
+      "relevant": false,
+      "card": "a player and a player play two TvP best-of-threes",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:a player and a player trade 2-1 series wins",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "BGM climbs a mountain as a penalty",
+      "summary": "BGM went hiking as a penalty, with Ppohyeonuk streaming the climb from 3 pm alongside Mongsun and Peubal. Mongsun wrote that sweating on the hike and eating something good afterwards was healing.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "BGM members stream a penalty mountain hike",
+      "sources": [
+        "https://eloboard.com/community/posts/568"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:BGM climbs a mountain as a penalty",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "JSA and Black Academy face off in a team showdown on Sijosae's stream",
+      "summary": "JSA and Black Academy held a joint team showdown on Sijosae's stream on the evening of October 9. JSA's Skey said they had trained the Action way the day before and promised to win. Black Academy's Jegal Chubin said afterwards they were embarrassed when Mobi recognised them first and asked for a photo.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "JSA vs Black Academy team showdown on Sijosae's stream",
+      "sources": [
+        "https://eloboard.com/community/posts/643"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:JSA and Black Academy face off in a team showdown on Sijosae's stream",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "RoyaL's team beats Light's team 2-0 in Major Proleague",
+      "summary": "RoyaL's team (RoyaL, soma, Rush, Jaedong, Best) won both sets of the 5v5 Major Proleague against Light's team (Light, SnOw, Queen, Bisu, Larva), taking the individual set 4-1. In the winners-league set Queen put Light's team 4-3 up, but Rush came in last and beat Queen and Bisu to win it.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague 5v5: RoyaL's team vs Light's team, with a winners-league set",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:RoyaL's team beats Light's team 2-0 in Major Proleague",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Sldoli's team beats Cltem's team 2-0 in ClamCK",
+      "summary": "Sldoli's team (Sldoli, Nangni, free, Gongdachu, Jyeomni) won both sets of the 5v5 ClamCK against Cltem's team, whose line-up included Calm. The first set went to 4-3 when free beat Calm on Radeon in the decider, and the second ended 3-1.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "ClamCK 5v5: Sldoli's team vs Cltem's team, with free and Calm",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:Sldoli's team beats Cltem's team 2-0 in ClamCK",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Shinee wins four games as Seonjae's team takes both K League sets 4-3",
+      "summary": "Seonjae's team (Motive, Stork, Shinee, Killer) beat Taesu's team 4-3 in both best-of-seven sets of the 4v4 K League. Shinee won four games, beating Mind and BTS twice each, and Stork won three. For the losing side BarrackS took three games.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "4v4 K League: Seonjae's team with Shinee vs Taesu's team",
+      "sources": [
+        "https://eloboard.com/news/2026-10-10"
+      ],
+      "date": "2026-10-10",
+      "id": "2026-10-10:Shinee wins four games as Seonjae's team takes both K League sets 4-3",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma loses 1-2 to Bisu, sweeps huro and Shinee",
+      "summary": "soma (Z) won two of three best-of-threes, beating huro and Shinee 2-0, but lost 1-2 to Bisu after taking Backroom first. Queen came back to beat RoyaL 2-1, and Fantasy beat Hyuk 2-0.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "soma plays three Bo3s, including one against Bisu",
+      "sources": [
+        "https://eloboard.com/news/2026-10-09"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:soma loses 1-2 to Bisu, sweeps huro and Shinee",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Heyoi loses 1-2 to a player, then wins the rematch 3-1",
+      "summary": "Heyoi (P) lost a best-of-three 1-2 to a player (T), then won the best-of-five that followed 3-1 with three straight wins. Heyoi had seen a doctor that day, apparently for gastritis and enteritis, before streaming in the evening.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Heyoi and a player play a Bo3 and a Bo5 on the same day",
+      "sources": [
+        "https://eloboard.com/news/2026-10-09"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Heyoi loses 1-2 to a player, then wins the rematch 3-1",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Union team beats Dreamz 4-1 in CK",
+      "summary": "A union team (Tomato, Yui, 2rani, a player, Myeonchuga) won four of five games against Dreamz. Dreamz's only win came when Yoning beat Tomato on Attitude. Dreamz's Shuttle said they would hold impromptu CKs to prepare for Calm MonstarZ.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Dreamz play a union team in CK while preparing for Calm MonstarZ",
+      "sources": [
+        "https://eloboard.com/news/2026-10-09"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Union team beats Dreamz 4-1 in CK",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Professor CK: union team sweeps New World 5-0",
+      "summary": "A union team (Stork, Shine, a player, kOp, Jinseo) won the first five games in a row of a best-of-nine against New World. Shine beat huro, and the other four union players each beat one New World player. New World's Jiuri asked fans to support and fund the teachers' CK.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Professor CK: a union team with Shine takes on New World",
+      "sources": [
+        "https://eloboard.com/community/posts/521"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Professor CK: union team sweeps New World 5-0",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Union team beats JSA twice in impromptu tier-8 skill check",
+      "summary": "In an impromptu tier-8 skill check hosted by JSA's Sijosae, a union team beat JSA 3-0 in the first set and 3-1 in the winners league, where Nangni Cup winner Danseol finished it. In the CK that followed, another union team won four of six games.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "JSA host an impromptu tier-8 skill check against a union team",
+      "sources": [
+        "https://eloboard.com/news/2026-10-09"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Union team beats JSA twice in impromptu tier-8 skill check",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "DM signs youth player Yerin",
+      "summary": "DM's Zeus announced that youth player Yerin has joined the team.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "DM announce youth player Yerin",
+      "sources": [
+        "https://eloboard.com/community/posts/523"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:DM signs youth player Yerin",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Camping stream at 'President Hak''s brings some healing, and a bug",
+      "summary": "Horang2, SeCret, Sldoli and Neukdaechaerin did a camping stream on SeCret's channel on October 8. Neukdaechaerin thanked 'President Hak' for the healing time in nature, but said the big bug that hit their neck means they're giving up on camping.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Four streamers go camping on SeCret's stream",
+      "sources": [
+        "https://eloboard.com/community/posts/525"
+      ],
+      "date": "2026-10-08",
+      "id": "2026-10-08:Camping stream at 'President Hak''s brings some healing, and a bug",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New Castle lists six off-season individual cup wins",
+      "summary": "New Castle summed up its off-season individual results: five players won six cups between them, with Queenju winning two. Danseol's coach Tsyu thanked everyone who helped Danseol practise for the Nangni Cup win.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "New Castle looks back on its off-season individual tournaments",
+      "sources": [
+        "https://eloboard.com/community/posts/440"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:New Castle lists six off-season individual cup wins",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "a player holds open audition for Narak crew on October 12",
+      "summary": "a player is holding an open audition for the one-off overseas crew Narakdan on Monday, October 12 at 2 pm. Current members are a player, Ssangdi, a player and Wiper, and applications go to a player by message.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "a player's Narak crew holds an open audition on Monday",
+      "sources": [
+        "https://eloboard.com/community/posts/441"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:a player holds open audition for Narak crew on October 12",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "EloBoard adds an FA tab and LIVE badges for bracket events",
+      "summary": "EloBoard added an FA tab to its university pages and now shows LIVE on bracket-event schedules when the broadcaster is on air. The match-entry screen now splits each set into its own card, and 166 games were added that day.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "EloBoard adds an FA tab and LIVE badges",
+      "sources": [
+        "https://eloboard.com/community/posts/410"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:EloBoard adds an FA tab and LIVE badges for bracket events",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Acting stream 'Chunui University User Manual' airs October 9",
+      "summary": "Hasom premiered the acting stream 'Chunui University User Manual' live at 4:30 pm on October 9, with Horang2 and seven streamers. The video will stay private for a while after the broadcast.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Hasom's acting stream 'Chunui University User Manual' premieres live",
+      "sources": [
+        "https://eloboard.com/community/posts/454"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Acting stream 'Chunui University User Manual' airs October 9",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "BGM's Jinseo holds a birthday gift draw",
+      "summary": "BGM's Jinseo celebrated their birthday on October 9 with a gift draw for well-wishers. Viewers and streamers could enter by posting a screenshot.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "BGM's Jinseo marks their birthday with a gift draw",
+      "sources": [
+        "https://eloboard.com/community/posts/503"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:BGM's Jinseo holds a birthday gift draw",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New World's Bamhaming spends 5 million won on new stream gear",
+      "summary": "New World's Bamhaming upgraded their setup with a 3-million-won PC and 2 million won of other gear. They planned a short stream that night once setup was done.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "New World's Bamhaming shows off a new 5-million-won streaming setup",
+      "sources": [
+        "https://eloboard.com/community/posts/458"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:New World's Bamhaming spends 5 million won on new stream gear",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Jiuri, Ttumi and Nayeri off to the doctor",
+      "summary": "New World's Jiuri took a day off for hand, arm and back pain, and BGM's Ttumi rested with tonsil stones. Black Academy's Nayeri got an IV drip and started streaming late.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Three streamers from New World, BGM and Black Academy take sick days",
+      "sources": [
+        "https://eloboard.com/community/posts/460"
+      ],
+      "date": "2026-10-09",
+      "id": "2026-10-09:Jiuri, Ttumi and Nayeri off to the doctor",
+      "addedAt": "2026-10-10T10:44:16.772Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Community thread discusses rollback netcode for Brood War",
       "summary": "A new thread on TL.net's Brood War forum is about rollback netcode in Brood War. Rollback is a networking method that keeps online games responsive by predicting inputs and correcting them when they arrive. See the thread for the details and the community discussion.",
       "spoiler": false,
