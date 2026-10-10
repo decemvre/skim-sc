@@ -35,7 +35,7 @@ export function section (file, { today, now = new Date() }) {
     const table = (rows, caption) => `<table class="matches bot-matches"><caption>${caption}</caption><thead><tr><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Competition</th><th scope="col">Players</th></tr></thead><tbody>${rows}</tbody></table>`
     return `${START}
 <section id="schedule" class="section" aria-labelledby="schedule-title">
-  <div class="section-heading"><div><p class="eyebrow">KEPT UP TO DATE BY SKIM BOT</p><h2 id="schedule-title">Coming up</h2></div><p class="section-note">From SOOP's official schedule, checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet. Times in KST and Bucharest. Rosters and community results: <a class="text-link" href="https://eloboard.com/colleges">EloBoard <span aria-hidden="true">↗</span></a></p></div>
+  <div class="section-heading"><div><p class="eyebrow">KEPT UP TO DATE BY SKIM BOT</p><h2 id="schedule-title">Coming up</h2></div><p class="section-note">From SOOP's official schedule, checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet. Times in KST and Bucharest.</p></div>
   ${upcoming.length ? table(upcoming.map((m) => row(m)).join(''), 'Upcoming matches') : '<p class="section-note">Nothing on SOOP\'s schedule yet.</p>'}
   ${past.length ? `<details class="spoilers"><summary>Results <span>(spoilers - click to show)</span></summary>${table(past.map((m) => row(m, true)).join(''), 'Recent results, newest first')}<p class="section-note">Scores from Liquipedia where it has them; a match shown with “vs” has no score yet.</p></details>` : ''}
 </section>
