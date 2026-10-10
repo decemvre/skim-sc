@@ -44,9 +44,10 @@ test('names: known ones from the table, unknown ones looked up once a day and ne
 
 test('a future match that leaves the schedule is kept and marked, not dropped', async () => {
     const saved = {matches: [{key: '2026-10-12 21:00 김민철 vs 김지성', date: '2026-10-12', onSchedule: true, at: '2026-10-12T12:00:00.000Z'}]};
-    const r = await refresh({today: '2026-10-10', read: async () => [], names: {players: {}, unknown: {}}, lookup: false, saved});
-    assert.deepEqual(r.changes, [{kind: 'gone', key: '2026-10-12 21:00 김민철 vs 김지성'}]);
-    assert.equal(r.file.matches[0].onSchedule, false);
+    const other = {date: '2026-10-17', kst: '15:00', competition: 'Google Play ASL Season 22', a: {korean: '김민철', race: 'Z'}, b: {korean: '홍길동', race: 'P'}, played: false, status: 'Upcoming'};
+    const r = await refresh({today: '2026-10-10', read: async () => [other], names: {players: {}, unknown: {}}, lookup: false, saved});
+    assert.deepEqual(r.changes.filter((c) => c.kind === 'gone'), [{kind: 'gone', key: '2026-10-12 21:00 김민철 vs 김지성'}]);
+    assert.equal(r.file.matches.find((m) => m.key.startsWith('2026-10-12')).onSchedule, false);
 });
 
 test('times: KST to Bucharest, EEST until 25 October 2026 and EET after', () => {
@@ -67,4 +68,9 @@ test('competitions get our names; the next month is read near the end of this on
 
 test('nicknames: only what we can read', () => {
     assert.deepEqual(englishNicknames(['철벽Iron Wall(铁壁)', '永康', 'Doh-men', '괴룡(怪龍)', 'ASLCHAMPRush']), ['Iron Wall', 'Doh-men', 'ASLCHAMPRush']);
+});
+
+test('an empty SOOP month we had matches for is a failed read, not a month of cancellations', async () => {
+    const saved = {matches: [{key: 'k', origin: 'soop', date: '2026-10-17', onSchedule: true}]};
+    await assert.rejects(refresh({today: '2026-10-10', read: async () => [], names: {players: {}, unknown: {}}, lookup: false, saved}), /came back empty/);
 });

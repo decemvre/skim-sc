@@ -22,3 +22,31 @@ details.spoilers > summary span { font-weight: 400; opacity: .75; }
 .news-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
 .news-item h3 { margin: .2rem 0 .4rem; }
 .news-item details.spoilers { margin-top: .4rem; }
+/* F-241: news (8 of 12 columns) beside what is coming up (4 of 12), right under the header. */
+.feed { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 40px; align-items: start; }
+.feed > #news { grid-column: 1 / span 8; grid-row: 1; }
+.feed > #schedule { grid-column: 9 / span 4; grid-row: 1; position: sticky; top: 0; }
+.feed > .section { border-top: 0; }
+#schedule .section-heading { margin-bottom: 6px; }
+#schedule > .section-note { margin-bottom: 14px; }
+.fixtures { list-style: none; margin: 0 0 18px; padding: 0; }
+.fixture { border-top: 1px solid var(--line); padding: 12px 0; }
+.fixture.big .fixture-comp { color: var(--accent); font-weight: 600; }
+.fixture-when { font-size: 13px; font-weight: 600; }
+.fixture-comp { font-size: 13px; color: var(--muted); }
+.fixture-comp small { opacity: .75; }
+.fixture-players { font-size: 14px; margin-top: 4px; }
+.fixture .player-chip { background: none; padding: 0; gap: 5px; }
+.fixture .race { font-size: 11px; width: 19px; height: 19px; }
+.feed .news-grid { grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+@media (max-width: 900px) {
+  .feed { display: block; }
+  .feed > #schedule { position: static; border-top: 1px solid var(--line); }
+}
+.feed .section-heading { display: block; }
+.feed .section-heading .section-note { margin-top: 8px; max-width: none; }
+@media (max-width: 900px) {
+  .feed { display: flex; flex-direction: column; }
+  .feed > #news { order: 1; }
+  .feed > #schedule { order: 2; }
+}

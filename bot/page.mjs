@@ -22,27 +22,32 @@ function side (s) {
 
 const day = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })
 
+// One match as a compact entry for the right-hand column (F-241): when, competition, players.
 function row (m, withResult = false) {
+    const when = `${esc(day(m.date))} · ${m.kst ? `${esc(m.kst)} KST · ${esc(m.bucharest.time)} ${esc(m.bucharest.zone)}` : 'all day'}`
     // An EloBoard entry (F-238): its English title in place of two players.
     if (m.origin === 'eloboard') {
-        return `<tr><th scope="row">${esc(day(m.date))}</th><td class="when">${m.kst ? `${esc(m.kst)} KST<br><small>${esc(m.bucharest.time)} ${esc(m.bucharest.zone)}</small>` : 'All day'}</td>` +
-            `<td>Star universities <small>(EloBoard)</small></td><td>${esc(m.titleEn)}</td></tr>`
+        return `<li class="fixture"><p class="fixture-when">${when}</p><p class="fixture-comp">Star universities <small>(EloBoard)</small></p><p class="fixture-players">${esc(m.titleEn)}</p></li>`
     }
     const players = `${side(m.a)} <span class="versus">${withResult && m.result ? `${m.result.a}–${m.result.b}` : 'vs'}</span> ${side(m.b)}`
-    return `<tr><th scope="row">${esc(day(m.date))}</th><td class="when">${esc(m.kst)} KST<br><small>${esc(m.bucharest.time)} ${esc(m.bucharest.zone)}</small></td>` +
-        `<td>${esc(m.competition.name)}${m.onSchedule ? '' : ' <small>(no longer on the schedule)</small>'}</td><td>${players}</td></tr>`
+    return `<li class="fixture${m.competition.big ? ' big' : ''}"><p class="fixture-when">${when}</p>` +
+        `<p class="fixture-comp">${esc(m.competition.name)}${m.onSchedule ? '' : ' <small>(no longer on the schedule)</small>'}</p><p class="fixture-players">${players}</p></li>`
 }
+
+export const CALENDAR = 'https://calendar.google.com/calendar/u/0?cid=NzM0MTUzMDI2MGY2NmZmNmExNWM1NGY3YmE1OWRlNDcxNTlkNjE1NTYzZDdjN2RmZDU3OTNmZDczMTg1NmQ1M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'
 
 export function section (file, { today, now = new Date() }) {
     const upcoming = file.matches.filter((m) => m.date >= today && !m.played && !m.needsTranslation).slice(0, 16)
     const past = file.matches.filter((m) => m.origin !== 'eloboard' && m.played && m.date <= today).slice(-10).reverse()
     const checked = bucharest(now)
-    const table = (rows, caption) => `<table class="matches bot-matches"><caption>${caption}</caption><thead><tr><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Competition</th><th scope="col">Players</th></tr></thead><tbody>${rows}</tbody></table>`
+    const list = (rows, label) => `<ul class="fixtures" aria-label="${label}">${rows}</ul>`
     return `${START}
 <section id="schedule" class="section" aria-labelledby="schedule-title">
-  <div class="section-heading"><div><p class="eyebrow">KEPT UP TO DATE BY SKIM BOT</p><h2 id="schedule-title">Coming up</h2></div><p class="section-note">From SOOP's official schedule and EloBoard's, checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet. Times in KST and Bucharest.</p></div>
-  ${upcoming.length ? table(upcoming.map((m) => row(m)).join(''), 'Upcoming matches') : '<p class="section-note">Nothing on SOOP\'s schedule yet.</p>'}
-  ${past.length ? `<details class="spoilers"><summary>Results <span>(spoilers - click to show)</span></summary>${table(past.map((m) => row(m, true)).join(''), 'Recent results, newest first')}<p class="section-note">Scores from Liquipedia where it has them; a match shown with “vs” has no score yet.</p></details>` : ''}
+  <div class="section-heading"><div><p class="eyebrow">SOOP · ELOBOARD</p><h2 id="schedule-title">Coming up</h2></div></div>
+  <p class="section-note">Checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet.</p>
+  ${upcoming.length ? list(upcoming.map((m) => row(m)).join(''), 'Upcoming matches') : '<p class="section-note">Nothing on SOOP\'s schedule yet.</p>'}
+  <a id="calendar" class="text-link" href="${CALENDAR}">Add to Google Calendar <span aria-hidden="true">↗</span></a>
+  ${past.length ? `<details class="spoilers"><summary>Results <span>(spoilers)</span></summary>${list(past.map((m) => row(m, true)).join(''), 'Recent results, newest first')}<p class="section-note">Scores from Liquipedia where it has them; “vs” means no score yet.</p></details>` : ''}
 </section>
 ${END}`
 }
@@ -70,11 +75,11 @@ export function newsSection (news, { limit = 12, now = new Date() } = {}) {
     const items = (news.items || []).filter((i) => !foreign(i) && String(i.date) >= since).slice(0, limit)
     const links = (i) => i.sources.map((s, n) => `<a class="source-link" href="${esc(s)}">${n ? `source ${n + 1}` : 'Source'} <span aria-hidden="true">↗</span></a>`).join(' ')
     const article = (i) => i.spoiler
-        ? `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.card || 'A result from the Korean scene')}</h3><details class="spoilers"><summary>Show the story <span>(spoiler)</span></summary><h4>${esc(i.headline)}</h4><p>${esc(i.summary)}</p>${links(i)}</details></article>`
+        ? `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.card || 'A result from the Korean scene')}</h3>${i.teaser ? `<p>${esc(i.teaser)}</p>` : ''}<details class="spoilers"><summary>Show the story <span>(spoiler)</span></summary><h4>${esc(i.headline)}</h4><p>${esc(i.summary)}</p>${links(i)}</details></article>`
         : `<article class="news-item"><p class="eyebrow">${esc(i.date)}</p><h3>${esc(i.headline)}</h3><p>${esc(i.summary)}</p>${links(i)}</article>`
     return `${NEWS_START}
 <section id="news" class="section" aria-labelledby="news-title">
-  <div class="section-heading"><div><p class="eyebrow">FROM THE KOREAN SCENE · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">The last week's news from Korean outlets (via Naver Sports) and EloBoard, translated by Skim Bot. Players by ID or nickname, never by name. Stories that give away a result are folded.</p></div>
+  <div class="section-heading"><div><p class="eyebrow">PUBLISHED IN SOUTH KOREA · IN ENGLISH</p><h2 id="news-title">Brood War news</h2></div><p class="section-note">The last week, from Korean outlets (via Naver Sports) and EloBoard. Players by ID, never by name; results are folded.</p></div>
   ${items.length ? `<div class="news-grid">${items.map(article).join('')}</div>` : '<p class="section-note">No news yet.</p>'}
 </section>
 ${NEWS_END}`

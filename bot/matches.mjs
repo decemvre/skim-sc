@@ -65,8 +65,16 @@ async function fromEloboard (e, names, { lookup, today, previous }) {
 export async function refresh ({ today = kstToday(), read = schedule, names = loadNames(), lookup = true, saved = loadMatches(), now = new Date(),
     eloboard = null } = {}) {
     const seen = []
-    for (const month of monthsToRead(today)) seen.push(...await read(month))
     const before = new Map(saved.matches.map((m) => [m.key, m]))
+    for (const month of monthsToRead(today)) {
+        const found = await read(month)
+        // An empty month we had matches for is a failed read (offline, a page that did not
+        // load), not a month of cancellations: 10 Oct, a DNS outage marked every match gone.
+        if (!found.length && saved.matches.some((m) => m.origin !== 'eloboard' && m.date.startsWith(month.slice(0, 7)) && m.date >= today)) {
+            throw new Error(`SOOP's schedule for ${month.slice(0, 7)} came back empty: not trusted`)
+        }
+        seen.push(...found)
+    }
     const after = new Map()
     const changes = []
     const unknownNames = new Set()
