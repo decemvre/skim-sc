@@ -23,19 +23,24 @@ function side (s) {
 const day = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })
 
 function row (m, withResult = false) {
+    // An EloBoard entry (F-238): its English title in place of two players.
+    if (m.origin === 'eloboard') {
+        return `<tr><th scope="row">${esc(day(m.date))}</th><td class="when">${m.kst ? `${esc(m.kst)} KST<br><small>${esc(m.bucharest.time)} ${esc(m.bucharest.zone)}</small>` : 'All day'}</td>` +
+            `<td>Star universities <small>(EloBoard)</small></td><td>${esc(m.titleEn)}</td></tr>`
+    }
     const players = `${side(m.a)} <span class="versus">${withResult && m.result ? `${m.result.a}–${m.result.b}` : 'vs'}</span> ${side(m.b)}`
     return `<tr><th scope="row">${esc(day(m.date))}</th><td class="when">${esc(m.kst)} KST<br><small>${esc(m.bucharest.time)} ${esc(m.bucharest.zone)}</small></td>` +
         `<td>${esc(m.competition.name)}${m.onSchedule ? '' : ' <small>(no longer on the schedule)</small>'}</td><td>${players}</td></tr>`
 }
 
 export function section (file, { today, now = new Date() }) {
-    const upcoming = file.matches.filter((m) => m.date >= today && !m.played).slice(0, 12)
-    const past = file.matches.filter((m) => m.played && m.date < today || (m.played && m.date === today)).slice(-10).reverse()
+    const upcoming = file.matches.filter((m) => m.date >= today && !m.played && !m.needsTranslation).slice(0, 16)
+    const past = file.matches.filter((m) => m.origin !== 'eloboard' && m.played && m.date <= today).slice(-10).reverse()
     const checked = bucharest(now)
     const table = (rows, caption) => `<table class="matches bot-matches"><caption>${caption}</caption><thead><tr><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Competition</th><th scope="col">Players</th></tr></thead><tbody>${rows}</tbody></table>`
     return `${START}
 <section id="schedule" class="section" aria-labelledby="schedule-title">
-  <div class="section-heading"><div><p class="eyebrow">KEPT UP TO DATE BY SKIM BOT</p><h2 id="schedule-title">Coming up</h2></div><p class="section-note">From SOOP's official schedule, checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet. Times in KST and Bucharest.</p></div>
+  <div class="section-heading"><div><p class="eyebrow">KEPT UP TO DATE BY SKIM BOT</p><h2 id="schedule-title">Coming up</h2></div><p class="section-note">From SOOP's official schedule and EloBoard's, checked ${esc(checked.date)} ${esc(checked.time)} ${esc(checked.zone)}. Players by ID; “?” is one not matched yet. Times in KST and Bucharest.</p></div>
   ${upcoming.length ? table(upcoming.map((m) => row(m)).join(''), 'Upcoming matches') : '<p class="section-note">Nothing on SOOP\'s schedule yet.</p>'}
   ${past.length ? `<details class="spoilers"><summary>Results <span>(spoilers - click to show)</span></summary>${table(past.map((m) => row(m, true)).join(''), 'Recent results, newest first')}<p class="section-note">Scores from Liquipedia where it has them; a match shown with “vs” has no score yet.</p></details>` : ''}
 </section>

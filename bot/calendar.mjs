@@ -56,6 +56,24 @@ export function descriptionFor (match) {
         'Kept up to date by Skim Bot - https://decemvre.github.io/skim-sc/'].filter(Boolean).join('\n')
 }
 
+// Words that say which event this is, for matching a hand-made event to an EloBoard entry.
+const GENERIC = new Set(['the', 'and', 'vs', 'tournament', 'university', 'universities', 'match', 'mini', 'star', 'cup', 'tier', 'brood', 'war', 'starcraft', 'clash', 'battle', 'special', 'ultimate'])
+const tokens = (text) => new Set(String(text || '').toLowerCase().match(/[a-z][a-z0-9]{2,}/g)?.filter((w) => !GENERIC.has(w)) || [])
+
+function eloboardBody (m) {
+    const base = {
+        summary: m.titleEn,
+        description: [`${m.titleEn}`, m.kst ? `${m.kst} KST / ${m.bucharest.time} ${m.bucharest.zone} (Bucharest)` : 'All day (KST)',
+            `Source: ${m.source}`, 'Kept up to date by Skim Bot - https://decemvre.github.io/skim-sc/'].join('\n'),
+        extendedProperties: { private: { skimKey: m.key } },
+    }
+    if (m.allDay) {
+        const next = new Date(Date.parse(`${m.date}T00:00:00Z`) + 86400000).toISOString().slice(0, 10)
+        return { ...base, start: { date: m.date }, end: { date: next } }
+    }
+    return { ...base, start: { dateTime: m.at, timeZone: 'Asia/Seoul' }, end: { dateTime: new Date(Date.parse(m.at) + HOURS * 3600000).toISOString(), timeZone: 'Asia/Seoul' } }
+}
+
 // The plan: what to create, update or adopt. Pure, so it can be tested and dry-run.
 export function plan (matches, events, { today = kstToday() } = {}) {
     const byKey = new Map(events.filter((e) => e.extendedProperties?.private?.skimKey).map((e) => [e.extendedProperties.private.skimKey, e]))
@@ -63,6 +81,28 @@ export function plan (matches, events, { today = kstToday() } = {}) {
     const steps = []
     for (const m of matches) {
         if (m.competition.celebrity || m.date < today) continue
+        if (m.origin === 'eloboard') {
+            if (m.needsTranslation) continue
+            const mine = byKey.get(m.key)
+            const body = eloboardBody(m)
+            if (mine) {
+                taken.add(mine.id)
+                // An adopted hand-made event keeps the words a person gave it.
+                if (mine.extendedProperties?.private?.skimKeepSummary) body.summary = mine.summary
+                if (mine.summary !== body.summary || (mine.description || '') !== body.description) steps.push({ do: 'update', id: mine.id, was: mine.summary, body: { ...body, extendedProperties: mine.extendedProperties } })
+                continue
+            }
+            const ours = tokens(m.titleEn)
+            const eventDate = (e) => e.start?.date || (e.start?.dateTime ? new Date(Date.parse(e.start.dateTime) + 9 * 3600000).toISOString().slice(0, 10) : null)
+            const handMade = events.find((e) => !taken.has(e.id) && !e.extendedProperties?.private?.skimKey && eventDate(e) === m.date &&
+                [...tokens(e.summary)].some((w) => ours.has(w)))
+            if (handMade) {
+                taken.add(handMade.id)
+                steps.push({ do: 'adopt', id: handMade.id, was: handMade.summary, body: { summary: handMade.summary, description: body.description,
+                    extendedProperties: { private: { skimKey: m.key, skimKeepSummary: '1' } } } })
+            } else steps.push({ do: 'create', body })
+            continue
+        }
         const body = (existing) => ({
             summary: summaryFor(m, existing?.summary || null),
             description: descriptionFor(m),

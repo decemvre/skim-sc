@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { loadNames } from './lib/names.mjs'
+import { news as eloboardNews } from './sources/eloboard.mjs'
 import { inZone } from './lib/time.mjs'
 
 export const QUEUE_FILE = fileURLToPath(new URL('./data/news-queue.json', import.meta.url))
@@ -71,13 +72,16 @@ export async function teamliquid ({ fetchImpl = fetch } = {}) {
     return items
 }
 
-// One watcher pass: today's and yesterday's Korean news, and TL.net. Returns what was new.
-export async function check ({ now = new Date(), queue = loadQueue(), names = loadNames().players, sources = { naver, teamliquid } } = {}) {
+// One watcher pass: today's and yesterday's Korean news (Naver, EloBoard) and TL.net.
+export async function check ({ now = new Date(), queue = loadQueue(), names = loadNames().players, sources = { naver, teamliquid, eloboard: eloboardNews } } = {}) {
     const today = inZone(now, 'Asia/Seoul').date
     const yesterday = inZone(new Date(now - 86400000), 'Asia/Seoul').date
     const found = []
     const errors = []
-    for (const [name, run] of [['naver', () => Promise.all([sources.naver(today, { names }), sources.naver(yesterday, { names })]).then((a) => a.flat())], ['tl', () => sources.teamliquid()]]) {
+    const runs = [['naver', () => Promise.all([sources.naver(today, { names }), sources.naver(yesterday, { names })]).then((a) => a.flat())], ['tl', () => sources.teamliquid()]]
+    // EloBoard's daily paper is all Brood War; a day not yet published is simply empty.
+    if (sources.eloboard) runs.push(['eloboard', () => Promise.all([sources.eloboard(today), sources.eloboard(yesterday)]).then((a) => a.flat())])
+    for (const [name, run] of runs) {
         try { found.push(...await run()) } catch (error) { errors.push(`${name}: ${error.message}`) }
     }
     // Today's and yesterday's lists overlap: one story, one entry.

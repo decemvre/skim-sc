@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { MATCHES_FILE, refresh } from './matches.mjs'
+import { schedule as eloboardSchedule } from './sources/eloboard.mjs'
 import { saveNames, loadNames } from './lib/names.mjs'
 import { check, QUEUE_FILE } from './news.mjs'
 import { digest, NEWS_FILE } from './digest.mjs'
@@ -57,7 +58,10 @@ export async function tick ({ now = new Date(), state = loadState(), log = conso
     await step('pull', async () => { execFileSync('git', ['pull', '-q', '--rebase', '--autostash'], { cwd: ROOT, timeout: 60000 }) })
 
     if (due(state, 'schedule', 60 * 60000, now)) await step('schedule', async () => {
-        const r = await refresh({ now })
+        // EloBoard every three hours (a month page and up to a week of day pages); SOOP hourly.
+        const withEloboard = due(state, 'eloboard', 3 * 3600000, now)
+        const r = await refresh({ now, eloboard: withEloboard ? eloboardSchedule : null })
+        if (withEloboard) state.last.eloboard = now.toISOString()
         writeFileSync(MATCHES_FILE, JSON.stringify(r.file, null, 2) + '\n')
         saveNames(r.names)
         state.last.schedule = now.toISOString()
@@ -81,8 +85,16 @@ export async function tick ({ now = new Date(), state = loadState(), log = conso
     const today = localDate(now)
     const runsToday = state.modelRuns[today] || 0
     if (!weekend && minutes >= 7 * 60 + 30 && minutes < 16 * 60 && runsToday < MODEL_RUNS_PER_DAY) await step('digest', async () => {
-        const r = await digest({ now })
+        const pendingTitles = loadMatches().matches.filter((m) => m.needsTranslation).map((m) => m.titleSource)
+        const r = await digest({ now, titles: pendingTitles })
         if (!r.ran) return
+        if (Object.keys(r.translated).length) {
+            const file = loadMatches()
+            for (const m of file.matches) if (m.needsTranslation && r.translated[m.titleSource]) {
+                m.titleEn = r.translated[m.titleSource]; m.competition.name = m.titleEn; m.needsTranslation = false
+            }
+            writeFileSync(MATCHES_FILE, JSON.stringify(file, null, 2) + '\n')
+        }
         state.modelRuns = { [today]: runsToday + 1 }
         writeFileSync(NEWS_FILE, JSON.stringify(r.news, null, 2) + '\n')
         writeFileSync(QUEUE_FILE, JSON.stringify(r.queue, null, 2) + '\n')

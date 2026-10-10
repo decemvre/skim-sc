@@ -26,8 +26,10 @@ export const NEWS_FILE = fileURLToPath(new URL('./data/news.json', import.meta.u
 const HANGUL = /[ᄀ-ᇿ㄰-㆏가-힯]/
 
 export const SCHEMA = {
-    type: 'object', additionalProperties: false, required: ['items'],
-    properties: { items: { type: 'array', items: {
+    type: 'object', additionalProperties: false, required: ['items', 'titles'],
+    properties: { titles: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['ko', 'en'],
+        properties: { ko: { type: 'string' }, en: { type: 'string' } } } },
+    items: { type: 'array', items: {
         type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'sources', 'date'],
         properties: {
             headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' }, relevant: { type: 'boolean' },
@@ -36,7 +38,7 @@ export const SCHEMA = {
     } } },
 }
 
-export function prompt (items, watchlist = loadWatchlist()) {
+export function prompt (items, watchlist = loadWatchlist(), titles = []) {
     return `You write short English news items about Korean StarCraft: Brood War for a group of friends in Romania who follow the Korean scene but do not read Korean.
 
 Below are news items gathered today (Korean and English). Turn them into English items.
@@ -51,10 +53,14 @@ Rules - all of them matter:
    Players (by ID; Korean name in brackets where known): ${watchlist.players.map((p) => p.korean ? `${p.id} (${p.korean})` : p.id).join(', ')}
    Teams: ${watchlist.teams.map((t) => t.korean && t.korean !== t.name ? `${t.name} (${t.korean})` : t.name).join(', ')}
 7. Leave out anything not about Brood War (StarCraft II, other games), adverts, and items with nothing new.
-8. Answer with JSON only, in the given shape. No commentary.
+8. "titles": translate each of the schedule titles listed at the end into a short English title (at most 70 characters) - star-university event names from EloBoard. Same name rule: {{name:<Korean>}} for a player's real name; a streamer's handle may be romanized. Keep team names in English (마범대 = MBU, 드림즈 = Dreamz, 캄몬 = Calm MonstarZ, 신세계 = New World, 더블비 = Double B). "ko" is the title exactly as given. Use an empty list when there are none.
+9. Answer with JSON only, in the given shape. No commentary.
 
 Items:
-${JSON.stringify(items.map((i) => ({ source: i.source, lang: i.lang, title: i.title, summary: i.summary, link: i.link, at: i.at })), null, 1)}`
+${JSON.stringify(items.map((i) => ({ source: i.source, lang: i.lang, title: i.title, summary: i.summary, link: i.link, at: i.at })), null, 1)}
+
+Schedule titles to translate:
+${JSON.stringify(titles)}`
 }
 
 function run (cmd, args, input, timeout = 300000) {
@@ -117,13 +123,15 @@ export function loadNews (file = NEWS_FILE) {
     try { return JSON.parse(readFileSync(file, 'utf8')) } catch { return { items: [] } }
 }
 
-export async function digest ({ queue = loadQueue(), names = loadNames(), news = loadNews(), runners = RUNNERS, order = ['claude', 'grok'], now = new Date(), lookup = true } = {}) {
+export async function digest ({ queue = loadQueue(), names = loadNames(), news = loadNews(), runners = RUNNERS, order = ['claude', 'grok'], now = new Date(), lookup = true,
+    titles = [] } = {}) {
     const waiting = queue.items.filter((i) => !i.done).slice(0, 40)
-    if (!waiting.length) return { ran: false, added: [], queue, news, names }
+    const pending = [...new Set(titles)].slice(0, 30)
+    if (!waiting.length && !pending.length) return { ran: false, added: [], translated: {}, queue, news, names }
     let answer = null, by = null
     const failures = []
     for (const name of order) {
-        try { answer = await runners[name](prompt(waiting)); by = name; break } catch (error) { failures.push(error.message) }
+        try { answer = await runners[name](prompt(waiting, loadWatchlist(), pending)); by = name; break } catch (error) { failures.push(error.message) }
     }
     if (!answer) throw new Error(`no model could digest the news: ${failures.join(' | ')}`)
     const added = []
@@ -133,10 +141,17 @@ export async function digest ({ queue = loadQueue(), names = loadNames(), news =
         if (!item) { dropped++; continue }
         added.push({ ...item, id: `${item.date}:${item.headline}`.slice(0, 120), addedAt: now.toISOString(), by, posted: false })
     }
+    // Schedule titles, cleaned like the news: an ID for every real name, no Korean left.
+    const translated = {}
+    for (const t of answer.titles || []) {
+        if (!pending.includes(t.ko)) continue
+        const clean = await cleanItem({ headline: t.en, summary: '', card: null }, names, { lookup })
+        if (clean?.headline && clean.headline.length <= 90) translated[t.ko] = clean.headline
+    }
     for (const i of waiting) i.done = true
     const known = new Set(news.items.map((i) => i.id))
     news.items = [...added.filter((i) => !known.has(i.id)), ...news.items].filter((i) => now - Date.parse(i.addedAt) < 60 * 86400000)
-    return { ran: true, by, added, dropped, failures, queue, news, names }
+    return { ran: true, by, added, dropped, failures, translated, queue, news, names }
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {

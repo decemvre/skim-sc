@@ -55,6 +55,7 @@ const dayName = (date) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-G
 
 // The lines for one match: "ASL S22: Rush (T) vs Soulkey (Z)" / "15:00 KST · 09:00 Bucharest".
 function matchLines (m) {
+    if (m.origin === 'eloboard') return m.titleEn ? [m.titleEn, m.kst ? `${m.kst} KST · ${m.bucharest.time} Bucharest` : 'All day'] : null
     const players = who(m.a) && who(m.b) ? `${who(m.a)} vs ${who(m.b)}` : null
     if (!players) return null
     return [`${m.competition.name.replace(/\bSeason\s+(\d+)/i, 'S$1')}: ${players}`, `${m.kst} KST · ${m.bucharest.time} Bucharest`]
