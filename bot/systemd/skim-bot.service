@@ -1,0 +1,10 @@
+[Unit]
+Description=Skim Bot: SkiM SC's schedule, news, page and group posts - one pass (O-98)
+After=network-online.target
+[Service]
+Type=oneshot
+# The bot's own clone, so nothing it commits collides with work in ~/Code/skim-sc.
+WorkingDirectory=%h/.local/share/skim-bot/skim-sc
+Environment=PATH=%h/.nvm/versions/node/v24.20.0/bin:%h/google-cloud-sdk/bin:%h/.local/bin:/usr/bin:/bin
+ExecStart=%h/.nvm/versions/node/v24.20.0/bin/node bot/run.mjs
+TimeoutStartSec=20min
