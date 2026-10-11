@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T18:01:05.529Z",
+  "updated": "2026-10-11T04:31:55.551Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -205,7 +205,75 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
-      "key": "2026-10-11 20:00 eloboard CK 마범대 미니대학대전 2연승 기념 2부",
+      "key": "2026-10-08 20:00 eloboard CK 캄몬전대비 즉흥 ck",
+      "origin": "eloboard",
+      "date": "2026-10-08",
+      "kst": "20:00",
+      "allDay": false,
+      "at": "2026-10-08T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-08",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK 캄몬전대비 즉흥 ck",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 캄몬전대비 즉흥 ck",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-11T04:31:55.551Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
+    },
+    {
+      "key": "2026-10-11 15:00 eloboard [더블끝장전] 선정은 & 유이",
+      "origin": "eloboard",
+      "date": "2026-10-11",
+      "kst": "15:00",
+      "allDay": false,
+      "at": "2026-10-11T06:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-11",
+        "time": "09:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[더블끝장전] 선정은 & 유이",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[더블끝장전] 선정은 & 유이",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-11T04:31:55.551Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-11"
+    },
+    {
+      "key": "2026-10-11 20:00 eloboard 마범대 미니대학대전 2연승 기념 2부",
       "origin": "eloboard",
       "date": "2026-10-11",
       "kst": "20:00",
@@ -217,7 +285,7 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "CK 마범대 미니대학대전 2연승 기념 2부",
+        "raw": "마범대 미니대학대전 2연승 기념 2부",
         "name": "",
         "big": false,
         "celebrity": false,
@@ -226,7 +294,7 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK 마범대 미니대학대전 2연승 기념 2부",
+      "titleSource": "마범대 미니대학대전 2연승 기념 2부",
       "titleEn": null,
       "needsTranslation": true,
       "duel": null,
@@ -235,7 +303,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-10T18:01:05.529Z",
+      "firstSeen": "2026-10-11T04:31:55.551Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-11"
     },
     {
