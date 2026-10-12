@@ -37,7 +37,7 @@ export const CONFIG_FILE = join(homedir(), '.config/friendzy/skim-bot.json')
 export const POSTED_FILE = fileURLToPath(new URL('./data/posted.json', import.meta.url))
 export const BRIDGE = process.env.FRIENDZY_WHATSAPP_BRIDGE || 'http://127.0.0.1:8796'
 export const REMIND_MIN = 30
-// The morning post names at most this many stories; the rest are on the page (12 Oct: a
+// A post (morning or news) names at most this many stories; the rest are on the page (12 Oct: a
 // Monday carrying the weekend's six was too long, and WhatsApp folded it).
 export const MORNING_NEWS = 3
 // Typing a long post takes the bridge minutes: the morning one of 12 Oct took over five, and
@@ -115,7 +115,7 @@ export function newsText (cards, results = []) {
     if (!cards.length && !results.length) return null
     const head = cards.length ? '🤖 Skim Bot - Brood War news' : '🤖 Skim Bot - University results'
     return [head, ...(results.length ? [...(cards.length ? ['University results:'] : []), resultLines(results).join('\n')] : []),
-        ...(results.length && cards.length ? ['News:'] : []), ...cards.map(newsBlock), 'More on the page:', `${SITE}#news`].join('\n\n')
+        ...(results.length && cards.length ? ['News:'] : []), ...cards.slice(0, MORNING_NEWS).map(newsBlock), 'More on the page:', `${SITE}#news`].join('\n\n')
 }
 
 export function reminderText (m, now = new Date()) {

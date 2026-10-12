@@ -181,3 +181,13 @@ test('university team results are posted once, in the morning or with the news; 
     assert.equal(safe('A: Rush 4-2 Light\nCK: Double B 5-3 Dreamz', ['CK: Double B 5-3 Dreamz']), 'CK: Double B 5-3 Dreamz');
     assert.deepEqual(freshResults(news, posted, new Date('2026-10-17T05:30:00Z')), []);
 });
+
+test('a news post during the day names three stories too; the rest count as told', async () => {
+    const posted = {mornings: {'2026-10-12': 'x'}, reminders: {}, news: {}};
+    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `d${n}`, addedAt: '2026-10-12T06:00:00Z', relevant: true, card: `Day story ${n}`}));
+    const sent = [];
+    await post('news', {now: new Date('2026-10-12T07:00:00Z'), posted, matches: [], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
+    assert.match(sent[0], /Day story 3/);
+    assert.doesNotMatch(sent[0], /Day story 4/);
+    assert.equal(Object.keys(posted.news).length, 6);
+});
