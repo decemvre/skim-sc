@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T12:46:26.468Z",
+  "updated": "2026-10-12T14:00:26.453Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -205,40 +205,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
-      "key": "2026-10-08 20:00 eloboard CK 캄몬전대비 즉흥 ck",
-      "origin": "eloboard",
-      "date": "2026-10-08",
-      "kst": "20:00",
-      "allDay": false,
-      "at": "2026-10-08T11:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-08",
-        "time": "14:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK 캄몬전대비 즉흥 ck",
-        "name": "Impromptu CK to prepare for the Calm MonstarZ match",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 캄몬전대비 즉흥 ck",
-      "titleEn": "Impromptu CK to prepare for the Calm MonstarZ match",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-12T04:00:26.355Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
-    },
-    {
       "key": "2026-10-12 05:00 eloboard CK 극락회 오프 ck",
       "origin": "eloboard",
       "date": "2026-10-12",
@@ -273,40 +239,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
     },
     {
-      "key": "2026-10-12 19:00 eloboard [유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-      "origin": "eloboard",
-      "date": "2026-10-12",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-12T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-12",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-        "name": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-      "titleEn": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-12T00:30:26.352Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
-    },
-    {
       "key": "2026-10-12 19:00 eloboard CK [주적대전] 더블비 VS 드림즈 교수ck",
       "origin": "eloboard",
       "date": "2026-10-12",
@@ -335,6 +267,40 @@
         "더블비",
         "드림즈"
       ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-12T00:30:26.352Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
+    },
+    {
+      "key": "2026-10-12 19:00 eloboard [유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+      "origin": "eloboard",
+      "date": "2026-10-12",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-12T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-12",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+        "name": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+      "titleEn": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
+      "needsTranslation": false,
+      "duel": null,
       "a": null,
       "b": null,
       "played": false,
@@ -455,6 +421,40 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
+      "key": "2026-10-14 all-day eloboard 대전 빵투어 임밍지, 빛나:♡",
+      "origin": "eloboard",
+      "date": "2026-10-14",
+      "kst": null,
+      "allDay": true,
+      "at": "2026-10-13T15:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-13",
+        "time": "18:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "대전 빵투어 임밍지, 빛나:♡",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "대전 빵투어 임밍지, 빛나:♡",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-12T14:00:26.453Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-14"
+    },
+    {
       "key": "2026-10-14 20:00 비트 리벤저스 vs 메디카 스타즈",
       "origin": "soop",
       "date": "2026-10-14",
@@ -522,40 +522,6 @@
       "onSchedule": true,
       "firstSeen": "2026-10-10T14:56:17.805Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
-    },
-    {
-      "key": "2026-10-17 all-day eloboard [마범대] 유스 종족최강자전 개최",
-      "origin": "eloboard",
-      "date": "2026-10-17",
-      "kst": null,
-      "allDay": true,
-      "at": "2026-10-16T15:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-16",
-        "time": "18:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[마범대] 유스 종족최강자전 개최",
-        "name": "[MBU] Youth Race Championship",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[마범대] 유스 종족최강자전 개최",
-      "titleEn": "[MBU] Youth Race Championship",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
     },
     {
       "key": "2026-10-17 15:00 유영진 vs 김민철",
