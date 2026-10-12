@@ -6,7 +6,8 @@
 //     refuses, whatever called it.
 //   - morning   one post with the day's highlights: today's matches (KST) and the news that
 //               came in since the last post. On a weekend: only major matches, no news.
-//   - news      relevant news (the Korean scene, or a watchlist player or team) as soon as it
+//   - news      relevant news (12 Oct: only a top-30 watchlist player, the ASL, Race Wars or the
+//               Major Proleague - lib/scope.mjs) as soon as it
 //               is ready - weekdays, inside the window. Later news waits for the next weekday
 //               morning's post. Never news on a weekend.
 //   - reminder  30 minutes before a major match, any day - if that moment is inside the window.
@@ -30,6 +31,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { loadMatches } from './matches.mjs'
 import { loadNews } from './digest.mjs'
+import { inScope } from './lib/scope.mjs'
+import { loadWatchlist } from './watchlist.mjs'
 import { kstToday } from './lib/time.mjs'
 
 export const SITE = 'https://decemvre.github.io/skim-sc/'
@@ -72,10 +75,10 @@ function matchLines (m) {
     return [`${m.competition.name.replace(/\bSeason\s+(\d+)/i, 'S$1')}: ${players}`, `${m.kst} KST · ${m.bucharest.time} Bucharest`]
 }
 
-// News worth a line: relevant, a spoiler-free card, not posted, added in the last five days
-// (a Monday morning carries the weekend's), newest first, at most six.
-export function freshCards (news, posted, now = new Date()) {
-    return (news.items || []).filter((i) => i.relevant !== false && !i.teamResult && i.card && !SCORE.test(i.card) && !posted.news[i.id] &&
+// News worth a line: relevant, in scope (lib/scope.mjs), a spoiler-free card, not posted, added
+// in the last five days (a Monday morning carries the weekend's), newest first, at most six.
+export function freshCards (news, posted, now = new Date(), watchlist = loadWatchlist()) {
+    return (news.items || []).filter((i) => i.relevant !== false && inScope(i, watchlist) && !i.teamResult && i.card && !SCORE.test(i.card) && !posted.news[i.id] &&
         !(i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s)) && now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
 }
 

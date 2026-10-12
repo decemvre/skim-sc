@@ -22,11 +22,11 @@ test('morning: only on a day with matches or news; celebrity leagues and team-on
 test('no card that looks like a result, none irrelevant, none older than five days, none twice', () => {
     const at = '2026-10-16T10:00:00Z';
     const news = {items: [
-        {id: 'a', addedAt: at, relevant: true, card: 'Both finalists talk before Saturday'},
-        {id: 'b', addedAt: at, relevant: true, card: 'Rush beats Light 4-2'},
-        {id: 'c', addedAt: '2026-10-01T10:00:00Z', relevant: true, card: 'Old news'},
-        {id: 'd', addedAt: at, relevant: true, card: null},
-        {id: 'e', addedAt: at, relevant: true, card: 'Already posted'},
+        {id: 'a', addedAt: at, headline: 'ASL S22', relevant: true, card: 'Both finalists talk before Saturday'},
+        {id: 'b', addedAt: at, headline: 'ASL S22', relevant: true, card: 'Rush beats Light 4-2'},
+        {id: 'c', addedAt: '2026-10-01T10:00:00Z', headline: 'ASL S22', relevant: true, card: 'Old news'},
+        {id: 'd', addedAt: at, headline: 'ASL S22', relevant: true, card: null},
+        {id: 'e', addedAt: at, headline: 'ASL S22', relevant: true, card: 'Already posted'},
         {id: 'f', addedAt: at, relevant: false, card: 'A small online cup'},
     ]};
     assert.deepEqual(freshCards(news, {news: {e: 'x'}}, new Date('2026-10-17T06:00:00Z')).map((c) => c.id), ['a']);
@@ -65,7 +65,7 @@ test('weekdays: one morning post, then news as it comes; later news waits for th
     const sent = [];
     const posted = {mornings: {}, reminders: {}, news: {}};
     const sender = async (text) => { sent.push(text); return {sent: true}; };
-    const news = {items: [{id: 'a', addedAt: '2026-10-12T05:00:00Z', relevant: true, card: 'Finalists talk'}]};
+    const news = {items: [{id: 'a', addedAt: '2026-10-12T05:00:00Z', headline: 'ASL S22', relevant: true, card: 'Finalists talk'}]};
     const mon8 = new Date('2026-10-12T05:00:00Z');
     await post('news', {now: mon8, posted, matches: [], news, sender});
     assert.equal(sent.length, 0, 'no news before the morning post');
@@ -73,11 +73,11 @@ test('weekdays: one morning post, then news as it comes; later news waits for th
     await post('morning', {now: mon8, posted, matches: [m({date: '2026-10-12'})], news, sender});
     assert.equal(sent.length, 1);
     assert.match(sent[0], /Finalists talk/);
-    news.items.push({id: 'b', addedAt: '2026-10-12T09:00:00Z', relevant: true, card: 'A new star university joins'});
+    news.items.push({id: 'b', addedAt: '2026-10-12T09:00:00Z', headline: 'ASL S22', relevant: true, card: 'A new star university joins'});
     await post('news', {now: new Date('2026-10-12T09:05:00Z'), posted, matches: [], news, sender});
     assert.equal(sent.length, 2);
     assert.match(sent[1], /^🤖 Skim Bot - Brood War news/);
-    news.items.push({id: 'c', addedAt: '2026-10-12T15:00:00Z', relevant: true, card: 'Evening announcement'});
+    news.items.push({id: 'c', addedAt: '2026-10-12T15:00:00Z', headline: 'ASL S22', relevant: true, card: 'Evening announcement'});
     await post('news', {now: new Date('2026-10-12T15:05:00Z'), posted, matches: [], news, sender});
     assert.equal(sent.length, 2, '18:05 is outside the window');
     await post('morning', {now: new Date('2026-10-13T05:00:00Z'), posted, matches: [], news, sender});
@@ -89,7 +89,7 @@ test('weekends: no news at all; the morning post only for a major match', async 
     const sent = [];
     const posted = {mornings: {}, reminders: {}, news: {}};
     const sender = async (text) => { sent.push(text); return {sent: true}; };
-    const news = {items: [{id: 'a', addedAt: '2026-10-17T05:00:00Z', relevant: true, card: 'Saturday news'}]};
+    const news = {items: [{id: 'a', addedAt: '2026-10-17T05:00:00Z', headline: 'ASL S22', relevant: true, card: 'Saturday news'}]};
     const sat8 = new Date('2026-10-17T05:00:00Z');
     await post('morning', {now: sat8, posted, matches: [m({competition: {name: 'Ultimate Battle', big: false}})], news, sender});
     assert.equal(sent.length, 0, 'a minor match and news: nothing on a Saturday');
@@ -116,7 +116,7 @@ test('Ultimate Battle is a big competition: it gets the reminder', () => {
 
 test('a post that may have gone out is recorded and never posted again (12 Oct: three copies)', async () => {
     const posted = {mornings: {}, reminders: {}, news: {}};
-    const news = {items: [{id: 'a', addedAt: '2026-10-12T05:00:00Z', relevant: true, card: 'Finalists talk'}]};
+    const news = {items: [{id: 'a', addedAt: '2026-10-12T05:00:00Z', headline: 'ASL S22', relevant: true, card: 'Finalists talk'}]};
     const mon8 = new Date('2026-10-12T05:00:00Z');
     let calls = 0;
     const sender = async () => { calls++; throw new UnsureError('no answer from the bridge'); };
@@ -141,7 +141,7 @@ test('send: no answer, or a post typed but not seen going, is unsure; a refusal 
 });
 
 test('the morning post names three stories and one sentence each; the rest count as told', async () => {
-    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `n${n}`, addedAt: '2026-10-12T04:00:00Z', relevant: true, card: `Story ${n}`, teaser: `First line ${n}. Second line ${n}.`}));
+    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `n${n}`, addedAt: '2026-10-12T04:00:00Z', headline: 'ASL S22', relevant: true, card: `Story ${n}`, teaser: `First line ${n}. Second line ${n}.`}));
     const posted = {mornings: {}, reminders: {}, news: {}};
     const sent = [];
     await post('morning', {now: new Date('2026-10-12T05:00:00Z'), posted, matches: [m({date: '2026-10-12'})], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
@@ -158,22 +158,22 @@ test('university team results are posted once, in the morning or with the news; 
     const sender = async (text, opts) => { sent.push(await send(text, {...opts, group: 'g', fetchImpl: async (_u, r) => ({ok: true, status: 200, json: async () => ({sent: true, body: JSON.parse(r.body).text})})}).then(() => safeOf(text, opts))); return {sent: true}; };
     const safeOf = (text, opts) => safe(text, opts.allowed);
     const news = {items: [
-        {id: 'u1', addedAt: '2026-10-12T04:00:00Z', date: '2026-10-11', relevant: true, spoiler: true, card: 'Dreamz and Calm MonstarZ meet', teamResult: 'University Clash: Dreamz 4-2 Calm MonstarZ'},
-        {id: 'p1', addedAt: '2026-10-12T04:00:00Z', relevant: true, spoiler: true, card: 'Soulkey and Jaedong practise', teamResult: null},
+        {id: 'u1', addedAt: '2026-10-12T04:00:00Z', date: '2026-10-11', headline: 'ASL S22', relevant: true, spoiler: true, card: 'Dreamz and Calm MonstarZ meet', teamResult: 'University Clash: Dreamz 4-2 Calm MonstarZ'},
+        {id: 'p1', addedAt: '2026-10-12T04:00:00Z', headline: 'ASL S22', relevant: true, spoiler: true, card: 'Soulkey and Jaedong practise', teamResult: null},
     ]};
     await post('morning', {now: new Date('2026-10-12T05:00:00Z'), posted, matches: [], news, sender});
     assert.match(sent[0], /University results:\n\nUniversity Clash: Dreamz 4-2 Calm MonstarZ/);
     assert.match(sent[0], /Soulkey and Jaedong practise/);
     assert.doesNotMatch(sent[0], /Dreamz and Calm MonstarZ meet/, 'the result, not also its card');
-    news.items.push({id: 'u2', addedAt: '2026-10-12T10:00:00Z', date: '2026-10-12', relevant: true, spoiler: true, card: 'x', teamResult: 'UMS Battle: Black Academy 3-1 JSA'});
+    news.items.push({id: 'u2', addedAt: '2026-10-12T10:00:00Z', date: '2026-10-12', headline: 'ASL S22', relevant: true, spoiler: true, card: 'x', teamResult: 'UMS Battle: Black Academy 3-1 JSA'});
     await post('news', {now: new Date('2026-10-12T10:15:00Z'), posted, matches: [], news, sender});
     assert.equal(sent.length, 2);
     assert.match(sent[1], /^🤖 Skim Bot - University results\n\nUMS Battle: Black Academy 3-1 JSA\n/);
     await post('news', {now: new Date('2026-10-12T10:30:00Z'), posted, matches: [], news, sender});
     assert.equal(sent.length, 2, 'once');
     // A weekend: no news, but a university result still goes.
-    news.items.push({id: 'u3', addedAt: '2026-10-17T06:00:00Z', date: '2026-10-17', relevant: true, card: 'y', teamResult: 'CK: Double B 5-3 Dreamz'},
-        {id: 'n9', addedAt: '2026-10-17T06:00:00Z', relevant: true, card: 'Weekend story'});
+    news.items.push({id: 'u3', addedAt: '2026-10-17T06:00:00Z', date: '2026-10-17', headline: 'ASL S22', relevant: true, card: 'y', teamResult: 'CK: Double B 5-3 Dreamz'},
+        {id: 'n9', addedAt: '2026-10-17T06:00:00Z', headline: 'ASL S22', relevant: true, card: 'Weekend story'});
     await post('morning', {now: new Date('2026-10-17T05:00:00Z'), posted, matches: [], news, sender});
     assert.match(sent[2], /CK: Double B 5-3 Dreamz/);
     assert.doesNotMatch(sent[2], /Weekend story/);
@@ -184,10 +184,33 @@ test('university team results are posted once, in the morning or with the news; 
 
 test('a news post during the day names three stories too; the rest count as told', async () => {
     const posted = {mornings: {'2026-10-12': 'x'}, reminders: {}, news: {}};
-    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `d${n}`, addedAt: '2026-10-12T06:00:00Z', relevant: true, card: `Day story ${n}`}));
+    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `d${n}`, addedAt: '2026-10-12T06:00:00Z', headline: 'ASL S22', relevant: true, card: `Day story ${n}`}));
     const sent = [];
     await post('news', {now: new Date('2026-10-12T07:00:00Z'), posted, matches: [], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
     assert.match(sent[0], /Day story 3/);
     assert.doesNotMatch(sent[0], /Day story 4/);
     assert.equal(Object.keys(posted.news).length, 6);
+});
+
+test('only news about a top player, the ASL, Race Wars or the Major Proleague goes to the group (12 Oct)', () => {
+    const at = '2026-10-12T05:00:00Z';
+    const watchlist = {players: [{id: 'Bisu'}, {id: 'Light'}, {id: 'Best'}]};
+    const items = [
+        {id: 'player', addedAt: at, relevant: true, card: 'Bisu plays a best-of-seven against Speed'},
+        {id: 'asl', addedAt: at, relevant: true, card: 'ASL S22 groups are drawn'},
+        {id: 'race', addedAt: at, relevant: true, card: 'Race Wars returns in November'},
+        {id: 'mpl', addedAt: at, relevant: true, card: 'Major Proleague 5v5 line-ups are out'},
+        {id: 'streamer', addedAt: at, relevant: true, card: "MBU's Kahiri is back on stream"},
+        {id: 'teams', addedAt: at, relevant: true, card: "JSA vs Black Academy on Sijosae's stream"},
+        {id: 'word', addedAt: at, relevant: true, card: 'The best light show of the season'},
+        {id: 'model-no', addedAt: at, relevant: false, card: 'Bisu streams a charity cup'},
+    ];
+    const ids = freshCards({items}, {news: {}}, new Date('2026-10-12T06:00:00Z'), watchlist).map((i) => i.id);
+    assert.deepEqual(ids, ['player', 'asl', 'race', 'mpl']);
+});
+
+test('a top player named only in passing in the summary does not make a story about them', () => {
+    const items = [{id: 'jsa', addedAt: '2026-10-12T05:00:00Z', relevant: true, card: 'JSA vs Black Academy on a stream',
+        headline: 'JSA and Black Academy face off', summary: "JSA's Skey said they had trained the Action way."}];
+    assert.deepEqual(freshCards({items}, {news: {}}, new Date('2026-10-12T06:00:00Z'), {players: [{id: 'Action'}]}), []);
 });
