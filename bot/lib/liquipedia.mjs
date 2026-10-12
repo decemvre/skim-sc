@@ -34,5 +34,5 @@ export function infobox (text) {
     if (!box) return null
     const field = (name) => new RegExp(`\\n\\|${name}=([^\\n]*)`).exec(box)?.[1]?.trim() || ''
     return { id: field('id'), name: field('name'), romanized: field('romanized_name'), race: field('race'),
-        nicknames: field('nicknames').split(',').map((n) => n.trim()).filter(Boolean) }
+        nicknames: field('nicknames').split(',').map((n) => n.trim()).filter(Boolean), afreeca: field('afreeca') }
 }

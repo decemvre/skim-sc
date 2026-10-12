@@ -214,3 +214,12 @@ test('a top player named only in passing in the summary does not make a story ab
         headline: 'JSA and Black Academy face off', summary: "JSA's Skey said they had trained the Action way."}];
     assert.deepEqual(freshCards({items}, {news: {}}, new Date('2026-10-12T06:00:00Z'), {players: [{id: 'Action'}]}), []);
 });
+
+test('a match in the news carries its day, both times and where to watch, the link alone on its line (12 Oct)', () => {
+    const text = newsText([{id: 'm', card: 'soma plays Bisu in a Bo3', teaser: 'Two of the best meet on soma\'s stream.',
+        match: {date: '2026-10-13', time: '21:00', link: 'https://www.sooplive.com/station/thakzkf'}}]);
+    assert.match(text, /\*soma plays Bisu in a Bo3\*\nTwo of the best meet on soma's stream\.\nTue 13 Oct · 21:00 KST · 15:00 Bucharest\n\nhttps:\/\/www\.sooplive\.com\/station\/thakzkf\n\nMore on the page:/);
+    assert.equal(safe(text), text, 'the time line is not taken for a score');
+    const dayOnly = newsBlock({card: 'A series this week', match: {date: '2026-10-14', time: null, link: null}});
+    assert.equal(dayOnly, '*A series this week*\nWed 14 Oct');
+});

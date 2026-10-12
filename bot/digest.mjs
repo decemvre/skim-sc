@@ -2,7 +2,7 @@
 // Skim Bot, F-234 (the model's half): the queued news, turned into short English items.
 //
 // This is one of the two model runs a day (morning and evening, O-98), and only when the
-// watcher has queued something. Claude runs it (`claude -p`, no tools, a fixed JSON shape);
+// watcher has queued something. Claude Haiku runs it (`claude -p`, no tools, a fixed JSON shape);
 // Grok (`grok -p`) is asked instead if Claude's run fails.
 //
 // Silviu's two rules are enforced here in code, not left to the prompt:
@@ -21,9 +21,12 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { loadQueue, QUEUE_FILE } from './news.mjs'
-import { loadNames, resolve, saveNames } from './lib/names.mjs'
+import { loadNames, resolve, saveNames, station } from './lib/names.mjs'
 import { loadWatchlist } from './watchlist.mjs'
 
+// The cheapest Claude that does the job (Silviu, 12 Oct): tried on ten Korean stories against
+// qwen3:8b on this machine, which left them all in Korean. Haiku: about a cent a run.
+export const MODEL = 'haiku'
 export const NEWS_FILE = fileURLToPath(new URL('./data/news.json', import.meta.url))
 const HANGUL = /[ᄀ-ᇿ㄰-㆏가-힯]/
 
@@ -32,10 +35,13 @@ export const SCHEMA = {
     properties: { titles: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['ko', 'en'],
         properties: { ko: { type: 'string' }, en: { type: 'string' } } } },
     items: { type: 'array', items: {
-        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'teaser', 'teamResult', 'sources', 'date'],
+        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'teaser', 'teamResult', 'match', 'sources', 'date'],
         properties: {
             headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' }, relevant: { type: 'boolean' },
-            card: { type: ['string', 'null'] }, teaser: { type: ['string', 'null'] }, teamResult: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
+            card: { type: ['string', 'null'] }, teaser: { type: ['string', 'null'] }, teamResult: { type: ['string', 'null'] },
+            match: { anyOf: [{ type: 'null' }, { type: 'object', additionalProperties: false, required: ['date', 'time', 'streamer', 'link'], properties: {
+                date: { type: 'string' }, time: { type: ['string', 'null'] }, streamer: { type: ['string', 'null'] }, link: { type: ['string', 'null'] } } }] },
+            sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
         },
     } } },
 }
@@ -53,6 +59,7 @@ Rules - all of them matter:
 5. "card": one line of at most 100 characters for the group chat that reveals NO result at all, even if the item is a spoiler (e.g. "Interviews with both ASL S22 finalists ahead of Saturday's final" is fine; "Rush beats Light 4-2" is not). Use null if the story cannot be told without a result. It is the item's title in the group chat.
 5b. "teaser": one or two short sentences (at most 220 characters) shown under the card in the group chat: what the story is about, with enough detail to be worth reading, and again NO result - no winner, score or who advanced. Null when "card" is null.
 5c. "teamResult": only when the item reports the final result of a match between star-university teams (a university clash, a CK or a battle between universities, a team league match), one line of at most 100 characters with the event, both teams and the team score - for example "University Clash: Dreamz 4-2 Calm MonstarZ". Teams only: no player's own games, scores or MVP. Null for everything else - a player's 1v1 result, teams that are not universities (e.g. "Team Jaedong"), a match not finished yet.
+5d. "match": when the story is about a match or series still to be played, when it is played - otherwise null. "date": YYYY-MM-DD in Korea; "time": HH:MM Korean time, or null if the source gives none; "streamer": whose stream it is on - {{name:<Korean name>}} for a player's real name, a player's ID, or a streamer's handle; null if not said; "link": a stream address given in the source (sooplive.com, afreecatv.com, youtube.com, chzzk.naver.com), else null - never made up.
 6. "relevant": true ONLY when the story is about one of these: one of the top players below (the story is about them, not a passing mention), the ASL, Race Wars, or the Major Proleague. False for everything else, however big: star university leagues and team showdowns, other cups and leagues, streamers coming back or going, gossip. The group gets too much news; when unsure, false.
    Top players (by ID; Korean name in brackets where known): ${watchlist.players.map((p) => p.korean ? `${p.id} (${p.korean})` : p.id).join(', ')}
 7. Leave out anything not about Brood War (StarCraft II, other games), adverts, and items with nothing new.
@@ -93,7 +100,7 @@ export function firstJson (text) {
 
 export const RUNNERS = {
     async claude (text) {
-        const out = await run('claude', ['-p', '--output-format', 'json', '--json-schema', JSON.stringify(SCHEMA), '--no-session-persistence', '--tools', '', '--strict-mcp-config'], text)
+        const out = await run('claude', ['-p', '--model', MODEL, '--output-format', 'json', '--json-schema', JSON.stringify(SCHEMA), '--no-session-persistence', '--tools', '', '--strict-mcp-config'], text)
         const envelope = JSON.parse(out)
         if (envelope.is_error) throw new Error(`claude: ${envelope.result || 'error'}`)
         return envelope.structured_output || firstJson(String(envelope.result || ''))
@@ -103,8 +110,29 @@ export const RUNNERS = {
     },
 }
 
+const STREAM_HOSTS = /(^|\.)(sooplive\.com|afreecatv\.com|youtube\.com|youtu\.be|chzzk\.naver\.com|twitch\.tv)$/
+
+// A match still to be played (Silviu, 12 Oct): its day and Korean time, and where to watch it -
+// the link the source gave, or else the SOOP station of the player whose stream it is on. Only
+// the date, time and link are kept: the streamer may be a real name, and the page is public.
+export async function cleanMatch (match, names, { lookup = true, resolveName = resolve, stationOf = station } = {}) {
+    if (!match || !/^\d{4}-\d{2}-\d{2}$/.test(match.date || '')) return null
+    const time = /^([01]\d|2[0-3]):[0-5]\d$/.test(match.time || '') ? match.time : null
+    let link = null
+    try {
+        const url = new URL(match.link || '')
+        if (url.protocol === 'https:' && STREAM_HOSTS.test(url.hostname)) link = url.href
+    } catch { /* no link, or not one */ }
+    const streamer = String(match.streamer || '').replace(/^\{\{name:([^}]+)\}\}$/, '$1').trim()
+    if (!link && streamer) {
+        const id = HANGUL.test(streamer) ? (await resolveName(names, streamer, null, { lookup }))?.id : streamer
+        if (id) link = await stationOf(names, id, { lookup })
+    }
+    return { date: match.date, time, link }
+}
+
 // {{name:유영진}} -> Rush, or "a player". Returns null for an item that cannot be made safe.
-export async function cleanItem (item, names, { lookup = true, resolveName = resolve } = {}) {
+export async function cleanItem (item, names, { lookup = true, resolveName = resolve, stationOf = station } = {}) {
     const fill = async (text) => {
         let out = String(text ?? '')
         for (const [, korean] of out.matchAll(/\{\{name:([^}]+)\}\}/g)) {
@@ -114,7 +142,7 @@ export async function cleanItem (item, names, { lookup = true, resolveName = res
         return out.replace(/\s+/g, ' ').trim()
     }
     const clean = { ...item, headline: await fill(item.headline), summary: await fill(item.summary), card: item.card ? await fill(item.card) : null, teaser: item.teaser ? await fill(item.teaser) : null,
-        teamResult: item.teamResult ? await fill(item.teamResult) : null }
+        teamResult: item.teamResult ? await fill(item.teamResult) : null, match: await cleanMatch(item.match, names, { lookup, resolveName, stationOf }) }
     const text = `${clean.headline} ${clean.summary} ${clean.card || ''} ${clean.teaser || ''} ${clean.teamResult || ''}`
     if (HANGUL.test(text) || /\{\{name:/.test(text)) return null
     const romanized = Object.values(names.players || {}).map((p) => p.romanized).filter((r) => r && r.length > 4)

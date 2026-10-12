@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {aboutBroodWar, check} from '../news.mjs';
-import {cleanItem, digest, firstJson, prompt} from '../digest.mjs';
+import {cleanItem, cleanMatch, digest, firstJson, prompt} from '../digest.mjs';
 import {newsSection, injectNews, END, NEWS_START, NEWS_END} from '../page.mjs';
 
 // F-234: Korean Brood War news in English, never a real name, never a spoiler outside a fold.
@@ -73,4 +73,21 @@ test('a university team result is one short line with a score, names checked lik
     assert.equal((await cleanItem({...base, teamResult: 'Dreamz won'}, names, opts)).teamResult, null, 'no score, no result line');
     assert.equal(await cleanItem({...base, teamResult: '드림즈 4-2 캄몬'}, names, opts), null, 'Hangul left in drops the item');
     assert.match(prompt([], {players: [], teams: []}), /"teamResult": only when the item reports the final result of a match between star-university teams/);
+});
+
+test('a match keeps its day, its Korean time and where to watch - never the streamer\'s name (12 Oct)', async () => {
+    const names = {players: {'박상현': {id: 'soma', soop: 'thakzkf'}}, unknown: {}};
+    const resolveName = async (table, korean) => table.players[korean] || null;
+    const stationOf = async (table, id) => id === 'soma' ? 'https://www.sooplive.com/station/thakzkf' : null;
+    const opts = {lookup: false, resolveName, stationOf};
+    assert.deepEqual(await cleanMatch({date: '2026-10-13', time: '21:00', streamer: '{{name:박상현}}', link: null}, names, opts),
+        {date: '2026-10-13', time: '21:00', link: 'https://www.sooplive.com/station/thakzkf'});
+    assert.deepEqual(await cleanMatch({date: '2026-10-13', time: '9pm', streamer: 'Kahiri', link: 'https://www.youtube.com/watch?v=x'}, names, opts),
+        {date: '2026-10-13', time: null, link: 'https://www.youtube.com/watch?v=x'});
+    assert.deepEqual(await cleanMatch({date: '2026-10-13', time: '20:00', streamer: null, link: 'https://evil.example/stream'}, names, opts),
+        {date: '2026-10-13', time: '20:00', link: null}, 'only stream sites');
+    assert.equal(await cleanMatch({date: 'tomorrow', time: null, streamer: null, link: null}, names, opts), null);
+    const item = await cleanItem({headline: 'soma plays Bisu', summary: 'A Bo3.', card: 'soma plays Bisu', teaser: null, teamResult: null,
+        match: {date: '2026-10-13', time: '21:00', streamer: '{{name:박상현}}', link: null}}, names, opts);
+    assert.ok(item && !/[가-힯]/.test(JSON.stringify(item)), 'no Korean name left in what the public page gets');
 });

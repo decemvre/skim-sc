@@ -24,8 +24,8 @@ test('the schedule page reads as matches; a played one is marked, its result nev
 });
 
 test('a Liquipedia infobox is accepted only for the same Korean name and race', () => {
-    const box = infobox('{{Infobox player\n|id=Rush\n|name=유영진(柳英眞)\n|romanized_name=Yoo Young Jin\n|race=Terran\n|nicknames=Future Terran, ASLCHAMPRush\n}}');
-    assert.deepEqual(box, {id: 'Rush', name: '유영진(柳英眞)', romanized: 'Yoo Young Jin', race: 'Terran', nicknames: ['Future Terran', 'ASLCHAMPRush']});
+    const box = infobox('{{Infobox player\n|id=Rush\n|name=유영진(柳英眞)\n|romanized_name=Yoo Young Jin\n|race=Terran\n|nicknames=Future Terran, ASLCHAMPRush\n|afreeca=rushplays\n}}');
+    assert.deepEqual(box, {id: 'Rush', name: '유영진(柳英眞)', romanized: 'Yoo Young Jin', race: 'Terran', nicknames: ['Future Terran', 'ASLCHAMPRush'], afreeca: 'rushplays'});
     assert.equal(matches(box, '유영진', 'T'), true);
     assert.equal(matches(box, '유영진', 'Z'), false, 'same name, other race: a different player');
     assert.equal(matches(box, '김민철', 'T'), false);

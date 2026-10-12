@@ -50,7 +50,7 @@ export async function resolve (table, korean, race, { lookup = true, today = new
         const box = infobox(await wikitext(title, options))
         if (!matches(box, korean, race)) continue
         const entry = { id: box.id, romanized: box.romanized || null, race: race || Object.keys(RACES).find((k) => box.race.toLowerCase().startsWith(RACES[k].toLowerCase())) || null,
-            nicknames: englishNicknames(box.nicknames).slice(0, 4), source: `https://liquipedia.net/starcraft/${encodeURIComponent(title.replace(/ /g, '_'))}`, checked: today }
+            nicknames: englishNicknames(box.nicknames).slice(0, 4), soop: box.afreeca || null, source: `https://liquipedia.net/starcraft/${encodeURIComponent(title.replace(/ /g, '_'))}`, checked: today }
         table.players[korean] = entry
         delete table.unknown?.[korean]
         return entry
@@ -58,4 +58,17 @@ export async function resolve (table, korean, race, { lookup = true, today = new
     // Tried today and not found: not asked again until tomorrow.
     table.unknown = { ...(table.unknown || {}), [korean]: today }
     return null
+}
+
+// A player's SOOP (ex-AfreecaTV) station, from the afreeca= field of their Liquipedia infobox:
+// where they stream, and so where a match they play on their own stream is watched. Asked for
+// once per player and kept in names.json ("" when they have none).
+export async function station (table, id, { lookup = true, options } = {}) {
+    const entry = Object.values(table.players || {}).find((p) => p.id?.toLowerCase() === String(id || '').toLowerCase())
+    if (!entry) return null
+    if (entry.soop === undefined && lookup && entry.source) {
+        const title = decodeURIComponent(entry.source.split('/starcraft/')[1] || '')
+        try { entry.soop = infobox(await wikitext(title, options))?.afreeca || '' } catch { return null }
+    }
+    return entry.soop ? `https://www.sooplive.com/station/${entry.soop}` : null
 }

@@ -33,7 +33,7 @@ import { loadMatches } from './matches.mjs'
 import { loadNews } from './digest.mjs'
 import { inScope } from './lib/scope.mjs'
 import { loadWatchlist } from './watchlist.mjs'
-import { kstToday } from './lib/time.mjs'
+import { bucharest, kstInstant, kstToday } from './lib/time.mjs'
 
 export const SITE = 'https://decemvre.github.io/skim-sc/'
 export const CONFIG_FILE = join(homedir(), '.config/friendzy/skim-bot.json')
@@ -96,8 +96,15 @@ export function blurb (item) {
     const text = item.teaser ? firstSentence(item.teaser) : item.spoiler ? '' : firstSentence(item.summary)
     return text && !SCORE.test(text) ? text : ''
 }
-// One news item in the chat: its title in bold, the short summary below it.
-export const newsBlock = (c) => [`*${c.card}*`, blurb(c)].filter(Boolean).join('\n')
+// A match still to come (Silviu, 12 Oct): "Tue 13 Oct · 21:00 KST · 15:00 Bucharest", or the day alone.
+export function whenLine (match) {
+    if (!match?.date) return ''
+    if (!match.time) return dayName(match.date)
+    return `${dayName(match.date)} · ${match.time} KST · ${bucharest(kstInstant(match.date, match.time)).time} Bucharest`
+}
+// One news item in the chat: its title in bold, the short summary below it, and for a match its
+// time and - alone on its own line - where to watch it.
+export const newsBlock = (c) => [[`*${c.card}*`, blurb(c), whenLine(c.match)].filter(Boolean).join('\n'), c.match?.link].filter(Boolean).join('\n\n')
 
 export function morningText (matches, cards, today, { weekend = false, results = [] } = {}) {
     const todays = matches.filter((m) => m.date === today && m.onSchedule && !m.competition.celebrity && (!weekend || m.competition.big))
