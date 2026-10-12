@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {competition} from '../lib/competitions.mjs';
-import {UnsureError, blurb, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
+import {UnsureError, blurb, freshResults, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
 
 // F-236: the group posts. Nothing on a quiet day, never a result, links on their own line.
 const m = (over) => ({key: 'k1', date: '2026-10-17', kst: '15:00', at: '2026-10-17T06:00:00.000Z', bucharest: {time: '09:00', zone: 'EEST'},
@@ -150,4 +150,34 @@ test('the morning post names three stories and one sentence each; the rest count
     assert.equal(Object.keys(posted.news).length, 6);
     await post('news', {now: new Date('2026-10-12T05:15:00Z'), posted, matches: [], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
     assert.equal(sent.length, 1, 'no second post with the other three');
+});
+
+test('university team results are posted once, in the morning or with the news; other results never (12 Oct)', async () => {
+    const posted = {mornings: {}, reminders: {}, news: {}};
+    const sent = [];
+    const sender = async (text, opts) => { sent.push(await send(text, {...opts, group: 'g', fetchImpl: async (_u, r) => ({ok: true, status: 200, json: async () => ({sent: true, body: JSON.parse(r.body).text})})}).then(() => safeOf(text, opts))); return {sent: true}; };
+    const safeOf = (text, opts) => safe(text, opts.allowed);
+    const news = {items: [
+        {id: 'u1', addedAt: '2026-10-12T04:00:00Z', date: '2026-10-11', relevant: true, spoiler: true, card: 'Dreamz and Calm MonstarZ meet', teamResult: 'University Clash: Dreamz 4-2 Calm MonstarZ'},
+        {id: 'p1', addedAt: '2026-10-12T04:00:00Z', relevant: true, spoiler: true, card: 'Soulkey and Jaedong practise', teamResult: null},
+    ]};
+    await post('morning', {now: new Date('2026-10-12T05:00:00Z'), posted, matches: [], news, sender});
+    assert.match(sent[0], /University results:\n\nUniversity Clash: Dreamz 4-2 Calm MonstarZ/);
+    assert.match(sent[0], /Soulkey and Jaedong practise/);
+    assert.doesNotMatch(sent[0], /Dreamz and Calm MonstarZ meet/, 'the result, not also its card');
+    news.items.push({id: 'u2', addedAt: '2026-10-12T10:00:00Z', date: '2026-10-12', relevant: true, spoiler: true, card: 'x', teamResult: 'UMS Battle: Black Academy 3-1 JSA'});
+    await post('news', {now: new Date('2026-10-12T10:15:00Z'), posted, matches: [], news, sender});
+    assert.equal(sent.length, 2);
+    assert.match(sent[1], /^🤖 Skim Bot - University results\n\nUMS Battle: Black Academy 3-1 JSA\n/);
+    await post('news', {now: new Date('2026-10-12T10:30:00Z'), posted, matches: [], news, sender});
+    assert.equal(sent.length, 2, 'once');
+    // A weekend: no news, but a university result still goes.
+    news.items.push({id: 'u3', addedAt: '2026-10-17T06:00:00Z', date: '2026-10-17', relevant: true, card: 'y', teamResult: 'CK: Double B 5-3 Dreamz'},
+        {id: 'n9', addedAt: '2026-10-17T06:00:00Z', relevant: true, card: 'Weekend story'});
+    await post('morning', {now: new Date('2026-10-17T05:00:00Z'), posted, matches: [], news, sender});
+    assert.match(sent[2], /CK: Double B 5-3 Dreamz/);
+    assert.doesNotMatch(sent[2], /Weekend story/);
+    // The last check lets the result line through and nothing else with a score.
+    assert.equal(safe('A: Rush 4-2 Light\nCK: Double B 5-3 Dreamz', ['CK: Double B 5-3 Dreamz']), 'CK: Double B 5-3 Dreamz');
+    assert.deepEqual(freshResults(news, posted, new Date('2026-10-17T05:30:00Z')), []);
 });

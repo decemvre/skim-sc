@@ -11,8 +11,12 @@
 //               morning's post. Never news on a weekend.
 //   - reminder  30 minutes before a major match, any day - if that moment is inside the window.
 //
-// Nothing on a quiet day. Never a result: the text is built only from the schedule and the
-// news items' spoiler-free cards, and a last check drops any line that looks like a score.
+//   - results   the result of a match between star-university teams, once known (12 Oct): in
+//               the morning post, with the news during the week, on its own at a weekend.
+//
+// Nothing on a quiet day. Never any other result: the text is built only from the schedule,
+// the news items' spoiler-free cards and the university results, and a last check drops any
+// other line that looks like a score.
 // English, links alone on their own line. Send-only: the bridge never reads the group.
 //
 // Which group: ~/.config/friendzy/skim-bot.json {"group": "<exact WhatsApp name>"}, and the
@@ -51,7 +55,7 @@ export const inWindow = (now = new Date()) => { const t = local(now).minutes; re
 const SCORE = /\b\d{1,2}\s*[-–:]\s*\d{1,2}\b|\b(beats?|beat|defeats?|defeated|wins?|won|eliminat\w*|knocks? out|knocked out|advances?|advanced)\b/i
 
 export function loadPosted (file = POSTED_FILE) {
-    try { return { mornings: {}, reminders: {}, news: {}, ...JSON.parse(readFileSync(file, 'utf8')) } } catch { return { mornings: {}, reminders: {}, news: {} } }
+    try { return { mornings: {}, reminders: {}, news: {}, results: {}, ...JSON.parse(readFileSync(file, 'utf8')) } } catch { return { mornings: {}, reminders: {}, news: {}, results: {} } }
 }
 export function config (file = CONFIG_FILE) {
     try { return JSON.parse(readFileSync(file, 'utf8')) } catch { return {} }
@@ -71,9 +75,16 @@ function matchLines (m) {
 // News worth a line: relevant, a spoiler-free card, not posted, added in the last five days
 // (a Monday morning carries the weekend's), newest first, at most six.
 export function freshCards (news, posted, now = new Date()) {
-    return (news.items || []).filter((i) => i.relevant !== false && i.card && !SCORE.test(i.card) && !posted.news[i.id] &&
+    return (news.items || []).filter((i) => i.relevant !== false && !i.teamResult && i.card && !SCORE.test(i.card) && !posted.news[i.id] &&
         !(i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s)) && now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
 }
+
+// University team results not posted yet (Silviu, 12 Oct), from the last two days, oldest first.
+export function freshResults (news, posted, now = new Date()) {
+    return (news.items || []).filter((i) => i.teamResult && !(posted.results || {})[i.id] && now - Date.parse(i.addedAt || 0) < 2 * 86400000)
+        .sort((x, y) => String(x.date).localeCompare(String(y.date)))
+}
+const resultLines = (results) => results.map((r) => r.teamResult)
 
 // The line under a title (Silviu, 10 Oct): the first sentence of the spoiler-free teaser; for a
 // story with no result in it, its summary's. Nothing when that would give a result away.
@@ -85,23 +96,26 @@ export function blurb (item) {
 // One news item in the chat: its title in bold, the short summary below it.
 export const newsBlock = (c) => [`*${c.card}*`, blurb(c)].filter(Boolean).join('\n')
 
-export function morningText (matches, cards, today, { weekend = false } = {}) {
+export function morningText (matches, cards, today, { weekend = false, results = [] } = {}) {
     const todays = matches.filter((m) => m.date === today && m.onSchedule && !m.competition.celebrity && (!weekend || m.competition.big))
         .map((m) => ({ m, lines: matchLines(m) })).filter((x) => x.lines)
     const news = weekend ? [] : cards
-    if (!todays.length && !news.length) return null
+    if (!todays.length && !news.length && !results.length) return null
     const parts = [`🤖 Skim Bot - ${todays.length ? `Brood War in Korea today (${dayName(today)})` : `Brood War news (${dayName(today)})`}`]
     for (const { lines } of todays) parts.push(lines.join('\n'))
     const watch = [...new Set(todays.map(({ m }) => m.competition.watch).filter(Boolean))]
     if (watch.length) parts.push('Watch live:', ...watch)
-    if (news.length) parts.push(...(todays.length ? ['News:'] : []), ...news.slice(0, MORNING_NEWS).map(newsBlock))
+    if (results.length) parts.push('University results:', resultLines(results).join('\n'))
+    if (news.length) parts.push(...(todays.length || results.length ? ['News:'] : []), ...news.slice(0, MORNING_NEWS).map(newsBlock))
     parts.push('More on the page:', SITE)
     return parts.join('\n\n')
 }
 
-export function newsText (cards) {
-    if (!cards.length) return null
-    return [`🤖 Skim Bot - Brood War news`, ...cards.map(newsBlock), 'More on the page:', `${SITE}#news`].join('\n\n')
+export function newsText (cards, results = []) {
+    if (!cards.length && !results.length) return null
+    const head = cards.length ? '🤖 Skim Bot - Brood War news' : '🤖 Skim Bot - University results'
+    return [head, ...(results.length ? [...(cards.length ? ['University results:'] : []), resultLines(results).join('\n')] : []),
+        ...(results.length && cards.length ? ['News:'] : []), ...cards.map(newsBlock), 'More on the page:', `${SITE}#news`].join('\n\n')
 }
 
 export function reminderText (m, now = new Date()) {
@@ -117,9 +131,10 @@ export function dueReminders (matches, posted, now = new Date()) {
         Date.parse(m.at) - now > 0 && Date.parse(m.at) - now <= (REMIND_MIN + 15) * 60000)
 }
 
-// The last line of defence: nothing that looks like a result leaves this machine.
-export function safe (text) {
-    return text.split('\n').filter((line) => !(SCORE.test(line) && !/KST|Bucharest|https?:\/\//.test(line))).join('\n')
+// The last line of defence: nothing that looks like a result leaves this machine, but for the
+// university results the post was built with (`allowed`, line for line).
+export function safe (text, allowed = []) {
+    return text.split('\n').filter((line) => allowed.includes(line) || !(SCORE.test(line) && !/KST|Bucharest|https?:\/\//.test(line))).join('\n')
 }
 
 // A post that may or may not be in the group: the bridge's answer never came, or it typed the
@@ -146,10 +161,10 @@ export function patientFetch (url, { method = 'GET', headers, body, signal } = {
     })
 }
 
-export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date() } = {}) {
+export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date(), allowed = [] } = {}) {
     // The one rule nothing overrides: 08:00-16:00 Bucharest, or not at all.
     if (!inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
-    const body = safe(text)
+    const body = safe(text, allowed)
     if (!group || dryRun) return { sent: false, printed: body, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
     let r
     try {
@@ -172,10 +187,12 @@ export async function post (kind, { now = new Date(), posted = loadPosted(), mat
     // Outside the window nothing happens at all - not even a reminder that would be late.
     if (!inWindow(now)) return { results, posted }
     const { weekend } = local(now)
-    const deliver = async (text, after) => {
+    posted.results ||= {}
+    const told = (results) => { for (const r of results) posted.results[r.id] = now.toISOString() }
+    const deliver = async (text, after, allowed = []) => {
         let r
         try {
-            r = await sender(text, { dryRun, now })
+            r = await sender(text, { dryRun, now, allowed })
         } catch (error) {
             if (error instanceof UnsureError) after()
             throw error
@@ -185,16 +202,19 @@ export async function post (kind, { now = new Date(), posted = loadPosted(), mat
     }
     if (kind === 'morning' && !posted.mornings[today]) {
         const cards = weekend ? [] : freshCards(news, posted, now)
-        const text = morningText(matches, cards, today, { weekend })
+        const results = freshResults(news, posted, now)
+        const text = morningText(matches, cards, today, { weekend, results })
         // Every fresh story counts as told, those past MORNING_NEWS too: they are on the page.
-        if (text) await deliver(text, () => { posted.mornings[today] = now.toISOString(); for (const c of cards) posted.news[c.id] = now.toISOString() })
+        if (text) await deliver(text, () => { posted.mornings[today] = now.toISOString(); for (const c of cards) posted.news[c.id] = now.toISOString(); told(results) }, resultLines(results))
         // A quiet morning is still a morning: news may follow during the day.
         else posted.mornings[today] = `nothing (${now.toISOString()})`
     }
-    if (kind === 'news' && !weekend && posted.mornings[today]) {
-        const cards = freshCards(news, posted, now)
-        const text = newsText(cards)
-        if (text) await deliver(text, () => { for (const c of cards) posted.news[c.id] = now.toISOString() })
+    // During the week news and university results go together; at a weekend, results alone.
+    if (kind === 'news' && posted.mornings[today]) {
+        const cards = weekend ? [] : freshCards(news, posted, now)
+        const results = freshResults(news, posted, now)
+        const text = newsText(cards, results)
+        if (text) await deliver(text, () => { for (const c of cards) posted.news[c.id] = now.toISOString(); told(results) }, resultLines(results))
     }
     if (kind === 'reminders') {
         for (const m of dueReminders(matches, posted, now)) {

@@ -29,4 +29,5 @@ posts are logged, not sent.
 
 Rules for the group (Silviu): nothing outside 08:00-16:00; one morning post; news as it comes
 on weekdays; never news on weekends - only major matches; reminders before major matches; no
-results, ever. Results live on the page behind a closed dropdown.
+results, but one kind: a match between star-university teams, posted once its result is known
+(12 Oct), any day. Every other result lives on the page behind a closed dropdown.

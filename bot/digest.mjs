@@ -13,6 +13,8 @@
 //   - No spoilers in the group. Each item says whether it reveals a result, and carries a
 //     separate one-line `card` that must not; spoiler items' text is shown on the page only
 //     behind a closed dropdown.
+//   - One exception (Silviu, 12 Oct): the result of a match between star-university teams may
+//     be posted. Such an item carries it in `teamResult`, teams and the score only.
 
 import { execFile } from 'node:child_process'
 import { readFileSync, writeFileSync } from 'node:fs'
@@ -30,10 +32,10 @@ export const SCHEMA = {
     properties: { titles: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['ko', 'en'],
         properties: { ko: { type: 'string' }, en: { type: 'string' } } } },
     items: { type: 'array', items: {
-        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'teaser', 'sources', 'date'],
+        type: 'object', additionalProperties: false, required: ['headline', 'summary', 'spoiler', 'relevant', 'card', 'teaser', 'teamResult', 'sources', 'date'],
         properties: {
             headline: { type: 'string' }, summary: { type: 'string' }, spoiler: { type: 'boolean' }, relevant: { type: 'boolean' },
-            card: { type: ['string', 'null'] }, teaser: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
+            card: { type: ['string', 'null'] }, teaser: { type: ['string', 'null'] }, teamResult: { type: ['string', 'null'] }, sources: { type: 'array', items: { type: 'string' } }, date: { type: 'string' },
         },
     } } },
 }
@@ -50,6 +52,7 @@ Rules - all of them matter:
 4. "spoiler": true if the item reveals any match result - a winner, a score, who advanced or was knocked out, who is in a final because of a win.
 5. "card": one line of at most 100 characters for the group chat that reveals NO result at all, even if the item is a spoiler (e.g. "Interviews with both ASL S22 finalists ahead of Saturday's final" is fine; "Rush beats Light 4-2" is not). Use null if the story cannot be told without a result. It is the item's title in the group chat.
 5b. "teaser": one or two short sentences (at most 220 characters) shown under the card in the group chat: what the story is about, with enough detail to be worth reading, and again NO result - no winner, score or who advanced. Null when "card" is null.
+5c. "teamResult": only when the item reports the final result of a match between star-university teams (a university clash, a CK or a battle between universities, a team league match), one line of at most 100 characters with the event, both teams and the team score - for example "University Clash: Dreamz 4-2 Calm MonstarZ". Teams only: no player's own games, scores or MVP. Null for everything else - a player's 1v1 result, teams that are not universities (e.g. "Team Jaedong"), a match not finished yet.
 6. "relevant": true when the story matters to people following the Korean Brood War scene - its main leagues and tournaments (ASL, SSL, star university leagues, KCM, Ultimate Battle), or any of these players or teams. False for minor items: small online cups, streamer gossip, unrelated celebrities.
    Players (by ID; Korean name in brackets where known): ${watchlist.players.map((p) => p.korean ? `${p.id} (${p.korean})` : p.id).join(', ')}
    Teams: ${watchlist.teams.map((t) => t.korean && t.korean !== t.name ? `${t.name} (${t.korean})` : t.name).join(', ')}
@@ -111,13 +114,16 @@ export async function cleanItem (item, names, { lookup = true, resolveName = res
         }
         return out.replace(/\s+/g, ' ').trim()
     }
-    const clean = { ...item, headline: await fill(item.headline), summary: await fill(item.summary), card: item.card ? await fill(item.card) : null, teaser: item.teaser ? await fill(item.teaser) : null }
-    const text = `${clean.headline} ${clean.summary} ${clean.card || ''} ${clean.teaser || ''}`
+    const clean = { ...item, headline: await fill(item.headline), summary: await fill(item.summary), card: item.card ? await fill(item.card) : null, teaser: item.teaser ? await fill(item.teaser) : null,
+        teamResult: item.teamResult ? await fill(item.teamResult) : null }
+    const text = `${clean.headline} ${clean.summary} ${clean.card || ''} ${clean.teaser || ''} ${clean.teamResult || ''}`
     if (HANGUL.test(text) || /\{\{name:/.test(text)) return null
     const romanized = Object.values(names.players || {}).map((p) => p.romanized).filter((r) => r && r.length > 4)
     if (romanized.some((r) => text.toLowerCase().includes(r.toLowerCase()))) return null
     if (clean.card && clean.card.length > 140) clean.card = clean.card.slice(0, 137) + '…'
     if (clean.teaser && clean.teaser.length > 260) clean.teaser = clean.teaser.slice(0, 257) + '…'
+    // A team result is one short line with a score in it, or it is not one.
+    if (clean.teamResult && (clean.teamResult.length > 120 || !/\d+\s*[-–:]\s*\d+/.test(clean.teamResult))) clean.teamResult = null
     return clean
 }
 

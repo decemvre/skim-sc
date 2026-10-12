@@ -64,3 +64,13 @@ test('on the page a spoiler shows only its card; the story is folded', () => {
     assert.match(html, /Rollback netcode thread/);
     assert.equal(injectNews(`a${END}b`, `${NEWS_START}N${NEWS_END}`), `a${END}\n${NEWS_START}N${NEWS_END}b`);
 });
+
+test('a university team result is one short line with a score, names checked like the rest (12 Oct)', async () => {
+    const names = {players: {}};
+    const opts = {lookup: false, resolveName: async () => null};
+    const base = {headline: 'Dreamz take the clash', summary: 's', spoiler: true, card: 'c', teaser: null, sources: [], date: '2026-10-11'};
+    assert.equal((await cleanItem({...base, teamResult: 'University Clash: Dreamz 4-2 Calm MonstarZ'}, names, opts)).teamResult, 'University Clash: Dreamz 4-2 Calm MonstarZ');
+    assert.equal((await cleanItem({...base, teamResult: 'Dreamz won'}, names, opts)).teamResult, null, 'no score, no result line');
+    assert.equal(await cleanItem({...base, teamResult: '드림즈 4-2 캄몬'}, names, opts), null, 'Hangul left in drops the item');
+    assert.match(prompt([], {players: [], teams: []}), /"teamResult": only when the item reports the final result of a match between star-university teams/);
+});
