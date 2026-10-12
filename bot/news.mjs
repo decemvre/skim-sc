@@ -10,7 +10,7 @@
 // queue into English items for the page and the group. Seen items are remembered by id, so a
 // story is queued once however often this runs.
 //
-//   node bot/news.mjs        check now (the watcher runs this every 30-60 minutes)
+//   node bot/news.mjs        check now (the watcher runs this every hour)
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath, pathToFileURL } from 'node:url'

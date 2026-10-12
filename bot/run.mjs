@@ -6,7 +6,7 @@
 //   step       when                                   model?
 //   pull       every pass (the bot's own clone)       no
 //   schedule   hourly - SOOP, names, calendar sync    no
-//   news       every 30 minutes - Naver, EloBoard      no
+//   news       hourly - Naver, EloBoard               no
 //   digest     queue not empty, weekdays 07:30-16:00   yes - Claude, Grok if it fails; at most 8 a day
 //   results    once a day after 20:00 - Liquipedia     no
 //   publish    when something changed - page, push     no
@@ -74,7 +74,7 @@ export async function tick ({ now = new Date(), state = loadState(), log = conso
         }
     })
 
-    if (due(state, 'news', 30 * 60000, now)) await step('news', async () => {
+    if (due(state, 'news', 60 * 60000, now)) await step('news', async () => {
         const r = await check({ now })
         writeFileSync(QUEUE_FILE, JSON.stringify(r.queue, null, 2) + '\n')
         state.last.news = now.toISOString()
