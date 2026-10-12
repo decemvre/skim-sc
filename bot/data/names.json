@@ -1,5 +1,13 @@
 {
   "players": {
+    "강구열": {
+      "id": "910",
+      "romanized": "Kang Gu Yeol",
+      "race": "T",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/910",
+      "checked": "2026-10-12"
+    },
     "김경모": {
       "id": "ggaemo",
       "romanized": "Kim Kyung Mo",
@@ -34,6 +42,14 @@
       ],
       "source": "https://liquipedia.net/starcraft/Action",
       "checked": "2026-10-10"
+    },
+    "김수식": {
+      "id": "Absolute",
+      "romanized": null,
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Absolute",
+      "checked": "2026-10-12"
     },
     "김영진": {
       "id": "Skey",
@@ -216,6 +232,14 @@
       "source": "https://liquipedia.net/starcraft/Leta",
       "checked": "2026-10-10"
     },
+    "어윤수": {
+      "id": "n.Die_soO",
+      "romanized": "Eu Yoon Su",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/N.Die_soO",
+      "checked": "2026-10-12"
+    },
     "원선재": {
       "id": "Motive",
       "romanized": "Won Seon Jae",
@@ -253,6 +277,14 @@
       ],
       "source": "https://liquipedia.net/starcraft/Free",
       "checked": "2026-10-10"
+    },
+    "윤진규": {
+      "id": "Yoon",
+      "romanized": "Yoon Jin Kyu",
+      "race": "Z",
+      "nicknames": [],
+      "source": "https://liquipedia.net/starcraft/Yoon_(Amateur)",
+      "checked": "2026-10-12"
     },
     "윤찬희": {
       "id": "Mong",
@@ -307,6 +339,18 @@
       ],
       "source": "https://liquipedia.net/starcraft/Flash",
       "checked": "2026-10-10"
+    },
+    "이윤열": {
+      "id": "NaDa",
+      "romanized": "Lee Yoon Yeol",
+      "race": "T",
+      "nicknames": [
+        "Genius Terran",
+        "Tornado Terran",
+        "Otter Terran"
+      ],
+      "source": "https://liquipedia.net/starcraft/NaDa",
+      "checked": "2026-10-12"
     },
     "이재호": {
       "id": "Light",
@@ -460,7 +504,7 @@
     "만개빵": "2026-10-10",
     "매펀": "2026-10-10",
     "민지": "2026-10-11",
-    "박수범": "2026-10-10",
+    "박수범": "2026-10-12",
     "사랑": "2026-10-12",
     "선정은": "2026-10-11",
     "설영욱": "2026-10-10",
@@ -478,7 +522,8 @@
     "주서리": "2026-10-10",
     "주적대전": "2026-10-12",
     "즉흥": "2026-10-12",
-    "천유주": "2026-10-10",
+    "천유주": "2026-10-12",
+    "최성원": "2026-10-12",
     "파비지원": "2026-10-10",
     "핑핑": "2026-10-11",
     "흑카": "2026-10-12"

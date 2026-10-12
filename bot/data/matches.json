@@ -218,7 +218,7 @@
       },
       "competition": {
         "raw": "CK 캄몬전대비 즉흥 ck",
-        "name": "",
+        "name": "Impromptu CK to prepare for the Calm MonstarZ match",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -227,8 +227,8 @@
         "eloboard": true
       },
       "titleSource": "CK 캄몬전대비 즉흥 ck",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Impromptu CK to prepare for the Calm MonstarZ match",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -252,7 +252,7 @@
       },
       "competition": {
         "raw": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-        "name": "",
+        "name": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -261,8 +261,8 @@
         "eloboard": true
       },
       "titleSource": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -286,7 +286,7 @@
       },
       "competition": {
         "raw": "CK [주적대전] 더블비 VS 드림즈 교수ck",
-        "name": "",
+        "name": "CK [Archrival Battle] Double B vs Dreamz professors' CK",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -295,8 +295,8 @@
         "eloboard": true
       },
       "titleSource": "CK [주적대전] 더블비 VS 드림즈 교수ck",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [Archrival Battle] Double B vs Dreamz professors' CK",
+      "needsTranslation": false,
       "duel": [
         "더블비",
         "드림즈"
@@ -546,7 +546,7 @@
       },
       "competition": {
         "raw": "[스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-        "name": "",
+        "name": "[Women's SC Deathmatch] BGM Ana vs FA Darin, cast by Sarang-e",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -555,8 +555,8 @@
         "eloboard": true
       },
       "titleSource": "[스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[Women's SC Deathmatch] BGM Ana vs FA Darin, cast by Sarang-e",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
