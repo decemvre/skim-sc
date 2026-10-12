@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T07:15:26.379Z",
+  "updated": "2026-10-12T10:30:26.396Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -273,6 +273,40 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
     },
     {
+      "key": "2026-10-12 19:00 eloboard [유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+      "origin": "eloboard",
+      "date": "2026-10-12",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-12T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-12",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+        "name": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
+      "titleEn": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-12T00:30:26.352Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
+    },
+    {
       "key": "2026-10-12 19:00 eloboard CK [주적대전] 더블비 VS 드림즈 교수ck",
       "origin": "eloboard",
       "date": "2026-10-12",
@@ -301,40 +335,6 @@
         "더블비",
         "드림즈"
       ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-12T00:30:26.352Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
-    },
-    {
-      "key": "2026-10-12 19:00 eloboard [유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-      "origin": "eloboard",
-      "date": "2026-10-12",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-12T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-12",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-        "name": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[유즈맵 대결] 흑카 vs 캄몬스타즈vs 케이대 vs JSA",
-      "titleEn": "[UMS Battle] Black Academy vs Calm MonstarZ vs K University vs JSA",
-      "needsTranslation": false,
-      "duel": null,
       "a": null,
       "b": null,
       "played": false,
@@ -382,6 +382,40 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
+    },
+    {
+      "key": "2026-10-13 00:30 eloboard 두산CK공약(이지다와 레전더리야방 with혁센세)",
+      "origin": "eloboard",
+      "date": "2026-10-13",
+      "kst": "00:30",
+      "allDay": false,
+      "at": "2026-10-12T15:30:00.000Z",
+      "bucharest": {
+        "date": "2026-10-12",
+        "time": "18:30",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "두산CK공약(이지다와 레전더리야방 with혁센세)",
+        "name": "Doosan CK Pledge (Ejida & Legendary Yabang with Hyuksensei)",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "두산CK공약(이지다와 레전더리야방 with혁센세)",
+      "titleEn": "Doosan CK Pledge (Ejida & Legendary Yabang with Hyuksensei)",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-12T10:30:26.396Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
       "key": "2026-10-13 21:00 eloboard [중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
