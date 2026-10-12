@@ -118,13 +118,16 @@ export async function tick ({ now = new Date(), state = loadState(), log = conso
     })
 
     await step('posts', async () => {
-        let posted = loadPosted()
-        for (const kind of ['morning', 'news', 'reminders']) {
-            const r = await post(kind, { now, posted })
-            posted = r.posted
-            for (const x of r.results) log(`post ${kind}: ${x.sent ? 'sent' : 'not sent (' + x.why + ')'}`)
+        const posted = loadPosted()
+        // Written even when a post fails: one that may have gone out is recorded (UnsureError).
+        try {
+            for (const kind of ['morning', 'news', 'reminders']) {
+                const r = await post(kind, { now, posted })
+                for (const x of r.results) log(`post ${kind}: ${x.sent ? 'sent' : 'not sent (' + x.why + ')'}`)
+            }
+        } finally {
+            writeFileSync(POSTED_FILE, JSON.stringify(posted, null, 2) + '\n')
         }
-        writeFileSync(POSTED_FILE, JSON.stringify(posted, null, 2) + '\n')
     })
 
     // Each distinct failure is said in the war room once a day.

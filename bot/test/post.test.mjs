@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {competition} from '../lib/competitions.mjs';
-import {blurb, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
+import {UnsureError, blurb, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
 
 // F-236: the group posts. Nothing on a quiet day, never a result, links on their own line.
 const m = (over) => ({key: 'k1', date: '2026-10-17', kst: '15:00', at: '2026-10-17T06:00:00.000Z', bucharest: {time: '09:00', zone: 'EEST'},
@@ -112,4 +112,42 @@ test('news in the chat: a bold title with a short spoiler-free summary under it;
 
 test('Ultimate Battle is a big competition: it gets the reminder', () => {
     assert.equal(competition('스타끝장전 시즌3').big, true);
+});
+
+test('a post that may have gone out is recorded and never posted again (12 Oct: three copies)', async () => {
+    const posted = {mornings: {}, reminders: {}, news: {}};
+    const news = {items: [{id: 'a', addedAt: '2026-10-12T05:00:00Z', relevant: true, card: 'Finalists talk'}]};
+    const mon8 = new Date('2026-10-12T05:00:00Z');
+    let calls = 0;
+    const sender = async () => { calls++; throw new UnsureError('no answer from the bridge'); };
+    await assert.rejects(post('morning', {now: mon8, posted, matches: [m({date: '2026-10-12'})], news, sender}), UnsureError);
+    assert.ok(posted.mornings['2026-10-12'] && posted.news.a, 'recorded as posted');
+    await post('morning', {now: new Date('2026-10-12T05:15:00Z'), posted, matches: [m({date: '2026-10-12'})], news, sender});
+    assert.equal(calls, 1, 'not tried again');
+    // A refusal is a plain failure: nothing went out, and the next pass tries again.
+    const fresh = {mornings: {}, reminders: {}, news: {}};
+    await assert.rejects(post('morning', {now: mon8, posted: fresh, matches: [m({date: '2026-10-12'})], news, sender: async () => { throw new Error('the bridge did not post: PAUSED'); }}), /PAUSED/);
+    assert.deepEqual(fresh.mornings, {});
+});
+
+test('send: no answer, or a post typed but not seen going, is unsure; a refusal is not', async () => {
+    const at = new Date('2026-10-12T05:00:00Z');
+    const answer = (status, body) => async () => ({ok: status < 300, status, json: async () => body});
+    await assert.rejects(send('hi', {group: 'g', now: at, fetchImpl: async () => { throw Object.assign(new Error('socket hang up'), {code: 'ECONNRESET'}); }}), UnsureError);
+    await assert.rejects(send('hi', {group: 'g', now: at, fetchImpl: answer(502, {error: 'box emptied', code: 'unconfirmed'})}), UnsureError);
+    await assert.rejects(send('hi', {group: 'g', now: at, fetchImpl: answer(409, {error: 'The bridge is PAUSED'})}), (e) => !(e instanceof UnsureError) && /PAUSED/.test(e.message));
+    await assert.rejects(send('hi', {group: 'g', now: at, fetchImpl: async () => { throw Object.assign(new Error('connect ECONNREFUSED'), {code: 'ECONNREFUSED'}); }}), (e) => !(e instanceof UnsureError));
+    assert.deepEqual(await send('hi', {group: 'g', now: at, fetchImpl: answer(200, {sent: true, status: 'sent'})}), {sent: true, status: 'sent'});
+});
+
+test('the morning post names three stories and one sentence each; the rest count as told', async () => {
+    const items = [1, 2, 3, 4, 5, 6].map((n) => ({id: `n${n}`, addedAt: '2026-10-12T04:00:00Z', relevant: true, card: `Story ${n}`, teaser: `First line ${n}. Second line ${n}.`}));
+    const posted = {mornings: {}, reminders: {}, news: {}};
+    const sent = [];
+    await post('morning', {now: new Date('2026-10-12T05:00:00Z'), posted, matches: [m({date: '2026-10-12'})], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
+    assert.match(sent[0], /Story 3\*\nFirst line 3\./);
+    assert.doesNotMatch(sent[0], /Story 4|Second line/);
+    assert.equal(Object.keys(posted.news).length, 6);
+    await post('news', {now: new Date('2026-10-12T05:15:00Z'), posted, matches: [], news: {items}, sender: async (t) => { sent.push(t); return {sent: true}; }});
+    assert.equal(sent.length, 1, 'no second post with the other three');
 });

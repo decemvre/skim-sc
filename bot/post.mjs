@@ -19,6 +19,7 @@
 // same name in the bridge's "groups". Until both are set, a post is printed, not sent.
 
 import { readFileSync, writeFileSync } from 'node:fs'
+import { request as httpRequest } from 'node:http'
 import { homedir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
@@ -32,6 +33,12 @@ export const CONFIG_FILE = join(homedir(), '.config/friendzy/skim-bot.json')
 export const POSTED_FILE = fileURLToPath(new URL('./data/posted.json', import.meta.url))
 export const BRIDGE = process.env.FRIENDZY_WHATSAPP_BRIDGE || 'http://127.0.0.1:8796'
 export const REMIND_MIN = 30
+// The morning post names at most this many stories; the rest are on the page (12 Oct: a
+// Monday carrying the weekend's six was too long, and WhatsApp folded it).
+export const MORNING_NEWS = 3
+// Typing a long post takes the bridge minutes: the morning one of 12 Oct took over five, and
+// fetch() gives up on an answer after five whatever the signal says.
+export const SEND_TIMEOUT_MS = 15 * 60000
 export const WINDOW = { from: 8 * 60, to: 16 * 60, zone: 'Europe/Bucharest' }
 
 export function local (now = new Date()) {
@@ -68,10 +75,11 @@ export function freshCards (news, posted, now = new Date()) {
         !(i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s)) && now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
 }
 
-// The line under a title (Silviu, 10 Oct): the spoiler-free teaser; for a story with no result
-// in it, its summary's first sentence. Nothing when that would give a result away.
+// The line under a title (Silviu, 10 Oct): the first sentence of the spoiler-free teaser; for a
+// story with no result in it, its summary's. Nothing when that would give a result away.
+const firstSentence = (text) => (String(text || '').match(/^.*?[.!?](\s|$)/)?.[0] || String(text || '')).trim()
 export function blurb (item) {
-    const text = item.teaser || (item.spoiler ? '' : (String(item.summary || '').match(/^.*?[.!?](\s|$)/)?.[0] || '').trim())
+    const text = item.teaser ? firstSentence(item.teaser) : item.spoiler ? '' : firstSentence(item.summary)
     return text && !SCORE.test(text) ? text : ''
 }
 // One news item in the chat: its title in bold, the short summary below it.
@@ -86,7 +94,7 @@ export function morningText (matches, cards, today, { weekend = false } = {}) {
     for (const { lines } of todays) parts.push(lines.join('\n'))
     const watch = [...new Set(todays.map(({ m }) => m.competition.watch).filter(Boolean))]
     if (watch.length) parts.push('Watch live:', ...watch)
-    if (news.length) parts.push(...(todays.length ? ['News:'] : []), ...news.map(newsBlock))
+    if (news.length) parts.push(...(todays.length ? ['News:'] : []), ...news.slice(0, MORNING_NEWS).map(newsBlock))
     parts.push('More on the page:', SITE)
     return parts.join('\n\n')
 }
@@ -114,14 +122,46 @@ export function safe (text) {
     return text.split('\n').filter((line) => !(SCORE.test(line) && !/KST|Bucharest|https?:\/\//.test(line))).join('\n')
 }
 
-export async function send (text, { group = config().group, fetchImpl = fetch, dryRun = false, now = new Date() } = {}) {
+// A post that may or may not be in the group: the bridge's answer never came, or it typed the
+// post and could not see it go. Recorded as posted, so the next pass does not post it again
+// (12 Oct: three copies of one morning post), and said in the war room.
+export class UnsureError extends Error {}
+const UNSURE_CODES = ['unconfirmed', 'no-tick']
+
+// fetch() without its five-minute limit on the answer: node:http waits as long as `signal` says.
+export function patientFetch (url, { method = 'GET', headers, body, signal } = {}) {
+    return new Promise((resolve, reject) => {
+        const request = httpRequest(url, { method, headers, signal }, (response) => {
+            const chunks = []
+            response.on('data', (c) => chunks.push(c))
+            response.on('end', () => {
+                const text = Buffer.concat(chunks).toString('utf8')
+                resolve({ ok: response.statusCode >= 200 && response.statusCode < 300, status: response.statusCode, json: async () => JSON.parse(text) })
+            })
+            response.on('error', reject)
+        })
+        request.on('error', reject)
+        if (body) request.write(body)
+        request.end()
+    })
+}
+
+export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date() } = {}) {
     // The one rule nothing overrides: 08:00-16:00 Bucharest, or not at all.
     if (!inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
     const body = safe(text)
     if (!group || dryRun) return { sent: false, printed: body, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
-    const r = await fetchImpl(`${BRIDGE}/send`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Friendzy-Office': '1' },
-        body: JSON.stringify({ group, agent: 'skim', text: body }), signal: AbortSignal.timeout(6 * 60000) })
+    let r
+    try {
+        r = await fetchImpl(`${BRIDGE}/send`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Friendzy-Office': '1' },
+            body: JSON.stringify({ group, agent: 'skim', text: body }), signal: AbortSignal.timeout(SEND_TIMEOUT_MS) })
+    } catch (error) {
+        // Refused before it was sent, the request never left; anything else may have been typed.
+        if (error.code === 'ECONNREFUSED') throw new Error('the bridge is not running: nothing was posted')
+        throw new UnsureError(`no answer from the bridge (${error.name === 'TimeoutError' ? 'timed out' : error.message}): the post may be in the group - recorded as posted, look at the group`)
+    }
     const data = await r.json().catch(() => ({}))
+    if (UNSURE_CODES.includes(data.code)) throw new UnsureError(`the bridge typed the post but could not see it go (${data.code}): recorded as posted, look at the group`)
     if (!r.ok || !data.sent) throw new Error(`the bridge did not post: ${data.error || r.status}`)
     return { sent: true, status: data.status }
 }
@@ -133,13 +173,20 @@ export async function post (kind, { now = new Date(), posted = loadPosted(), mat
     if (!inWindow(now)) return { results, posted }
     const { weekend } = local(now)
     const deliver = async (text, after) => {
-        const r = await sender(text, { dryRun, now })
+        let r
+        try {
+            r = await sender(text, { dryRun, now })
+        } catch (error) {
+            if (error instanceof UnsureError) after()
+            throw error
+        }
         results.push(r)
         if (r.sent || dryRun) after()
     }
     if (kind === 'morning' && !posted.mornings[today]) {
         const cards = weekend ? [] : freshCards(news, posted, now)
         const text = morningText(matches, cards, today, { weekend })
+        // Every fresh story counts as told, those past MORNING_NEWS too: they are on the page.
         if (text) await deliver(text, () => { posted.mornings[today] = now.toISOString(); for (const c of cards) posted.news[c.id] = now.toISOString() })
         // A quiet morning is still a morning: news may follow during the day.
         else posted.mornings[today] = `nothing (${now.toISOString()})`
