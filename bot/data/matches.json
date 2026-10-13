@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T06:00:53.011Z",
+  "updated": "2026-10-13T09:16:01.005Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -279,7 +279,7 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
     },
     {
-      "key": "2026-10-13 14:00 eloboard [소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
+      "key": "2026-10-13 14:00 eloboard [소병대] 실력평가후 JSA와 미니대전 저녁 6시",
       "origin": "eloboard",
       "date": "2026-10-13",
       "kst": "14:00",
@@ -291,8 +291,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "[소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
-        "name": "[Sobyeongdae] JSA and Mini Battle after skill assessment, 5-6 PM",
+        "raw": "[소병대] 실력평가후 JSA와 미니대전 저녁 6시",
+        "name": "[Sobyeongdae] After skill evaluation: JSA and Mini battle, 6 PM",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -300,8 +300,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "[소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
-      "titleEn": "[Sobyeongdae] JSA and Mini Battle after skill assessment, 5-6 PM",
+      "titleSource": "[소병대] 실력평가후 JSA와 미니대전 저녁 6시",
+      "titleEn": "[Sobyeongdae] After skill evaluation: JSA and Mini battle, 6 PM",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -309,7 +309,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-13T06:00:53.011Z",
+      "firstSeen": "2026-10-13T09:16:01.005Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
