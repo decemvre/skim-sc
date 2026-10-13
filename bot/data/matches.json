@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T02:46:12.001Z",
+  "updated": "2026-10-13T04:00:00.525Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -292,7 +292,7 @@
       },
       "competition": {
         "raw": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
-        "name": "",
+        "name": "[Double D] Doosan CK pledge: Ijda's legendary night stream",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -301,8 +301,8 @@
         "eloboard": true
       },
       "titleSource": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[Double D] Doosan CK pledge: Ijda's legendary night stream",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -437,7 +437,7 @@
       },
       "competition": {
         "raw": "[와플대] 애공의 유스키우기 여지니 vs 요괴버스 7판",
-        "name": "",
+        "name": "[Waffle-dae] Aegong's youth-raising: Yeojini vs Yogoe Bus, 7 games",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -446,8 +446,8 @@
         "eloboard": true
       },
       "titleSource": "[와플대] 애공의 유스키우기 여지니 vs 요괴버스 7판",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[Waffle-dae] Aegong's youth-raising: Yeojini vs Yogoe Bus, 7 games",
+      "needsTranslation": false,
       "duel": [
         "여지니",
         "요괴버스"
