@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T17:16:26.386Z",
+  "updated": "2026-10-13T02:46:12.001Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -279,7 +279,7 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
     },
     {
-      "key": "2026-10-13 00:30 eloboard 두산CK공약(이지다와 레전더리야방 with혁센세)",
+      "key": "2026-10-13 00:30 eloboard [더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
       "origin": "eloboard",
       "date": "2026-10-13",
       "kst": "00:30",
@@ -291,78 +291,7 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "두산CK공약(이지다와 레전더리야방 with혁센세)",
-        "name": "Doosan CK Pledge (Ejida & Legendary Yabang with Hyuksensei)",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "두산CK공약(이지다와 레전더리야방 with혁센세)",
-      "titleEn": "Doosan CK Pledge (Ejida & Legendary Yabang with Hyuksensei)",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-12T10:30:26.396Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
-    },
-    {
-      "key": "2026-10-13 21:00 eloboard [중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
-      "origin": "eloboard",
-      "date": "2026-10-13",
-      "kst": "21:00",
-      "allDay": false,
-      "at": "2026-10-13T12:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-13",
-        "time": "15:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
-        "name": "Special Ultimate Battle Light vs soma",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[중계진]Google Play 스페셜 끝장전 이재호 vs 박상현",
-      "titleEn": "Special Ultimate Battle Light vs soma",
-      "needsTranslation": false,
-      "duel": [
-        "이재호",
-        "박상현"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
-    },
-    {
-      "key": "2026-10-14 all-day eloboard 대전 빵투어 임밍지, 빛나:♡",
-      "origin": "eloboard",
-      "date": "2026-10-14",
-      "kst": null,
-      "allDay": true,
-      "at": "2026-10-13T15:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-13",
-        "time": "18:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "대전 빵투어 임밍지, 빛나:♡",
+        "raw": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
         "name": "",
         "big": false,
         "celebrity": false,
@@ -371,7 +300,7 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "대전 빵투어 임밍지, 빛나:♡",
+      "titleSource": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
       "titleEn": null,
       "needsTranslation": true,
       "duel": null,
@@ -380,8 +309,50 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-12T14:00:26.453Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-14"
+      "firstSeen": "2026-10-13T02:46:12.001Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
+    },
+    {
+      "key": "2026-10-13 21:00 이재호 vs 박상현",
+      "origin": "soop",
+      "date": "2026-10-13",
+      "kst": "21:00",
+      "at": "2026-10-13T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-13",
+        "time": "15:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "이재호",
+        "race": "T",
+        "id": "Light",
+        "nicknames": [
+          "Invisible Terran",
+          "Super Terran",
+          "Moo.howoo"
+        ]
+      },
+      "b": {
+        "korean": "박상현",
+        "race": "Z",
+        "id": "soma",
+        "nicknames": []
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-13T02:46:12.001Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-13"
     },
     {
       "key": "2026-10-14 20:00 비트 리벤저스 vs 메디카 스타즈",
