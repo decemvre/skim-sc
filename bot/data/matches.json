@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T04:00:00.525Z",
+  "updated": "2026-10-13T06:00:53.011Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -279,20 +279,20 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
     },
     {
-      "key": "2026-10-13 00:30 eloboard [더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
+      "key": "2026-10-13 14:00 eloboard [소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
       "origin": "eloboard",
       "date": "2026-10-13",
-      "kst": "00:30",
+      "kst": "14:00",
       "allDay": false,
-      "at": "2026-10-12T15:30:00.000Z",
+      "at": "2026-10-13T05:00:00.000Z",
       "bucharest": {
-        "date": "2026-10-12",
-        "time": "18:30",
+        "date": "2026-10-13",
+        "time": "08:00",
         "zone": "EEST"
       },
       "competition": {
-        "raw": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
-        "name": "[Double D] Doosan CK pledge: Ijda's legendary night stream",
+        "raw": "[소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
+        "name": "[Sobyeongdae] JSA and Mini Battle after skill assessment, 5-6 PM",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -300,8 +300,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "[더블디] 두산CK공약(이지다와 레전더리야방 with혁센세)",
-      "titleEn": "[Double D] Doosan CK pledge: Ijda's legendary night stream",
+      "titleSource": "[소병대] 실력평가후 JSA와 미니대전 저녁 5시~6시",
+      "titleEn": "[Sobyeongdae] JSA and Mini Battle after skill assessment, 5-6 PM",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -309,7 +309,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-13T02:46:12.001Z",
+      "firstSeen": "2026-10-13T06:00:53.011Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
