@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T09:16:01.005Z",
+  "updated": "2026-10-13T12:45:57.488Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -313,6 +313,40 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
+      "key": "2026-10-13 18:15 eloboard [JSA] 급미니대전 VS 소병대",
+      "origin": "eloboard",
+      "date": "2026-10-13",
+      "kst": "18:15",
+      "allDay": false,
+      "at": "2026-10-13T09:15:00.000Z",
+      "bucharest": {
+        "date": "2026-10-13",
+        "time": "12:15",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[JSA] 급미니대전 VS 소병대",
+        "name": "[JSA] Quick Mini Battle vs Sobyeongdae",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[JSA] 급미니대전 VS 소병대",
+      "titleEn": "[JSA] Quick Mini Battle vs Sobyeongdae",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-13T12:45:57.488Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
+    },
+    {
       "key": "2026-10-13 21:00 이재호 vs 박상현",
       "origin": "soop",
       "date": "2026-10-13",
@@ -351,7 +385,7 @@
       "played": false,
       "status": "Upcoming",
       "firstSeen": "2026-10-13T02:46:12.001Z",
-      "onSchedule": true,
+      "onSchedule": false,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-13"
     },
     {
@@ -387,15 +421,15 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
     },
     {
-      "key": "2026-10-15 19:00 eloboard [대학대전] 드림즈 vs 캄몬",
+      "key": "2026-10-15 18:00 eloboard [대학대전] 드림즈 vs 캄몬",
       "origin": "eloboard",
       "date": "2026-10-15",
-      "kst": "19:00",
+      "kst": "18:00",
       "allDay": false,
-      "at": "2026-10-15T10:00:00.000Z",
+      "at": "2026-10-15T09:00:00.000Z",
       "bucharest": {
         "date": "2026-10-15",
-        "time": "13:00",
+        "time": "12:00",
         "zone": "EEST"
       },
       "competition": {
@@ -420,7 +454,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
+      "firstSeen": "2026-10-13T12:45:57.488Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
     },
     {
