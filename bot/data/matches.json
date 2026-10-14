@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T11:15:20.096Z",
+  "updated": "2026-10-14T12:15:27.726Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -387,6 +387,40 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
     },
     {
+      "key": "2026-10-15 15:00 eloboard [고티어CK] 정소윤주최",
+      "origin": "eloboard",
+      "date": "2026-10-15",
+      "kst": "15:00",
+      "allDay": false,
+      "at": "2026-10-15T06:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-15",
+        "time": "09:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[고티어CK] 정소윤주최",
+        "name": "[High Tier CK] Organized by Vm",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[고티어CK] 정소윤주최",
+      "titleEn": "[High Tier CK] Organized by Vm",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-14T12:15:27.726Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
+    },
+    {
       "key": "2026-10-15 18:00 eloboard [대학대전] 드림즈 vs 캄몬",
       "origin": "eloboard",
       "date": "2026-10-15",
@@ -424,7 +458,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
     },
     {
-      "key": "2026-10-15 20:00 eloboard [와플대] 재앙이네 시청자리그 해설 허유 비재희",
+      "key": "2026-10-15 20:00 eloboard [와플대] 재앙이네 시청자리그",
       "origin": "eloboard",
       "date": "2026-10-15",
       "kst": "20:00",
@@ -436,8 +470,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "[와플대] 재앙이네 시청자리그 해설 허유 비재희",
-        "name": "[Waffle U] \"It's a Disaster\" Viewer League Casting: a player & a player",
+        "raw": "[와플대] 재앙이네 시청자리그",
+        "name": "[Waffle Univ.] Disaster Viewer League",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -445,8 +479,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "[와플대] 재앙이네 시청자리그 해설 허유 비재희",
-      "titleEn": "[Waffle U] \"It's a Disaster\" Viewer League Casting: a player & a player",
+      "titleSource": "[와플대] 재앙이네 시청자리그",
+      "titleEn": "[Waffle Univ.] Disaster Viewer League",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -454,7 +488,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-14T08:46:20.093Z",
+      "firstSeen": "2026-10-14T12:15:27.726Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-15"
     },
     {
@@ -678,16 +712,16 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
     },
     {
-      "key": "2026-10-24 all-day eloboard [마범대] 마범컵 5,6 티어 대회",
+      "key": "2026-10-25 15:00 eloboard [마범대] 마범컵 5,6 티어 대회",
       "origin": "eloboard",
-      "date": "2026-10-24",
-      "kst": null,
-      "allDay": true,
-      "at": "2026-10-23T15:00:00.000Z",
+      "date": "2026-10-25",
+      "kst": "15:00",
+      "allDay": false,
+      "at": "2026-10-25T06:00:00.000Z",
       "bucharest": {
-        "date": "2026-10-23",
-        "time": "18:00",
-        "zone": "EEST"
+        "date": "2026-10-25",
+        "time": "08:00",
+        "zone": "EET"
       },
       "competition": {
         "raw": "[마범대] 마범컵 5,6 티어 대회",
@@ -708,8 +742,8 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-24"
+      "firstSeen": "2026-10-14T12:15:27.726Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
     },
     {
       "key": "2026-10-28 20:00 우리할매 러브즈 vs 메디카 스타즈",
