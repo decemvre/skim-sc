@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T04:31:20.083Z",
+  "updated": "2026-10-14T05:31:20.111Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -502,6 +502,40 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
+    },
+    {
+      "key": "2026-10-17 18:00 eloboard [미니대전] BGM vs 와플대",
+      "origin": "eloboard",
+      "date": "2026-10-17",
+      "kst": "18:00",
+      "allDay": false,
+      "at": "2026-10-17T09:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-17",
+        "time": "12:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[미니대전] BGM vs 와플대",
+        "name": "[Mini-Match] BGM vs Waffle University",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[미니대전] BGM vs 와플대",
+      "titleEn": "[Mini-Match] BGM vs Waffle University",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-14T05:31:20.111Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
     },
     {
       "key": "2026-10-19 19:00 eloboard [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
