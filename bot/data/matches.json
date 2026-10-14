@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T12:15:27.726Z",
+  "updated": "2026-10-14T18:00:20.097Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -380,10 +380,10 @@
       "b": {
         "team": "메디카 스타즈"
       },
-      "played": false,
-      "status": "Upcoming",
+      "played": true,
+      "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
-      "onSchedule": false,
+      "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
     },
     {
