@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T00:01:20.086Z",
+  "updated": "2026-10-14T03:30:20.094Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -536,6 +536,46 @@
       "onSchedule": true,
       "firstSeen": "2026-10-10T14:56:17.805Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-19"
+    },
+    {
+      "key": "2026-10-19 21:00 김민철 vs 장윤철",
+      "origin": "soop",
+      "date": "2026-10-19",
+      "kst": "21:00",
+      "at": "2026-10-19T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-19",
+        "time": "15:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "Iron Wall"
+        ]
+      },
+      "b": {
+        "korean": "장윤철",
+        "race": "P",
+        "id": "SnOw",
+        "nicknames": []
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-14T03:30:20.094Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-19"
     },
     {
       "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
