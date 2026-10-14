@@ -1,6 +1,287 @@
 {
   "items": [
     {
+      "headline": "Yampiel 5v5: Larva's team beats Jaedong's team 2-1",
+      "summary": "In the Major Proleague 'Yampiel' 5v5 on Oct 13, Larva's team beat Jaedong's team 2-1. Jaedong's side took the Winners League set 5-3, but SnOw beat Jaedong in the Super Ace decider to win the match. SnOw finished the day 5-1 and Jaedong 4-3.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague 'Yampiel' 5v5 team match, captained by Jaedong and Larva",
+      "teaser": "Captains Jaedong and Larva drafted their squads. The Super Ace decider game was picked by roulette.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-13"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Yampiel 5v5: Larva's team beats Jaedong's team 2-1",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New World signs 6-tier Zerg Yeonbulbi",
+      "summary": "Team New World said on Oct 13 that it had signed the 6-tier Zerg player Yeonbulbi. In a thank-you notice that night, Yeonbulbi said a long collab night and drive left them drained, and promised to stream early the next day.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Team New World signs Zerg streamer Yeonbulbi",
+      "teaser": "New World announced the signing on its board. Yeonbulbi thanked fans and promised an early stream the next day.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1205"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:New World signs 6-tier Zerg Yeonbulbi",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Cheon Yuju leaves New World after a short stay",
+      "summary": "Cheon Yuju left Team New World, announced in a notice early on Oct 13. They said a collab schedule given only 14 hours in advance left no room to keep up, and that leaving alone was better than hurting the crew. New World posted a farewell on its board.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamer Cheon Yuju leaves Team New World",
+      "teaser": "Cheon Yuju quit after a short time with the crew, citing a collab schedule given at short notice. New World posted a farewell.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1097"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Cheon Yuju leaves New World after a short stay",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats Light 8-1 in Google Play special",
+      "summary": "soma (Zerg) beat Light (Terran) 8-1 in a nine-game special showdown on Oct 13. soma won the first eight games in a row, and Light took only the last one.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Google Play special: soma vs Light in a nine-game showdown",
+      "teaser": "A special nine-game match between two top players, played as part of the Google Play showdown series.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:soma beats Light 8-1 in Google Play special",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Chairman's CK: United team beats Chairman's team 2-1",
+      "summary": "In the Chairman's CK on Oct 13, the United team beat the Chairman's team 2-1. The United team won the first set 3-0, the Chairman's team took the second 3-1, and Bijaehee beat a player in the super ace decider to finish it.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Chairman's CK: United team vs Chairman's team, individual sets and a super ace",
+      "teaser": "Two sets of individual games and a super ace decider between crew players in the Chairman's CK.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Chairman's CK: United team beats Chairman's team 2-1",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Gwangnak crew beats United team 6-2 in offline 8v8 CK",
+      "summary": "The Gwangnak crew beat the United team 6-2 in an offline eight-on-eight CK. Jegal Chubin and Ttumi won for the United team, while the Gwangnak crew won the other six games. The result was posted on Oct 12 and logged on Oct 13.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Offline 8v8 CK: Gwangnak crew vs United team",
+      "teaser": "Eight players from each crew met in a single offline CK, and the Gwangnak players reflected on the result on their board.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Gwangnak crew beats United team 6-2 in offline 8v8 CK",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Bisu beats herO 4-0 in sponsored best-of-seven",
+      "summary": "Bisu beat herO 4-0 in a best-of-seven 1v1 on Oct 13, a sponsored match. Other single games and sets were played in the same event that day.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Sponsored best-of-seven 1v1: Bisu vs herO",
+      "teaser": "A best-of-seven 1v1 on Oct 13, one of several matches that day in the sponsored event.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Bisu beats herO 4-0 in sponsored best-of-seven",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Bijaehee beats Yesul 4-1 in seven-game decider",
+      "summary": "Bijaehee of Waffle beat Yesul of Double B 4-1 in a seven-game decider on Oct 13. The two also met in a best-of-three the same day, which Bijaehee won 2-0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Seven-game decider: Bijaehee (Waffle) vs Yesul (Double B)",
+      "teaser": "A seven-game decider between two players from different groups, with a best-of-three rematch on the same day.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Bijaehee beats Yesul 4-1 in seven-game decider",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "a player plans StarCraft 1 streaming return",
+      "summary": "a player, known as sOs, announced on Oct 13 that they would restart StarCraft 1 streams. The player said they have been practicing a little but it is still very hard, and promised to be back on broadcast soon.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "a player (sOs) plans to return to StarCraft 1 streaming soon",
+      "teaser": "The player has been practicing lately, says it is still hard, and promises to be back on stream soon.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1122"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:a player plans StarCraft 1 streaming return",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Calm MonstarZ and Dreamz prepare for Oct 15 university match",
+      "summary": "Calm MonstarZ and Dreamz are getting ready for their university match on the 15th. Calm MonstarZ published its entry list on the night of Oct 13, while Dreamz players announced practice sessions online on the 13th and offline on the 14th.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Calm MonstarZ and Dreamz train ahead of the university match on the 15th",
+      "teaser": "Both squads posted practice plans before the university match on the 15th. Calm MonstarZ revealed its entry list on the 13th.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-15",
+        "time": null,
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1193"
+      ],
+      "date": "2026-10-14",
+      "id": "2026-10-14:Calm MonstarZ and Dreamz prepare for Oct 15 university match",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "ASL Season 22 final: Rush vs Soulkey on the 17th",
+      "summary": "The Google Play ASL Season 22 final will be played on Oct 17 at the Lotte World Ice Rink in Jamsil, Seoul, SOOP announced on Oct 14. Rush is chasing a first title and Soulkey a fifth overall.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Google Play ASL Season 22 final: Rush vs Soulkey, Oct 17",
+      "teaser": "The final takes place on a special stage at Jamsil's Lotte World Ice Rink in the league's 11th year. One player is seeking a first title, the other a fifth.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-17",
+        "time": null,
+        "link": null
+      },
+      "sources": [
+        "https://m.sports.naver.com/esports/article/076/0004455913",
+        "https://m.sports.naver.com/esports/article/031/0001065864",
+        "https://m.sports.naver.com/esports/article/347/0000196054",
+        "https://m.sports.naver.com/esports/article/311/0002068560"
+      ],
+      "date": "2026-10-14",
+      "id": "2026-10-14:ASL Season 22 final: Rush vs Soulkey on the 17th",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "An AI called Pluto arrives in the StarCraft 1 scene",
+      "summary": "Inven reports that an AI called Pluto has come to StarCraft 1, bringing fresh air to a scene long dominated by veteran players. The article covers how the AI is changing the scene.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "An AI called Pluto arrives in the StarCraft 1 scene, per Inven",
+      "teaser": "Inven's article looks at how the new AI is shaking up a scene long dominated by veteran players.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://m.sports.naver.com/esports/article/442/0000197678"
+      ],
+      "date": "2026-10-14",
+      "id": "2026-10-14:An AI called Pluto arrives in the StarCraft 1 scene",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Major Proleague 4v4 'Ryongpiel': effOrt's team beats Bisu's team 2-1",
+      "summary": "In the Major Proleague 4v4 'Ryongpiel' on Oct 13, effOrt's team beat Bisu's team 2-1. effOrt's team won the individual set 4-0, but Bisu's team took the Winners League set 5-2 after Bisu beat three players in a row. The Narak super ace game went to effOrt, who beat herO.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague 4v4 'Ryongpiel': effOrt's team vs Bisu's team, Narak super ace",
+      "teaser": "Four individual games, a Winners League set, and a Narak super ace decider, with effOrt and Bisu among the players.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Major Proleague 4v4 'Ryongpiel': effOrt's team beats Bisu's team 2-1",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "5v5 K-League: kOp's team beats Hyuk's team 2-1",
+      "summary": "kOp's team beat Hyuk's team 2-1 in a 5v5 K-League match on Oct 13. kOp's side won the individual set 4-1, but sSak won three games in a row in the Winners League set to flip it 5-4. kOp then beat Yoon in the super ace decider to finish it, and sSak went 4-0 in the team match.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "5v5 K-League: kOp's team vs Hyuk's team, roulette super ace",
+      "teaser": "Two sets, one of individual games and one a Winners League set, with the super ace drawn by roulette.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:5v5 K-League: kOp's team beats Hyuk's team 2-1",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Stork beats RoyaL 2-0 in sponsored best-of-three",
+      "summary": "Stork took the best-of-three sponsored match 2-0 against RoyaL on Oct 13. Earlier that day, Hyuk lost all of his games, while BTS beat PianO 2-1.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Sponsored best-of-three: Stork vs RoyaL",
+      "teaser": "A best-of-three sponsored match on Oct 13, one of several sponsored matches in the same event.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-14"
+      ],
+      "date": "2026-10-13",
+      "id": "2026-10-13:Stork beats RoyaL 2-0 in sponsored best-of-three",
+      "addedAt": "2026-10-14T04:31:20.083Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "AI 'Pluto' taught itself StarCraft and won an AI tournament",
       "summary": "Pluto, an AI, learned StarCraft through repeated games against AI opponents, without using human match data. One model now plays all three races, and it won an AI competition and has been beating Korean pro players. Dong-A Ilbo reported the story.",
       "spoiler": true,
