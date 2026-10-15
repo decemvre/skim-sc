@@ -1,6 +1,202 @@
 {
   "items": [
     {
+      "headline": "ASL S22 final: Soulkey vs Rush on Saturday",
+      "summary": "Soulkey (Zerg) goes for a record fifth ASL title against Rush (Terran), who has two runner-up finishes and is chasing his first title. The final is on Saturday the 17th.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "ASL Season 22 final preview: Soulkey chases a record fifth title",
+      "teaser": "Rush is hoping to finally win after two runner-up finishes. The final is on Saturday, the 17th.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-17",
+        "time": null,
+        "link": null
+      },
+      "sources": [
+        "https://m.sports.naver.com/esports/article/144/0001144240"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:ASL S22 final: Soulkey vs Rush on Saturday",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "a player leaves JSA",
+      "summary": "a player announced on 14 October that he has left the JSA team. He said he is unsure whether to keep playing StarCraft and plans a short break after weeks of nonstop streaming.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamer leaves JSA, unsure whether to keep playing StarCraft",
+      "teaser": "He thanked the team's coaches and members and said he will think about whether to continue playing.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1225"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:a player leaves JSA",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "JSA welcomes a new youth recruit",
+      "summary": "JSA posted a welcome poster for a new youth recruit on its official board on 14 October. The recruit's race is still listed as undecided, and an interview clip was shared on the free board.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "JSA welcomes a new youth recruit",
+      "teaser": "The race has not been announced yet, and an interview clip of the recruit was posted on the community board.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1322"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:JSA welcomes a new youth recruit",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New World signs its second youth player",
+      "summary": "New World announced its second youth recruit on its official board on 14 October. The team describes the new player as passionate and says they come from the Eumbi group.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "New World welcomes its second youth recruit",
+      "teaser": "The team calls the new player passionate and says they come from the Eumbi group.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-15"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:New World signs its second youth player",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Best beats RoyaL 4-3 in a seven-game 1v1 marathon",
+      "summary": "Best (Protoss) beat RoyaL (Terran) 4-3 in a best-of-seven 1v1 on 14 October. The series went the full seven games, with the lead changing hands several times, and it was the only best-of-seven 1v1 that day.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Best vs RoyaL: a best-of-seven 1v1 that went all seven games",
+      "teaser": "The two veterans traded the lead several times before a seventh and final game was needed.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-15"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Best beats RoyaL 4-3 in a seven-game 1v1 marathon",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Results from several 14 October 1v1 series",
+      "summary": "Sharp beat Queen 2-1, and Queen beat Mini 2-1. soma lost single games to Light and Sharp. Streamer series also finished, including a player's 3-0 and 2-1 wins and a player's 2-1 and 2-0 wins.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-15"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Results from several 14 October 1v1 series",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer a player plays a surprise CK at short notice",
+      "summary": "a player was called in at short notice to play a CK with the Wiper balance and finished 1-1 while her team won. She thanked the players who filled the matchups.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Heukcademy's Gayeong steps in at short notice for a CK match",
+      "teaser": "She played the CK with the Wiper balance and thanked everyone who filled the matchups.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1238"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Streamer a player plays a surprise CK at short notice",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "KCM race tournament Season 4 opens Thursday at 19:00",
+      "summary": "The KCM race tournament Season 4 opens on Thursday at 19:00 with three players per race. Terran: Light, RoyaL, Speed; Protoss: Mini, SnOw, huro; Zerg: effOrt, soma, Queen. Caster a player announced it, with a 600,000 won cumulative all-kill prize.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "KCM race tournament Season 4 opens Thursday at 19:00",
+      "teaser": "Nine players, three from each race, take part, and the cumulative all-kill prize is 600,000 won.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-15",
+        "time": "19:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1264"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:KCM race tournament Season 4 opens Thursday at 19:00",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz vs Calm MonstarZ university clash on Thursday",
+      "summary": "The university clash between Dreamz and Calm MonstarZ is set for 18:00 on Thursday on the stream of Calm. Both teams say they have been practicing hard for the match.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreamz vs Calm MonstarZ university clash, Thursday at 18:00",
+      "teaser": "Both teams have been preparing, and the clash is on Calm's channel.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-15",
+        "time": "18:00",
+        "link": "https://www.sooplive.com/station/brainzerg7"
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1292"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Dreamz vs Calm MonstarZ university clash on Thursday",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Vm returns with a 'Soso CK' hosted on Thursday",
+      "summary": "Vm returns from a break with a 'Soso CK' custom tournament at 15:00 on Thursday, with a 3,000-coin entry fee. The first pairing is Vm vs ToSsGirL, with other matches including a player vs a player.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Return CK hosted by a streamer, Thursday at 15:00",
+      "teaser": "It is the host's first comeback after five years of streaming, with the first match against ToSsGirL.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-15",
+        "time": "15:00",
+        "link": "https://www.sooplive.com/station/https://bj.afreecatv.com/ever316"
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1321"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Vm returns with a 'Soso CK' hosted on Thursday",
+      "addedAt": "2026-10-15T04:30:35.242Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Google Play ASL Season 22 final: Rush vs Soulkey on October 17",
       "summary": "SOOP will host the Google Play ASL Season 22 final on October 17 at a special stage in Lotte World Ice Rink, Jamsil, Seoul, played in StarCraft: Remastered. The best-of-seven final pits Terran Rush against Zerg Soulkey. Both reached the final through the semifinals.",
       "card": "Google Play ASL Season 22 final set for October 17 in Seoul",
