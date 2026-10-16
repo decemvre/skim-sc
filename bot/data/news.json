@@ -1,6 +1,124 @@
 {
   "items": [
     {
+      "headline": "ASL Season 22 final: Soulkey vs Rush on Saturday",
+      "summary": "The Google Play ASL Season 22 final is on Saturday, 17 October, at 15:00 at Lotte World Ice Rink in Seoul. Soulkey, a five-time champion, aims to keep Zerg on top, while Rush returns to the final hoping for his first ASL trophy after two runner-up finishes.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "ASL Season 22 final: Soulkey vs Rush this Saturday",
+      "teaser": "Soulkey goes for a fifth ASL title and to extend Zerg's dominance, while Rush seeks his first ASL trophy after two runner-up finishes.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-17",
+        "time": "15:00",
+        "link": null
+      },
+      "sources": [
+        "https://m.sports.naver.com/esports/article/236/0000257495",
+        "https://m.sports.naver.com/esports/article/442/0000197822"
+      ],
+      "date": "2026-10-16",
+      "id": "2026-10-16:ASL Season 22 final: Soulkey vs Rush on Saturday",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Google Play showdown: Soulkey vs SnOw on Monday night",
+      "summary": "Soulkey and SnOw meet in a Google Play nine-set showdown on Monday, 19 October at 21:00 Korean time, and both play all nine sets even if one leads 8-0. Each set pays 100,000 won, doubled to 200,000 won with a daily double chance, and a whitewash adds 300,000 won, for a maximum of 1.4 million won. Each player removes one of the seven ASL Season 22 maps.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Google Play showdown: Soulkey vs SnOw on Monday night",
+      "teaser": "A nine-set Google Play showdown with prize money per set, an optional double-chance bonus, and a whitewash reward.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-19",
+        "time": "21:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1405"
+      ],
+      "date": "2026-10-16",
+      "id": "2026-10-16:Google Play showdown: Soulkey vs SnOw on Monday night",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "KCM Race Best Season 4, week 1: Zerg 2 points, Protoss 1, Terran 0",
+      "summary": "The first week of KCM Race Best Season 4 finished on 15 October with Zerg on 2 points, Protoss on 1 and Terran on 0. Mini beat Queen and Light in a row, effOrt beat Mini and RoyaL, and soma beat Speed and SnOw to close the week.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1405"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:KCM Race Best Season 4, week 1: Zerg 2 points, Protoss 1, Terran 0",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz seal their university league win on 15 October",
+      "summary": "Dreamz sealed their star-university match on 15 October and celebrated on the gallery. Yoning said he had won two games against Terran players.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1435",
+        "https://eloboard.com/community/posts/1446"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Dreamz seal their university league win on 15 October",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Trap drops all three series on 15 October",
+      "summary": "Trap (Protoss) lost all three best-of series on 15 October: 1:3 to BTS (Zerg), 2:3 to Shine (Terran) after coming back from 0:2 to 2:2, and 1:2 to Action (Zerg). He won only one game against Action before losing the last two.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-16"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:Trap drops all three series on 15 October",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "huro and SnOw beat effOrt on 15 October",
+      "summary": "huro (Protoss) beat effOrt (Zerg) 2:1 in a best-of-three match on 15 October. SnOw (Protoss) also won 2:0 against effOrt the same day.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-16"
+      ],
+      "date": "2026-10-15",
+      "id": "2026-10-15:huro and SnOw beat effOrt on 15 October",
+      "addedAt": "2026-10-16T04:30:49.484Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "ASL S22 final: Soulkey vs Rush on Saturday",
       "summary": "Soulkey (Zerg) goes for a record fifth ASL title against Rush (Terran), who has two runner-up finishes and is chasing his first title. The final is on Saturday the 17th.",
       "spoiler": false,

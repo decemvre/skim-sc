@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T03:30:49.478Z",
+  "updated": "2026-10-16T04:30:49.484Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -551,7 +551,7 @@
       },
       "competition": {
         "raw": "[8티어CK] 단솔주최",
-        "name": "",
+        "name": "[Tier 8 CK] Hosted by Dansol",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -560,8 +560,8 @@
         "eloboard": true
       },
       "titleSource": "[8티어CK] 단솔주최",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[Tier 8 CK] Hosted by Dansol",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
