@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T22:00:49.476Z",
+  "updated": "2026-10-16T03:30:49.478Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -387,43 +387,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-14"
     },
     {
-      "key": "2026-10-16 14:00 eloboard [와플대] 애공의 유스키우기 여지니 vs 요괴버스 7판",
-      "origin": "eloboard",
-      "date": "2026-10-16",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-16T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-16",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[와플대] 애공의 유스키우기 여지니 vs 요괴버스 7판",
-        "name": "[Waffle-dae] Aegong's youth-raising: Yeojini vs Yogoe Bus, 7 games",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[와플대] 애공의 유스키우기 여지니 vs 요괴버스 7판",
-      "titleEn": "[Waffle-dae] Aegong's youth-raising: Yeojini vs Yogoe Bus, 7 games",
-      "needsTranslation": false,
-      "duel": [
-        "여지니",
-        "요괴버스"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-12T17:16:26.386Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-16"
-    },
-    {
       "key": "2026-10-17 15:00 유영진 vs 김민철",
       "origin": "soop",
       "date": "2026-10-17",
@@ -573,6 +536,40 @@
       "firstSeen": "2026-10-14T03:30:20.094Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-19"
+    },
+    {
+      "key": "2026-10-20 17:00 eloboard [8티어CK] 단솔주최",
+      "origin": "eloboard",
+      "date": "2026-10-20",
+      "kst": "17:00",
+      "allDay": false,
+      "at": "2026-10-20T08:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-20",
+        "time": "11:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "[8티어CK] 단솔주최",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "[8티어CK] 단솔주최",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-16T03:30:49.478Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
     },
     {
       "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
