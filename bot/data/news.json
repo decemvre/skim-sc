@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "headline": "Brood War takes the Jamsil ice rink stage on the 17th",
+      "summary": "OSEN looks at StarCraft's return to the centre of Korean esports after the closures of pro league teams, a period when the game was often dismissed as a relic. The piece presents the coming event on a Jamsil ice rink as proof that the scene can last.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Brood War takes the Jamsil ice rink stage on the 17th",
+      "teaser": "OSEN looks at how Brood War is proving it can last after pro league team closures, ahead of an event on the 17th on a Jamsil ice rink.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://m.sports.naver.com/esports/article/109/0005624370"
+      ],
+      "date": "2026-10-16",
+      "id": "2026-10-16:Brood War takes the Jamsil ice rink stage on the 17th",
+      "addedAt": "2026-10-16T10:01:07.682Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "SOOP and ASL: ten years together, Season 22 final at Lotte World on 17 Oct",
       "summary": "StarCraft remains active as an esports game, with tournaments running for nearly ten years since the pro league and major teams disappeared. Online, hundreds of millions of people have watched matches. SOOP will host the Google Play ASL Season 22 final at the Jamsil Lotte World ice rink on 17 October, with a crowd of over 1,000 expected.",
       "spoiler": false,
