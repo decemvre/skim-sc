@@ -18,7 +18,8 @@
 // Nothing on a quiet day. Never any other result: the text is built only from the schedule,
 // the news items' spoiler-free cards and the university results, and a last check drops any
 // other line that looks like a score.
-// English, links alone on their own line. Send-only: the bridge never reads the group.
+// English, links alone on their own line. The bridge reads nothing in the group but /skim
+// questions (F-287, bot/ask.mjs), which are answered at any hour.
 //
 // Which group: ~/.config/friendzy/skim-bot.json {"group": "<exact WhatsApp name>"}, and the
 // same name in the bridge's "groups". Until both are set, a post is printed, not sent.
@@ -171,10 +172,12 @@ export function patientFetch (url, { method = 'GET', headers, body, signal } = {
     })
 }
 
-export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date(), allowed = [] } = {}) {
-    // The one rule nothing overrides: 08:00-16:00 Bucharest, or not at all.
-    if (!inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
-    const body = safe(text, allowed)
+export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date(), allowed = [], asked = false } = {}) {
+    // 08:00-16:00 Bucharest for everything the bot says by itself. An answer to somebody's
+    // /skim question (F-287) is not the bot speaking up: it goes whenever it was asked, and
+    // says what was asked for - a result included, when that is the question.
+    if (!asked && !inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
+    const body = asked ? text : safe(text, allowed)
     if (!group || dryRun) return { sent: false, printed: body, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
     let r
     try {

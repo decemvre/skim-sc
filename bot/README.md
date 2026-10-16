@@ -2,7 +2,11 @@
 
 Keeps SkiM SC current and tells the group chat what is on: today's Korean Brood War matches
 and news, in English, with players under their IDs and nicknames - never their real names.
-Runs on Silviu's machine; posts through the Friendzy WhatsApp bridge (send-only).
+Runs on Silviu's machine; posts through the Friendzy WhatsApp bridge.
+
+Ask it in the group: `/skim <question>` in Romanian or English (F-287). The bridge reads only
+messages that start with /skim; `bot/ask.mjs` has Claude Haiku search the Korean sources and
+answers in the group in the question's language - at any hour, at most 6 an hour and 30 a day.
 
 - `node bot/matches.mjs` - SOOP's official schedule -> `bot/data/matches.json`; names matched
   against Liquipedia once and kept in `bot/data/names.json` (edit it by hand to correct one).
