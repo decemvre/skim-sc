@@ -44,3 +44,14 @@ test('the group cannot run it in a loop', () => {
     assert.equal(overLimit(asked, NOW), 'hour')
     assert.equal(overLimit({}, NOW), null)
 })
+
+test('over the limit, the first question hears it once, in its language; the next waits quietly', async () => {
+    const asked = Object.fromEntries(Array.from({ length: LIMITS.hour }, (_, i) => [`m${i}`, { at: new Date(NOW - i * 60e3).toISOString() }]))
+    const posted = []
+    const sender = async (t) => { posted.push(t); return { sent: true } }
+    const model = async () => { throw new Error('not asked') }
+    await ask({ id: 'x1', text: '/skim cine joacă?', now: NOW, asked, save: () => {}, model, sender })
+    await ask({ id: 'x2', text: '/skim who plays?', now: NOW, asked, save: () => {}, model, sender })
+    assert.equal(posted.length, 1)
+    assert.match(posted[0], /Am răspuns la 15 întrebări în ultima oră/)
+})

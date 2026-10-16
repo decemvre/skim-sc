@@ -26,7 +26,7 @@ import { loadWatchlist } from './watchlist.mjs'
 export const MODEL = 'haiku'
 export const ASKED_FILE = fileURLToPath(new URL('./data/asked.json', import.meta.url))
 // How many questions the group gets answered: enough for a conversation, not for a loop.
-export const LIMITS = { hour: 6, day: 30 }
+export const LIMITS = { hour: 15, day: 60 }
 export const MAX_LINKS = 2
 const PREFIX = /^\s*[/@]skim\b[:,]?\s*/i
 
@@ -101,7 +101,7 @@ export function loadAsked (file = ASKED_FILE) {
 
 // Over the limit: how many were answered in the last hour and the last day.
 export function overLimit (asked, now = new Date()) {
-    const times = Object.values(asked).map((a) => Date.parse(a.at)).filter(Boolean)
+    const times = Object.entries(asked).filter(([id]) => !id.startsWith('_')).map(([, a]) => Date.parse(a.at)).filter(Boolean)
     const hour = times.filter((t) => now - t < 3600e3).length
     const day = times.filter((t) => now - t < 86400e3).length
     return hour >= LIMITS.hour ? 'hour' : day >= LIMITS.day ? 'day' : null
@@ -113,7 +113,19 @@ export async function ask ({ id, from, text, now = new Date(), asked = loadAsked
     if (!question) return { skipped: 'no question' }
     if (id && asked[id]) return { skipped: 'already answered' }
     const limit = overLimit(asked, now)
-    if (limit) return { skipped: `over the limit for the ${limit}` }
+    if (limit) {
+        // Said once per limit reached, not under every question after it: the first one over
+        // the hour's limit hears when to ask again, the rest wait quietly (Silviu, 16 Oct).
+        const told = Date.parse(asked._limitNotice?.at || '')
+        if (told && now - told < (limit === 'hour' ? 3600e3 : 86400e3)) return { skipped: `over the limit for the ${limit}` }
+        if (!dryRun) { asked._limitNotice = { at: now.toISOString(), limit }; save(asked) }
+        const ro = romanian(question)
+        const notice = `❓ ${from ? from + ': ' : ''}${question.slice(0, 120)}\n\n` + (limit === 'hour'
+            ? (ro ? `Am răspuns la ${LIMITS.hour} întrebări în ultima oră. Întreabă din nou peste puțin timp.` : `I have answered ${LIMITS.hour} questions in the last hour. Ask again in a little while.`)
+            : (ro ? `Am răspuns la ${LIMITS.day} întrebări azi. Revin mâine.` : `I have answered ${LIMITS.day} questions today. Back tomorrow.`))
+        const result = await sender(notice, { asked: true, dryRun })
+        return { skipped: `over the limit for the ${limit}`, reply: notice, ...result }
+    }
     let reply
     try {
         reply = replyText(from, question, await model(prompt(question, { now })))
