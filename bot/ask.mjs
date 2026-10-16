@@ -8,8 +8,8 @@
 // won given in rough US dollars too.
 //
 // The WhatsApp bridge sees the message (it reads only messages that start with /skim) and runs
-// this once per question. Claude Haiku searches the Korean sources - Naver, SOOP, Liquipedia,
-// the Korean press - and answers in the language it was asked in, players by their ID, never
+// this once per question. Claude Haiku looks in the bot's own records first, then searches Korean
+// sources - eloboard, Naver, SOOP, the Korean press; Liquipedia and tl.net only as a back-up - and answers in the language it was asked in, players by their ID, never
 // by their real name. Links alone on their own line. Then the answer goes to the group through
 // the bridge, like every other post.
 //
@@ -49,7 +49,44 @@ export const questionOf = (text) => String(text || '').replace(PREFIX, '').trim(
 // A guess at the language without a model, for the one message written when the model failed.
 export const romanian = (text) => /[ăâîșțşţ]|\b(cine|ce|c[aâ]nd|unde|care|azi|m[aâ]ine|meci|meciul|joac[aă]|cum|c[aâ]t)\b/i.test(text)
 
-export function prompt (question, { watchlist = loadWatchlist(), now = new Date() } = {}) {
+export const NEWS_FILE = fileURLToPath(new URL('./data/news.json', import.meta.url))
+export const MATCHES_FILE = fileURLToPath(new URL('./data/matches.json', import.meta.url))
+const readJson = (file, empty) => { try { return JSON.parse(readFileSync(file, 'utf8')) } catch { return empty } }
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+// What Skim Bot already wrote down itself, for this question (G-116). Asked the score of that
+// week's Light vs soma, it searched the web and could not confirm it, while its own news had held
+// "soma beats Light 8-1" since the day after. The players the question names are matched against
+// the bot's news and its schedule; with no player named, the last three days' news.
+export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }).items || [], matches = readJson(MATCHES_FILE, { matches: [] }).matches || [],
+    watchlist = loadWatchlist(), now = new Date() } = {}) {
+    const people = new Map()
+    const add = (p) => { if (p?.id) people.set(p.id.toLowerCase(), { id: p.id, korean: p.korean || people.get(p.id.toLowerCase())?.korean }) }
+    for (const p of watchlist.players || []) add(p)
+    for (const m of matches) { add(m.a); add(m.b) }
+    const named = [...people.values()].filter((p) => new RegExp(`(^|[^\\p{L}])${escape(p.id)}($|[^\\p{L}])`, 'iu').test(question) || (p.korean && question.includes(p.korean)))
+    const mentions = (text) => named.filter((p) => new RegExp(`(^|[^\\p{L}])${escape(p.id)}($|[^\\p{L}])`, 'iu').test(text) || (p.korean && text.includes(p.korean))).length
+    const day = (d) => Date.parse(`${d}T00:00:00Z`)
+    const recent = (d, days) => Math.abs(now - day(d)) <= days * 86400e3
+    const pickedNews = news
+        .filter((n) => n.date && recent(n.date, named.length ? 60 : 3))
+        .map((n) => ({ n, hits: mentions(`${n.headline} ${n.summary} ${n.card || ''}`) }))
+        .filter(({ hits }) => !named.length || hits > 0)
+        .sort((x, y) => y.hits - x.hits || day(y.n.date) - day(x.n.date))
+        .slice(0, 8)
+        .map(({ n }) => `- ${n.date}: ${n.headline}. ${n.summary}${n.sources?.[0] ? ` (${n.sources[0]})` : ''}`)
+    const pickedMatches = !named.length ? [] : matches
+        .filter((m) => m.date && recent(m.date, 30) && [m.a, m.b].some((s) => s && named.some((p) => p.id.toLowerCase() === String(s.id).toLowerCase())))
+        .sort((x, y) => day(y.date) - day(x.date))
+        .slice(0, 8)
+        .map((m) => `- ${m.date} ${m.kst || ''} KST (${m.bucharest?.time || '?'} Bucharest): ${m.a?.id} (${m.a?.race || '?'}) vs ${m.b?.id} (${m.b?.race || '?'}), ${m.competition?.name || m.competition?.raw || ''}, ${m.played ? 'played' : m.status || 'scheduled'}` +
+            (m.result ? `, ${m.a?.id} ${m.result.a}-${m.result.b} ${m.b?.id}` : '') + (m.competition?.watch ? `, watch: ${m.competition.watch}` : ''))
+    if (!pickedNews.length && !pickedMatches.length) return ''
+    return [pickedNews.length ? `News Skim Bot recorded (from eloboard.com and other Korean sources, read daily):\n${pickedNews.join('\n')}` : '',
+        pickedMatches.length ? `Matches on Skim Bot's schedule:\n${pickedMatches.join('\n')}` : ''].filter(Boolean).join('\n\n')
+}
+
+export function prompt (question, { watchlist = loadWatchlist(), now = new Date(), records = ownRecords(question, { watchlist, now }) } = {}) {
     const kst = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short', hourCycle: 'h23' }).format(now)
     return `You answer questions about South Korea for a WhatsApp group of friends in Romania who do not read Korean - most of all Korean StarCraft: Brood War (players, matches, leagues such as the ASL, KSL, Race Wars, the star university leagues, streamers on SOOP/AfreecaTV), but anything about Korea: news, culture, places, food, games, prices.
 
@@ -58,8 +95,12 @@ It is now ${kst} in Korea.
 The question:
 ${question}
 
-How to answer:
-1. Search the web in Korean first - Naver (news and blogs), the Korean press, Korean community sites, and for StarCraft sooplive.com / afreecatv.com and Liquipedia (liquipedia.net/starcraft) for brackets and schedules. Translate names and terms into Korean to search. Read the pages you need; prefer the newest.
+${records ? `What we already know - Skim Bot's own records, most relevant first. Check these FIRST: if they answer the question, answer from them and give their source as the link; a score or result here is real, even when the web has nothing yet. Search the web only for what these do not cover.
+
+${records}
+
+` : ''}How to answer:
+1. Search in Korean, and almost only in Korean (Silviu, 16 Oct): translate every name and term into Korean (players by their Korean name, leagues as Koreans write them) and search Korean sources - eloboard.com (results and news, every day), Naver news, blogs and cafés, sooplive.com / afreecatv.com (schedules, VODs, boards), the Korean press (OSEN, Sports Chosun, Inven, Daily eSports, Nate sports), Korean communities (fmkorea, dcinside). Liquipedia and TeamLiquid (tl.net) are a back-up only: open them when the Korean sources have nothing, never first. Prefer the newest; a result from this week is in the Korean sources days before it reaches English ones.
 2. Answer in the language of the question: "ro" for Romanian, "en" for English. Romanian with diacritics.
 3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. Times as Korea time and Bucharest time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
 4. Players by their ID (Rush, Soulkey, Flash), never by their real name - not even in brackets. These IDs and Korean names are known: ${watchlist.players.map((p) => p.korean ? `${p.id} = ${p.korean}` : p.id).join(', ')}.
@@ -67,7 +108,7 @@ How to answer:
 6. A result (who won, a score) only when the question asks for it.
 7. If the question is not about South Korea at all, say in one line that you only answer about South Korea and Korean StarCraft.
 7b. Every amount in won is followed by its rough value in US dollars, at about 1,400 won to the dollar, in the answer's language - "₩5.000.000 (aprox. 3.600 $)" in Romanian, "₩5,000,000 (about $3,600)" in English. Round it; do not look the rate up.
-8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first. No links in "answer" itself.
+8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first, Korean sources before Liquipedia or tl.net. No links in "answer" itself.
 
 Answer with JSON only, in the given shape.`
 }

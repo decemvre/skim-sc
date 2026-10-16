@@ -55,3 +55,28 @@ test('over the limit, the first question hears it once, in its language; the nex
     assert.equal(posted.length, 1)
     assert.match(posted[0], /Am răspuns la 15 întrebări în ultima oră/)
 })
+
+test('a question is answered from the bot\'s own records first: the players it names are looked up in its news and schedule (G-116)', async () => {
+    const { ownRecords, prompt } = await import('../ask.mjs')
+    const news = [
+        { date: '2026-10-13', headline: 'soma beats Light 8-1 in Google Play special', summary: 'soma won the first eight games.', sources: ['https://eloboard.com/news/2026-10-14'] },
+        { date: '2026-10-13', headline: 'Bisu beats Speed 4-2', summary: 'Long format PvT.', sources: [] },
+    ]
+    const matches = [{ date: '2026-10-13', kst: '21:00', bucharest: { time: '15:00' }, a: { id: 'Light', race: 'T' }, b: { id: 'soma', race: 'Z' }, competition: { name: 'Ultimate Battle' }, played: true }]
+    const now = new Date('2026-10-16T12:00:00Z')
+    const records = ownRecords('cât a fost scorul la ultimul showmatch Light vs Soma?', { news, matches, watchlist: { players: [] }, now })
+    assert.match(records, /soma beats Light 8-1/)
+    assert.match(records, /eloboard\.com\/news\/2026-10-14/)
+    assert.match(records, /Light \(T\) vs soma \(Z\), Ultimate Battle, played/)
+    assert.doesNotMatch(records, /Bisu/, 'only what is about the players asked about')
+    assert.match(prompt('x', { now, records }), /Check these FIRST/)
+    assert.doesNotMatch(prompt('x', { now, records: '' }), /Check these FIRST/, 'nothing recorded, nothing said')
+})
+
+test('the search is Korean first; Liquipedia and tl.net are only a back-up (Silviu, 16 Oct)', async () => {
+    const { prompt } = await import('../ask.mjs')
+    const p = prompt('who won?', { now: new Date('2026-10-16T12:00:00Z'), records: '' })
+    assert.match(p, /Search in Korean, and almost only in Korean/)
+    assert.match(p, /eloboard\.com/)
+    assert.match(p, /Liquipedia and TeamLiquid \(tl\.net\) are a back-up only/)
+})
