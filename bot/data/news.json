@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "headline": "Rush and Soulkey meet in the ASL Season 22 final",
+      "summary": "Rush, a Terran reaching his first ASL final in eight seasons, faces Soulkey, a veteran chasing the record for most ASL titles. The final is at the Lotte World ice rink in Seoul on Saturday 17 October at 3 p.m., as part of the Google Play ASL Season 22.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Rush and Soulkey set for the ASL Season 22 final on Saturday",
+      "teaser": "Lotte World ice rink in Seoul, 3 p.m. Saturday. One finalist is going for a first ASL title, the other for the most titles ever won.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-17",
+        "time": "15:00",
+        "link": null
+      },
+      "sources": [
+        "https://m.sports.naver.com/esports/article/347/0000196099"
+      ],
+      "date": "2026-10-16",
+      "id": "2026-10-16:Rush and Soulkey meet in the ASL Season 22 final",
+      "addedAt": "2026-10-16T07:00:16.531Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "ASL Season 22 final: Soulkey vs Rush on Saturday",
       "summary": "The Google Play ASL Season 22 final is on Saturday, 17 October, at 15:00 at Lotte World Ice Rink in Seoul. Soulkey, a five-time champion, aims to keep Zerg on top, while Rush returns to the final hoping for his first ASL trophy after two runner-up finishes.",
       "spoiler": false,
