@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T22:01:07.703Z",
+  "updated": "2026-10-17T03:31:07.674Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -202,6 +202,40 @@
       "status": null,
       "onSchedule": true,
       "firstSeen": "2026-10-10T14:56:17.805Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
+    },
+    {
+      "key": "2026-10-08 20:00 eloboard CK 캄몬전대비 즉흥 ck",
+      "origin": "eloboard",
+      "date": "2026-10-08",
+      "kst": "20:00",
+      "allDay": false,
+      "at": "2026-10-08T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-08",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK 캄몬전대비 즉흥 ck",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 캄몬전대비 즉흥 ck",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-17T03:31:07.674Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
