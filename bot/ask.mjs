@@ -13,8 +13,9 @@
 // by their real name. Links alone on their own line. Then the answer goes to the group through
 // the bridge, like every other post.
 //
-// Unlike the bot's own posts it goes at any hour (somebody asked), and it says a result when
-// the question asks for one.
+// Unlike the bot's own posts it goes at any hour (somebody asked). A result - who won, a score,
+// who advanced - only when the question explicitly asks for one (Silviu, 17 Oct): otherwise the
+// bot's notes go to the model without results, and a last check drops any sentence with one.
 //
 //   node bot/ask.mjs --id <message id> --from <who asked> -- <the message>
 //   node bot/ask.mjs --dry-run -- "/skim who is in the ASL final?"
@@ -52,6 +53,18 @@ export const romanian = (text) => /[ăâîșțşţ]|\b(cine|ce|c[aâ]nd|unde|car
 export const NEWS_FILE = fileURLToPath(new URL('./data/news.json', import.meta.url))
 export const MATCHES_FILE = fileURLToPath(new URL('./data/matches.json', import.meta.url))
 const readJson = (file, empty) => { try { return JSON.parse(readFileSync(file, 'utf8')) } catch { return empty } }
+// Does the question explicitly ask for a result? (Silviu, 17 Oct: never otherwise.)
+const ASKS_RESULT = /\b(results?|scores?|who won|who lost|who wins|who will win|winner|did \w+ (win|lose|beat)|won\?|beat|final score|outcome|how did .* do)\b|rezultat|scor|c[âa]știg|castig|[îi]nvin|a b[ăa]tut|pierdut|cum s-a terminat|cum a ie[șs]it|결과|스코어|승리|우승|이겼/i
+export const asksForResult = (question) => ASKS_RESULT.test(question || '')
+
+// The last check on an answer nobody asked a result of: a sentence with a score or a
+// won/beat/advanced in it is dropped.
+const SCORE = /\b\d{1,2}\s*[-–:]\s*\d{1,2}\b(?!\s*(KST|Bucharest|Korea|Seoul|ora|time|[AaPp]M|h\b))|\b(beats?|beaten|defeat\w*|wins?|won|winner|eliminat\w*|knock\w* out|advance[sd]?|swept|sweeps?)\b|\b(a )?(câștigat|castigat|învins|invins|bătut|batut|eliminat|calificat)\b/i
+export function withoutResults (answer) {
+    const kept = String(answer).split(/(?<=[.!?])\s+|\n/).filter((s) => !SCORE.test(s))
+    return kept.join(' ').trim()
+}
+
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
 // What Skim Bot already wrote down itself, for this question (G-116). Asked the score of that
@@ -59,7 +72,7 @@ const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 // "soma beats Light 8-1" since the day after. The players the question names are matched against
 // the bot's news and its schedule; with no player named, the last three days' news.
 export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }).items || [], matches = readJson(MATCHES_FILE, { matches: [] }).matches || [],
-    watchlist = loadWatchlist(), now = new Date() } = {}) {
+    watchlist = loadWatchlist(), now = new Date(), results = asksForResult(question) } = {}) {
     const people = new Map()
     const add = (p) => { if (p?.id) people.set(p.id.toLowerCase(), { id: p.id, korean: p.korean || people.get(p.id.toLowerCase())?.korean }) }
     for (const p of watchlist.players || []) add(p)
@@ -73,14 +86,16 @@ export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }
         .map((n) => ({ n, hits: mentions(`${n.headline} ${n.summary} ${n.card || ''}`) }))
         .filter(({ hits }) => !named.length || hits > 0)
         .sort((x, y) => y.hits - x.hits || day(y.n.date) - day(x.n.date))
+        .filter(({ n }) => results || !n.spoiler || n.card)
         .slice(0, 8)
-        .map(({ n }) => `- ${n.date}: ${n.headline}. ${n.summary}${n.sources?.[0] ? ` (${n.sources[0]})` : ''}`)
+        // Not asked for a result: a spoiler item is told by its spoiler-free card and teaser only.
+        .map(({ n }) => `- ${n.date}: ${results || !n.spoiler ? `${n.headline}. ${n.summary}` : `${n.card}.${n.teaser ? ' ' + n.teaser : ''}`}${n.sources?.[0] ? ` (${n.sources[0]})` : ''}`)
     const pickedMatches = !named.length ? [] : matches
         .filter((m) => m.date && recent(m.date, 30) && [m.a, m.b].some((s) => s && named.some((p) => p.id.toLowerCase() === String(s.id).toLowerCase())))
         .sort((x, y) => day(y.date) - day(x.date))
         .slice(0, 8)
         .map((m) => `- ${m.date} ${m.kst || ''} KST (${m.bucharest?.time || '?'} Bucharest): ${m.a?.id} (${m.a?.race || '?'}) vs ${m.b?.id} (${m.b?.race || '?'}), ${m.competition?.name || m.competition?.raw || ''}, ${m.played ? 'played' : m.status || 'scheduled'}` +
-            (m.result ? `, ${m.a?.id} ${m.result.a}-${m.result.b} ${m.b?.id}` : '') + (m.competition?.watch ? `, watch: ${m.competition.watch}` : ''))
+            (m.result && results ? `, ${m.a?.id} ${m.result.a}-${m.result.b} ${m.b?.id}` : '') + (m.competition?.watch ? `, watch: ${m.competition.watch}` : ''))
     if (!pickedNews.length && !pickedMatches.length) return ''
     return [pickedNews.length ? `News Skim Bot recorded (from eloboard.com and other Korean sources, read daily):\n${pickedNews.join('\n')}` : '',
         pickedMatches.length ? `Matches on Skim Bot's schedule:\n${pickedMatches.join('\n')}` : ''].filter(Boolean).join('\n\n')
@@ -95,7 +110,7 @@ It is now ${kst} in Korea.
 The question:
 ${question}
 
-${records ? `What we already know - Skim Bot's own records, most relevant first. Check these FIRST: if they answer the question, answer from them and give their source as the link; a score or result here is real, even when the web has nothing yet. Search the web only for what these do not cover.
+${records ? `What we already know - Skim Bot's own records, most relevant first. Check these FIRST: if they answer the question, answer from them and give their source as the link${asksForResult(question) ? '; a score or result here is real, even when the web has nothing yet' : ''}. Search the web only for what these do not cover.
 
 ${records}
 
@@ -105,7 +120,7 @@ ${records}
 3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. Times as Korea time and Bucharest time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
 4. Players by their ID (Rush, Soulkey, Flash), never by their real name - not even in brackets. These IDs and Korean names are known: ${watchlist.players.map((p) => p.korean ? `${p.id} = ${p.korean}` : p.id).join(', ')}.
 5. If you did not find it, say so in one line and say what you did find. Never guess a date, a time, a score or a result.
-6. A result (who won, a score) only when the question asks for it.
+6. ${asksForResult(question) ? 'The question asks for a result: give it (who won, the score), if you found it.' : 'NO RESULTS (Silviu, 17 Oct). The question does not ask for one, so never say who won or lost, a score, who advanced, was knocked out or is in a final because of a win - not even of a match already played, not as an aside, not hinted ("a dominant performance"). Say only what was asked: when, where, who plays, where to watch.'}
 7. If the question is not about South Korea at all, say in one line that you only answer about South Korea and Korean StarCraft.
 7b. Every amount in won is followed by its rough value in US dollars, at about 1,400 won to the dollar, in the answer's language - "₩5.000.000 (aprox. 3.600 $)" in Romanian, "₩5,000,000 (about $3,600)" in English. Round it; do not look the rate up.
 8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first, Korean sources before Liquipedia or tl.net. No links in "answer" itself.
@@ -173,7 +188,9 @@ export async function ask ({ id, from, text, now = new Date(), asked = loadAsked
     }
     let reply
     try {
-        reply = replyText(from, question, await model(prompt(question, { now })))
+        const found = await model(prompt(question, { now }))
+        if (!asksForResult(question)) found.answer = withoutResults(found.answer) || (romanian(question) ? 'Nu am găsit nimic fără să dau un rezultat.' : 'I found nothing I can say without giving a result away.')
+        reply = replyText(from, question, found)
     } catch (error) {
         console.error(`ask: ${error.message}`)
         reply = `❓ ${from ? from + ': ' : ''}${question.slice(0, 120)}\n\n` + (romanian(question)

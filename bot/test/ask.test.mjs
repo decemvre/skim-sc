@@ -80,3 +80,27 @@ test('the search is Korean first; Liquipedia and tl.net are only a back-up (Silv
     assert.match(p, /eloboard\.com/)
     assert.match(p, /Liquipedia and TeamLiquid \(tl\.net\) are a back-up only/)
 })
+
+test('no result unless the question explicitly asks for one (Silviu, 17 Oct)', async () => {
+    const { ownRecords, prompt, asksForResult, withoutResults } = await import('../ask.mjs')
+    for (const q of ['who won soma vs Light?', 'did Rush win?', 'cât a fost scorul?', 'cine a câștigat ASL?', 'rezultatul de aseară?']) assert.ok(asksForResult(q), q)
+    for (const q of ['when does soma play next?', 'Link to the soma goes into it on a 7-win streak. match?', 'ce face Flash azi?', 'unde văd finala ASL?']) assert.ok(!asksForResult(q), q)
+    const news = [{ date: '2026-10-13', headline: 'soma beats Light 8-1 in Google Play special', summary: 'soma won the first eight games.', spoiler: true,
+        card: 'soma and Light play a Google Play special', teaser: 'A long showmatch on SOOP.', sources: ['https://eloboard.com/news/2026-10-14'] }]
+    const matches = [{ date: '2026-10-13', kst: '21:00', bucharest: { time: '15:00' }, a: { id: 'Light', race: 'T' }, b: { id: 'soma', race: 'Z' }, competition: { name: 'Ultimate Battle' }, played: true, result: { a: 1, b: 8 } }]
+    const now = new Date('2026-10-16T12:00:00Z')
+    const quiet = ownRecords('link to the soma vs Light match?', { news, matches, watchlist: { players: [] }, now })
+    assert.match(quiet, /soma and Light play a Google Play special\. A long showmatch on SOOP/)
+    assert.doesNotMatch(quiet, /8-1|1-8|beats|won/)
+    assert.match(ownRecords('who won soma vs Light?', { news, matches, watchlist: { players: [] }, now }), /soma beats Light 8-1[\s\S]*Light 1-8 soma/)
+    assert.match(prompt('when does soma play?', { now, records: '' }), /NO RESULTS/)
+    assert.doesNotMatch(prompt('who won?', { now, records: '' }), /NO RESULTS/)
+    assert.equal(withoutResults('Soma plays Light at 19:00 KST. Soma beat Light 8-1 last week. Watch on SOOP.'), 'Soma plays Light at 19:00 KST. Watch on SOOP.')
+
+    const sent = []
+    const sender = async (text) => { sent.push(text); return { sent: true } }
+    const model = async () => ({ language: 'en', answer: 'Here is the VOD. soma won 8-1.', links: ['https://sooplive.com/x'] })
+    await ask({ from: 'Andrei', text: '/skim link to the soma vs Light match?', now: NOW, asked: {}, save: () => {}, model, sender })
+    assert.doesNotMatch(sent[0], /8-1|won/)
+    assert.match(sent[0], /Here is the VOD\./)
+})
