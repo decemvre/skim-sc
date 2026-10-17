@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T11:30:07.669Z",
+  "updated": "2026-10-17T16:15:07.680Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -461,7 +461,12 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17",
+      "result": {
+        "a": 3,
+        "b": 4,
+        "source": "https://liquipedia.net/starcraft/ASL/22"
+      }
     },
     {
       "key": "2026-10-17 18:00 eloboard [미니대전] BGM vs 와플대",
