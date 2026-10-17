@@ -12,11 +12,14 @@
 //               morning's post. Never news on a weekend.
 //   - reminder  30 minutes before a major match, any day - if that moment is inside the window.
 //
-//   - results   NEVER (Silviu, 17 Oct): no result is shown unless a question asks for one
-//               (/skim, bot/ask.mjs). The university team results posted since 12 Oct stop too.
+//   - results   the result of a match between star-university teams, once known (12 Oct): in
+//               the morning post, with the news during the week, on its own at a weekend.
+//               The only result ever posted unasked (Silviu, 17 Oct); /skim gives others
+//               only when a question asks for one (bot/ask.mjs).
 //
-// Nothing on a quiet day. The text is built only from the schedule and the news items'
-// spoiler-free cards, and a last check drops any line that looks like a score.
+// Nothing on a quiet day. Never any other result: the text is built only from the schedule,
+// the news items' spoiler-free cards and the university results, and a last check drops any
+// other line that looks like a score.
 // English, links alone on their own line. The bridge reads nothing in the group but /skim
 // questions (F-287, bot/ask.mjs), which are answered at any hour.
 //
@@ -82,10 +85,10 @@ export function freshCards (news, posted, now = new Date(), watchlist = loadWatc
         !(i.sources || []).some((s) => /tl\.net|teamliquid/i.test(s)) && now - Date.parse(i.addedAt || 0) < 5 * 86400000).slice(0, 6)
 }
 
-// University team results were posted from 12 Oct; since 17 Oct no result goes to the group
-// unasked (Silviu), so there are never any to post.
-export function freshResults () {
-    return []
+// University team results not posted yet (Silviu, 12 Oct), from the last two days, oldest first.
+export function freshResults (news, posted, now = new Date()) {
+    return (news.items || []).filter((i) => i.teamResult && !(posted.results || {})[i.id] && now - Date.parse(i.addedAt || 0) < 2 * 86400000)
+        .sort((x, y) => String(x.date).localeCompare(String(y.date)))
 }
 const resultLines = (results) => results.map((r) => r.teamResult)
 
