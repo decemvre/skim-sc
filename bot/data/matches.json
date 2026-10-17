@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T06:01:07.671Z",
+  "updated": "2026-10-17T11:30:07.669Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -457,10 +457,10 @@
           "Iron Wall"
         ]
       },
-      "played": false,
-      "status": "Upcoming",
+      "played": true,
+      "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
-      "onSchedule": false,
+      "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
     },
     {
