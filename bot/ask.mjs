@@ -60,8 +60,16 @@ export const asksForResult = (question) => ASKS_RESULT.test(question || '')
 // The last check on an answer nobody asked a result of: a sentence with a score or a
 // won/beat/advanced in it is dropped.
 const SCORE = /\b\d{1,2}\s*[-–:]\s*\d{1,2}\b(?!\s*(KST|Bucharest|Korea|Seoul|ora|time|[AaPp]M|h\b))|\b(beats?|beaten|defeat\w*|wins?|won|winner|eliminat\w*|knock\w* out|advance[sd]?|swept|sweeps?)\b|\b(a )?(câștigat|castigat|învins|invins|bătut|batut|eliminat|calificat)\b/i
-export function withoutResults (answer) {
-    const kept = String(answer).split(/(?<=[.!?])\s+|\n/).filter((s) => !SCORE.test(s))
+// University team results are the exception (Silviu, 17 Oct), as in the group posts: a sentence
+// with one of the known ones - its score and one of its teams - stays.
+export function teamResults (news = readJson(NEWS_FILE, { items: [] }).items || []) {
+    return news.map((n) => String(n.teamResult || '').match(/^(?:.*?:\s*)?(.+?)\s+(\d+)\s*[-–:]\s*(\d+)\s+(.+)$/))
+        .filter(Boolean).map(([, a, x, y, b]) => ({ a: a.trim(), b: b.trim(), x, y }))
+}
+const isTeamResult = (sentence, known) => known.some((r) => new RegExp(`\\b(${r.x}\\s*[-–:]\\s*${r.y}|${r.y}\\s*[-–:]\\s*${r.x})\\b`).test(sentence) &&
+    [r.a, r.b].some((t) => sentence.toLowerCase().includes(t.toLowerCase())))
+export function withoutResults (answer, known = []) {
+    const kept = String(answer).split(/(?<=[.!?])\s+|\n/).filter((s) => !SCORE.test(s) || isTeamResult(s, known))
     return kept.join(' ').trim()
 }
 
@@ -86,10 +94,10 @@ export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }
         .map((n) => ({ n, hits: mentions(`${n.headline} ${n.summary} ${n.card || ''}`) }))
         .filter(({ hits }) => !named.length || hits > 0)
         .sort((x, y) => y.hits - x.hits || day(y.n.date) - day(x.n.date))
-        .filter(({ n }) => results || !n.spoiler || n.card)
+        .filter(({ n }) => results || !n.spoiler || n.card || n.teamResult)
         .slice(0, 8)
         // Not asked for a result: a spoiler item is told by its spoiler-free card and teaser only.
-        .map(({ n }) => `- ${n.date}: ${results || !n.spoiler ? `${n.headline}. ${n.summary}` : `${n.card}.${n.teaser ? ' ' + n.teaser : ''}`}${n.sources?.[0] ? ` (${n.sources[0]})` : ''}`)
+        .map(({ n }) => `- ${n.date}: ${results || !n.spoiler ? `${n.headline}. ${n.summary}` : `${n.card}.${n.teaser ? ' ' + n.teaser : ''}${n.teamResult ? ` University result: ${n.teamResult}.` : ''}`}${n.sources?.[0] ? ` (${n.sources[0]})` : ''}`)
     const pickedMatches = !named.length ? [] : matches
         .filter((m) => m.date && recent(m.date, 30) && [m.a, m.b].some((s) => s && named.some((p) => p.id.toLowerCase() === String(s.id).toLowerCase())))
         .sort((x, y) => day(y.date) - day(x.date))
@@ -120,7 +128,7 @@ ${records}
 3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. Times as Korea time and Bucharest time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
 4. Players by their ID (Rush, Soulkey, Flash), never by their real name - not even in brackets. These IDs and Korean names are known: ${watchlist.players.map((p) => p.korean ? `${p.id} = ${p.korean}` : p.id).join(', ')}.
 5. If you did not find it, say so in one line and say what you did find. Never guess a date, a time, a score or a result.
-6. ${asksForResult(question) ? 'The question asks for a result: give it (who won, the score), if you found it.' : 'NO RESULTS (Silviu, 17 Oct). The question does not ask for one, so never say who won or lost, a score, who advanced, was knocked out or is in a final because of a win - not even of a match already played, not as an aside, not hinted ("a dominant performance"). Say only what was asked: when, where, who plays, where to watch.'}
+6. ${asksForResult(question) ? 'The question asks for a result: give it (who won, the score), if you found it.' : 'NO RESULTS (Silviu, 17 Oct). The question does not ask for one, so never say who won or lost, a score, who advanced, was knocked out or is in a final because of a win - not even of a match already played, not as an aside, not hinted ("a dominant performance"). Say only what was asked: when, where, who plays, where to watch. The one exception: a university team result written in the records as "University result: ..." may be given - the event, both teams and the team score, nothing about the games of a single player.'}
 7. If the question is not about South Korea at all, say in one line that you only answer about South Korea and Korean StarCraft.
 7b. Every amount in won is followed by its rough value in US dollars, at about 1,400 won to the dollar, in the answer's language - "₩5.000.000 (aprox. 3.600 $)" in Romanian, "₩5,000,000 (about $3,600)" in English. Round it; do not look the rate up.
 8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first, Korean sources before Liquipedia or tl.net. No links in "answer" itself.
@@ -189,7 +197,7 @@ export async function ask ({ id, from, text, now = new Date(), asked = loadAsked
     let reply
     try {
         const found = await model(prompt(question, { now }))
-        if (!asksForResult(question)) found.answer = withoutResults(found.answer) || (romanian(question) ? 'Nu am găsit nimic fără să dau un rezultat.' : 'I found nothing I can say without giving a result away.')
+        if (!asksForResult(question)) found.answer = withoutResults(found.answer, teamResults()) || (romanian(question) ? 'Nu am găsit nimic fără să dau un rezultat.' : 'I found nothing I can say without giving a result away.')
         reply = replyText(from, question, found)
     } catch (error) {
         console.error(`ask: ${error.message}`)

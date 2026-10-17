@@ -104,3 +104,14 @@ test('no result unless the question explicitly asks for one (Silviu, 17 Oct)', a
     assert.doesNotMatch(sent[0], /8-1|won/)
     assert.match(sent[0], /Here is the VOD\./)
 })
+
+test('university team results are the exception: given unasked, as in the group posts (Silviu, 17 Oct)', async () => {
+    const { ownRecords, teamResults, withoutResults } = await import('../ask.mjs')
+    const news = [{ date: '2026-10-15', headline: 'Dreamz beat Calm MonstarZ 4-2', summary: 'Rush won the ace match.', spoiler: true,
+        card: 'Dreamz and Calm MonstarZ meet in the University Clash', teaser: null, teamResult: 'University Clash: Dreamz 4-2 Calm MonstarZ' }]
+    const records = ownRecords('what is new in the university leagues?', { news, matches: [], watchlist: { players: [] }, now: new Date('2026-10-16T12:00:00Z') })
+    assert.match(records, /University result: University Clash: Dreamz 4-2 Calm MonstarZ/)
+    assert.doesNotMatch(records, /Rush won/, 'not the player games')
+    const known = teamResults(news)
+    assert.equal(withoutResults('Dreamz beat Calm MonstarZ 4-2. Rush won the ace 2-0. More next week.', known), 'Dreamz beat Calm MonstarZ 4-2. More next week.')
+})
