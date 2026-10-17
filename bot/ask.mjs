@@ -61,7 +61,10 @@ export const asksForResult = (question) => ASKS_RESULT.test(question || '')
 
 // The last check on an answer nobody asked a result of: a sentence with a score or a
 // won/beat/advanced in it is dropped.
-const SCORE = /\b\d{1,2}\s*[-–:]\s*\d{1,2}\b(?!\s*(KST|Bucharest|Korea|Seoul|ora|time|[AaPp]M|h\b))|\b(beats?|beaten|defeat\w*|wins?|won|winner|eliminat\w*|knock\w* out|advance[sd]?|swept|sweeps?)\b|\b(a )?(câștigat|castigat|învins|invins|bătut|batut|eliminat|calificat)\b/i
+// A score is 4-2, 3–1 or 3:1. Never hh:mm: a colon before two digits is a clock time, wherever
+// the zone is written, or the sentence that answered "what time" was dropped as a result
+// ("21:00 KST, 15:00 in Bucharest" lost the whole line, Silviu 17 Oct).
+const SCORE = /\b\d{1,2}\s*[-–]\s*\d{1,2}\b(?!\s*(KST|Bucharest|Korea|Seoul|ora|time|[AaPp]M|h\b))|\b\d{1,2}\s*:\s*\d\b|\b(beats?|beaten|defeat\w*|wins?|won|winner|eliminat\w*|knock\w* out|advance[sd]?|swept|sweeps?)\b|\b(a )?(câștigat|castigat|învins|invins|bătut|batut|eliminat|calificat)\b/i
 // University team results are the exception (Silviu, 17 Oct), as in the group posts: a sentence
 // with one of the known ones - its score and one of its teams - stays.
 export function teamResults (news = readJson(NEWS_FILE, { items: [] }).items || []) {

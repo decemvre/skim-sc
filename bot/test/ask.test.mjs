@@ -98,6 +98,11 @@ test('no result unless the question explicitly asks for one (Silviu, 17 Oct)', a
     assert.match(prompt('when does soma play?', { now, records: '' }), /NO RESULTS/)
     assert.doesNotMatch(prompt('who won?', { now, records: '' }), /NO RESULTS/)
     assert.equal(withoutResults('Soma plays Light at 19:00 KST. Soma beat Light 8-1 last week. Watch on SOOP.'), 'Soma plays Light at 19:00 KST. Watch on SOOP.')
+    // A time is never a score, wherever its zone is written (17 Oct: "what time" lost its answer).
+    for (const t of ['Soulkey vs SnOw is on Monday, 21:00 KST, 15:00 in Bucharest.', 'Luni la 21:00 ora Coreei (15:00 la București).', 'It starts at 21:00, 15:00 for you.'])
+        assert.equal(withoutResults(t), t, t)
+    for (const t of ['Soulkey took it 3:1.', 'It ended 4-2.', 'Scorul a fost 3–0.'])
+        assert.equal(withoutResults(t), '', t)
 
     const sent = []
     const sender = async (text) => { sent.push(text); return { sent: true } }
