@@ -141,10 +141,12 @@ export function reminderText (m, now = new Date()) {
     return [`🤖 Starting in ${minutes} minutes`, lines.join('\n'), ...(m.competition.watch ? ['Watch live:', m.competition.watch] : [])].join('\n\n')
 }
 
-// Matches starting in the next REMIND_MIN (plus the watcher's 15 minutes of slack) not yet reminded.
+// Matches starting within REMIND_MIN, not yet reminded. Within it, not within it plus the timer's
+// 15 minutes: with that slack the :15 run caught every match on the hour, and reminders went out
+// 45 minutes before (Silviu, 17 Oct). The run every 15 minutes still lands one inside the 30.
 export function dueReminders (matches, posted, now = new Date()) {
     return matches.filter((m) => m.competition.big && m.onSchedule && !m.played && !posted.reminders[m.key] &&
-        Date.parse(m.at) - now > 0 && Date.parse(m.at) - now <= (REMIND_MIN + 15) * 60000)
+        Date.parse(m.at) - now > 0 && Date.parse(m.at) - now <= REMIND_MIN * 60000)
 }
 
 // The last line of defence: nothing that looks like a result leaves this machine, but for the

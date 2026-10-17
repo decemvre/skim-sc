@@ -38,6 +38,9 @@ test('a reminder half an hour before a big match, once', async () => {
     const list = [m({}), m({key: 'k2', competition: {name: 'Ultimate Battle', big: false}})];
     assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T05:35:00Z')).map((x) => x.key), ['k1']);
     assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T04:00:00Z')), [], 'too early');
+    // The :15 run before a match on the hour is 45 minutes early; the :30 run is the one (17 Oct).
+    assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T05:15:00Z')), [], '45 minutes is too early');
+    assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T05:30:20Z')).map((x) => x.key), ['k1'], 'the :30 run, timer jitter and all');
     const sent = [];
     const posted = {mornings: {}, reminders: {}, news: {}};
     const sender = async (text) => { sent.push(text); return {sent: true, status: 'delivered'}; };
