@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T16:15:07.680Z",
+  "updated": "2026-10-17T17:16:07.671Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -202,40 +202,6 @@
       "status": null,
       "onSchedule": true,
       "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
-    },
-    {
-      "key": "2026-10-08 20:00 eloboard CK 캄몬전대비 즉흥 ck",
-      "origin": "eloboard",
-      "date": "2026-10-08",
-      "kst": "20:00",
-      "allDay": false,
-      "at": "2026-10-08T11:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-08",
-        "time": "14:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK 캄몬전대비 즉흥 ck",
-        "name": "",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 캄몬전대비 즉흥 ck",
-      "titleEn": null,
-      "needsTranslation": true,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-17T03:31:07.674Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
@@ -461,12 +427,12 @@
       "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
-      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17",
       "result": {
         "a": 3,
         "b": 4,
         "source": "https://liquipedia.net/starcraft/ASL/22"
-      }
+      },
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
     },
     {
       "key": "2026-10-17 18:00 eloboard [미니대전] BGM vs 와플대",
@@ -501,6 +467,43 @@
       "onSchedule": true,
       "firstSeen": "2026-10-14T05:31:20.111Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
+    },
+    {
+      "key": "2026-10-18 19:00 eloboard CK [미니대전] 신세계 vs 더블비 17시",
+      "origin": "eloboard",
+      "date": "2026-10-18",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-18T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-18",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK [미니대전] 신세계 vs 더블비 17시",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [미니대전] 신세계 vs 더블비 17시",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": [
+        "신세계",
+        "더블비"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-17T17:16:07.671Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-18"
     },
     {
       "key": "2026-10-19 19:00 eloboard [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
