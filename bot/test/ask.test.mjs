@@ -73,12 +73,14 @@ test('a question is answered from the bot\'s own records first: the players it n
     assert.doesNotMatch(prompt('x', { now, records: '' }), /Check these FIRST/, 'nothing recorded, nothing said')
 })
 
-test('the search is Korean first; Liquipedia and tl.net are only a back-up (Silviu, 16 Oct)', async () => {
+test('Korean sources first for anything Korean; anywhere for StarCraft outside Korea (Silviu, 16 and 17 Oct)', async () => {
     const { prompt } = await import('../ask.mjs')
     const p = prompt('who won?', { now: new Date('2026-10-16T12:00:00Z'), records: '' })
-    assert.match(p, /Search in Korean, and almost only in Korean/)
+    assert.match(p, /For anything Korean .* search in Korean first/)
     assert.match(p, /eloboard\.com/)
-    assert.match(p, /Liquipedia and TeamLiquid \(tl\.net\) are a back-up only/)
+    assert.match(p, /search anywhere: Google, YouTube/)
+    assert.match(p, /StarCraft anywhere in the world - Brood War and StarCraft II/)
+    assert.doesNotMatch(p, /only answer about South Korea and Korean StarCraft/)
 })
 
 test('no result unless the question explicitly asks for one (Silviu, 17 Oct)', async () => {

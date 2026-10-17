@@ -4,12 +4,14 @@
 //   /skim cine joacă azi în ASL?
 //   /skim when is Rush's next match?
 //
-// About South Korea broadly, Korean StarCraft most of all (Silviu, 16 Oct), with every amount in
-// won given in rough US dollars too.
+// About Korean StarCraft most of all, StarCraft anywhere in the world, and South Korea broadly
+// (Silviu, 16 and 17 Oct), with every amount in won given in rough US dollars too. Only these
+// answers range that wide: the bot's own posts stay Korean Brood War (bot/post.mjs, lib/scope.mjs).
 //
 // The WhatsApp bridge sees the message (it reads only messages that start with /skim) and runs
-// this once per question. Claude Haiku looks in the bot's own records first, then searches Korean
-// sources - eloboard, Naver, SOOP, the Korean press; Liquipedia and tl.net only as a back-up - and answers in the language it was asked in, players by their ID, never
+// this once per question. Claude Haiku looks in the bot's own records first, then searches - Korean
+// sources first for anything Korean (eloboard, Naver, SOOP, the Korean press), and anywhere else,
+// Google, YouTube, Liquipedia, tl.net, for StarCraft outside Korea - and answers in the language it was asked in, players by their ID, never
 // by their real name. Links alone on their own line. Then the answer goes to the group through
 // the bridge, like every other post.
 //
@@ -111,7 +113,7 @@ export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }
 
 export function prompt (question, { watchlist = loadWatchlist(), now = new Date(), records = ownRecords(question, { watchlist, now }) } = {}) {
     const kst = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short', hourCycle: 'h23' }).format(now)
-    return `You answer questions about South Korea for a WhatsApp group of friends in Romania who do not read Korean - most of all Korean StarCraft: Brood War (players, matches, leagues such as the ASL, KSL, Race Wars, the star university leagues, streamers on SOOP/AfreecaTV), but anything about Korea: news, culture, places, food, games, prices.
+    return `You answer questions for a WhatsApp group of friends in Romania, experienced StarCraft players who do not read Korean. Most of all about Korean StarCraft: Brood War (players, matches, leagues such as the ASL, KSL, Race Wars, the star university leagues, streamers on SOOP/AfreecaTV); also StarCraft anywhere in the world - Brood War and StarCraft II, players, tournaments, streams, videos, history; and anything about South Korea: news, culture, places, food, games, prices.
 
 It is now ${kst} in Korea.
 
@@ -123,15 +125,15 @@ ${records ? `What we already know - Skim Bot's own records, most relevant first.
 ${records}
 
 ` : ''}How to answer:
-1. Search in Korean, and almost only in Korean (Silviu, 16 Oct): translate every name and term into Korean (players by their Korean name, leagues as Koreans write them) and search Korean sources - eloboard.com (results and news, every day), Naver news, blogs and cafés, sooplive.com / afreecatv.com (schedules, VODs, boards), the Korean press (OSEN, Sports Chosun, Inven, Daily eSports, Nate sports), Korean communities (fmkorea, dcinside). Liquipedia and TeamLiquid (tl.net) are a back-up only: open them when the Korean sources have nothing, never first. Prefer the newest; a result from this week is in the Korean sources days before it reaches English ones.
+1. Where to search (Silviu, 16 and 17 Oct). For anything Korean - Korean players, Korean leagues, Korea itself - search in Korean first: translate every name and term into Korean (players by their Korean name, leagues as Koreans write them) and search Korean sources - eloboard.com (results and news, every day), Naver news, blogs and cafés, sooplive.com / afreecatv.com (schedules, VODs, boards), the Korean press (OSEN, Sports Chosun, Inven, Daily eSports, Nate sports), Korean communities (fmkorea, dcinside); a result from this week is in the Korean sources days before it reaches English ones. For StarCraft outside Korea, or when the Korean sources have nothing, search anywhere: Google, YouTube (VODs, casts, interviews), Liquipedia, TeamLiquid (tl.net), Reddit, the players' and tournaments' own pages. Prefer the newest.
 2. Answer in the language of the question: "ro" for Romanian, "en" for English. Romanian with diacritics.
 3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. Times as Korea time and Bucharest time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
 4. Players by their ID (Rush, Soulkey, Flash), never by their real name - not even in brackets. These IDs and Korean names are known: ${watchlist.players.map((p) => p.korean ? `${p.id} = ${p.korean}` : p.id).join(', ')}.
 5. If you did not find it, say so in one line and say what you did find. Never guess a date, a time, a score or a result.
 6. ${asksForResult(question) ? 'The question asks for a result: give it (who won, the score), if you found it.' : 'NO RESULTS (Silviu, 17 Oct). The question does not ask for one, so never say who won or lost, a score, who advanced, was knocked out or is in a final because of a win - not even of a match already played, not as an aside, not hinted ("a dominant performance"). Say only what was asked: when, where, who plays, where to watch. The one exception: a university team result written in the records as "University result: ..." may be given - the event, both teams and the team score, nothing about the games of a single player.'}
-7. If the question is not about South Korea at all, say in one line that you only answer about South Korea and Korean StarCraft.
+7. If the question is about neither StarCraft nor South Korea, say in one line that you answer about StarCraft and South Korea.
 7b. Every amount in won is followed by its rough value in US dollars, at about 1,400 won to the dollar, in the answer's language - "₩5.000.000 (aprox. 3.600 $)" in Romanian, "₩5,000,000 (about $3,600)" in English. Round it; do not look the rate up.
-8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first, Korean sources before Liquipedia or tl.net. No links in "answer" itself.
+8. "links": at most ${MAX_LINKS} source URLs you actually read that back the answer, best first; for a Korean topic, Korean sources first. No links in "answer" itself.
 
 Answer with JSON only, in the given shape.`
 }

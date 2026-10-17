@@ -17,6 +17,9 @@
 //               The only result ever posted unasked (Silviu, 17 Oct); /skim gives others
 //               only when a question asks for one (bot/ask.mjs).
 //
+// Korean StarCraft: Brood War only (Silviu, 17 Oct): /skim answers about StarCraft anywhere and
+// about Korea, but what the bot posts unasked stays Korean Brood War (lib/scope.mjs).
+//
 // Nothing on a quiet day. Never any other result: the text is built only from the schedule,
 // the news items' spoiler-free cards and the university results, and a last check drops any
 // other line that looks like a score.
