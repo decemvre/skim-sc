@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T20:31:07.671Z",
+  "updated": "2026-10-18T00:16:07.684Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -469,20 +469,20 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
     },
     {
-      "key": "2026-10-18 19:00 eloboard CK [미니대전] 신세계 vs 더블비 17시",
+      "key": "2026-10-18 17:00 eloboard [미니대전] 더블비 vs 신세계",
       "origin": "eloboard",
       "date": "2026-10-18",
-      "kst": "19:00",
+      "kst": "17:00",
       "allDay": false,
-      "at": "2026-10-18T10:00:00.000Z",
+      "at": "2026-10-18T08:00:00.000Z",
       "bucharest": {
         "date": "2026-10-18",
-        "time": "13:00",
+        "time": "11:00",
         "zone": "EEST"
       },
       "competition": {
-        "raw": "CK [미니대전] 신세계 vs 더블비 17시",
-        "name": "",
+        "raw": "[미니대전] 더블비 vs 신세계",
+        "name": "[Mini-Match] Double B vs New World",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -490,19 +490,19 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK [미니대전] 신세계 vs 더블비 17시",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleSource": "[미니대전] 더블비 vs 신세계",
+      "titleEn": "[Mini-Match] Double B vs New World",
+      "needsTranslation": false,
       "duel": [
-        "신세계",
-        "더블비"
+        "더블비",
+        "신세계"
       ],
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-17T17:16:07.671Z",
+      "firstSeen": "2026-10-18T00:16:07.684Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-18"
     },
     {
