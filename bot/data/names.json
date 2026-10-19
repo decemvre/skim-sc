@@ -16,6 +16,15 @@
       "source": "https://liquipedia.net/starcraft/ggaemo",
       "checked": "2026-10-10"
     },
+    "김도우": {
+      "id": "Classic",
+      "romanized": "Kim Doh Woo",
+      "race": "T",
+      "nicknames": [],
+      "soop": null,
+      "source": "https://liquipedia.net/starcraft/Classic",
+      "checked": "2026-10-19"
+    },
     "김명운": {
       "id": "Queen",
       "romanized": "Kim Myung Woon",
@@ -544,6 +553,7 @@
     "극락회": "2026-10-19",
     "기념": "2026-10-11",
     "김세주": "2026-10-10",
+    "김아린": "2026-10-19",
     "김유진": "2026-10-14",
     "김철민": "2026-10-15",
     "다린": "2026-10-19",

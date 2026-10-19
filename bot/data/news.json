@@ -1,6 +1,155 @@
 {
   "items": [
     {
+      "headline": "Soulkey beats Rush 4-3 to win ASL Season 22",
+      "summary": "Soulkey beat Rush 4-3 in the Season 22 final on Saturday, October 17, winning his fifth ASL title. The final was held at an ice rink in Seoul's Lotte World with about 1,500 fans, and fan posts and videos from the event were shared afterwards.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "ASL Season 22 final at the Lotte World ice rink in Seoul, and fan reactions",
+      "teaser": "SOOP's ASL Season 22 final drew about 1,500 fans to an ice rink in Seoul's Lotte World. Fan videos and posts from the event are included too.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://m.sports.naver.com/esports/article/439/0000033779",
+        "https://m.sports.naver.com/esports/article/076/0004457335",
+        "https://eloboard.com/community/posts/1688",
+        "https://eloboard.com/community/posts/1683",
+        "https://eloboard.com/community/posts/1686",
+        "https://eloboard.com/community/posts/1680"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Soulkey beats Rush 4-3 to win ASL Season 22",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats RoyaL 4-3 in a 1:1 best-of-seven",
+      "summary": "soma (Zerg) beat RoyaL (Terran) 4-3 in a best-of-seven 1:1 series on October 18. He led 3-1, lost the next two games to make it 3-3, then won the seventh game.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "soma and RoyaL play a best-of-seven 1:1 series",
+      "teaser": "The best-of-seven 1:1 series between soma and RoyaL on October 18 went the full seven games.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-19"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:soma beats RoyaL 4-3 in a 1:1 best-of-seven",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Sharp beats effOrt 2-1 and 2-0 in two 1:1 series",
+      "summary": "Sharp (Terran) beat effOrt (Zerg) 2-1 in their first best-of-three 1:1 series on October 18, then 2-0 in the second. The first series went to a third game.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Sharp and effOrt meet twice in best-of-three 1:1 series",
+      "teaser": "Two best-of-three 1:1 series between Sharp and effOrt were played on October 18. One of them went to a third game.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-19"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Sharp beats effOrt 2-1 and 2-0 in two 1:1 series",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Double B beats New World 2-0 in Sunday's university clash",
+      "summary": "Double B beat New World 2-0 in their Sunday university clash. Before the match, Bbanghun posted the lineup poster and warned about the mini match.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Double B vs New World university clash, with Bbanghun's pre-match lineup poster",
+      "teaser": "Bbanghun posted the lineup poster for the Sunday 5 pm Double B vs New World clash, with a warning about the mini match.",
+      "teamResult": "University Clash: Double B 2-0 New World",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1675"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Double B beats New World 2-0 in Sunday's university clash",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Individual results from several star university matches on October 18",
+      "summary": "Yoning (Dreamz) beat Jiduudu (Calm MonstarZ) 2-1, then 2-0 in a rematch. Namdeokseon (Calm MonstarZ) beat Tomato 2-0, Gaengidda (Black Academy) beat Meonjin 2-0 and Eunseo 2-1, and Bongsoon (New World) beat Hiueng 2-0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Individual results from several star university matches on October 18",
+      "teaser": "Players from Dreamz, Calm MonstarZ, Black Academy and New World played 1:1 games in star university matches on October 18.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-19"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Individual results from several star university matches on October 18",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Former pro Classic plans a StarCraft 1 streaming comeback",
+      "summary": "Former STX Terran pro Classic says they will start streaming StarCraft 1 next week. They plan to go live on Tuesday at around 7 pm.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Former pro Classic plans a StarCraft 1 streaming comeback",
+      "teaser": "The announcement was posted on the evening of October 18, saying the StarCraft 1 streams start next week.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1725"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Former pro Classic plans a StarCraft 1 streaming comeback",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Danyu holds his last broadcast on October 18, giving away leftover goods",
+      "summary": "Danyu announced that the 6 pm broadcast on October 18 would be the last, with leftover goods and star university items given away. The previous night he did a Reze cosplay as a pledge.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Danyu's last broadcast: giveaways of leftover goods and star university items",
+      "teaser": "The final stream was set for 6 pm on October 18, with giveaways and a drinking segment.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1692"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Danyu holds his last broadcast on October 18, giving away leftover goods",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "a player posts a farewell notice thanking fans",
+      "summary": "a player posted a farewell notice on the morning of October 18 as a former K-Dae member. The notice thanked the fans who supported them and said a fuller thank-you would follow after getting home.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "a player posts a farewell notice to fans and supporters",
+      "teaser": "The notice was posted on the morning of October 18 and says a fuller thank-you will follow after getting home.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1689"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:a player posts a farewell notice thanking fans",
+      "addedAt": "2026-10-19T05:30:07.677Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Soulkey beats Rush 4-3 to win ASL Season 22, his fifth title",
       "summary": "Soulkey won the Google Play ASL Season 22 final 4-3 against Rush at Lotte World Ice Rink in Seoul on 17 October. He came back in the fifth set to take a 3-2 lead, then closed out the series. It is his fifth ASL title, the first time anyone has won five.",
       "spoiler": true,
