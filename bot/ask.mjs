@@ -3,6 +3,7 @@
 //
 //   /skim cine joacă azi în ASL?
 //   /skim when is Rush's next match?
+//   /skim help  (or /skim ajutor) - what it can do, F-344
 //
 // About Korean StarCraft most of all, StarCraft anywhere in the world, and South Korea broadly
 // (Silviu, 16 and 17 Oct), with every amount in won given in rough US dollars too. Only these
@@ -26,7 +27,7 @@ import { execFile } from 'node:child_process'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { send } from './post.mjs'
+import { send, SITE, REMIND_MIN } from './post.mjs'
 import { loadWatchlist } from './watchlist.mjs'
 
 export const MODEL = 'haiku'
@@ -174,17 +175,70 @@ export function loadAsked (file = ASKED_FILE) {
 
 // Over the limit: how many were answered in the last hour and the last day.
 export function overLimit (asked, now = new Date()) {
-    const times = Object.entries(asked).filter(([id]) => !id.startsWith('_')).map(([, a]) => Date.parse(a.at)).filter(Boolean)
+    const times = Object.entries(asked).filter(([id, a]) => !id.startsWith('_') && !a?.help).map(([, a]) => Date.parse(a.at)).filter(Boolean)
     const hour = times.filter((t) => now - t < 3600e3).length
     const day = times.filter((t) => now - t < 86400e3).length
     return hour >= LIMITS.hour ? 'hour' : day >= LIMITS.day ? 'day' : null
 }
 
+// "/skim help" (F-344): what Skim Bot does and how to ask it, written here rather than by the
+// model, so it is the same every time and costs nothing. "/skim ajutor" is the Romanian, and a
+// /skim with nothing after it gets the help too, as the likeliest thing it means.
+const HELP_WORDS = /^(help|ajutor|\?|commands|comenzi)\W*$/i
+export const asksForHelp = (question) => !question || HELP_WORDS.test(question)
+
+export function helpText (ro = false) {
+    return (ro ? [
+        '🤖 *Skim Bot* - ce știu să fac',
+        '',
+        '*Întreabă-mă* scriind /skim și întrebarea, în română sau engleză:',
+        '/skim cine joacă azi în ASL?',
+        '/skim când e următorul meci al lui Rush?',
+        '/skim ce mâncare să încerc în Seul?',
+        '',
+        '• StarCraft coreean mai ales: jucători, meciuri, ASL, KSL, ligile universitare, streamuri pe SOOP; StarCraft de oriunde, Brood War și SC2; și Coreea de Sud în general. Sumele în woni le dau și în dolari.',
+        '• Mă uit întâi în notițele mele, apoi caut în sursele coreene și pe web, și pun cel mult 2 linkuri.',
+        '• Orele le dau în ora Coreei și a Bucureștiului; jucătorii după ID, niciodată după numele real.',
+        '• Fără spoilere: spun cine a câștigat sau scorul doar dacă întrebi asta.',
+        `• Cel mult ${LIMITS.hour} întrebări pe oră și ${LIMITS.day} pe zi.`,
+        '',
+        `*Singur*, între 08:00 și 16:00 ora României: meciurile zilei dimineața, știri în zilele lucrătoare, un memento cu ${REMIND_MIN} de minute înainte de meciurile mari și rezultatele echipelor universitare.`,
+        '',
+        'Programul și știrile:',
+        '',
+        SITE,
+    ] : [
+        '🤖 *Skim Bot* - what I can do',
+        '',
+        '*Ask me* by writing /skim and your question, in English or Romanian:',
+        '/skim who plays in the ASL today?',
+        "/skim when is Rush's next match?",
+        '/skim what food should I try in Seoul?',
+        '',
+        '• Korean StarCraft most of all: players, matches, the ASL, KSL, university leagues, streams on SOOP; StarCraft anywhere, Brood War and SC2; and South Korea in general. Amounts in won come with rough dollars.',
+        '• I check my own notes first, then search Korean sources and the web, and add at most 2 links.',
+        '• Times in Korea and Bucharest time; players by their ID, never their real name.',
+        '• No spoilers: who won or the score only when that is what you ask.',
+        `• At most ${LIMITS.hour} questions an hour and ${LIMITS.day} a day.`,
+        '',
+        `*On my own*, 08:00-16:00 Bucharest time: the day's matches in the morning, news on weekdays, a reminder ${REMIND_MIN} minutes before a major match, and university team results.`,
+        '',
+        'Schedule and news:',
+        '',
+        SITE,
+    ]).join('\n')
+}
+
 export async function ask ({ id, from, text, now = new Date(), asked = loadAsked(), save = (a) => writeFileSync(ASKED_FILE, JSON.stringify(a, null, 2) + '\n'),
     model = claude, sender = send, dryRun = false } = {}) {
     const question = questionOf(text)
-    if (!question) return { skipped: 'no question' }
     if (id && asked[id]) return { skipped: 'already answered' }
+    // Help is not a question: no model, and it does not count towards the limits.
+    if (asksForHelp(question)) {
+        if (id && !dryRun) { asked[id] = { at: now.toISOString(), from: from || null, help: true }; save(asked) }
+        const reply = helpText(/ajutor|comenzi/i.test(question))
+        return { reply, ...await sender(reply, { asked: true, dryRun }) }
+    }
     const limit = overLimit(asked, now)
     if (limit) {
         // Said once per limit reached, not under every question after it: the first one over

@@ -7,6 +7,8 @@ Runs on Silviu's machine; posts through the Friendzy WhatsApp bridge.
 Ask it in the group: `/skim <question>` in Romanian or English (F-287). The bridge reads only
 messages that start with /skim; `bot/ask.mjs` has Claude Haiku search the Korean sources and
 answers in the group in the question's language - at any hour, at most 15 an hour and 60 a day; the first question over a limit is told when to ask again.
+`/skim help` (`/skim ajutor` in Romanian, or a bare `/skim`) answers with what the bot can do,
+written in `helpText()` rather than by the model, and is not counted against the limits (F-344).
 
 - `node bot/matches.mjs` - SOOP's official schedule -> `bot/data/matches.json`; names matched
   against Liquipedia once and kept in `bot/data/names.json` (edit it by hand to correct one).

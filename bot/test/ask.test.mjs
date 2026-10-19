@@ -122,3 +122,35 @@ test('university team results are the exception: given unasked, as in the group 
     const known = teamResults(news)
     assert.equal(withoutResults('Dreamz beat Calm MonstarZ 4-2. Rush won the ace 2-0. More next week.', known), 'Dreamz beat Calm MonstarZ 4-2. More next week.')
 })
+
+test('/skim help says what the bot does, without the model, in English or Romanian (F-344)', async () => {
+    const posted = []
+    const model = async () => { throw new Error('the model is not asked for help') }
+    const sender = async (t) => { posted.push(t); return { sent: true } }
+    const asked = {}
+    for (const text of ['/skim help', '/skim', '@skim ?', '/skim ajutor']) {
+        await ask({ id: text, from: 'Andrei', text, now: NOW, asked, save: () => {}, model, sender })
+    }
+    assert.equal(posted.length, 4)
+    assert.match(posted[0], /^🤖 \*Skim Bot\* - what I can do/)
+    assert.equal(posted[1], posted[0])
+    assert.equal(posted[2], posted[0])
+    assert.match(posted[3], /^🤖 \*Skim Bot\* - ce știu să fac/)
+    for (const text of posted) {
+        assert.match(text, /\/skim /, 'it shows how to ask')
+        assert.match(text, new RegExp(`${LIMITS.hour}.*${LIMITS.day}`))
+        // The link alone on its own line, a blank line above it.
+        assert.match(text, /\n\nhttps:\/\/decemvre\.github\.io\/skim-sc\/$/)
+    }
+    assert.equal(overLimit(asked, NOW), null)
+    assert.ok(Object.values(asked).every((a) => a.help), 'help is remembered, so it is answered once')
+})
+
+test('help is not counted towards the limits, and a real question with "help" in it is still a question', async () => {
+    const asked = Object.fromEntries(Array.from({ length: LIMITS.hour }, (_, i) => [`h${i}`, { at: NOW.toISOString(), help: true }]))
+    assert.equal(overLimit(asked, NOW), null)
+    let prompted = false
+    const model = async () => { prompted = true; return { language: 'en', answer: 'Use the observer.', links: [] } }
+    await ask({ text: '/skim help me find the ASL VODs', now: NOW, asked: {}, save: () => {}, model, sender: async () => ({ sent: true }) })
+    assert.ok(prompted)
+})
