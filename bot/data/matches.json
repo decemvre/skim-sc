@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T22:01:07.697Z",
+  "updated": "2026-10-19T03:45:07.673Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -519,7 +519,7 @@
       },
       "competition": {
         "raw": "[소병대] vs 베트남",
-        "name": "",
+        "name": "[Sobyeongdae] vs Vietnam",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -528,8 +528,8 @@
         "eloboard": true
       },
       "titleSource": "[소병대] vs 베트남",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "[Sobyeongdae] vs Vietnam",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -553,7 +553,7 @@
       },
       "competition": {
         "raw": "여캠 끝장전 [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-        "name": "",
+        "name": "Star Female-Cam Showdown: BGM Anna vs FA Darin (Sarang-e Broadcast)",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -562,8 +562,8 @@
         "eloboard": true
       },
       "titleSource": "여캠 끝장전 [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Star Female-Cam Showdown: BGM Anna vs FA Darin (Sarang-e Broadcast)",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -627,7 +627,7 @@
       },
       "competition": {
         "raw": "CK [8티어CK] 단솔주최",
-        "name": "",
+        "name": "8-Tier CK Hosted by Dansol",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -636,8 +636,8 @@
         "eloboard": true
       },
       "titleSource": "CK [8티어CK] 단솔주최",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "8-Tier CK Hosted by Dansol",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
