@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T04:16:14.796Z",
+  "updated": "2026-10-20T06:30:33.980Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -882,6 +882,49 @@
       "onSchedule": true,
       "firstSeen": "2026-10-14T12:15:27.726Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
+    },
+    {
+      "key": "2026-10-26 21:00 김민철 vs 유영진",
+      "origin": "soop",
+      "date": "2026-10-26",
+      "kst": "21:00",
+      "at": "2026-10-26T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-26",
+        "time": "14:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "김민철",
+        "race": "Z",
+        "id": "Soulkey",
+        "nicknames": [
+          "Iron Wall"
+        ]
+      },
+      "b": {
+        "korean": "유영진",
+        "race": "T",
+        "id": "Rush",
+        "nicknames": [
+          "Future Terran",
+          "ASLCHAMPRush"
+        ]
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-20T06:30:33.980Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-26"
     },
     {
       "key": "2026-10-28 20:00 우리할매 러브즈 vs 메디카 스타즈",
