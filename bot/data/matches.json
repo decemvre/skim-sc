@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T13:30:38.232Z",
+  "updated": "2026-10-20T16:00:38.226Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -1127,6 +1127,102 @@
       "onSchedule": true,
       "firstSeen": "2026-10-20T13:30:38.232Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-29"
+    },
+    {
+      "key": "2026-11-11 20:00 TBD vs TBD",
+      "origin": "soop",
+      "date": "2026-11-11",
+      "kst": "20:00",
+      "at": "2026-11-11T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-11",
+        "time": "13:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "team": "TBD"
+      },
+      "b": {
+        "team": "TBD"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-20T16:00:38.226Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-11"
+    },
+    {
+      "key": "2026-11-18 20:00 TBD vs TBD",
+      "origin": "soop",
+      "date": "2026-11-18",
+      "kst": "20:00",
+      "at": "2026-11-18T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-18",
+        "time": "13:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "team": "TBD"
+      },
+      "b": {
+        "team": "TBD"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-20T16:00:38.226Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-18"
+    },
+    {
+      "key": "2026-11-25 20:00 TBD vs TBD",
+      "origin": "soop",
+      "date": "2026-11-25",
+      "kst": "20:00",
+      "at": "2026-11-25T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-25",
+        "time": "13:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "team": "TBD"
+      },
+      "b": {
+        "team": "TBD"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-20T16:00:38.226Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-25"
     }
   ]
 }
