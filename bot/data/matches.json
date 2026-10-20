@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T16:00:38.226Z",
+  "updated": "2026-10-20T17:00:38.232Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -784,108 +784,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
     },
     {
-      "key": "2026-10-20 15:00 eloboard CK [BGM] 특별한추억 엠티",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-20T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "09:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [BGM] 특별한추억 엠티",
-        "name": "CK [BGM] Special Memories Retreat",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [BGM] 특별한추억 엠티",
-      "titleEn": "CK [BGM] Special Memories Retreat",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
-      "key": "2026-10-20 17:00 eloboard CK [8티어CK] 단솔주최",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-20T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "11:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [8티어CK] 단솔주최",
-        "name": "8-Tier CK Hosted by Dansol",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [8티어CK] 단솔주최",
-      "titleEn": "8-Tier CK Hosted by Dansol",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-17T20:31:07.671Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
-      "key": "2026-10-20 19:00 eloboard CK [JSA] 시조새 스타여캠 다퍼줍니다",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-20T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [JSA] 시조새 스타여캠 다퍼줍니다",
-        "name": "CK [JSA] Sijosae's Star Female-Cam Giveaway",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [JSA] 시조새 스타여캠 다퍼줍니다",
-      "titleEn": "CK [JSA] Sijosae's Star Female-Cam Giveaway",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
       "key": "2026-10-21 11:00 eloboard CK [뉴캣슬] 밍또의 요리교실",
       "origin": "eloboard",
       "date": "2026-10-21",
@@ -920,7 +818,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 14:00 eloboard 대학대전",
+      "key": "2026-10-21 14:00 eloboard 미니대전 [미니대전] 신세계 VS 소병대",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "14:00",
@@ -932,8 +830,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "대학대전",
-        "name": "University Clash",
+        "raw": "미니대전 [미니대전] 신세계 VS 소병대",
+        "name": "",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -941,16 +839,53 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "대학대전",
-      "titleEn": "University Clash",
-      "needsTranslation": false,
+      "titleSource": "미니대전 [미니대전] 신세계 VS 소병대",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": [
+        "신세계",
+        "소병대"
+      ],
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T17:00:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
+    },
+    {
+      "key": "2026-10-21 18:00 eloboard CK 수장ck 시조새 지면 죽습니다",
+      "origin": "eloboard",
+      "date": "2026-10-21",
+      "kst": "18:00",
+      "allDay": false,
+      "at": "2026-10-21T09:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-21",
+        "time": "12:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK 수장ck 시조새 지면 죽습니다",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 수장ck 시조새 지면 죽습니다",
+      "titleEn": null,
+      "needsTranslation": true,
       "duel": null,
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "firstSeen": "2026-10-20T17:00:38.232Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
@@ -1093,40 +1028,6 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
-    },
-    {
-      "key": "2026-10-29 16:00 eloboard CK [스타대학 요리 대학대전] 스타도 요리도 실력",
-      "origin": "eloboard",
-      "date": "2026-10-29",
-      "kst": "16:00",
-      "allDay": false,
-      "at": "2026-10-29T07:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-29",
-        "time": "09:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "CK [스타대학 요리 대학대전] 스타도 요리도 실력",
-        "name": "",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [스타대학 요리 대학대전] 스타도 요리도 실력",
-      "titleEn": null,
-      "needsTranslation": true,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T13:30:38.232Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-29"
     },
     {
       "key": "2026-11-11 20:00 TBD vs TBD",
