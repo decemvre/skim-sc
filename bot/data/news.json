@@ -1,6 +1,172 @@
 {
   "items": [
     {
+      "headline": "SOOP to fund a monthly high-tier tournament, announced by Sarang-e",
+      "summary": "On October 19, after his broadcast, Sarang-e announced that SOOP will sponsor a monthly tournament worth ₩1,500,000 (about $1,070). It is a one-day, 16-player bracket for the top applicants by tier, with single games in the early rounds and best-of-three from the semifinals. Prize split and format are still being discussed.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Sarang-e announces a monthly high-tier tournament sponsored by SOOP",
+      "teaser": "A one-day, 16-player bracket for the top applicants by tier. Broadcast starts at the quarterfinals, and the prize split and format are still being decided.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1843"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:SOOP to fund a monthly high-tier tournament, announced by Sarang-e",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Casters' showmatch: Soulkey beats SnOw 6:3 after trailing 0:2",
+      "summary": "In a casters' showmatch two days after ASL Season 22 ended, Soulkey (Zerg) beat SnOw (Protoss) 6:3. He fell 0:2 behind on Odyssey and Backroom, levelled at 2:2, then won four games in a row. A fan clip from the set was posted to the gallery.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Casters' showmatch between Soulkey and SnOw, two days after ASL Season 22",
+      "teaser": "A casters' showmatch between Soulkey and SnOw, with a fan clip from the set posted to the gallery afterwards.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1791"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Casters' showmatch: Soulkey beats SnOw 6:3 after trailing 0:2",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Next casters' showmatch: Soulkey vs Rush on October 26",
+      "summary": "The next casters' showmatch, a Google Play showmatch between Soulkey and Rush, is set for Monday, October 26 at 9 p.m. Korean time, according to a poster on the news board.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Next casters' showmatch: Soulkey vs Rush on October 26",
+      "teaser": "A Google Play showmatch between Soulkey and Rush on Monday, October 26 at 9 p.m. Korean time, as posted on the news board.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-26",
+        "time": "21:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/1791"
+      ],
+      "date": "2026-10-20",
+      "id": "2026-10-20:Next casters' showmatch: Soulkey vs Rush on October 26",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats Bisu 4:2 in a 1:1 seven-game series",
+      "summary": "In a 1:1 seven-game, first-to-four series on October 19, soma (Zerg) beat Bisu (Protoss) 4:2. He won the first three games, lost Odyssey and Aiolos, and closed it out on Backroom. The day before, soma had beaten RoyaL 4:3 in the same event.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1:1 seven-game series: soma vs Bisu, October 19",
+      "teaser": "A 1:1 seven-game, first-to-four series between soma and Bisu, played the day after soma faced RoyaL in the same event.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-20"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:soma beats Bisu 4:2 in a 1:1 seven-game series",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Major Proleague: Yunjung Team beats Mong Team 2-1; Mini wins four in a row",
+      "summary": "In the Major Proleague on October 19, Yunjung Team beat Mong Team 2-1. Yunjung Team took the seven-game ProLeague set 4-3, while Mong Team won the nine-game Winners League set 5-2, with Mini winning four in a row. Jaedong then took the super-ace decider on Odyssey for Yunjung Team.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague: Yunjung Team vs Mong Team, two sets",
+      "teaser": "A Major Proleague team match on October 19, with a seven-game ProLeague set, a nine-game Winners League set and a super-ace decider.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-20"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Major Proleague: Yunjung Team beats Mong Team 2-1; Mini wins four in a row",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "K League: Action wins three straight in Winners League; team wins 2-1",
+      "summary": "On October 19, Action's team beat huro's team 2-1 in K League. huro's team took the seven-game ProLeague set 4-3, but Action won three in a row in the nine-game Winners League to take it 5-1. He then won the super-ace game against Stork.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "K League team match: Action's team vs huro's team",
+      "teaser": "A K League team match between Action's team and huro's team, ending with a super-ace decider.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-20"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:K League: Action wins three straight in Winners League; team wins 2-1",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Rush loses 1:2 to Jaedong, then wins the rematch 2:0",
+      "summary": "On October 19, ASL Season 22 runner-up Rush (Terran) met Jaedong (Zerg) twice in best-of-three series. He lost the first 1:2 on Octagon, then won the rematch 2:0 on Backroom and Octagon. He also beat n.Die_soO 2:1 in a best-of-three.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Rush plays Jaedong twice, plus a best-of-three vs n.Die_soO, October 19",
+      "teaser": "Rush, the ASL Season 22 runner-up, played Jaedong twice in best-of-three series on October 19, and also faced n.Die_soO.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-20"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Rush loses 1:2 to Jaedong, then wins the rematch 2:0",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Oct 18 league results: Susik team wins 2-0; Yunhwan team beats Kkaemo 2-1",
+      "summary": "The info board posted results of two team league events from October 18. In one, the Taesu team beat the Susik team 2-0, with Stork going 5-0. In the other, the Yunhwan team beat the Kkaemo team 2-1, with Soulkey going 6-2.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Results of two league events from October 18, with the top performers",
+      "teaser": "The info board posted the October 18 results of two team league events, with Stork and Soulkey among the top performers.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/1777"
+      ],
+      "date": "2026-10-18",
+      "id": "2026-10-18:Oct 18 league results: Susik team wins 2-0; Yunhwan team beats Kkaemo 2-1",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Ju Harang comes back from 1:3 down to beat Yeopjip Ppo-nuna 5:4",
+      "summary": "On October 19, Calm MonstarZ's Ju Harang (Protoss) beat Yeopjip Ppo-nuna (Terran) 5:4 in a nine-game, first-to-five series. After falling 1:3 behind, he won three in a row to lead 4:3, then lost game eight on Knockout before taking the decider on Knockout.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Calm MonstarZ's Ju Harang plays a nine-game series vs Yeopjip Ppo-nuna",
+      "teaser": "Ju Harang and Yeopjip Ppo-nuna played a nine-game, first-to-five series on October 19, with the last game on Knockout.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-20"
+      ],
+      "date": "2026-10-19",
+      "id": "2026-10-19:Ju Harang comes back from 1:3 down to beat Yeopjip Ppo-nuna 5:4",
+      "addedAt": "2026-10-20T04:30:09.045Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Soulkey beats Rush 4-3 to win ASL Season 22",
       "summary": "Soulkey beat Rush 4-3 in the Season 22 final on Saturday, October 17, winning his fifth ASL title. The final was held at an ice rink in Seoul's Lotte World with about 1,500 fans, and fan posts and videos from the event were shared afterwards.",
       "spoiler": true,

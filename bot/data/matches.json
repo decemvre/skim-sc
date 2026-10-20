@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T03:14:15.670Z",
+  "updated": "2026-10-20T04:16:14.796Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -627,7 +627,7 @@
       },
       "competition": {
         "raw": "CK [흑카데미] 쭈꾸미 낚시",
-        "name": "",
+        "name": "CK [Heukkademi] Squid Fishing",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -636,8 +636,8 @@
         "eloboard": true
       },
       "titleSource": "CK [흑카데미] 쭈꾸미 낚시",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [Heukkademi] Squid Fishing",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -661,7 +661,7 @@
       },
       "competition": {
         "raw": "CK [더블비] 기린삼남매",
-        "name": "",
+        "name": "CK [Double B] Three Giraffe Siblings",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -670,8 +670,8 @@
         "eloboard": true
       },
       "titleSource": "CK [더블비] 기린삼남매",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [Double B] Three Giraffe Siblings",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -695,7 +695,7 @@
       },
       "competition": {
         "raw": "CK [DM] 말랑이의 고추포차 2",
-        "name": "",
+        "name": "CK [DM] Malangi's Chili Stall 2",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -704,8 +704,8 @@
         "eloboard": true
       },
       "titleSource": "CK [DM] 말랑이의 고추포차 2",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [DM] Malangi's Chili Stall 2",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -729,7 +729,7 @@
       },
       "competition": {
         "raw": "CK [BGM] 특별한추억 엠티",
-        "name": "",
+        "name": "CK [BGM] Special Memories Retreat",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -738,8 +738,8 @@
         "eloboard": true
       },
       "titleSource": "CK [BGM] 특별한추억 엠티",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [BGM] Special Memories Retreat",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -797,7 +797,7 @@
       },
       "competition": {
         "raw": "CK [JSA] 시조새 스타여캠 다퍼줍니다",
-        "name": "",
+        "name": "CK [JSA] Sijosae's Star Female-Cam Giveaway",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -806,8 +806,8 @@
         "eloboard": true
       },
       "titleSource": "CK [JSA] 시조새 스타여캠 다퍼줍니다",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [JSA] Sijosae's Star Female-Cam Giveaway",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
