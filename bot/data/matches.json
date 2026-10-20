@@ -1,6 +1,40 @@
 {
-  "updated": "2026-10-20T12:16:14.792Z",
+  "updated": "2026-10-20T13:30:38.232Z",
   "matches": [
+    {
+      "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
+      "origin": "eloboard",
+      "date": "2026-10-02",
+      "kst": "15:00",
+      "allDay": false,
+      "at": "2026-10-02T06:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-02",
+        "time": "09:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "낭니컵 와일드카드 결정전 와일드카드 결정전",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "낭니컵 와일드카드 결정전 와일드카드 결정전",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-02"
+    },
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
       "origin": "soop",
@@ -95,6 +129,40 @@
         "source": "https://liquipedia.net/starcraft/ASL/22"
       },
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06"
+    },
+    {
+      "key": "2026-10-07 17:00 eloboard 낭니컵 낭니컵 본선",
+      "origin": "eloboard",
+      "date": "2026-10-07",
+      "kst": "17:00",
+      "allDay": false,
+      "at": "2026-10-07T08:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-07",
+        "time": "11:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "낭니컵 낭니컵 본선",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "낭니컵 낭니컵 본선",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-07"
     },
     {
       "key": "2026-10-07 20:00 우리할매 러브즈 vs 기영이숯불 킹즈",
@@ -648,40 +716,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
     },
     {
-      "key": "2026-10-20 14:00 eloboard CK [더블비] 기린삼남매",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-20T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [더블비] 기린삼남매",
-        "name": "CK [Double B] Three Giraffe Siblings",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [더블비] 기린삼남매",
-      "titleEn": "CK [Double B] Three Giraffe Siblings",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
       "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
       "origin": "eloboard",
       "date": "2026-10-20",
@@ -705,6 +739,40 @@
       },
       "titleSource": "CK [DM] 말랑이의 고추포차 2",
       "titleEn": "CK [DM] Malangi's Chili Stall 2",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T03:14:15.670Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
+    },
+    {
+      "key": "2026-10-20 14:00 eloboard CK [더블비] 기린삼남매",
+      "origin": "eloboard",
+      "date": "2026-10-20",
+      "kst": "14:00",
+      "allDay": false,
+      "at": "2026-10-20T05:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-20",
+        "time": "08:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK [더블비] 기린삼남매",
+        "name": "CK [Double B] Three Giraffe Siblings",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [더블비] 기린삼남매",
+      "titleEn": "CK [Double B] Three Giraffe Siblings",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -816,6 +884,74 @@
       "onSchedule": true,
       "firstSeen": "2026-10-20T03:14:15.670Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
+    },
+    {
+      "key": "2026-10-21 11:00 eloboard CK [뉴캣슬] 밍또의 요리교실",
+      "origin": "eloboard",
+      "date": "2026-10-21",
+      "kst": "11:00",
+      "allDay": false,
+      "at": "2026-10-21T02:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-21",
+        "time": "05:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK [뉴캣슬] 밍또의 요리교실",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [뉴캣슬] 밍또의 요리교실",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
+    },
+    {
+      "key": "2026-10-21 14:00 eloboard 대학대전",
+      "origin": "eloboard",
+      "date": "2026-10-21",
+      "kst": "14:00",
+      "allDay": false,
+      "at": "2026-10-21T05:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-21",
+        "time": "08:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "대학대전",
+        "name": "University Clash",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "대학대전",
+      "titleEn": "University Clash",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
       "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
@@ -957,6 +1093,40 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
+    },
+    {
+      "key": "2026-10-29 16:00 eloboard CK [스타대학 요리 대학대전] 스타도 요리도 실력",
+      "origin": "eloboard",
+      "date": "2026-10-29",
+      "kst": "16:00",
+      "allDay": false,
+      "at": "2026-10-29T07:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-29",
+        "time": "09:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "CK [스타대학 요리 대학대전] 스타도 요리도 실력",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [스타대학 요리 대학대전] 스타도 요리도 실력",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T13:30:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-29"
     }
   ]
 }
