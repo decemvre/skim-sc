@@ -257,6 +257,15 @@
       "source": "https://liquipedia.net/starcraft/Stork",
       "checked": "2026-10-10"
     },
+    "송현덕": {
+      "id": "HerO[Shield]",
+      "romanized": "Song Hyeon Deok",
+      "race": "P",
+      "nicknames": [],
+      "soop": "gmdtkak",
+      "source": "https://liquipedia.net/starcraft/HerO(Shield)",
+      "checked": "2026-10-21"
+    },
     "신상문": {
       "id": "Leta",
       "romanized": "Shin Sang Moon",
@@ -386,6 +395,17 @@
       ],
       "source": "https://liquipedia.net/starcraft/NaDa",
       "checked": "2026-10-12"
+    },
+    "이인극": {
+      "id": "Prime",
+      "romanized": "Lee In Geuk",
+      "race": "T",
+      "nicknames": [
+        "Prime"
+      ],
+      "soop": null,
+      "source": "https://liquipedia.net/starcraft/Prime",
+      "checked": "2026-10-21"
     },
     "이재호": {
       "id": "Light",
@@ -635,9 +655,10 @@
     "죽습니다": "2026-10-21",
     "즉흥": "2026-10-20",
     "지면": "2026-10-21",
+    "진유성": "2026-10-21",
     "쭈꾸미": "2026-10-21",
     "천유주": "2026-10-12",
-    "최성원": "2026-10-12",
+    "최성원": "2026-10-21",
     "특별한추": "2026-10-20",
     "티어": "2026-10-20",
     "파비지원": "2026-10-10",

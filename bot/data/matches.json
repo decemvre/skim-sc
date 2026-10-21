@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T02:51:00.177Z",
+  "updated": "2026-10-21T04:00:44.220Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -15,7 +15,7 @@
       },
       "competition": {
         "raw": "낭니컵 와일드카드 결정전 와일드카드 결정전",
-        "name": "",
+        "name": "Nangni Cup Wild Card Qualifier",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -24,8 +24,8 @@
         "eloboard": true
       },
       "titleSource": "낭니컵 와일드카드 결정전 와일드카드 결정전",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Nangni Cup Wild Card Qualifier",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -144,7 +144,7 @@
       },
       "competition": {
         "raw": "낭니컵 낭니컵 본선",
-        "name": "",
+        "name": "Nangni Cup Main Event",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -153,8 +153,8 @@
         "eloboard": true
       },
       "titleSource": "낭니컵 낭니컵 본선",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Nangni Cup Main Event",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -797,7 +797,7 @@
       },
       "competition": {
         "raw": "CK [뉴캣슬] 밍또의 요리교실",
-        "name": "",
+        "name": "CK [Newcastle] Mingtto's Cooking Class",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -806,8 +806,8 @@
         "eloboard": true
       },
       "titleSource": "CK [뉴캣슬] 밍또의 요리교실",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [Newcastle] Mingtto's Cooking Class",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -831,7 +831,7 @@
       },
       "competition": {
         "raw": "미니대전 [미니대전] 신세계 VS 소병대",
-        "name": "",
+        "name": "Mini Tournament: New World vs Sobyeongdae",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -840,8 +840,8 @@
         "eloboard": true
       },
       "titleSource": "미니대전 [미니대전] 신세계 VS 소병대",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Mini Tournament: New World vs Sobyeongdae",
+      "needsTranslation": false,
       "duel": [
         "신세계",
         "소병대"
@@ -868,7 +868,7 @@
       },
       "competition": {
         "raw": "CK 수장ck 시조새 지면 죽습니다",
-        "name": "",
+        "name": "Boss CK: Sijosae Says He Dies If He Loses",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -877,8 +877,8 @@
         "eloboard": true
       },
       "titleSource": "CK 수장ck 시조새 지면 죽습니다",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Boss CK: Sijosae Says He Dies If He Loses",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -968,7 +968,7 @@
       },
       "competition": {
         "raw": "마예준배 마범컵 5,6 티어 대회 본선",
-        "name": "",
+        "name": "Mayejun Cup: MBU Cup Tier 5-6 Main Event",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -977,8 +977,8 @@
         "eloboard": true
       },
       "titleSource": "마예준배 마범컵 5,6 티어 대회 본선",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Mayejun Cup: MBU Cup Tier 5-6 Main Event",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
