@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T04:00:44.220Z",
+  "updated": "2026-10-21T06:00:44.309Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -716,40 +716,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
     },
     {
-      "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-20T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [DM] 말랑이의 고추포차 2",
-        "name": "CK [DM] Malangi's Chili Stall 2",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [DM] 말랑이의 고추포차 2",
-      "titleEn": "CK [DM] Malangi's Chili Stall 2",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
       "key": "2026-10-20 14:00 eloboard CK [더블비] 기린삼남매",
       "origin": "eloboard",
       "date": "2026-10-20",
@@ -773,6 +739,40 @@
       },
       "titleSource": "CK [더블비] 기린삼남매",
       "titleEn": "CK [Double B] Three Giraffe Siblings",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T03:14:15.670Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
+    },
+    {
+      "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
+      "origin": "eloboard",
+      "date": "2026-10-20",
+      "kst": "14:00",
+      "allDay": false,
+      "at": "2026-10-20T05:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-20",
+        "time": "08:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK [DM] 말랑이의 고추포차 2",
+        "name": "CK [DM] Malangi's Chili Stall 2",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [DM] 말랑이의 고추포차 2",
+      "titleEn": "CK [DM] Malangi's Chili Stall 2",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -852,6 +852,40 @@
       "status": null,
       "onSchedule": true,
       "firstSeen": "2026-10-20T17:00:38.232Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
+    },
+    {
+      "key": "2026-10-21 15:00 eloboard 대학대전 [드림즈] 황병영 강구열 테란교육합방",
+      "origin": "eloboard",
+      "date": "2026-10-21",
+      "kst": "15:00",
+      "allDay": false,
+      "at": "2026-10-21T06:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-21",
+        "time": "09:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "대학대전 [드림즈] 황병영 강구열 테란교육합방",
+        "name": "University Battle [Dreamz]: BarrackS & 910 Terran teaching joint practice",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "대학대전 [드림즈] 황병영 강구열 테란교육합방",
+      "titleEn": "University Battle [Dreamz]: BarrackS & 910 Terran teaching joint practice",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-21T06:00:44.309Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
