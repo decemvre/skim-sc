@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T13:15:11.065Z",
+  "updated": "2026-10-21T16:15:44.303Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -716,40 +716,6 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
     },
     {
-      "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-20T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [DM] 말랑이의 고추포차 2",
-        "name": "CK [DM] Malangi's Chili Stall 2",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [DM] 말랑이의 고추포차 2",
-      "titleEn": "CK [DM] Malangi's Chili Stall 2",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
       "key": "2026-10-20 14:00 eloboard CK [더블비] 기린삼남매",
       "origin": "eloboard",
       "date": "2026-10-20",
@@ -773,6 +739,40 @@
       },
       "titleSource": "CK [더블비] 기린삼남매",
       "titleEn": "CK [Double B] Three Giraffe Siblings",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-20T03:14:15.670Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
+    },
+    {
+      "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
+      "origin": "eloboard",
+      "date": "2026-10-20",
+      "kst": "14:00",
+      "allDay": false,
+      "at": "2026-10-20T05:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-20",
+        "time": "08:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "CK [DM] 말랑이의 고추포차 2",
+        "name": "CK [DM] Malangi's Chili Stall 2",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK [DM] 말랑이의 고추포차 2",
+      "titleEn": "CK [DM] Malangi's Chili Stall 2",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -818,7 +818,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 14:00 eloboard 미니대전 [미니대전] 신세계 VS 소병대",
+      "key": "2026-10-21 14:00 eloboard 미니대전",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "14:00",
@@ -830,8 +830,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "미니대전 [미니대전] 신세계 VS 소병대",
-        "name": "Mini Tournament: New World vs Sobyeongdae",
+        "raw": "미니대전",
+        "name": "Mini-Match",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -839,23 +839,20 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "미니대전 [미니대전] 신세계 VS 소병대",
-      "titleEn": "Mini Tournament: New World vs Sobyeongdae",
+      "titleSource": "미니대전",
+      "titleEn": "Mini-Match",
       "needsTranslation": false,
-      "duel": [
-        "신세계",
-        "소병대"
-      ],
+      "duel": null,
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-20T17:00:38.232Z",
+      "firstSeen": "2026-10-21T16:15:44.303Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 15:00 eloboard 대학대전 [드림즈] 황병영 강구열 테란교육합방",
+      "key": "2026-10-21 15:00 eloboard 대학대전",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "15:00",
@@ -867,8 +864,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "대학대전 [드림즈] 황병영 강구열 테란교육합방",
-        "name": "University Battle [Dreamz]: BarrackS & 910 Terran teaching joint practice",
+        "raw": "대학대전",
+        "name": "University Clash",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -876,8 +873,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "대학대전 [드림즈] 황병영 강구열 테란교육합방",
-      "titleEn": "University Battle [Dreamz]: BarrackS & 910 Terran teaching joint practice",
+      "titleSource": "대학대전",
+      "titleEn": "University Clash",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -885,75 +882,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-21T06:00:44.309Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
-    },
-    {
-      "key": "2026-10-21 15:00 eloboard CK 소윤ck",
-      "origin": "eloboard",
-      "date": "2026-10-21",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-21T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-21",
-        "time": "09:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK 소윤ck",
-        "name": "CK with a player",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 소윤ck",
-      "titleEn": "CK with a player",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-21T09:30:44.307Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
-    },
-    {
-      "key": "2026-10-21 18:00 eloboard CK 수장ck 시조새 지면 죽습니다",
-      "origin": "eloboard",
-      "date": "2026-10-21",
-      "kst": "18:00",
-      "allDay": false,
-      "at": "2026-10-21T09:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-21",
-        "time": "12:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK 수장ck 시조새 지면 죽습니다",
-        "name": "Boss CK: Sijosae Says He Dies If He Loses",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 수장ck 시조새 지면 죽습니다",
-      "titleEn": "Boss CK: Sijosae Says He Dies If He Loses",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T17:00:38.232Z",
+      "firstSeen": "2026-10-21T16:15:44.303Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
@@ -982,11 +911,45 @@
       "b": {
         "team": "기영이숯불 킹즈"
       },
-      "played": false,
-      "status": "Upcoming",
+      "played": true,
+      "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
-      "onSchedule": false,
+      "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
+    },
+    {
+      "key": "2026-10-22 20:00 eloboard 미니대전",
+      "origin": "eloboard",
+      "date": "2026-10-22",
+      "kst": "20:00",
+      "allDay": false,
+      "at": "2026-10-22T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-22",
+        "time": "14:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "미니대전",
+        "name": "Mini-Match",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "미니대전",
+      "titleEn": "Mini-Match",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-21T16:15:44.303Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
     },
     {
       "key": "2026-10-25 15:00 eloboard 마예준배 마범컵 5,6 티어 대회 본선",
