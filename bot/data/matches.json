@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T09:00:44.385Z",
+  "updated": "2026-10-22T12:30:44.303Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -983,6 +983,40 @@
       "status": null,
       "onSchedule": true,
       "firstSeen": "2026-10-21T13:15:11.065Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
+    },
+    {
+      "key": "2026-10-25 19:00 eloboard CK 도택혁명CK",
+      "origin": "eloboard",
+      "date": "2026-10-25",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-25T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-25",
+        "time": "12:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "CK 도택혁명CK",
+        "name": "CK: Dotaekhyeokmyeong",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 도택혁명CK",
+      "titleEn": "CK: Dotaekhyeokmyeong",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-22T12:30:44.303Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
     },
     {
