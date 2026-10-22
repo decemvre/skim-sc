@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T23:00:44.304Z",
+  "updated": "2026-10-22T04:30:44.311Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -865,7 +865,7 @@
       },
       "competition": {
         "raw": "CK 소윤ck",
-        "name": "",
+        "name": "a player CK",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -874,8 +874,8 @@
         "eloboard": true
       },
       "titleSource": "CK 소윤ck",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "a player CK",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -931,7 +931,7 @@
       },
       "competition": {
         "raw": "CK [흑카데미] 퇴근전쟁",
-        "name": "",
+        "name": "CK [Black Academy] Quitting-Time War",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -940,8 +940,8 @@
         "eloboard": true
       },
       "titleSource": "CK [흑카데미] 퇴근전쟁",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK [Black Academy] Quitting-Time War",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -999,7 +999,7 @@
       },
       "competition": {
         "raw": "마예준배 마범컵 5,6 티어 대회 본선",
-        "name": "",
+        "name": "a player Cup (MBU) Tier 5-6 Main Stage",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -1008,8 +1008,8 @@
         "eloboard": true
       },
       "titleSource": "마예준배 마범컵 5,6 티어 대회 본선",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "a player Cup (MBU) Tier 5-6 Main Stage",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,

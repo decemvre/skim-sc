@@ -1,6 +1,100 @@
 {
   "items": [
     {
+      "headline": "Hong-PL: Larva's team wins 2:1 after Light takes super-ace decider",
+      "summary": "Larva's team beat effOrt's team 2:1 in sets in the Major Proleague Hong-PL on 21 October. The Pro League went 4:0 to Larva's team, while Rush won five straight in the Winners League, which went 5:1 to effOrt's team. Light won the super-ace decider over Stork to give Larva's team the match.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague Hong-PL: Rush and Light on 21 October",
+      "teaser": "Two teams of top players met in the Major Proleague Hong-PL, with a Pro League set and a Winners League set that came down to a super-ace decider. Rush and Light were the players to watch.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-22"
+      ],
+      "date": "2026-10-21",
+      "id": "2026-10-21:Hong-PL: Larva's team wins 2:1 after Light takes super-ace decider",
+      "addedAt": "2026-10-22T04:30:44.311Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "1:1 best-of-seven: Speed beats Jaedong 4-3",
+      "summary": "Speed beat Jaedong 4:3 in a best-of-seven 1:1 series on 21 October. Jaedong took sets 1, 4 and 6, while Speed won sets 2, 3, 5 and 7. The same day Jaedong also lost 2:3 to Mini in a best-of-five.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1:1 best-of-seven: Speed vs Jaedong on 21 October",
+      "teaser": "A long best-of-seven 1:1 series between Speed and Jaedong, which went the full distance. Jaedong also played Mini in a best-of-five the same day.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-22"
+      ],
+      "date": "2026-10-21",
+      "id": "2026-10-21:1:1 best-of-seven: Speed beats Jaedong 4-3",
+      "addedAt": "2026-10-22T04:30:44.311Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mini-match: New World beats Sobyeongdae 4-1 in person",
+      "summary": "New World beat Sobyeongdae 4:1 in a seven-game mini-match held in person on 21 October. Sobyeongdae took the first game, but New World won the next four, and the sixth game was left without a result.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Mini-match: New World vs Sobyeongdae, in-person gathering on 21 October",
+      "teaser": "New World and Sobyeongdae met in a seven-game mini-match at a joint in-person gathering of both universities on 21 October.",
+      "teamResult": "Mini-match: New World 4-1 Sobyeongdae",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-22"
+      ],
+      "date": "2026-10-21",
+      "id": "2026-10-21:Mini-match: New World beats Sobyeongdae 4-1 in person",
+      "addedAt": "2026-10-22T04:30:44.311Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "KCM Race Supremacy Season 4, week 2 starts 22 October at 19:00",
+      "summary": "Week 2 of KCM Race Supremacy Season 4 is on Thursday 22 October at 19:00. Light, Sharp, BarrackS, Mini, huro, SnOw, soma, effOrt and herO are on the list. The cumulative all-kill prize is ₩900,000 (about $640).",
+      "spoiler": false,
+      "relevant": false,
+      "card": "KCM Race Supremacy Season 4, week 2, Thursday 22 October at 19:00",
+      "teaser": "Nine players, three per race, take part in the second week of KCM Season 4, with a cumulative all-kill prize of ₩900,000 (about $640).",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-22",
+        "time": "19:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/news/2026-10-22"
+      ],
+      "date": "2026-10-22",
+      "id": "2026-10-22:KCM Race Supremacy Season 4, week 2 starts 22 October at 19:00",
+      "addedAt": "2026-10-22T04:30:44.311Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "SOOP executives plan a new StarCraft: Remastered league before year-end",
+      "summary": "At the ASL Season 22 finals, SOOP's a player and a player said a new league built on StarCraft: Remastered will be unveiled this year. It is aimed at amateurs, streamers and fans.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "SOOP executives on a new StarCraft: Remastered league, from ASL S22 finals",
+      "teaser": "Interview at the ASL Season 22 finals with two SOOP executives about a new league for amateurs, streamers and fans, due before year-end.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-22"
+      ],
+      "date": "2026-10-22",
+      "id": "2026-10-22:SOOP executives plan a new StarCraft: Remastered league before year-end",
+      "addedAt": "2026-10-22T04:30:44.311Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "JMT signs HerO[Shield] with official welcome post",
       "summary": "JMT posted an official welcome poster for HerO[Shield] at 11pm on 20 October, and the player's EloBoard listing changed to JMT the same day. A gallery post about his university career was shared alongside it.",
       "spoiler": false,
