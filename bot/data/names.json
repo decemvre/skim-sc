@@ -60,6 +60,15 @@
       "source": "https://liquipedia.net/starcraft/Absolute",
       "checked": "2026-10-12"
     },
+    "김수환": {
+      "id": "HBQ",
+      "romanized": null,
+      "race": "T",
+      "nicknames": [],
+      "soop": null,
+      "source": "https://liquipedia.net/starcraft/HBQ",
+      "checked": "2026-10-23"
+    },
     "김영진": {
       "id": "Skey",
       "romanized": null,
@@ -548,6 +557,17 @@
       "source": "https://liquipedia.net/starcraft/KOp",
       "checked": "2026-10-10"
     },
+    "진영화": {
+      "id": "Movie",
+      "romanized": "Jin Young Hwa",
+      "race": "P",
+      "nicknames": [
+        "Iron Reaver"
+      ],
+      "soop": "jyh8610",
+      "source": "https://liquipedia.net/starcraft/Movie",
+      "checked": "2026-10-23"
+    },
     "최호선": {
       "id": "sSak",
       "romanized": "Choi Ho Seon",
@@ -577,6 +597,7 @@
     "극락회": "2026-10-23",
     "기념": "2026-10-11",
     "기린삼남": "2026-10-23",
+    "김바다": "2026-10-23",
     "김세주": "2026-10-10",
     "김아린": "2026-10-19",
     "김유진": "2026-10-14",
