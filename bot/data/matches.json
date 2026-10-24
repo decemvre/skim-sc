@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T03:45:16.260Z",
+  "updated": "2026-10-24T07:15:28.890Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -273,7 +273,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
     },
     {
-      "key": "2026-10-12 05:00 eloboard CK 극락회 오프 ck",
+      "key": "2026-10-12 05:00 eloboard 극락회 vs 연합팀 (뚜미T 3탕)",
       "origin": "eloboard",
       "date": "2026-10-12",
       "kst": "05:00",
@@ -285,8 +285,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "CK 극락회 오프 ck",
-        "name": "CK Geukrakhoe offline event (CK)",
+        "raw": "극락회 vs 연합팀 (뚜미T 3탕)",
+        "name": "",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -294,16 +294,19 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK 극락회 오프 ck",
-      "titleEn": "CK Geukrakhoe offline event (CK)",
-      "needsTranslation": false,
-      "duel": null,
+      "titleSource": "극락회 vs 연합팀 (뚜미T 3탕)",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": [
+        "극락회",
+        "연합팀"
+      ],
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-12T07:15:26.379Z",
+      "firstSeen": "2026-10-24T07:15:28.890Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
     },
     {
@@ -503,7 +506,7 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
     },
     {
-      "key": "2026-10-17 18:00 eloboard [미니대전] BGM vs 와플대",
+      "key": "2026-10-17 18:00 eloboard 와플대 vs BGM",
       "origin": "eloboard",
       "date": "2026-10-17",
       "kst": "18:00",
@@ -515,8 +518,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "[미니대전] BGM vs 와플대",
-        "name": "[Mini-Match] BGM vs Waffle University",
+        "raw": "와플대 vs BGM",
+        "name": "Waffle University vs BGM",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -524,8 +527,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "[미니대전] BGM vs 와플대",
-      "titleEn": "[Mini-Match] BGM vs Waffle University",
+      "titleSource": "와플대 vs BGM",
+      "titleEn": "Waffle University vs BGM",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -533,11 +536,11 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-14T05:31:20.111Z",
+      "firstSeen": "2026-10-24T07:15:28.890Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
     },
     {
-      "key": "2026-10-18 17:00 eloboard [미니대전] 더블비 vs 신세계",
+      "key": "2026-10-18 17:00 eloboard 신세계 vs 더블비",
       "origin": "eloboard",
       "date": "2026-10-18",
       "kst": "17:00",
@@ -549,8 +552,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "[미니대전] 더블비 vs 신세계",
-        "name": "[Mini-Match] Double B vs New World",
+        "raw": "신세계 vs 더블비",
+        "name": "New World vs Double B",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -558,19 +561,19 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "[미니대전] 더블비 vs 신세계",
-      "titleEn": "[Mini-Match] Double B vs New World",
+      "titleSource": "신세계 vs 더블비",
+      "titleEn": "New World vs Double B",
       "needsTranslation": false,
       "duel": [
-        "더블비",
-        "신세계"
+        "신세계",
+        "더블비"
       ],
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-18T00:16:07.684Z",
+      "firstSeen": "2026-10-24T07:15:28.890Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-18"
     },
     {
@@ -818,7 +821,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 14:00 eloboard 미니대전",
+      "key": "2026-10-21 14:00 eloboard 신세계 vs 소병대",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "14:00",
@@ -830,8 +833,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "미니대전",
-        "name": "Mini-Match",
+        "raw": "신세계 vs 소병대",
+        "name": "",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -839,16 +842,19 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "미니대전",
-      "titleEn": "Mini-Match",
-      "needsTranslation": false,
-      "duel": null,
+      "titleSource": "신세계 vs 소병대",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": [
+        "신세계",
+        "소병대"
+      ],
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-21T16:15:44.303Z",
+      "firstSeen": "2026-10-24T07:15:28.890Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
@@ -918,7 +924,7 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
     },
     {
-      "key": "2026-10-22 20:00 eloboard 미니대전",
+      "key": "2026-10-22 20:00 eloboard 캄몬스타즈 vs 더블비",
       "origin": "eloboard",
       "date": "2026-10-22",
       "kst": "20:00",
@@ -930,8 +936,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "미니대전",
-        "name": "Mini-Match",
+        "raw": "캄몬스타즈 vs 더블비",
+        "name": "Calm MonstarZ vs Double B",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -939,8 +945,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "미니대전",
-      "titleEn": "Mini-Match",
+      "titleSource": "캄몬스타즈 vs 더블비",
+      "titleEn": "Calm MonstarZ vs Double B",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -948,7 +954,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-22T09:00:44.385Z",
+      "firstSeen": "2026-10-24T07:15:28.890Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
     },
     {
