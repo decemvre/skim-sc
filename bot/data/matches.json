@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T07:15:28.890Z",
+  "updated": "2026-10-24T10:45:28.927Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -992,20 +992,20 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-23"
     },
     {
-      "key": "2026-10-24 18:00 eloboard CK 스승ck",
+      "key": "2026-10-24 17:00 eloboard CK 스승ck",
       "origin": "eloboard",
       "date": "2026-10-24",
-      "kst": "18:00",
+      "kst": "17:00",
       "allDay": false,
-      "at": "2026-10-24T09:00:00.000Z",
+      "at": "2026-10-24T08:00:00.000Z",
       "bucharest": {
         "date": "2026-10-24",
-        "time": "12:00",
+        "time": "11:00",
         "zone": "EEST"
       },
       "competition": {
         "raw": "CK 스승ck",
-        "name": "CK Teacher-Student",
+        "name": "",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -1014,15 +1014,15 @@
         "eloboard": true
       },
       "titleSource": "CK 스승ck",
-      "titleEn": "CK Teacher-Student",
-      "needsTranslation": false,
+      "titleEn": null,
+      "needsTranslation": true,
       "duel": null,
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-23T09:15:44.318Z",
+      "firstSeen": "2026-10-24T10:45:28.927Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-24"
     },
     {
