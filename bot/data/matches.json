@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T06:45:57.407Z",
+  "updated": "2026-10-25T10:15:57.395Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -858,7 +858,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 15:00 eloboard 대학대전",
+      "key": "2026-10-21 15:00 eloboard CK 소윤ck",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "15:00",
@@ -870,8 +870,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "대학대전",
-        "name": "University Clash",
+        "raw": "CK 소윤ck",
+        "name": "",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -879,16 +879,16 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "대학대전",
-      "titleEn": "University Clash",
-      "needsTranslation": false,
+      "titleSource": "CK 소윤ck",
+      "titleEn": null,
+      "needsTranslation": true,
       "duel": null,
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
+      "firstSeen": "2026-10-25T10:15:57.395Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
@@ -1097,7 +1097,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
     },
     {
-      "key": "2026-10-25 15:30 eloboard 마예준배 마범컵 5,6 티어 대회 와일드카드 결정전",
+      "key": "2026-10-25 15:30 eloboard 마예준배 마범컵 5,6 티어 대회",
       "origin": "eloboard",
       "date": "2026-10-25",
       "kst": "15:30",
@@ -1109,7 +1109,7 @@
         "zone": "EET"
       },
       "competition": {
-        "raw": "마예준배 마범컵 5,6 티어 대회 와일드카드 결정전",
+        "raw": "마예준배 마범컵 5,6 티어 대회",
         "name": "",
         "big": false,
         "celebrity": false,
@@ -1118,7 +1118,7 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "마예준배 마범컵 5,6 티어 대회 와일드카드 결정전",
+      "titleSource": "마예준배 마범컵 5,6 티어 대회",
       "titleEn": null,
       "needsTranslation": true,
       "duel": null,
@@ -1127,7 +1127,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-25T06:45:57.407Z",
+      "firstSeen": "2026-10-25T10:15:57.395Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
     },
     {
@@ -1165,41 +1165,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
     },
     {
-      "key": "2026-10-26 all-day eloboard 마예준배 마범컵 5,6 티어 대회 본선",
-      "origin": "eloboard",
-      "date": "2026-10-26",
-      "kst": null,
-      "allDay": true,
-      "at": "2026-10-25T15:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-25",
-        "time": "17:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "마예준배 마범컵 5,6 티어 대회 본선",
-        "name": "",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "마예준배 마범컵 5,6 티어 대회 본선",
-      "titleEn": null,
-      "needsTranslation": true,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T06:45:57.407Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-26"
-    },
-    {
-      "key": "2026-10-26 19:00 eloboard 미니대전 드림즈 VS JSA 미니대전",
+      "key": "2026-10-26 19:00 eloboard 미니대전",
       "origin": "eloboard",
       "date": "2026-10-26",
       "kst": "19:00",
@@ -1211,8 +1177,8 @@
         "zone": "EET"
       },
       "competition": {
-        "raw": "미니대전 드림즈 VS JSA 미니대전",
-        "name": "Mini-Match Dreamz vs JSA Mini-Match",
+        "raw": "미니대전",
+        "name": "Mini-Match",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -1220,8 +1186,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "미니대전 드림즈 VS JSA 미니대전",
-      "titleEn": "Mini-Match Dreamz vs JSA Mini-Match",
+      "titleSource": "미니대전",
+      "titleEn": "Mini-Match",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -1229,7 +1195,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-25T06:45:57.407Z",
+      "firstSeen": "2026-10-25T10:15:57.395Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-26"
     },
     {
