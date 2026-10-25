@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T10:15:57.395Z",
+  "updated": "2026-10-25T16:00:57.393Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -924,40 +924,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
     },
     {
-      "key": "2026-10-22 19:00 eloboard 대학대전",
-      "origin": "eloboard",
-      "date": "2026-10-22",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-22T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-22",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "대학대전",
-        "name": "University Clash",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "대학대전",
-      "titleEn": "University Clash",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
-    },
-    {
       "key": "2026-10-22 19:00 eloboard 캄몬스타즈 vs 더블비",
       "origin": "eloboard",
       "date": "2026-10-22",
@@ -981,6 +947,40 @@
       },
       "titleSource": "캄몬스타즈 vs 더블비",
       "titleEn": "Calm MonstarZ vs Double B",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-25T03:06:00.061Z",
+      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
+    },
+    {
+      "key": "2026-10-22 19:00 eloboard 대학대전",
+      "origin": "eloboard",
+      "date": "2026-10-22",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-10-22T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-10-22",
+        "time": "13:00",
+        "zone": "EEST"
+      },
+      "competition": {
+        "raw": "대학대전",
+        "name": "University Clash",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "대학대전",
+      "titleEn": "University Clash",
       "needsTranslation": false,
       "duel": null,
       "a": null,
