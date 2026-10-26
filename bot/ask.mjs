@@ -29,6 +29,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { send, SITE, REMIND_MIN } from './post.mjs'
 import { loadWatchlist } from './watchlist.mjs'
+import { upcomingLines } from './lib/importance.mjs'
 
 export const MODEL = 'haiku'
 export const ASKED_FILE = fileURLToPath(new URL('./data/asked.json', import.meta.url))
@@ -110,8 +111,12 @@ export function ownRecords (question, { news = readJson(NEWS_FILE, { items: [] }
         .slice(0, 8)
         .map((m) => `- ${m.date} ${m.kst || ''} KST (${m.bucharest?.time || '?'} Bucharest): ${m.a?.id} (${m.a?.race || '?'}) vs ${m.b?.id} (${m.b?.race || '?'}), ${m.competition?.name || m.competition?.raw || ''}, ${m.played ? 'played' : m.status || 'scheduled'}` +
             (m.result && results ? `, ${m.a?.id} ${m.result.a}-${m.result.b} ${m.b?.id}` : '') + (m.competition?.watch ? `, watch: ${m.competition.watch}` : ''))
-    if (!pickedNews.length && !pickedMatches.length) return ''
-    return [pickedNews.length ? `News Skim Bot recorded (from eloboard.com and other Korean sources, read daily):\n${pickedNews.join('\n')}` : '',
+    // The next 24 hours of the schedule, always, most important first (Silviu, 26 Oct): asked
+    // "any important showmatches today?" with no player named, the bot had no schedule at all.
+    const soon = upcomingLines(matches, { watchlist, now })
+    if (!pickedNews.length && !pickedMatches.length && !soon.length) return ''
+    return [soon.length ? `Skim Bot's schedule, the next 24 hours, MOST IMPORTANT FIRST (start times already worked out):\n${soon.join('\n')}` : '',
+        pickedNews.length ? `News Skim Bot recorded (from eloboard.com and other Korean sources, read daily):\n${pickedNews.join('\n')}` : '',
         pickedMatches.length ? `Matches on Skim Bot's schedule:\n${pickedMatches.join('\n')}` : ''].filter(Boolean).join('\n\n')
 }
 
@@ -131,7 +136,8 @@ ${records}
 ` : ''}How to answer:
 1. Where to search (Silviu, 16 and 17 Oct). For anything Korean - Korean players, Korean leagues, Korea itself - search in Korean first: translate every name and term into Korean (players by their Korean name, leagues as Koreans write them) and search Korean sources - eloboard.com (results and news, every day), Naver news, blogs and cafés, sooplive.com / afreecatv.com (schedules, VODs, boards), the Korean press (OSEN, Sports Chosun, Inven, Daily eSports, Nate sports), Korean communities (fmkorea, dcinside); a result from this week is in the Korean sources days before it reaches English ones. For StarCraft outside Korea, or when the Korean sources have nothing, search anywhere: Google, YouTube (VODs, casts, interviews), Liquipedia, TeamLiquid (tl.net), Reddit, the players' and tournaments' own pages. Prefer the newest.
 2. Answer in the language of the question: "ro" for Romanian, "en" for English. Romanian with diacritics.
-3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. Times as Korea time and Bucharest time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
+3. Short: at most 5 lines, plain text, no markdown headings, no bullet lists of more than 4 items. A start time is its Bucharest time and how long until it - "14:00 Bucharest, in 4 h 35 min" - as the schedule above writes it; never "in X hours from now" next to a Korea time (Bucharest is 6 hours behind Korea in summer time, 7 in winter).
+3b. Importance (Silviu, 26 Oct): a 1v1 between two of the top players listed in rule 4 - a [TOP-LEVEL 1v1] on the schedule - is MORE important than anything else, league games included. Asked what is important, name those first. Never call one less important because it is a showmatch. Check both players of every 1v1 against the list.
 4. Players by their ID (Rush, Soulkey, Flash), never by their real name - not even in brackets. These IDs and Korean names are known: ${watchlist.players.map((p) => p.korean ? `${p.id} = ${p.korean}` : p.id).join(', ')}.
 5. If you did not find it, say so in one line and say what you did find. Never guess a date, a time, a score or a result.
 6. ${asksForResult(question) ? 'The question asks for a result: give it (who won, the score), if you found it.' : 'NO RESULTS (Silviu, 17 Oct). The question does not ask for one, so never say who won or lost, a score, who advanced, was knocked out or is in a final because of a win - not even of a match already played, not as an aside, not hinted ("a dominant performance"). Say only what was asked: when, where, who plays, where to watch. The one exception: a university team result written in the records as "University result: ..." may be given - the event, both teams and the team score, nothing about the games of a single player.'}
