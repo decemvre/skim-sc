@@ -57,7 +57,8 @@ test('on the page a spoiler shows only its card; the story is folded', () => {
     const html = newsSection({items: [
         {date: '2026-10-07', headline: 'Rush beats Light 4-2', summary: 'Into the final.', spoiler: true, card: 'Semifinal night in Seoul', sources: ['l']},
         {date: '2026-10-08', headline: 'Rollback netcode thread', summary: 'Talk.', spoiler: false, card: 'c', sources: ['l2']},
-    ]});
+    // The page shows the last week: read on 9 Oct, whatever today is (B-245).
+    ]}, {now: new Date('2026-10-09T12:00:00Z')});
     const [visible] = html.split('<details');
     assert.match(visible, /Semifinal night in Seoul/);
     assert.doesNotMatch(visible, /4-2/);
