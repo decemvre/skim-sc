@@ -54,6 +54,9 @@ export const MORNING_NEWS = 3
 // fetch() gives up on an answer after five whatever the signal says.
 export const SEND_TIMEOUT_MS = 15 * 60000
 export const WINDOW = { from: 8 * 60, to: 16 * 60, zone: 'Europe/Bucharest' }
+// The bridge refuses a message over 700 characters (WhatsApp folds one behind "Read more" at 768;
+// 26 Oct: a 757-character morning post was refused and nothing went). A longer post goes as parts.
+export const POST_MAX = 700
 
 export function local (now = new Date()) {
     const parts = Object.fromEntries(new Intl.DateTimeFormat('en-GB', { timeZone: WINDOW.zone, weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
@@ -161,6 +164,33 @@ export function safe (text, allowed = []) {
     return text.split('\n').filter((line) => allowed.includes(line) || !(SCORE.test(line) && !/KST|Bucharest|https?:\/\//.test(line))).join('\n')
 }
 
+// A post in parts of at most `max` characters, as the bridge counts them (26 Oct). Split between
+// paragraphs, packed as full as they go; a paragraph ending in ":" stays with the one after it, so
+// "More on the page:" never leaves its link behind. A paragraph too long alone is split between
+// its lines, and a line too long alone is cut at a word, with "…" - nothing is left out silently
+// except the end of that one line.
+export function splitPost (text, max = POST_MAX) {
+    const cut = (line) => line.length <= max ? line : `${line.slice(0, max - 1).replace(/\s+\S*$/, '')}…`
+    const fit = (pieces, sep) => {
+        const out = []
+        for (const piece of pieces) {
+            const last = out.at(-1)
+            if (last !== undefined && last.length + sep.length + piece.length <= max) out[out.length - 1] = `${last}${sep}${piece}`
+            else out.push(piece)
+        }
+        return out
+    }
+    const paragraphs = String(text).trim().split(/\n{2,}/)
+    const blocks = []
+    for (const p of paragraphs) {
+        const prev = blocks.at(-1)
+        if (prev !== undefined && /:$/.test(prev)) blocks[blocks.length - 1] = `${prev}\n\n${p}`
+        else blocks.push(p)
+    }
+    const pieces = blocks.flatMap((b) => b.length <= max ? [b] : fit(b.split('\n').map(cut), '\n'))
+    return fit(pieces, '\n\n')
+}
+
 // A post that may or may not be in the group: the bridge's answer never came, or it typed the
 // post and could not see it go. Recorded as posted, so the next pass does not post it again
 // (12 Oct: three copies of one morning post), and said in the war room.
@@ -198,20 +228,29 @@ export async function send (text, { group = config().group, fetchImpl = patientF
     if (!asked && !video && !override && !inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
     if (override) console.error(`send: outside the window by Silviu's exception - ${override}`)
     const body = asked || video ? text : safe(text, allowed)
-    if (!group || dryRun) return { sent: false, printed: body, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
-    let r
-    try {
-        r = await fetchImpl(`${BRIDGE}/send`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Friendzy-Office': '1' },
-            body: JSON.stringify({ group, agent: 'skim', text: body }), signal: AbortSignal.timeout(SEND_TIMEOUT_MS) })
-    } catch (error) {
-        // Refused before it was sent, the request never left; anything else may have been typed.
-        if (error.code === 'ECONNREFUSED') throw new Error('the bridge is not running: nothing was posted')
-        throw new UnsureError(`no answer from the bridge (${error.name === 'TimeoutError' ? 'timed out' : error.message}): the post may be in the group - recorded as posted, look at the group`)
+    const parts = splitPost(body)
+    if (!group || dryRun) return { sent: false, printed: parts.join('\n\n--- next message ---\n\n'), parts: parts.length, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
+    let status
+    for (const [i, part] of parts.entries()) {
+        // Once a part is in the group the post is there in part: a later failure is recorded as
+        // posted (UnsureError), or the next pass would post the first parts again.
+        const of = parts.length > 1 ? ` (part ${i + 1} of ${parts.length}${i ? `; parts 1-${i} are in the group` : ''})` : ''
+        const failed = (message) => i ? new UnsureError(`${message}${of}: recorded as posted, look at the group`) : new Error(`${message}${of}`)
+        let r
+        try {
+            r = await fetchImpl(`${BRIDGE}/send`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Friendzy-Office': '1' },
+                body: JSON.stringify({ group, agent: 'skim', text: part }), signal: AbortSignal.timeout(SEND_TIMEOUT_MS) })
+        } catch (error) {
+            // Refused before it was sent, the request never left; anything else may have been typed.
+            if (error.code === 'ECONNREFUSED') throw failed('the bridge is not running: nothing more was posted')
+            throw new UnsureError(`no answer from the bridge (${error.name === 'TimeoutError' ? 'timed out' : error.message})${of}: the post may be in the group - recorded as posted, look at the group`)
+        }
+        const data = await r.json().catch(() => ({}))
+        if (UNSURE_CODES.includes(data.code)) throw new UnsureError(`the bridge typed the post but could not see it go (${data.code})${of}: recorded as posted, look at the group`)
+        if (!r.ok || !data.sent) throw failed(`the bridge did not post: ${data.error || r.status}`)
+        status = data.status
     }
-    const data = await r.json().catch(() => ({}))
-    if (UNSURE_CODES.includes(data.code)) throw new UnsureError(`the bridge typed the post but could not see it go (${data.code}): recorded as posted, look at the group`)
-    if (!r.ok || !data.sent) throw new Error(`the bridge did not post: ${data.error || r.status}`)
-    return { sent: true, status: data.status }
+    return parts.length > 1 ? { sent: true, status, parts: parts.length } : { sent: true, status }
 }
 
 export async function post (kind, { now = new Date(), posted = loadPosted(), matches = loadMatches().matches, news = loadNews(), dryRun = false, sender = send } = {}) {

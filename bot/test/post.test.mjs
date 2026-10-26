@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {competition} from '../lib/competitions.mjs';
-import {UnsureError, blurb, freshResults, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send} from '../post.mjs';
+import {POST_MAX, UnsureError, blurb, freshResults, dueReminders, newsBlock, newsText, freshCards, inWindow, morningText, post, safe, send, splitPost} from '../post.mjs';
+import {readFileSync} from 'node:fs';
 
 // F-236: the group posts. Nothing on a quiet day, never a result, links on their own line.
 const m = (over) => ({key: 'k1', date: '2026-10-17', kst: '15:00', at: '2026-10-17T06:00:00.000Z', bucharest: {time: '09:00', zone: 'EEST'},
@@ -226,4 +227,40 @@ test('a match in the news carries its day, both times and where to watch, the li
     assert.equal(safe(text), text, 'the time line is not taken for a score');
     const dayOnly = newsBlock({card: 'A series this week', match: {date: '2026-10-14', time: null, link: null}});
     assert.equal(dayOnly, '*A series this week*\nWed 14 Oct');
+});
+
+// 26 Oct, 14:16: the bridge refused a 757-character morning post (its limit is 700) and nothing went.
+test('a post over 700 goes as parts split between paragraphs, each under 700, nothing lost', async () => {
+    const text = readFileSync(new URL('./morning-757.txt', import.meta.url), 'utf8');
+    assert.equal(text.length, 757);
+    const parts = splitPost(text);
+    assert.ok(parts.length > 1);
+    for (const p of parts) assert.ok(p.length <= POST_MAX, `${p.length} characters`);
+    assert.equal(parts.join('\n\n'), text, 'split only between paragraphs');
+    for (const p of parts) assert.doesNotMatch(p, /:$/, 'a heading stays with what it heads');
+    assert.ok(parts.some((p) => p.endsWith('More on the page:\n\nhttps://decemvre.github.io/skim-sc/')));
+
+    const at = new Date('2026-10-26T12:16:00Z');
+    const bodies = [];
+    const ok = async (_u, r) => { bodies.push(JSON.parse(r.body).text); return {ok: true, status: 200, json: async () => ({sent: true, status: 'sent'})}; };
+    assert.deepEqual(await send(text, {group: 'g', now: at, fetchImpl: ok}), {sent: true, status: 'sent', parts: parts.length});
+    assert.deepEqual(bodies, parts);
+});
+
+test('a short post is one message; a paragraph or line too long alone is split, then cut at a word', () => {
+    assert.deepEqual(splitPost('hi\n\nthere'), ['hi\n\nthere']);
+    const lines = Array.from({length: 12}, (_, i) => `line ${i} `.padEnd(80, 'x')).join('\n');
+    for (const p of splitPost(lines)) assert.ok(p.length <= POST_MAX);
+    const [one] = splitPost(`${'word '.repeat(200)}end`);
+    assert.ok(one.length <= POST_MAX && one.endsWith('…'));
+});
+
+test('a later part that fails is never silent: the post counts as posted, and says which parts went', async () => {
+    const text = readFileSync(new URL('./morning-757.txt', import.meta.url), 'utf8');
+    const at = new Date('2026-10-26T12:16:00Z');
+    let n = 0;
+    const second = async () => (++n === 1 ? {ok: true, status: 200, json: async () => ({sent: true, status: 'sent'})} : {ok: false, status: 409, json: async () => ({error: 'The bridge is PAUSED'})});
+    await assert.rejects(send(text, {group: 'g', now: at, fetchImpl: second}), (e) => e instanceof UnsureError && /part 2 of 2; parts 1-1 are in the group/.test(e.message));
+    const first = async () => ({ok: false, status: 409, json: async () => ({error: 'The bridge is PAUSED'})});
+    await assert.rejects(send(text, {group: 'g', now: at, fetchImpl: first}), (e) => !(e instanceof UnsureError) && /PAUSED/.test(e.message));
 });
