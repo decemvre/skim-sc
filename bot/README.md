@@ -16,6 +16,29 @@ written in `helpText()` rather than by the model, and is not counted against the
 
 No dependencies beyond Node 24 and Google Chrome (to read SOOP's schedule page).
 
+## YouTube links in the group (F-535)
+
+A YouTube link posted in the group (watch, youtu.be, /shorts, m., music.) comes back as a Digi Cloud
+link to the video: `bot/video.mjs`, run by the bridge once per link, one at a time and apart from
+/skim questions. Of a message that is not /skim the bridge reads only its YouTube URLs, never its
+text, and never the bot's own messages.
+
+- yt-dlp at 720p at most, mp4, H.264 first. Not saved, with a short note: over 2 h, over 2 GB, a
+  live stream.
+- Uploaded to Digi Cloud, folder `Skim videos` (made the first time; nothing else in the account
+  is touched), and a public link made to it: anyone with the link can watch or download it, no
+  login; it is listed nowhere. The reply: who posted it, the title, the link on its own line.
+- The same video again (by id) gets the same link. At most 20 stay in the folder: the oldest by
+  upload time go, links and all.
+- The local copy (`~/.cache/skim-bot/videos/`) is deleted after the upload, or after the last
+  retry failed. Retries double from 30 s with jitter, capped at 8 min; 3 tries to download, 4 to
+  upload. A failure for good is one short note in the group.
+- Login: `~/.config/friendzy/digistorage.json` (mode 600) `{"user": "<email>", "password": "<app password>"}`.
+  Without it a link gets "could not be saved just now".
+
+    node bot/video.mjs --download-only -- <url>   # the download alone, then deleted: no login
+    node bot/video.mjs --no-post -- <url>         # everything, the reply printed, not sent
+
 ## How it runs (O-98)
 
 `bot/run.mjs` is one pass of everything; a systemd user timer runs it every 15 minutes from
