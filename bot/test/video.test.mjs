@@ -119,24 +119,51 @@ test(`at most ${KEEP} in the folder: the oldest goes and its record with it`, as
     assert.ok(videos.jNQXAC9IVRw)
 })
 
-test('the Digi Cloud client: rclone koofr/digistorage, password obscured on stdin, prune deletes only the oldest inside the folder', async () => {
+test('the Digi Cloud client: rclone koofr/digistorage, password obscured on stdin; links lose their password; prune deletes only the oldest, links and all', async () => {
     const calls = []
+    const L = '2d1fae68-fab1-4b8b-9408-07376d742828'
     const runner = async (cmd, args, { env, input } = {}) => {
         calls.push({ args, env, input })
         if (args[0] === 'obscure') return 'OBSCURED\n'
         if (args[0] === 'lsjson') return JSON.stringify([{ Name: 'new.mp4', ModTime: '2026-10-26T08:00:00Z' }, { Name: 'old.mp4', ModTime: '2026-10-25T08:00:00Z' }])
-        if (args[0] === 'link' && args[1] === '--unlink') throw new Error('not supported')
+        if (args[0] === 'link') return `https://storage.example/content/links/${L}/files/get?path=%2F\n`
         return ''
     }
-    const digi = new Digi({ creds: { user: 'a@b.ro', password: 'secret' }, runner })
+    const api = []
+    const fetchImpl = async (url, { method, headers }) => {
+        api.push(`${method} ${url.pathname}`)
+        assert.equal(headers.Authorization, 'Basic ' + Buffer.from('a@b.ro:secret').toString('base64'))
+        const json = (o) => ({ ok: true, status: 200, text: async () => JSON.stringify(o) })
+        if (url.pathname === '/api/v2/mounts') return json({ mounts: [{ id: 'm1', isPrimary: true }] })
+        if (url.pathname === '/api/v2/mounts/m1/links' && method === 'GET') return json({ links: [{ id: 'old1', path: `${FOLDER}/old.mp4` }, { id: 'save', path: '/!SAVE/x' }] })
+        if (url.pathname === `/api/v2/mounts/m1/links/${L}` && method === 'GET') return json({ url: `https://storage.example/links/${L}`, hasPassword: false, validTo: 123 })
+        return json({})
+    }
+    const digi = new Digi({ creds: { user: 'a@b.ro', password: 'secret' }, runner, fetchImpl, base: 'https://storage.example' })
     await digi.ensureFolder()
     assert.deepEqual(calls[0], { args: ['obscure', '-'], env: undefined, input: 'secret' })
     assert.deepEqual(calls[1].args, ['mkdir', ':koofr:Skim videos'])
     assert.equal(calls[1].env.RCLONE_KOOFR_PROVIDER, 'digistorage')
     assert.equal(calls[1].env.RCLONE_KOOFR_PASSWORD, 'OBSCURED')
     assert.equal(calls[1].env.RCLONE_KOOFR_SETMTIME, 'false')
-    assert.ok(!calls.some((c) => c.args.some((a) => a.includes('secret'))), 'the password is never on a command line')
-    calls.length = 0
+    assert.deepEqual(await digi.link(`${FOLDER}/new.mp4`), { url: `https://storage.example/links/${L}`, validTo: 123 })
+    assert.ok(api.includes(`DELETE /api/v2/mounts/m1/links/${L}/password`))
+    calls.length = 0; api.length = 0
     assert.deepEqual(await digi.prune(1), [`${FOLDER}/old.mp4`])
-    assert.deepEqual(calls.map((c) => c.args.join(' ')), ['lsjson --files-only --no-mimetype :koofr:Skim videos', 'link --unlink :koofr:Skim videos/old.mp4', 'deletefile :koofr:Skim videos/old.mp4'])
+    assert.deepEqual(calls.map((c) => c.args.join(' ')), ['lsjson --files-only --no-mimetype :koofr:Skim videos', 'deletefile :koofr:Skim videos/old.mp4'])
+    assert.deepEqual(api.filter((a) => a.startsWith('DELETE')), ['DELETE /api/v2/mounts/m1/links/old1'])
+    assert.ok(!calls.some((c) => c.args.some((a) => a.includes('secret'))), 'the password is never on a command line')
+})
+
+test('a link posted again near the end of its 14 days is made again', async () => {
+    const work = mkdtempSync(join(tmpdir(), 'skim-video-'))
+    const { digi, runner } = fakes({ files: [{ path: `${FOLDER}/z.mp4`, size: 1, modified: 1 }] })
+    let unlinked = 0
+    digi.unlink = async () => { unlinked++ }
+    digi.link = async () => ({ url: 'https://storage.rcs-rds.ro/links/new', validTo: Date.now() + 14 * 86400e3 })
+    const videos = { jNQXAC9IVRw: { title: 'Z', path: `${FOLDER}/z.mp4`, link: 'https://storage.rcs-rds.ro/links/old', validTo: Date.now() + 3600e3 } }
+    const sent = []
+    await handle({ url: 'https://youtu.be/jNQXAC9IVRw', videos, save: () => {}, digi, sender: async (t) => { sent.push(t); return { sent: true } }, runner, work, log: () => {} })
+    assert.equal(unlinked, 1)
+    assert.deepEqual(sent, ['🎬 Z\n\nhttps://storage.rcs-rds.ro/links/new'])
 })

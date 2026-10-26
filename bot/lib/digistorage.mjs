@@ -8,7 +8,9 @@
 //
 // Only FOLDER is ever written to; nothing else in the account is listed, moved or deleted.
 // A link is Koofr's public link: whoever has the URL can open the file without logging in; it is
-// listed nowhere and nothing on it is indexed - the URL is the whole secret.
+// listed nowhere and nothing on it is indexed - the URL is the whole secret. Digi Cloud gives a new
+// link a password and 14 days by default (seen 26 Oct): the password is taken off here, through
+// Koofr's REST API (rclone cannot), and the 14 days stay - a link nearly out is made again.
 
 import { execFile } from 'node:child_process'
 import { readFileSync, statSync } from 'node:fs'
@@ -18,6 +20,7 @@ import { join } from 'node:path'
 export const CREDENTIALS_FILE = process.env.DIGISTORAGE_CREDENTIALS || join(homedir(), '.config/digistorage/skim-bot')
 export const RCLONE = process.env.RCLONE || join(homedir(), '.local/bin/rclone')
 export const FOLDER = '/Skim videos'
+export const BASE = process.env.DIGISTORAGE_URL || 'https://storage.rcs-rds.ro'
 
 export class MissingCredentials extends Error {}
 
@@ -45,15 +48,40 @@ function exec (cmd, args, { env, input, timeout = 120000 } = {}) {
 }
 
 export class Digi {
-    constructor ({ creds = null, runner = exec, rclone = RCLONE } = {}) {
-        Object.assign(this, { creds, runner, rclone })
+    constructor ({ creds = null, runner = exec, rclone = RCLONE, fetchImpl = fetch, base = BASE } = {}) {
+        Object.assign(this, { creds, runner, rclone, fetchImpl, base })
         this.env = null
+        this.mountId = null
+    }
+
+    // Koofr's REST API, for what rclone cannot do with a link.
+    async api (method, path) {
+        const { user, password } = this.creds ||= credentials()
+        const r = await this.fetchImpl(new URL(path, this.base), { method, signal: AbortSignal.timeout(60000),
+            headers: { Authorization: 'Basic ' + Buffer.from(`${user}:${password}`).toString('base64'), Accept: 'application/json' } })
+        if (r.status === 401 || r.status === 403) throw new MissingCredentials(`Digi Cloud refused the login (${r.status})`)
+        if (!r.ok) throw new Error(`Digi Cloud ${method} ${path.replace(/[0-9a-f-]{36}/g, '…')}: ${r.status}`)
+        const text = await r.text()
+        return text ? JSON.parse(text) : {}
+    }
+
+    async mount () {
+        if (this.mountId) return this.mountId
+        const { mounts = [] } = await this.api('GET', '/api/v2/mounts')
+        const m = mounts.find((x) => x.isPrimary)
+        if (!m) throw new Error('Digi Cloud: no drive found')
+        return (this.mountId = m.id)
+    }
+
+    async linksTo (path) {
+        const { links = [] } = await this.api('GET', `/api/v2/mounts/${await this.mount()}/links`)
+        return links.filter((l) => l.path === path)
     }
 
     // rclone's environment: the backend and the login, the password obscured by rclone itself.
     async environment () {
         if (this.env) return this.env
-        const { user, password } = this.creds || credentials()
+        const { user, password } = this.creds ||= credentials()
         const obscured = (await this.runner(this.rclone, ['obscure', '-'], { input: password })).trim()
         this.env = { ...process.env, RCLONE_CONFIG: '/nonexistent/skim-bot-rclone.conf', RCLONE_KOOFR_PROVIDER: 'digistorage',
             RCLONE_KOOFR_USER: user, RCLONE_KOOFR_PASSWORD: obscured, RCLONE_KOOFR_SETMTIME: 'false' }
@@ -92,10 +120,24 @@ export class Digi {
         return { path }
     }
 
+    // A new link to one file, without a password: {url, validTo}. The url is the link's own page
+    // (storage.rcs-rds.ro/links/<id>), with the file's name, a preview and a download button.
     async link (path) {
-        const url = (await this.rc(['link', remote(path)])).trim().split('\n').pop()
-        if (!/^https:\/\/\S+$/.test(url)) throw new Error('Digi Cloud made a link without a URL')
-        return { url }
+        const made = (await this.rc(['link', remote(path)])).trim().split('\n').pop()
+        const id = made.match(/\/links\/([0-9a-f-]{36})/)?.[1]
+        if (!id) throw new Error('Digi Cloud made a link without a URL')
+        const at = `/api/v2/mounts/${await this.mount()}/links/${id}`
+        await this.api('DELETE', `${at}/password`)
+        const l = await this.api('GET', at)
+        if (l.hasPassword) throw new Error('Digi Cloud kept a password on the link')
+        if (!/^https:\/\/\S+$/.test(l.url || '')) throw new Error('Digi Cloud made a link without a URL')
+        return { url: l.url, validTo: l.validTo || null }
+    }
+
+    // Every link to a path, gone.
+    async unlink (path) {
+        const m = await this.mount()
+        for (const l of await this.linksTo(path)) await this.api('DELETE', `/api/v2/mounts/${m}/links/${l.id}`)
     }
 
     // A path inside FOLDER, by name - the only kind this ever deletes.
@@ -113,8 +155,7 @@ export class Digi {
         for (const f of old) {
             const path = `${dir}/${f.Name}`
             if (!Digi.inFolder(path, dir)) continue
-            // Its link goes with it; a backend that cannot unlink still cannot serve a deleted file.
-            await this.rc(['link', '--unlink', remote(path)]).catch(() => {})
+            await this.unlink(path)
             await this.rc(['deletefile', remote(path)])
             gone.push(path)
         }

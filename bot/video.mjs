@@ -8,7 +8,7 @@
 //   2. yt-dlp, 720p at most, mp4 (H.264 first, so it plays on every phone and in the browser).
 //      Not over MAX_SECONDS long, not over MAX_BYTES, not a live stream: those get a short note.
 //   3. Uploaded to Digi Cloud with rclone (koofr backend, provider digistorage), folder "Skim videos"
-//      (made the first time), and a link made to it:
+//      (made the first time), and a link made to it, its password taken off; it lasts 14 days:
 //      anyone with the link can watch or download it without logging in; it is listed nowhere.
 //   4. The reply in the group: who posted it, the title, and the link alone on its own line.
 //   5. The local copy is deleted whatever happens - after the upload, or after the last retry
@@ -148,7 +148,13 @@ export async function handle ({ url, from = '', dryPost = false, downloadOnly = 
         if (known?.link && !downloadOnly) {
             digi ||= new Digi()
             if (await retry(() => digi.info(known.path), { attempts: RETRY.upload, wait, log, label: 'check' })) {
-                log(`video ${id}: posted before, same link`)
+                // Digi Cloud's links last 14 days: one with less than a day left is made again.
+                if (known.validTo && known.validTo - Date.now() < 86400e3) {
+                    await retry(() => digi.unlink(known.path), { attempts: RETRY.upload, wait, log, label: 'unlink' })
+                    const fresh = await retry(() => digi.link(known.path), { attempts: RETRY.upload, wait, log, label: 'link' })
+                    Object.assign(known, { link: fresh.url, validTo: fresh.validTo }); save(videos)
+                    log(`video ${id}: posted before, link renewed`)
+                } else log(`video ${id}: posted before, same link`)
                 return { id, reused: true, link: known.link, ...await post(replyText(from, known.title, known.link)) }
             }
             delete videos[id]; save(videos)
@@ -172,7 +178,7 @@ export async function handle ({ url, from = '', dryPost = false, downloadOnly = 
         }, { attempts: RETRY.upload, wait, log, label: 'upload' })
         clean()
         const link = await retry(() => digi.link(up.path), { attempts: RETRY.upload, wait, log, label: 'link' })
-        videos[id] = { title, path: up.path, link: link.url, at: new Date().toISOString() }
+        videos[id] = { title, path: up.path, link: link.url, validTo: link.validTo, at: new Date().toISOString() }
         save(videos)
         // At most KEEP in the folder: the oldest go, and with them their record here.
         try {

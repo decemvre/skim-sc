@@ -35,7 +35,9 @@ text, and never the bot's own messages.
   upload. A failure for good is one short note in the group.
 - Upload with rclone (`~/.local/bin/rclone`, koofr backend, provider digistorage), no rclone config:
   the login is `~/.config/digistorage/skim-bot` (mode 600), line 1 the email, line 2 an app password
-  (F-536). Without it a link gets "could not be saved just now".
+  (F-536). Digi gives a new link a password and 14 days: the password is removed through the
+  Koofr REST API; a repost of a link with under a day left gets a new one. Without the login a
+  link gets "could not be saved just now".
 
     node bot/video.mjs --download-only -- <url>   # the download alone, then deleted: no login
     node bot/video.mjs --no-post -- <url>         # everything, the reply printed, not sent
