@@ -44,3 +44,17 @@ test('asked about important showmatches with no player named, the model still ge
     assert.match(text, /Never call one less important because it is a showmatch/)
     assert.match(text, /14:00 Bucharest, in 4 h 37 min/)
 })
+
+test('everywhere else too: a top-player 1v1 is major - in a weekend morning post, first, and it gets its reminder', async () => {
+    const { morningText, dueReminders } = await import('../post.mjs')
+    const day = [
+        { key: 'a', date: '2026-10-25', kst: '18:00', at: '2026-10-25T09:00:00Z', onSchedule: true, bucharest: { time: '?', zone: 'EEST' }, a: p('Light', 'T'), b: p('Nobody', 'Z'), competition: { name: 'ASL Season 22', big: true } },
+        { key: 'b', date: '2026-10-25', kst: '20:00', at: '2026-10-25T11:00:00Z', onSchedule: true, bucharest: { time: '?', zone: 'EEST' }, a: p('Mini', 'P'), b: p('Nobody', 'Z'), competition: { name: 'Some cup', big: false } },
+        { key: 'c', date: '2026-10-25', kst: '21:00', at: '2026-10-25T12:00:00Z', onSchedule: true, bucharest: { time: '?', zone: 'EEST' }, a: p('Soulkey', 'Z'), b: p('Rush', 'T'), competition: { name: 'Ultimate Battle', big: false } },
+    ]
+    const text = morningText(day, [], '2026-10-25', { weekend: true, watchlist })
+    assert.match(text, /Soulkey \(Z\) vs Rush \(T\)[\s\S]*Light \(T\) vs Nobody \(Z\)/, 'the top 1v1 first')
+    assert.doesNotMatch(text, /Mini/, 'a minor match still stays out on a weekend')
+    const due = dueReminders(day, { reminders: {} }, new Date('2026-10-25T11:45:00Z'), watchlist)
+    assert.deepEqual(due.map((m) => m.key), ['c'])
+})

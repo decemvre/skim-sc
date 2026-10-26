@@ -20,6 +20,10 @@ export function topMatch (m, top) {
     return Boolean(a && b && a !== b && top.has(a) && top.has(b))
 }
 
+// Major, everywhere the bot ranks or announces matches - the morning post, the reminders, the
+// page (Silviu, 26 Oct): a top-level 1v1 or a big competition.
+export const major = (m, top) => topMatch(m, top) || Boolean(m.competition?.big)
+
 export const rank = (m, top) => topMatch(m, top) ? 0 : m.competition?.big ? 1 : 2
 
 export const startOf = (m) => Date.parse(m.at || '') || (m.date && m.kst ? kstInstant(m.date, m.kst).getTime() : NaN)

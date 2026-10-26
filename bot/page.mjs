@@ -6,6 +6,11 @@
 // Results are spoilers: they sit in a closed <details>, which needs no script to open.
 
 import { bucharest } from './lib/time.mjs'
+import { major, topIds } from './lib/importance.mjs'
+import { loadWatchlist } from './watchlist.mjs'
+
+// A 1v1 between two watchlist players is highlighted like a big competition (Silviu, 26 Oct).
+const TOP = topIds(loadWatchlist())
 
 export const START = '<!-- skim-bot:schedule:start -->'
 export const END = '<!-- skim-bot:schedule:end -->'
@@ -30,7 +35,7 @@ function row (m, withResult = false) {
         return `<li class="fixture"><p class="fixture-when">${when}</p><p class="fixture-comp">Star universities <small>(EloBoard)</small></p><p class="fixture-players">${esc(m.titleEn)}</p></li>`
     }
     const players = `${side(m.a)} <span class="versus">${withResult && m.result ? `${m.result.a}–${m.result.b}` : 'vs'}</span> ${side(m.b)}`
-    return `<li class="fixture${m.competition.big ? ' big' : ''}"><p class="fixture-when">${when}</p>` +
+    return `<li class="fixture${major(m, TOP) ? ' big' : ''}"><p class="fixture-when">${when}</p>` +
         `<p class="fixture-comp">${esc(m.competition.name)}${m.onSchedule ? '' : ' <small>(no longer on the schedule)</small>'}</p><p class="fixture-players">${players}</p></li>`
 }
 

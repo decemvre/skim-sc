@@ -35,7 +35,8 @@ test('no card that looks like a result, none irrelevant, none older than five da
 });
 
 test('a reminder half an hour before a big match, once', async () => {
-    const list = [m({}), m({key: 'k2', competition: {name: 'Ultimate Battle', big: false}})];
+    // A minor match: not a big competition, and not two watchlist players (that is major, 26 Oct).
+    const list = [m({}), m({key: 'k2', competition: {name: 'Ultimate Battle', big: false}, b: {id: 'Nobody', race: 'Z'}})];
     assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T05:35:00Z')).map((x) => x.key), ['k1']);
     assert.deepEqual(dueReminders(list, {reminders: {}}, new Date('2026-10-17T04:00:00Z')), [], 'too early');
     // The :15 run before a match on the hour is 45 minutes early; the :30 run is the one (17 Oct).
@@ -94,7 +95,7 @@ test('weekends: no news at all; the morning post only for a major match', async 
     const sender = async (text) => { sent.push(text); return {sent: true}; };
     const news = {items: [{id: 'a', addedAt: '2026-10-17T05:00:00Z', headline: 'ASL S22', relevant: true, card: 'Saturday news'}]};
     const sat8 = new Date('2026-10-17T05:00:00Z');
-    await post('morning', {now: sat8, posted, matches: [m({competition: {name: 'Ultimate Battle', big: false}})], news, sender});
+    await post('morning', {now: sat8, posted, matches: [m({competition: {name: 'Ultimate Battle', big: false}, b: {id: 'Nobody', race: 'Z'}})], news, sender});
     assert.equal(sent.length, 0, 'a minor match and news: nothing on a Saturday');
     const posted2 = {mornings: {}, reminders: {}, news: {}};
     await post('morning', {now: sat8, posted: posted2, matches: [m({})], news, sender});

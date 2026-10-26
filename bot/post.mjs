@@ -39,6 +39,7 @@ import { loadMatches } from './matches.mjs'
 import { loadNews } from './digest.mjs'
 import { inScope } from './lib/scope.mjs'
 import { loadWatchlist } from './watchlist.mjs'
+import { major, topIds, topMatch } from './lib/importance.mjs'
 import { bucharest, kstInstant, kstToday } from './lib/time.mjs'
 
 export const SITE = 'https://decemvre.github.io/skim-sc/'
@@ -112,9 +113,13 @@ export function whenLine (match) {
 // time and - alone on its own line - where to watch it.
 export const newsBlock = (c) => [[`*${c.card}*`, blurb(c), whenLine(c.match)].filter(Boolean).join('\n'), c.match?.link].filter(Boolean).join('\n\n')
 
-export function morningText (matches, cards, today, { weekend = false, results = [] } = {}) {
-    const todays = matches.filter((m) => m.date === today && m.onSchedule && !m.competition.celebrity && (!weekend || m.competition.big))
-        .map((m) => ({ m, lines: matchLines(m) })).filter((x) => x.lines)
+export function morningText (matches, cards, today, { weekend = false, results = [], watchlist = loadWatchlist() } = {}) {
+    // Major = a big competition or a 1v1 between two watchlist players (Silviu, 26 Oct); those
+    // 1v1s first, as the most important of the day, the rest in schedule order.
+    const top = topIds(watchlist)
+    const todays = matches.filter((m) => m.date === today && m.onSchedule && !m.competition.celebrity && (!weekend || major(m, top)))
+        .map((m, i) => ({ m, i, lines: matchLines(m) })).filter((x) => x.lines)
+        .sort((x, y) => Number(topMatch(y.m, top)) - Number(topMatch(x.m, top)) || x.i - y.i)
     const news = weekend ? [] : cards
     if (!todays.length && !news.length && !results.length) return null
     const parts = [`🤖 Skim Bot - ${todays.length ? `Brood War in Korea today (${dayName(today)})` : `Brood War news (${dayName(today)})`}`]
@@ -144,8 +149,9 @@ export function reminderText (m, now = new Date()) {
 // Matches starting within REMIND_MIN, not yet reminded. Within it, not within it plus the timer's
 // 15 minutes: with that slack the :15 run caught every match on the hour, and reminders went out
 // 45 minutes before (Silviu, 17 Oct). The run every 15 minutes still lands one inside the 30.
-export function dueReminders (matches, posted, now = new Date()) {
-    return matches.filter((m) => m.competition.big && m.onSchedule && !m.played && !posted.reminders[m.key] &&
+export function dueReminders (matches, posted, now = new Date(), watchlist = loadWatchlist()) {
+    const top = topIds(watchlist)
+    return matches.filter((m) => major(m, top) && m.onSchedule && !m.played && !posted.reminders[m.key] &&
         Date.parse(m.at) - now > 0 && Date.parse(m.at) - now <= REMIND_MIN * 60000)
 }
 
