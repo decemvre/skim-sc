@@ -135,7 +135,8 @@ export async function handle ({ url, from = '', dryPost = false, downloadOnly = 
     digi = null, sender = send, runner = run, wait, log = console.error, work = WORK } = {}) {
     const id = videoId(url)
     if (!id) return { skipped: 'not a YouTube video link' }
-    const post = async (text) => sender(text, { asked: true, dryRun: dryPost })
+    // Any hour, like a /skim answer (Silviu, 26 Oct): somebody posted the link.
+    const post = async (text) => sender(text, { video: true, dryRun: dryPost })
     sweep(work)
     const dir = join(work, `${id}-${process.pid}`)
     const clean = () => rmSync(dir, { recursive: true, force: true })

@@ -179,12 +179,19 @@ export function patientFetch (url, { method = 'GET', headers, body, signal } = {
     })
 }
 
-export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date(), allowed = [], asked = false } = {}) {
+export async function send (text, { group = config().group, fetchImpl = patientFetch, dryRun = false, now = new Date(), allowed = [], asked = false,
+    video = false, override = null } = {}) {
     // 08:00-16:00 Bucharest for everything the bot says by itself. An answer to somebody's
     // /skim question (F-287) is not the bot speaking up: it goes whenever it was asked, and
     // says what was asked for - a result included, when that is the question.
-    if (!asked && !inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
-    const body = asked ? text : safe(text, allowed)
+    // The reply to a YouTube link somebody posted (F-535) goes at any hour too (Silviu, 26 Oct),
+    // as it is: a video's title is not checked for scores.
+    // `override` is a one-off exception Silviu gave for a single post, with its reason - never
+    // for anything automatic; the post is still checked for results.
+    if (override !== null && !String(override).trim()) throw new Error('an override needs its reason')
+    if (!asked && !video && !override && !inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
+    if (override) console.error(`send: outside the window by Silviu's exception - ${override}`)
+    const body = asked || video ? text : safe(text, allowed)
     if (!group || dryRun) return { sent: false, printed: body, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
     let r
     try {

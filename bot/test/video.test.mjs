@@ -6,6 +6,7 @@ import { join } from 'node:path'
 
 import { delayFor, fileName, handle, replyText, retry, tooBig, videoId, KEEP, MAX_SECONDS } from '../video.mjs'
 import { Digi, FOLDER } from '../lib/digistorage.mjs'
+import { send } from '../post.mjs'
 
 test('every YouTube link form gives its video id; anything else gives none', () => {
     for (const url of ['https://www.youtube.com/watch?v=jNQXAC9IVRw', 'https://youtube.com/watch?feature=share&v=jNQXAC9IVRw&t=3',
@@ -166,4 +167,23 @@ test('a link posted again near the end of its 14 days is made again', async () =
     await handle({ url: 'https://youtu.be/jNQXAC9IVRw', videos, save: () => {}, digi, sender: async (t) => { sent.push(t); return { sent: true } }, runner, work, log: () => {} })
     assert.equal(unlinked, 1)
     assert.deepEqual(sent, ['🎬 Z\n\nhttps://storage.rcs-rds.ro/links/new'])
+})
+
+test('a video reply goes at any hour, title as it is; an override goes once with its reason; everything else still waits for the window', async () => {
+    const night = new Date('2026-10-26T01:00:00Z') // 03:00 in Bucharest
+    const sent = []
+    const fetchImpl = async (url, { body }) => { sent.push(JSON.parse(body).text); return { ok: true, json: async () => ({ sent: true }) } }
+    const go = (text, o) => send(text, { group: 'Noobz', fetchImpl, now: night, ...o })
+    await go('🎬 Andrei: Rush 3-1 Flash highlights\n\nhttps://storage.rcs-rds.ro/links/x', { video: true })
+    assert.equal(sent[0], '🎬 Andrei: Rush 3-1 Flash highlights\n\nhttps://storage.rcs-rds.ro/links/x')
+    await assert.rejects(go('news'), /outside 08:00-16:00/)
+    await assert.rejects(go('news', { override: '  ' }), /needs its reason/)
+    await go('announcement', { override: 'F-535 announcement, Silviu 26 Oct' })
+    assert.deepEqual(sent, [sent[0], 'announcement'])
+    // The handler asks for a video reply, not a /skim answer.
+    let options
+    await handle({ url: 'https://youtu.be/jNQXAC9IVRw', videos: { jNQXAC9IVRw: { title: 'Z', path: `${FOLDER}/z.mp4`, link: 'https://storage.rcs-rds.ro/links/z' } },
+        save: () => {}, digi: { info: async () => ({ size: 1 }) }, sender: async (t, o) => { options = o; return { sent: true } }, log: () => {} })
+    assert.equal(options.video, true)
+    assert.equal(options.asked, undefined)
 })
