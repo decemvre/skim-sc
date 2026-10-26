@@ -18,6 +18,10 @@ test('every YouTube link form gives its video id; anything else gives none', () 
 test('the reply is who posted it and the title, then the link alone on its own line', () => {
     assert.equal(replyText('Andrei', 'Me at the zoo', 'https://storage.rcs-rds.ro/links/x'), '🎬 Andrei: Me at the zoo\n\nhttps://storage.rcs-rds.ro/links/x')
     assert.equal(fileName('a/b: "c"?', 'jNQXAC9IVRw'), 'a b c [jNQXAC9IVRw].mp4')
+    // Digi Cloud refuses emoji in a name (400, 26 Oct); Romanian letters stay.
+    assert.equal(fileName('A treia escadrilă de F-16🇷🇴', 'jSfv6_k4_EE'), 'A treia escadrilă de F-16 [jSfv6_k4_EE].mp4')
+    assert.equal(fileName('👨‍👩‍👧 ❤️ gg 😀', 'jNQXAC9IVRw'), '❤ gg [jNQXAC9IVRw].mp4')
+    assert.equal(fileName('🔥🔥', 'jNQXAC9IVRw'), 'video [jNQXAC9IVRw].mp4')
 })
 
 test('limits: over 2 h, a live stream or over 2 GB is not saved', () => {

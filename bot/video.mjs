@@ -52,7 +52,10 @@ export const videoId = (url) => String(url || '').match(LINK)?.[1] || null
 export const watchUrl = (id) => `https://www.youtube.com/watch?v=${id}`
 
 // A good name in a folder: the title, then the id, which keeps two videos of one title apart.
-export const fileName = (title, id) => `${String(title || 'video').replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120) || 'video'} [${id}].mp4`
+// Digi Cloud answers 400 to a name with anything beyond the Basic Multilingual Plane - an emoji, a
+// flag (26 Oct: "A treia escadrilă de F-16🇷🇴") - so those go, with the joiners and variation
+// selectors that held them together. Only the file's name: the reply keeps the title as it is.
+export const fileName = (title, id) => `${String(title || 'video').replace(/[\u{10000}-\u{10FFFF}\u200d\ufe0e\ufe0f\u20e3]/gu, '').replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120) || 'video'} [${id}].mp4`
 
 export const replyText = (from, title, url) => [`🎬 ${from ? from + ': ' : ''}${title}`, '', url].join('\n')
 export const noteText = (from, title, why) => `🎬 ${from ? from + ': ' : ''}${title ? title + ' - ' : ''}${why}`
