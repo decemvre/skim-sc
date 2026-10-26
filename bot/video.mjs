@@ -7,7 +7,8 @@
 //      one at a time, apart from /skim questions so a long download never holds an answer up.
 //   2. yt-dlp, 720p at most, mp4 (H.264 first, so it plays on every phone and in the browser).
 //      Not over MAX_SECONDS long, not over MAX_BYTES, not a live stream: those get a short note.
-//   3. Uploaded to Digi Cloud, folder "Skim videos" (made the first time), and a link made to it:
+//   3. Uploaded to Digi Cloud with rclone (koofr backend, provider digistorage), folder "Skim videos"
+//      (made the first time), and a link made to it:
 //      anyone with the link can watch or download it without logging in; it is listed nowhere.
 //   4. The reply in the group: who posted it, the title, and the link alone on its own line.
 //   5. The local copy is deleted whatever happens - after the upload, or after the last retry
@@ -23,7 +24,7 @@
 //   node bot/video.mjs --download-only -- <url>  only the download (then deleted): no login needed
 
 import { execFile } from 'node:child_process'
-import { mkdirSync, openAsBlob, readdirSync, readFileSync, rmSync, statSync, statfsSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readdirSync, readFileSync, rmSync, statSync, statfsSync, writeFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
@@ -109,7 +110,7 @@ export async function download (id, dir, { runner = run } = {}) {
     mkdirSync(dir, { recursive: true })
     const free = statfsSync(dir)
     if (free.bavail * free.bsize < MAX_BYTES * 2 + 1024 ** 3) throw new Error('not enough free disk to download')
-    await runner(YTDLP, [...ytArgs(), '--no-progress', '-f', FORMAT, '--merge-output-format', 'mp4', '--max-filesize', `${MAX_BYTES}`,
+    await runner(YTDLP, [...ytArgs(), '--no-progress', '--no-mtime', '-f', FORMAT, '--merge-output-format', 'mp4', '--max-filesize', `${MAX_BYTES}`,
         '-o', join(dir, '%(id)s.%(ext)s'), watchUrl(id)], 45 * 60000)
     const file = readdirSync(dir).map((f) => join(dir, f)).find((f) => f.endsWith('.mp4'))
     // --max-filesize skips quietly: no file is a video over the cap.
@@ -152,6 +153,8 @@ export async function handle ({ url, from = '', dryPost = false, downloadOnly = 
             }
             delete videos[id]; save(videos)
         }
+        // No login, no download: said before anything is fetched.
+        if (!downloadOnly) { digi ||= new Digi(); await digi.environment?.() }
         const v = await retry(() => probe(id, { runner }), { attempts: RETRY.download, wait, log, label: 'probe' })
         title = v.title
         const why = tooBig(v)
@@ -165,7 +168,7 @@ export async function handle ({ url, from = '', dryPost = false, downloadOnly = 
             await digi.ensureFolder(FOLDER)
             const free = await digi.free()
             if (free !== null && free < got.size) throw new Permanent('Digi Cloud is full.')
-            return digi.upload(got.file, { name, size: got.size, open: () => openAsBlob(got.file, { type: 'video/mp4' }) })
+            return digi.upload(got.file, { name, size: got.size })
         }, { attempts: RETRY.upload, wait, log, label: 'upload' })
         clean()
         const link = await retry(() => digi.link(up.path), { attempts: RETRY.upload, wait, log, label: 'link' })

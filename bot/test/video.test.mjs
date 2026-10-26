@@ -119,22 +119,24 @@ test(`at most ${KEEP} in the folder: the oldest goes and its record with it`, as
     assert.ok(videos.jNQXAC9IVRw)
 })
 
-test('the Digi Cloud client: folder made at the root by name, prune deletes the oldest file and its link, all inside the folder', async () => {
+test('the Digi Cloud client: rclone koofr/digistorage, password obscured on stdin, prune deletes only the oldest inside the folder', async () => {
     const calls = []
-    const fetchImpl = async (url, { method, body }) => {
-        calls.push(`${method} ${url.pathname}${url.search}${body && typeof body === 'string' ? ' ' + body : ''}`)
-        const json = (o, status = 200) => ({ ok: status < 300, status, text: async () => JSON.stringify(o) })
-        if (url.pathname === '/api/v2/mounts') return json({ mounts: [{ id: 'm1', isPrimary: true, spaceTotal: 51200, spaceUsed: 137 }] })
-        if (url.pathname.endsWith('/files/info')) return json({}, 404)
-        if (url.pathname.endsWith('/files/list')) return json({ files: [{ name: 'new.mp4', type: 'file', modified: 2 }, { name: 'old.mp4', type: 'file', modified: 1 }] })
-        if (url.pathname.endsWith('/links') && method === 'GET') return json({ links: [{ id: 'L1', path: `${FOLDER}/old.mp4` }, { id: 'L2', path: '/!SAVE/x' }] })
-        return json({})
+    const runner = async (cmd, args, { env, input } = {}) => {
+        calls.push({ args, env, input })
+        if (args[0] === 'obscure') return 'OBSCURED\n'
+        if (args[0] === 'lsjson') return JSON.stringify([{ Name: 'new.mp4', ModTime: '2026-10-26T08:00:00Z' }, { Name: 'old.mp4', ModTime: '2026-10-25T08:00:00Z' }])
+        if (args[0] === 'link' && args[1] === '--unlink') throw new Error('not supported')
+        return ''
     }
-    const digi = new Digi({ creds: { user: 'u', password: 'p' }, fetchImpl, base: 'https://storage.example' })
+    const digi = new Digi({ creds: { user: 'a@b.ro', password: 'secret' }, runner })
     await digi.ensureFolder()
-    assert.ok(calls.includes('POST /api/v2/mounts/m1/files/folder?path=%2F {"name":"Skim videos"}'))
-    assert.equal(await digi.free(), (51200 - 137) * 1024 * 1024)
+    assert.deepEqual(calls[0], { args: ['obscure', '-'], env: undefined, input: 'secret' })
+    assert.deepEqual(calls[1].args, ['mkdir', ':koofr:Skim videos'])
+    assert.equal(calls[1].env.RCLONE_KOOFR_PROVIDER, 'digistorage')
+    assert.equal(calls[1].env.RCLONE_KOOFR_PASSWORD, 'OBSCURED')
+    assert.equal(calls[1].env.RCLONE_KOOFR_SETMTIME, 'false')
+    assert.ok(!calls.some((c) => c.args.some((a) => a.includes('secret'))), 'the password is never on a command line')
     calls.length = 0
     assert.deepEqual(await digi.prune(1), [`${FOLDER}/old.mp4`])
-    assert.deepEqual(calls.filter((c) => c.startsWith('DELETE')), ['DELETE /api/v2/mounts/m1/links/L1', 'DELETE /api/v2/mounts/m1/files/remove?path=%2FSkim+videos%2Fold.mp4'])
+    assert.deepEqual(calls.map((c) => c.args.join(' ')), ['lsjson --files-only --no-mimetype :koofr:Skim videos', 'link --unlink :koofr:Skim videos/old.mp4', 'deletefile :koofr:Skim videos/old.mp4'])
 })

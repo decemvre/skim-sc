@@ -33,8 +33,9 @@ text, and never the bot's own messages.
 - The local copy (`~/.cache/skim-bot/videos/`) is deleted after the upload, or after the last
   retry failed. Retries double from 30 s with jitter, capped at 8 min; 3 tries to download, 4 to
   upload. A failure for good is one short note in the group.
-- Login: `~/.config/friendzy/digistorage.json` (mode 600) `{"user": "<email>", "password": "<app password>"}`.
-  Without it a link gets "could not be saved just now".
+- Upload with rclone (`~/.local/bin/rclone`, koofr backend, provider digistorage), no rclone config:
+  the login is `~/.config/digistorage/skim-bot` (mode 600), line 1 the email, line 2 an app password
+  (F-536). Without it a link gets "could not be saved just now".
 
     node bot/video.mjs --download-only -- <url>   # the download alone, then deleted: no login
     node bot/video.mjs --no-post -- <url>         # everything, the reply printed, not sent
