@@ -1,6 +1,235 @@
 {
   "items": [
     {
+      "headline": "Sharp wins 2–1 after losing the first set",
+      "summary": "Sharp (Terran) lost the opening set of a best-of-three to Hyuk (Zerg) on 25 October, then won the next two for a 2–1 win.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Sharp plays Hyuk in a best-of-three on 25 October",
+      "teaser": "A best-of-three between Sharp and Hyuk on 25 October, a Terran against Zerg series.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:Sharp wins 2–1 after losing the first set",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "SnOw beats Speed 4–2 in a seven-set 1v1",
+      "summary": "SnOw (Protoss) beat Speed (Terran) 4–2 in a seven-set 1v1 on 25 October. He won the first two sets, lost the third, took the fourth, lost the fifth and closed it out with the sixth.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "SnOw and Speed meet in a seven-set 1v1 on 25 October",
+      "teaser": "Protoss SnOw faces Terran Speed in a seven-set 1v1 played on 25 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:SnOw beats Speed 4–2 in a seven-set 1v1",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "A Terran streamer beats a Zerg 2–1 on 24 October",
+      "summary": "Ample (Terran) beat Hyuk (Zerg) 2–1 on 24 October, winning the first and third sets after losing the second.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Ample plays Hyuk in a best-of-three on 24 October",
+      "teaser": "A best-of-three between Terran Ample and Zerg Hyuk played on 24 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-25"
+      ],
+      "date": "2026-10-24",
+      "id": "2026-10-24:A Terran streamer beats a Zerg 2–1 on 24 October",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer 1v1 results, 24 October",
+      "summary": "Several Korean streamers played best-of-three series on 24 October. Two of the winners came back from a lost first set to win 2–1, and others swept their opponents 2–0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Streamer 1v1 round-up for 24 October",
+      "teaser": "Best-of-three series between several Korean streamers on 24 October, with replays posted on the EloBoard community board.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-25"
+      ],
+      "date": "2026-10-24",
+      "id": "2026-10-24:Streamer 1v1 results, 24 October",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer 1v1 results, 25 October: Myeonchuga 5–0 Bitaming",
+      "summary": "Myeonchuga (Zerg) beat Bitaming (Terran) 5–0 in a nine-set match on 25 October. Other streamer 1v1s the same day ended 2–0 or 2–1, including Ddoa's 2–1 win over Hayun.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Streamer 1v1 round-up for 25 October",
+      "teaser": "Best-of-three and nine-set series between Korean streamers on 25 October, with replays posted for some of them.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:Streamer 1v1 results, 25 October: Myeonchuga 5–0 Bitaming",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mabeom Cup 5/6-tier final: Ringa beats Mengong 2–1",
+      "summary": "Ringa (Terran) beat Mengong (Terran) 2–1 in the best-of-three final of the Mabeom Cup 5/6-tier event on 25 October. Earlier, Newcastle's Iageng reached the semifinal, where Ringa beat him 2–1, and beat Aramy in the quarterfinal.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Mabeom Cup 5/6-tier: the bracket, the final and the streamer runs",
+      "teaser": "A streamer-run amateur cup on 25 October, with knockout matches from the 24-player round down to the final.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26",
+        "https://eloboard.com/community/posts/2442",
+        "https://eloboard.com/community/posts/2437",
+        "https://eloboard.com/community/posts/2446",
+        "https://eloboard.com/community/posts/2444",
+        "https://eloboard.com/community/posts/2445",
+        "https://eloboard.com/community/posts/2443",
+        "https://eloboard.com/community/posts/2471",
+        "https://eloboard.com/community/posts/2408",
+        "https://eloboard.com/community/posts/2407"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:Mabeom Cup 5/6-tier final: Ringa beats Mengong 2–1",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "STX beat SKT 2–0 in a 5v5 team showdown",
+      "summary": "STX beat SKT 2–0 in a 5v5 showdown on 25 October, taking the Proleague set 3–0 before winning the Winners League set. Both teams posted throwback posters for the event.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "STX vs SKT 5v5 showdown on 25 October, with throwback posters",
+      "teaser": "A 5v5 team showdown on Sunday 25 October at 19:00, with posters from both sides playing on the old rivalry.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:STX beat SKT 2–0 in a 5v5 team showdown",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Team Soobeom beats Team Kkaemo 2–0 in 5v5 K-League",
+      "summary": "Team Soobeom beat Team Kkaemo 2–0 in a 5v5 K-League on 25 October, taking the Proleague set 4–1 and the Winners League set 5–2.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "5v5 K-League team event on 25 October: Soobeom vs Kkaemo",
+      "teaser": "Team Soobeom and Team Kkaemo play a 5v5 K-League with a Proleague set and a Winners League set on 25 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:Team Soobeom beats Team Kkaemo 2–0 in 5v5 K-League",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Team Jeongwoo beats Team Byeonggu 2–1 in 5v5 Proleague",
+      "summary": "Team Jeongwoo beat Team Byeonggu 2–1 on 25 October, taking the Proleague set 4–0 and losing the Winners League set 3–5. effOrt then won the super ace decider over Best on Aiolos.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "5v5 Proleague on 25 October: Team Jeongwoo vs Team Byeonggu, with a super ace decider",
+      "teaser": "Team Jeongwoo and Team Byeonggu play a 5v5 Proleague with a Winners League set and a super ace decider on Aiolos.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-26"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:Team Jeongwoo beats Team Byeonggu 2–1 in 5v5 Proleague",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreams vs JSA mini-match on 26 October at 19:00",
+      "summary": "Dreams and JSA meet in a mini-match on 26 October at 19:00, streamed by Shuttle. Players from both sides were practising for it in the days before.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreams vs JSA mini-match on 26 October at 19:00",
+      "teaser": "A mini-match between Dreams and JSA on 26 October, streamed by Shuttle, with players practising in advance.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-26",
+        "time": "19:00",
+        "link": "https://www.sooplive.com/station/jk890202"
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2410"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Dreams vs JSA mini-match on 26 October at 19:00",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "MBU adds Hwiyeon as an 8-tier Protoss",
+      "summary": "MBU announced Hwiyeon, an 8-tier Protoss, as a new member with an official poster dated 25 October. The site's player record also moved Hwiyeon to MBU on that day.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "MBU welcomes Hwiyeon, an 8-tier Protoss",
+      "teaser": "An official MBU poster welcomes Hwiyeon as a new member, and the site's player record shows the change on 25 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2409"
+      ],
+      "date": "2026-10-25",
+      "id": "2026-10-25:MBU adds Hwiyeon as an 8-tier Protoss",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "New World youth offline training on 26 October",
+      "summary": "New World will hold an offline youth training session on Monday 26 October at 15:00, announced on a poster with several members. The schedule lists the stream under Mong.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "New World youth offline training on Monday 26 October at 15:00",
+      "teaser": "New World holds an offline training session for its youth members, announced with a poster of several members.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2473"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:New World youth offline training on 26 October",
+      "addedAt": "2026-10-26T05:45:27.022Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Major Proleague: Soulkey's team vs SnOw's team, both sets",
       "summary": "On 23 October Soulkey's team met SnOw's team in two Major Proleague sets. Soulkey's team won the Proleague set 4-0. In the Winners League set Rush had put SnOw's team 3-2 up, but Light won three straight to make it 5-3 for Soulkey's team, and he won all four of his games that day.",
       "spoiler": true,
