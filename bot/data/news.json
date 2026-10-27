@@ -1,6 +1,222 @@
 {
   "items": [
     {
+      "headline": "Ukhaneunhyeong leaves the Sobyeongdae team",
+      "summary": "On October 26, Ukhaneunhyeong announced they are leaving the Sobyeongdae team, thanking viewers and wishing the team well. The post does not say which team they will join.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Ukhaneunhyeong leaves the Sobyeongdae team",
+      "teaser": "A short farewell post thanking viewers, with no new team named.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2488"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Ukhaneunhyeong leaves the Sobyeongdae team",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Ringa reflects on his Mabeom Cup 5/6-tier run",
+      "summary": "On October 26, Ringa of Black Academy won the Mabeom Cup 5/6-tier event, which the post calls Black Academy's third individual title. He said he had planned only to win one game, had felt the pressure for several days, and cried after the win, thanking his coaches.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Ringa on his Mabeom Cup 5/6-tier event and the emotions behind it",
+      "teaser": "Ringa thanks his coaches and supporters, and invites fans to a mountain-hiking stream at 3 PM.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2499"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Ringa reflects on his Mabeom Cup 5/6-tier run",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Casters' showdown: Rush beats Soulkey 6:3",
+      "summary": "On October 26, Rush (Terran) beat Soulkey (Zerg) 6:3 in the casters' nine-set showdown, coming back from 3:3. The same day Rush also beat effOrt 4:0 in the 1:1 match, and soma beat RoyaL 4:1 in the elimination match.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Casters' nine-set showdown and side matches from 26 October",
+      "teaser": "The casters' decisive nine-set match and the rest of the day's matches, with Rush, Soulkey, soma and RoyaL in the line-up.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Casters' showdown: Rush beats Soulkey 6:3",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Hong PL 4:4: Hyeonje team beats Yuncheol team 2:0",
+      "summary": "On October 26, the Hyeonje team (Mini, soma, Larva, JyJ) beat the Yuncheol team (SnOw, Light, Best, Queen) 2:0 in the Hong PL 4:4 event. Mini finished the day 7-0, and in the Winners' League set Hyeonje came back from 0:3 to win 5:3.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Hong PL 4:4: Hyeonje team vs Yuncheol team, individual and Winners' games",
+      "teaser": "The Hong PL 4:4 team showdown, with its individual games and Winners' League set, featuring Mini and Light.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Hong PL 4:4: Hyeonje team beats Yuncheol team 2:0",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Calm MonstarZ Civil War: Calm's team wins 6:2",
+      "summary": "On October 26, Calm MonstarZ's Civil War ended 6:2 in an eight-game individual series, with Calm's team on the winning side. Calm had announced a 7 PM start, and Bitaming, unable to stream from home because of a router fault, watched from a booth instead.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Calm MonstarZ Civil War: eight individual games between two sides",
+      "teaser": "The Civil War was set for 7 PM, and Bitaming could not play because of a home internet problem.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Calm MonstarZ Civil War: Calm's team wins 6:2",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Queen Cup 6-tier PL: broadcast notice lists sets and teams",
+      "summary": "A broadcast notice for the Queen Cup 6-tier PL was posted on October 26, listing a 5:5 event with three sets: a Pro League set in entry mode, a Winners' set, and a super ace set. The notice names the teams taking part, including Dreamz, Black Academy, Newcastle, JSA, Calm MonstarZ and JMT.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Queen Cup 6-tier PL: broadcast notice with the sets and team lists",
+      "teaser": "The notice lays out the three sets and the team line-ups for the 6-tier PL event.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2507"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Queen Cup 6-tier PL: broadcast notice lists sets and teams",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mini Daejeon: JSA beats Dreamz 2:1 in the super ace decider",
+      "summary": "On October 26 at 7 PM, JSA beat Dreamz 2:1 in Mini Daejeon. Dreamz took the first set 3:2, but JSA won the second 3:0 and then the super ace decider, with Sosim beating Yoning.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Mini Daejeon: JSA vs Dreamz, with a super ace decider",
+      "teaser": "The 7 PM team match between JSA and Dreamz, with the line-up poster and the match format.",
+      "teamResult": "Mini Daejeon: JSA 2-1 Dreamz",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Mini Daejeon: JSA beats Dreamz 2:1 in the super ace decider",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "BishOp wins both best-of-threes; Rush and Shinee sweep",
+      "summary": "On October 26, BishOp (Terran) played Trap (Protoss) twice in best-of-three matches, winning 2:1 once and 2:0 once. Mind beat effOrt 2:1 after losing the second set, Light beat Queen 2:0, Rush beat soma 2:0, and Shinee beat BTS 2:0. Mobi came back from losing the first set to beat a player 2:1.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Round of best-of-three 1:1 matches on 26 October",
+      "teaser": "A day of best-of-three player matches, with Light, Rush and Shinee in the line-up.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:BishOp wins both best-of-threes; Rush and Shinee sweep",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Hanjjoni beats Hayhyeon 3:0; Mingddoyam wins both of his matches",
+      "summary": "On October 26, Hanjjoni (Protoss) beat Hayhyeon (Terran) 3:0 in a best-of-five. Mingddoyam (Terran) came back from losing the first set to beat Sewol 2:1, then beat Guki 2:0, while Maknaehyeonjin beat Ppyakppyak and Jini 2:0 each and lost 0:2 to Meonjin. Many other matches followed across the day.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "A long round of 1:1 matches on 26 October in several formats",
+      "teaser": "Matches in several formats across the day, with players such as Hanjjoni and Mingddoyam.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Hanjjoni beats Hayhyeon 3:0; Mingddoyam wins both of his matches",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Video sketch from the Google Play ASL S22 final",
+      "summary": "A behind-the-scenes video from the Google Play ASL Season 22 final was posted to the video and photo board on October 26.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Video sketch from the Google Play ASL S22 final day",
+      "teaser": "A behind-the-scenes video from the finals venue, posted to the video and photo board.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2519"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Video sketch from the Google Play ASL S22 final",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamers post health updates and rest-day notices",
+      "summary": "Several streamers posted updates on October 26 about illness, rest days and plans. One described a clinic visit and a sore throat, another said they had been unwell for much of the month, and others announced breaks and plans for the coming week.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamers' health updates and rest days for the coming week",
+      "teaser": "Rest days, illness and schedule notes from several streamers.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2491"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Streamers post health updates and rest-day notices",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Nyangsudi edges Ganggaida 4:3 in a seven-game 1:1",
+      "summary": "On October 26, Nyangsudi (Zerg) beat Ganggaida (Terran) 4:3 over seven games. Nyangsudi won sets 1, 3, 4 and 5, while Ganggaida took sets 2, 6 and 7.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Seven-game 1:1 showdown between two streamers on 26 October",
+      "teaser": "A seven-game 1:1 match between Nyangsudi (Zerg) and Ganggaida (Terran).",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-27"
+      ],
+      "date": "2026-10-26",
+      "id": "2026-10-26:Nyangsudi edges Ganggaida 4:3 in a seven-game 1:1",
+      "addedAt": "2026-10-27T05:30:40.077Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Sharp wins 2–1 after losing the first set",
       "summary": "Sharp (Terran) lost the opening set of a best-of-three to Hyuk (Zerg) on 25 October, then won the next two for a 2–1 win.",
       "spoiler": true,
@@ -2866,227 +3082,6 @@
       "date": "2026-10-13",
       "id": "2026-10-13:Stork beats RoyaL 2-0 in sponsored best-of-three",
       "addedAt": "2026-10-14T04:31:20.083Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "AI 'Pluto' taught itself StarCraft and won an AI tournament",
-      "summary": "Pluto, an AI, learned StarCraft through repeated games against AI opponents, without using human match data. One model now plays all three races, and it won an AI competition and has been beating Korean pro players. Dong-A Ilbo reported the story.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "An AI that taught itself StarCraft from scratch, and how it learned",
-      "teaser": "Pluto learned the game through repeated AI-vs-AI play with no human game data, and now handles all three races with one model. Dong-A Ilbo has the full story.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/020/0003754412"
-      ],
-      "date": "2026-10-13",
-      "id": "2026-10-13:AI 'Pluto' taught itself StarCraft and won an AI tournament",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Semi-major Pro League: a player team beats BTS team 2:0",
-      "summary": "In a semi-major Pro League 4-on-4 team match on 11 October, the a player team and the BTS team played two sets of best-of-seven. The first set was a close 4:3 individual round, and the second was taken by Sharp, who beat four opponents in a row, so the a player team won 2:0.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Semi-major Pro League team match: a player team vs BTS team",
-      "teaser": "A 4-on-4 semi-major Pro League team match on 11 October, with each set played as best-of-seven. Sharp was one of the key players on the day.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-12"
-      ],
-      "date": "2026-10-11",
-      "id": "2026-10-11:Semi-major Pro League: a player team beats BTS team 2:0",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Ontoi renews contract with Sobyeongdae",
-      "summary": "Ontoi finished his contract renewal with Sobyeongdae on 11 October and posted a thank-you notice on 12 October. He said that now that he is officially a Sobyeongdae student, he will do his duty, and he shared the dessert gifts he received from fellow streamers.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Ontoi renews with Sobyeongdae and thanks fans after his first content back",
-      "teaser": "The streamer finished his contract renewal and posted thanks after his first broadcast back with the team. Fellow streamers also sent him gifts.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/980"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Ontoi renews contract with Sobyeongdae",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Casters' showdown: Soulkey beats RoyaL 5:4",
-      "summary": "Soulkey (Zerg) and RoyaL (Terran) met in a best-of-nine casters' showdown on 12 October. RoyaL took the first three games and the fifth to lead 4:1, before Soulkey took the fourth and then won the last four games in a row to finish 5:4.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Casters' final showdown: Soulkey vs RoyaL, best of nine",
-      "teaser": "Soulkey (Zerg) and RoyaL (Terran) played a best-of-nine casters' showdown on 12 October, with the full series played out.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Casters' showdown: Soulkey beats RoyaL 5:4",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Bisu sweeps Jaedong 4:0 on a Chinese spawn",
-      "summary": "Bisu (Protoss) and Jaedong (Zerg) played a best-of-seven one-on-one on a Chinese spawn on 12 October. Bisu won four games in a row, so the series ended 4:0 without a fifth game.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Bisu vs Jaedong: best-of-seven 1v1 on a Chinese spawn",
-      "teaser": "Bisu and Jaedong met in a best-of-seven one-on-one on a Chinese spawn on 12 October. It was a long-form match between two top players.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Bisu sweeps Jaedong 4:0 on a Chinese spawn",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Yeseul beats Sojuyang 4:3 in a seven-game streamer showdown",
-      "summary": "Yeseul (Protoss) beat Sojuyang (Terran) 4:3 in a seven-game streamer showdown on 12 October, with 1,000 spawn at stake in each game. Yeseul also won two of three single games against Bijaehui (Zerg) and beat Ppyakppyak (Zerg) 2:0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Streamer showdown: Yeseul vs Sojuyang, seven games with 1,000-spawn stakes",
-      "teaser": "Two streamers faced off in a seven-game showdown on 12 October, with 1,000 spawn at stake per game. Yeseul also played two other streamers that day.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Yeseul beats Sojuyang 4:3 in a seven-game streamer showdown",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "BTS plays six best-of-three series, wins two",
-      "summary": "BTS (Zerg) played six best-of-three series on 12 October and won two of them, against huro and Shinee. He lost twice to SnOw, and lost 1:2 to both RoyaL and Fantasy.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "BTS plays six best-of-three series in one day",
-      "teaser": "BTS played six best-of-three series on 12 October against a mix of Protoss and Terran players.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:BTS plays six best-of-three series, wins two",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Fantasy loses 1:2 to Speed; EloBoard match roundup",
-      "summary": "Fantasy (Terran) took the first game but lost 1:2 to Speed in a best-of-three on 12 October. The same day, Trap won 2:0, RoyaL beat BTS and Queen 2:1 each, and Shinee beat huro 2:0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "A day of EloBoard matches, including Fantasy vs Speed",
-      "teaser": "A roundup of individual Brood War games and series on 12 October, featuring Fantasy, Speed and several others.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Fantasy loses 1:2 to Speed; EloBoard match roundup",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Seoldung beats Vitaming 4:2 in best-of-seven; Waffle-dae day roundup",
-      "summary": "Seoldung (Protoss) beat Vitaming (Terran) 4:2 in a best-of-seven on 12 October, with Vitaming taking the first and fourth games. Several other Waffle-dae players also played single games and best-of-three series that day.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Waffle-dae day: Seoldung vs Vitaming in a seven-game showdown",
-      "teaser": "Seoldung and Vitaming met in a best-of-seven on 12 October, and several other Waffle-dae players also had matches that day.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-13"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Seoldung beats Vitaming 4:2 in best-of-seven; Waffle-dae day roundup",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Yeseul's 'Dragoon taekkyeon' clip from a spawn game",
-      "summary": "A clip of Yeseul using Dragoons in a spawn game was posted to EloBoard's video board under the name 'Dragoon taekkyeon'. The video came from SOOP's Catch channel, and the post came from the FMKorea forum.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Yeseul's 'Dragoon taekkyeon' clip from a spawn game",
-      "teaser": "A short Brood War clip of Yeseul's Dragoon play in a spawn game was posted under the name 'Dragoon taekkyeon'.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1008"
-      ],
-      "date": "2026-10-13",
-      "id": "2026-10-13:Yeseul's 'Dragoon taekkyeon' clip from a spawn game",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Waffle-dae's Jinni to run a 'first aid' Zerg session with Yapsape",
-      "summary": "Jinni of Waffle-dae posted a poster for a joint 'first aid' education broadcast with Yapsape on 12 October at 3 p.m. The course material listed on the poster is Zerg strategy, match-up play and the basic manual.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Waffle-dae's Jinni hosts a first aid session with Yapsape on Zerg play",
-      "teaser": "A joint broadcast on 12 October at 3 p.m., with course material covering Zerg strategy, match-up play and the basics.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/984"
-      ],
-      "date": "2026-10-12",
-      "id": "2026-10-12:Waffle-dae's Jinni to run a 'first aid' Zerg session with Yapsape",
-      "addedAt": "2026-10-13T04:30:53.073Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Four crews to hold a use-map showdown on 13 October",
-      "summary": "Heukcademy, Calm MonstarZ, K-Dae and JSA are set to meet in a four-crew use-map showdown at 19:00, according to a poster Heukcademy posted. Wolf Chaerin of K-Dae also said the four crews would play a comprehensive-game match on 13 October.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Four crews plan a showdown on 13 October, with a 19:00 start",
-      "teaser": "Heukcademy, Calm MonstarZ, K-Dae and JSA are planning a four-crew showdown on the evening of 13 October.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-13",
-        "time": "19:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1000",
-        "https://eloboard.com/community/posts/995"
-      ],
-      "date": "2026-10-13",
-      "id": "2026-10-13:Four crews to hold a use-map showdown on 13 October",
-      "addedAt": "2026-10-13T04:30:53.073Z",
       "by": "claude",
       "posted": false
     }

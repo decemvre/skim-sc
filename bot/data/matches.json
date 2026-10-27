@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T03:45:25.575Z",
+  "updated": "2026-10-27T05:00:21.688Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -1218,7 +1218,7 @@
       },
       "competition": {
         "raw": "김윤환팀 vs 진영화팀",
-        "name": "",
+        "name": "Calm team vs Movie team",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -1227,8 +1227,8 @@
         "eloboard": true
       },
       "titleSource": "김윤환팀 vs 진영화팀",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Calm team vs Movie team",
+      "needsTranslation": false,
       "duel": [
         "김윤환팀",
         "진영화팀"
