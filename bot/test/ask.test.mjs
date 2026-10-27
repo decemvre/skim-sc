@@ -154,3 +154,27 @@ test('help is not counted towards the limits, and a real question with "help" in
     await ask({ text: '/skim help me find the ASL VODs', now: NOW, asked: {}, save: () => {}, model, sender: async () => ({ sent: true }) })
     assert.ok(prompted)
 })
+
+test('/skim help lists the two video forms, in English and Romanian (X-134)', async () => {
+    const posted = []
+    for (const text of ['/skim help', '/skim ajutor']) {
+        await ask({ id: text, text, now: NOW, asked: {}, save: () => {}, model: async () => { throw new Error('no model') }, sender: async (t) => { posted.push(t); return { sent: true } } })
+    }
+    assert.match(posted[0], /\n\/skim <YouTube link> - that video\n\/skim yt - the nearest YouTube link above it\n/)
+    assert.match(posted[1], /\n\/skim <link YouTube> - acel video\n\/skim yt - cel mai apropiat link YouTube de deasupra\n/)
+})
+
+test('/skim yt with no YouTube link above it (the bridge sends only those here) is said in one line, once, without the model or the limits (X-134)', async () => {
+    const posted = []
+    const asked = {}
+    const model = async () => { throw new Error('the model is not asked') }
+    const sender = async (t) => { posted.push(t); return { sent: true } }
+    const r = await ask({ id: 'm1', from: 'Andrei', text: '/skim yt', now: NOW, asked, save: () => {}, model, sender })
+    assert.equal(r.reply, '🎬 Andrei: I found no YouTube link above your /skim yt.')
+    assert.deepEqual(await ask({ id: 'm1', from: 'Andrei', text: '/skim yt', now: NOW, asked, save: () => {}, model, sender }), { skipped: 'already answered' })
+    assert.equal(posted.length, 1)
+    assert.equal(overLimit(asked, NOW), null)
+    let prompted = false
+    await ask({ text: '/skim ytb sau twitch?', now: NOW, asked: {}, save: () => {}, model: async () => { prompted = true; return { language: 'ro', answer: 'SOOP.', links: [] } }, sender })
+    assert.ok(prompted, 'a question starting with yt is still a question')
+})

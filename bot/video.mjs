@@ -1,10 +1,13 @@
 #!/usr/bin/env node
-// Skim Bot, F-535: a YouTube link posted in the group comes back as a Digi Cloud link to the video,
-// for the four of them only (Silviu, 26 Oct 2026).
+// Skim Bot, F-535: a YouTube video asked for in the group comes back as a Digi Cloud link to it,
+// for the four of them only (Silviu, 26 Oct 2026). Only when asked with /skim (X-134, 27 Oct):
+// `/skim <YouTube link>`, or `/skim yt` for the nearest YouTube link above it. A link posted
+// without /skim is left alone.
 //
-//   1. The WhatsApp bridge sees the link (office/whatsapp-bridge/skim-asks.mjs: of a message that
-//      is not /skim it reads only its YouTube URLs, never its text) and runs this once per link,
-//      one at a time, apart from /skim questions so a long download never holds an answer up.
+//   1. The WhatsApp bridge sees the /skim (office/whatsapp-bridge/skim-asks.mjs; for /skim yt the
+//      page looks back for the nearest YouTube link, and only that URL leaves it) and runs this
+//      once per /skim, one at a time, apart from /skim questions so a long download never holds
+//      an answer up.
 //   2. yt-dlp, 720p at most, mp4 (H.264 first, so it plays on every phone and in the browser).
 //      Not over MAX_SECONDS long, not over MAX_BYTES, not a live stream: those get a short note.
 //   3. Uploaded to Digi Cloud with rclone (koofr backend, provider digistorage), folder "Skim videos"

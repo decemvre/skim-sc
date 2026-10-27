@@ -4,6 +4,8 @@
 //   /skim cine joacă azi în ASL?
 //   /skim when is Rush's next match?
 //   /skim help  (or /skim ajutor) - what it can do, F-344
+//   /skim <YouTube link>, /skim yt - a video saved (bot/video.mjs, X-134); the bridge sends those
+//                     there, and only a /skim yt with no YouTube link above it comes here
 //
 // About Korean StarCraft most of all, StarCraft anywhere in the world, and South Korea broadly
 // (Silviu, 16 and 17 Oct), with every amount in won given in rough US dollars too. Only these
@@ -193,6 +195,11 @@ export function overLimit (asked, now = new Date()) {
 const HELP_WORDS = /^(help|ajutor|\?|commands|comenzi)\W*$/i
 export const asksForHelp = (question) => !question || HELP_WORDS.test(question)
 
+// "/skim yt" (X-134) is here only when the bridge found no YouTube link above it: said in one
+// line, without the model, and not counted towards the limits.
+export const asksForVideoAbove = (question) => /^yt\W*$/i.test(question || '')
+export const noLinkAboveText = (from) => `🎬 ${from ? from + ': ' : ''}I found no YouTube link above your /skim yt.`
+
 export function helpText (ro = false) {
     return (ro ? [
         '🤖 *Skim Bot* - ce știu să fac',
@@ -207,6 +214,11 @@ export function helpText (ro = false) {
         '• Orele le dau în ora Coreei și a Bucureștiului; jucătorii după ID, niciodată după numele real.',
         '• Fără spoilere: spun cine a câștigat sau scorul doar dacă întrebi asta.',
         `• Cel mult ${LIMITS.hour} întrebări pe oră și ${LIMITS.day} pe zi.`,
+        '',
+        '*Videoclipuri* de pe YouTube, salvate cu un link care merge pe orice telefon:',
+        '/skim <link YouTube> - acel video',
+        '/skim yt - cel mai apropiat link YouTube de deasupra',
+        '• Un link de YouTube pus fără /skim rămâne neatins. Cel mult 2 ore, la 720p.',
         '',
         `*Singur*, între 08:00 și 16:00 ora României: meciurile zilei dimineața, știri în zilele lucrătoare, un memento cu ${REMIND_MIN} de minute înainte de meciurile mari și rezultatele echipelor universitare.`,
         '',
@@ -227,6 +239,11 @@ export function helpText (ro = false) {
         '• No spoilers: who won or the score only when that is what you ask.',
         `• At most ${LIMITS.hour} questions an hour and ${LIMITS.day} a day.`,
         '',
+        '*YouTube videos*, saved with a link that plays on any phone:',
+        '/skim <YouTube link> - that video',
+        '/skim yt - the nearest YouTube link above it',
+        '• A YouTube link posted without /skim is left alone. Up to 2 h, at 720p.',
+        '',
         `*On my own*, 08:00-16:00 Bucharest time: the day's matches in the morning, news on weekdays, a reminder ${REMIND_MIN} minutes before a major match, and university team results.`,
         '',
         'Schedule and news:',
@@ -243,6 +260,11 @@ export async function ask ({ id, from, text, now = new Date(), asked = loadAsked
     if (asksForHelp(question)) {
         if (id && !dryRun) { asked[id] = { at: now.toISOString(), from: from || null, help: true }; save(asked) }
         const reply = helpText(/ajutor|comenzi/i.test(question))
+        return { reply, ...await sender(reply, { asked: true, dryRun }) }
+    }
+    if (asksForVideoAbove(question)) {
+        if (id && !dryRun) { asked[id] = { at: now.toISOString(), from: from || null, help: true }; save(asked) }
+        const reply = noLinkAboveText(from)
         return { reply, ...await sender(reply, { asked: true, dryRun }) }
     }
     const limit = overLimit(asked, now)

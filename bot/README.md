@@ -16,12 +16,16 @@ written in `helpText()` rather than by the model, and is not counted against the
 
 No dependencies beyond Node 24 and Google Chrome (to read SOOP's schedule page).
 
-## YouTube links in the group (F-535)
+## YouTube videos in the group (F-535, X-134)
 
-A YouTube link posted in the group (watch, youtu.be, /shorts, m., music.) comes back as a Digi Cloud
-link to the video: `bot/video.mjs`, run by the bridge once per link, one at a time and apart from
-/skim questions. Of a message that is not /skim the bridge reads only its YouTube URLs, never its
-text, and never the bot's own messages.
+Only when asked with /skim (Silviu, 27 Oct): `/skim <YouTube link>` saves that video (watch,
+youtu.be, /shorts, m., music., extra parameters and all); `/skim yt` saves the nearest YouTube link
+above it, looking back from the newest through what is loaded of the chat, never one of the bot's
+own messages. A YouTube link posted without /skim is left alone. Each comes back as a Digi Cloud
+link to the video: `bot/video.mjs`, run by the bridge once per /skim (its message id is
+remembered), one at a time and apart from /skim questions. With no link above, a /skim yt is
+answered in one line by `bot/ask.mjs`. Of the other messages only the one URL a /skim yt picked
+leaves the page, never their text.
 
 - yt-dlp at 720p at most, mp4, H.264 first. Not saved, with a short note: over 2 h, over 2 GB, a
   live stream.
