@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T13:00:27.149Z",
+  "updated": "2026-10-27T17:30:46.525Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -858,7 +858,7 @@
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
-      "key": "2026-10-21 15:00 eloboard CK 소윤ck",
+      "key": "2026-10-21 15:00 eloboard 대학대전",
       "origin": "eloboard",
       "date": "2026-10-21",
       "kst": "15:00",
@@ -870,8 +870,8 @@
         "zone": "EEST"
       },
       "competition": {
-        "raw": "CK 소윤ck",
-        "name": "CK Soyunck",
+        "raw": "대학대전",
+        "name": "University Clash",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -879,8 +879,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK 소윤ck",
-      "titleEn": "CK Soyunck",
+      "titleSource": "대학대전",
+      "titleEn": "University Clash",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -888,7 +888,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-27T07:15:21.770Z",
+      "firstSeen": "2026-10-27T17:30:46.525Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
     },
     {
