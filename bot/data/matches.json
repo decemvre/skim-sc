@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T10:45:20.908Z",
+  "updated": "2026-10-28T12:00:20.519Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -1313,7 +1313,7 @@
       "played": false,
       "status": "Upcoming",
       "firstSeen": "2026-10-10T09:31:02.354Z",
-      "onSchedule": true,
+      "onSchedule": false,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
     },
     {
