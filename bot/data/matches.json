@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T12:00:20.519Z",
+  "updated": "2026-10-28T17:45:21.017Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -1310,10 +1310,10 @@
       "b": {
         "team": "메디카 스타즈"
       },
-      "played": false,
-      "status": "Upcoming",
+      "played": true,
+      "status": "Replay",
       "firstSeen": "2026-10-10T09:31:02.354Z",
-      "onSchedule": false,
+      "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
     },
     {
