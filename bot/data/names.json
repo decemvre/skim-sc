@@ -8,6 +8,15 @@
       "source": "https://liquipedia.net/starcraft/910",
       "checked": "2026-10-12"
     },
+    "김건욱": {
+      "id": "Bale",
+      "romanized": "Kim Geon Wook",
+      "race": "Z",
+      "nicknames": [],
+      "soop": "killkg2",
+      "source": "https://liquipedia.net/starcraft/Bale",
+      "checked": "2026-10-29"
+    },
     "김경모": {
       "id": "ggaemo",
       "romanized": "Kim Kyung Mo",
@@ -15,6 +24,15 @@
       "nicknames": [],
       "source": "https://liquipedia.net/starcraft/ggaemo",
       "checked": "2026-10-10"
+    },
+    "김기덕": {
+      "id": "Alen",
+      "romanized": null,
+      "race": "Z",
+      "nicknames": [],
+      "soop": null,
+      "source": "https://liquipedia.net/starcraft/Alen",
+      "checked": "2026-10-29"
     },
     "김도우": {
       "id": "Classic",
@@ -157,7 +175,8 @@
       "race": "P",
       "nicknames": [],
       "source": "https://liquipedia.net/starcraft/SeCret",
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "soop": "skygkrtn"
     },
     "도재욱": {
       "id": "Best",
@@ -597,12 +616,13 @@
     "공다츠": "2026-10-15",
     "공약": "2026-10-13",
     "교수팀": "2026-10-29",
+    "권아온": "2026-10-29",
     "극락회": "2026-10-29",
     "기념": "2026-10-11",
     "기린삼남": "2026-10-29",
     "김말랑": "2026-10-27",
     "김바다": "2026-10-23",
-    "김세주": "2026-10-10",
+    "김세주": "2026-10-29",
     "김아린": "2026-10-19",
     "김유진": "2026-10-14",
     "김윤환팀": "2026-10-29",

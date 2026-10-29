@@ -1,6 +1,288 @@
 {
   "items": [
     {
+      "headline": "Streamers meet in Hyehwa to pay off a Civil War bet",
+      "summary": "On 28 October a group of Korean streamers gathered at a Hyehwa studio to pay off a bet from the Civil War event. Guests posted group photos, quizzes and a shared meal, and the host said a cold had left the planning short.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamers meet in Hyehwa to pay off a Civil War bet",
+      "teaser": "A group of Korean streamers gathered at a Hyehwa studio on 28 October to pay off a Civil War bet, with quizzes, a shared meal and a group photo.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2647"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Streamers meet in Hyehwa to pay off a Civil War bet",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "CK Jack-Joker League set for 29 October at 14:00",
+      "summary": "A CK Jack-Joker League, with players split into Jack, Joker and Spade tiers, was announced for 29 October at 14:00. The event is listed on the schedule as a broadcast by Alen.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "CK Jack-Joker League: a tiered CK player event on 29 October",
+      "teaser": "The Jack-Joker League starts at 14:00 on 29 October, with players in Jack and Joker tiers and a fixed Spade match. The announcement asked viewers to come along.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-29",
+        "time": "14:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2636"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:CK Jack-Joker League set for 29 October at 14:00",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer 1v1 ladder: Jiduedue wins two 2:0s, several 2:1s",
+      "summary": "Jiduedue (Terran) beat Yoning and Gina 2:0 each and split two sets with Chaerin. Yeshil (Protoss) came back from a set down to win 2:1 against Minji and Yui, but lost 1:2 to Imjoy. Several other amateur 1v1s ended 2:0 or 2:1.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "A run of streamer and amateur 1v1 sets from 28 October",
+      "teaser": "A run of 1v1 sets between streamers and amateurs on 28 October, several of them going to three games.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Streamer 1v1 ladder: Jiduedue wins two 2:0s, several 2:1s",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "BTS and Hiyoko now listed under C9",
+      "summary": "On 28 October the site affiliation of BTS (Zerg) and Hiyoko changed to C9. Their player records now show C9, although no news post was made about the change.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Two players now listed under C9",
+      "teaser": "Two players' team records on the EloBoard site changed to C9 on 28 October. No news post accompanied the change.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:BTS and Hiyoko now listed under C9",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Star University cooking contest broadcast on 29 October",
+      "summary": "A Star University cooking contest is set for 29 October at 16:00 on the stream of SeCret. On 28 October the New World team held a selection round on another stream, and its members said they would cook their own way.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Star University cooking contest on 29 October at 16:00",
+      "teaser": "The New World team has been picking its cooking line-up ahead of the Star University cooking contest on 29 October, with several players talking about their dishes.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-29",
+        "time": "16:00",
+        "link": "https://www.sooplive.com/station/skygkrtn"
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2615"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Star University cooking contest broadcast on 29 October",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Jumpiel 5:5 Pro League: Team Yoonchul 2:1 Team Sungdae",
+      "summary": "Team Yoonchul, with SnOw, soma and Light, beat Team Sungdae 2:1 in a Jumpiel 5:5 pro league on 28 October. Sungdae took the first set 4:3, Yoonchul swept the second 4:0, and Light won the super-ace decider.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Jumpiel 5:5 Pro League: Team Yoonchul vs Team Sungdae",
+      "teaser": "Two five-player teams met in a Jumpiel 5:5 pro league on 28 October, with two team sets and a super-ace decider at the end.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Jumpiel 5:5 Pro League: Team Yoonchul 2:1 Team Sungdae",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats Sharp 3:2 in five-set match",
+      "summary": "soma (Zerg) beat Sharp (Terran) 3:2 in a five-set first-to-three on 28 October. In the same session Queen came back from losing the first set to beat Mini 2:1, and Fantasy won both of his series.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "soma vs Sharp: five-set match on 28 October",
+      "teaser": "A five-set series between soma and Sharp, one of several 1v1 series in a pro league session on 28 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:soma beats Sharp 3:2 in five-set match",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Women streamers' double showdown: 7-8 tier skill check",
+      "summary": "In a women streamers' double showdown, a player and Yojeong Neoguri beat a player and Bomdeogi 4:2 in a first-to-four format. The result was posted as an official skill check for the 7 and 8 tiers.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Women streamers' double showdown: a 7-8 tier skill check",
+      "teaser": "A women streamers' double showdown, played as a 7-8 tier skill check on 28 October in a first-to-four format.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Women streamers' double showdown: 7-8 tier skill check",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Seugingi plans a home-studio setup stream on 28 October",
+      "summary": "After a tearful stream on 27 October, the streamer Seugingi said they will talk more and aim to be a better broadcaster. A home studio setup stream was planned for 5pm on 28 October with two guests.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Seugingi plans a home-studio setup stream on 28 October",
+      "teaser": "After a tearful stream, Seugingi said they will talk more and aim to be a better broadcaster. A home studio setup stream was planned for 5pm on 28 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2631"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Seugingi plans a home-studio setup stream on 28 October",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamers post from a Tokyo trip, from ramen to Tokyo Tower",
+      "summary": "Several streamers posted from a trip to Tokyo on 27 and 28 October, sharing ramen, Japanese barbecue and night views from Tokyo Tower. Bale said the first day ended with a dinner out, and another streamer posted about a Jeongseon mountain hike.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamers share a Tokyo trip, from ramen to Tokyo Tower",
+      "teaser": "A group of streamers posted from Tokyo on 27 and 28 October, with food, night views and a planned street-food day. Another streamer hiked in Jeongseon.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2596"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Streamers post from a Tokyo trip, from ramen to Tokyo Tower",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Calm MonstarZ finish practice ahead of Heukkadami clash",
+      "summary": "Calm MonstarZ players finished a practice session on 27 October and said they had won every game. They said they would now focus on their university clash with Heukkadami, and one streamer will appear on another channel on 30 October.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Calm MonstarZ prepare for their university clash with Heukkadami",
+      "teaser": "Calm MonstarZ players talked about their practice and the upcoming Heukkadami match, which they said they want to win.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2599"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Calm MonstarZ finish practice ahead of Heukkadami clash",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Calm MonstarZ video: a striking shot draws praise",
+      "summary": "A Calm MonstarZ video posted to EloBoard shows a player's striking shot, which a teammate praises.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Calm MonstarZ video of a striking shot",
+      "teaser": "A short clip from a Calm MonstarZ game, posted to the EloBoard video board on 28 October, shows a striking shot and a teammate's reaction.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2614"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Calm MonstarZ video: a striking shot draws praise",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Rush vs Best: nine-set Google Play showdown on 2 November",
+      "summary": "Rush (Terran) and Best (Protoss) will play a full nine-set Google Play showdown on Monday 2 November at 21:00. They will play all nine sets even at 8:0, on ASL Season 22 maps with one map removed by each player before the start.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "Rush vs Best: Google Play showdown on 2 November",
+      "teaser": "A full nine-set showdown on the ASL Season 22 maps, with each player removing one map before the start, on Monday 2 November at 21:00.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-02",
+        "time": "21:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2642"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Rush vs Best: nine-set Google Play showdown on 2 November",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Double B two-star camp streams on 28 October, with a secret guest",
+      "summary": "Two Double B players, Bapsae and Sojuyang, were set to take part in a tough two-star camp stream on 28 October at 12:30, hosted on the channel of Leta. The stream also had a secret guest slot.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Double B 'two-star camp' stream with a secret guest on 28 October",
+      "teaser": "Two Double B players were scheduled for a two-star camp stream on 28 October at 12:30, with a secret guest slot.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2595"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Double B two-star camp streams on 28 October, with a secret guest",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Speed beats Best 4:2 in 1:1 match",
+      "summary": "Speed (Terran) beat Best (Protoss) 4:2 in a first-to-four 1:1 match on 28 October. The winner took the first two sets, lost the next two, then won the last two.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Best vs Speed: first-to-four 1:1 match on 28 October",
+      "teaser": "Best and Speed met in a first-to-four 1:1 match on 28 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-29"
+      ],
+      "date": "2026-10-28",
+      "id": "2026-10-28:Speed beats Best 4:2 in 1:1 match",
+      "addedAt": "2026-10-29T05:30:24.290Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "MBU welcomes Protoss player a player as new member",
       "summary": "MBU announced a player as a new Protoss member on 27 October, with an official welcome poster and an afternoon announcement stream. The player's name on EloBoard was updated to a player and MBU was added to the player's team history.",
       "spoiler": false,
@@ -2709,202 +2991,6 @@
       "date": "2026-10-15",
       "id": "2026-10-15:huro and SnOw beat effOrt on 15 October",
       "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "ASL S22 final: Soulkey vs Rush on Saturday",
-      "summary": "Soulkey (Zerg) goes for a record fifth ASL title against Rush (Terran), who has two runner-up finishes and is chasing his first title. The final is on Saturday the 17th.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "ASL Season 22 final preview: Soulkey chases a record fifth title",
-      "teaser": "Rush is hoping to finally win after two runner-up finishes. The final is on Saturday, the 17th.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-17",
-        "time": null,
-        "link": null
-      },
-      "sources": [
-        "https://m.sports.naver.com/esports/article/144/0001144240"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:ASL S22 final: Soulkey vs Rush on Saturday",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "a player leaves JSA",
-      "summary": "a player announced on 14 October that he has left the JSA team. He said he is unsure whether to keep playing StarCraft and plans a short break after weeks of nonstop streaming.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Streamer leaves JSA, unsure whether to keep playing StarCraft",
-      "teaser": "He thanked the team's coaches and members and said he will think about whether to continue playing.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1225"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:a player leaves JSA",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "JSA welcomes a new youth recruit",
-      "summary": "JSA posted a welcome poster for a new youth recruit on its official board on 14 October. The recruit's race is still listed as undecided, and an interview clip was shared on the free board.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "JSA welcomes a new youth recruit",
-      "teaser": "The race has not been announced yet, and an interview clip of the recruit was posted on the community board.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1322"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:JSA welcomes a new youth recruit",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "New World signs its second youth player",
-      "summary": "New World announced its second youth recruit on its official board on 14 October. The team describes the new player as passionate and says they come from the Eumbi group.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "New World welcomes its second youth recruit",
-      "teaser": "The team calls the new player passionate and says they come from the Eumbi group.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-15"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:New World signs its second youth player",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Best beats RoyaL 4-3 in a seven-game 1v1 marathon",
-      "summary": "Best (Protoss) beat RoyaL (Terran) 4-3 in a best-of-seven 1v1 on 14 October. The series went the full seven games, with the lead changing hands several times, and it was the only best-of-seven 1v1 that day.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Best vs RoyaL: a best-of-seven 1v1 that went all seven games",
-      "teaser": "The two veterans traded the lead several times before a seventh and final game was needed.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-15"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Best beats RoyaL 4-3 in a seven-game 1v1 marathon",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Results from several 14 October 1v1 series",
-      "summary": "Sharp beat Queen 2-1, and Queen beat Mini 2-1. soma lost single games to Light and Sharp. Streamer series also finished, including a player's 3-0 and 2-1 wins and a player's 2-1 and 2-0 wins.",
-      "spoiler": true,
-      "relevant": false,
-      "card": null,
-      "teaser": null,
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-15"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Results from several 14 October 1v1 series",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Streamer a player plays a surprise CK at short notice",
-      "summary": "a player was called in at short notice to play a CK with the Wiper balance and finished 1-1 while her team won. She thanked the players who filled the matchups.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Heukcademy's Gayeong steps in at short notice for a CK match",
-      "teaser": "She played the CK with the Wiper balance and thanked everyone who filled the matchups.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1238"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Streamer a player plays a surprise CK at short notice",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "KCM race tournament Season 4 opens Thursday at 19:00",
-      "summary": "The KCM race tournament Season 4 opens on Thursday at 19:00 with three players per race. Terran: Light, RoyaL, Speed; Protoss: Mini, SnOw, huro; Zerg: effOrt, soma, Queen. Caster a player announced it, with a 600,000 won cumulative all-kill prize.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "KCM race tournament Season 4 opens Thursday at 19:00",
-      "teaser": "Nine players, three from each race, take part, and the cumulative all-kill prize is 600,000 won.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-15",
-        "time": "19:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1264"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:KCM race tournament Season 4 opens Thursday at 19:00",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Dreamz vs Calm MonstarZ university clash on Thursday",
-      "summary": "The university clash between Dreamz and Calm MonstarZ is set for 18:00 on Thursday on the stream of Calm. Both teams say they have been practicing hard for the match.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Dreamz vs Calm MonstarZ university clash, Thursday at 18:00",
-      "teaser": "Both teams have been preparing, and the clash is on Calm's channel.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-15",
-        "time": "18:00",
-        "link": "https://www.sooplive.com/station/brainzerg7"
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1292"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Dreamz vs Calm MonstarZ university clash on Thursday",
-      "addedAt": "2026-10-15T04:30:35.242Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Vm returns with a 'Soso CK' hosted on Thursday",
-      "summary": "Vm returns from a break with a 'Soso CK' custom tournament at 15:00 on Thursday, with a 3,000-coin entry fee. The first pairing is Vm vs ToSsGirL, with other matches including a player vs a player.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Return CK hosted by a streamer, Thursday at 15:00",
-      "teaser": "It is the host's first comeback after five years of streaming, with the first match against ToSsGirL.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-15",
-        "time": "15:00",
-        "link": "https://www.sooplive.com/station/https://bj.afreecatv.com/ever316"
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1321"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Vm returns with a 'Soso CK' hosted on Thursday",
-      "addedAt": "2026-10-15T04:30:35.242Z",
       "by": "claude",
       "posted": false
     }
