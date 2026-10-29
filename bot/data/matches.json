@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T05:30:24.290Z",
+  "updated": "2026-10-29T11:30:20.499Z",
   "matches": [
     {
       "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
@@ -1417,6 +1417,49 @@
       "onSchedule": true,
       "firstSeen": "2026-10-27T03:45:25.575Z",
       "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-30"
+    },
+    {
+      "key": "2026-11-02 21:00 유영진 vs 도재욱",
+      "origin": "soop",
+      "date": "2026-11-02",
+      "kst": "21:00",
+      "at": "2026-11-02T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-02",
+        "time": "14:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "유영진",
+        "race": "T",
+        "id": "Rush",
+        "nicknames": [
+          "Future Terran",
+          "ASLCHAMPRush"
+        ]
+      },
+      "b": {
+        "korean": "도재욱",
+        "race": "P",
+        "id": "Best",
+        "nicknames": [
+          "Doh-men"
+        ]
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-10-29T11:30:20.499Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-02"
     },
     {
       "key": "2026-11-11 20:00 TBD vs TBD",
