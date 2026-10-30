@@ -47,6 +47,21 @@ async function tellWarRoom (text) {
     } catch { /* the room being down is no reason to stop */ }
 }
 
+// One news source not answering is not a failed pass while another one did (B-355, 30 Oct: Naver's
+// API stopped answering this machine at 22:46 on 29 Oct, and every hourly pass went red with
+// everything else done). The pass still fails when no source answered, or when the same one has
+// been silent for a day: a source that is gone for good has to be looked at.
+export const NEWS_DOWN_LIMIT_MS = 24 * 3600000
+export function newsProblem ({ errors = [], failed = [], sources = [] }, state, now = new Date()) {
+    state.newsDown ||= {}
+    for (const name of Object.keys(state.newsDown)) if (!failed.includes(name)) delete state.newsDown[name]
+    for (const name of failed) state.newsDown[name] ||= now.toISOString()
+    if (!errors.length) return null
+    if (failed.length >= sources.length) return errors.join('; ')
+    const long = failed.filter((name) => now - Date.parse(state.newsDown[name]) >= NEWS_DOWN_LIMIT_MS)
+    return long.length ? `${long.join(', ')} silent since ${long.map((name) => state.newsDown[name]).join(', ')}: ${errors.join('; ')}` : null
+}
+
 export async function tick ({ now = new Date(), state = loadState(), log = console.log } = {}) {
     const errors = []
     let changed = false
@@ -79,7 +94,9 @@ export async function tick ({ now = new Date(), state = loadState(), log = conso
         writeFileSync(QUEUE_FILE, JSON.stringify(r.queue, null, 2) + '\n')
         state.last.news = now.toISOString()
         if (r.fresh.length) log(`news: ${r.fresh.length} new`)
-        if (r.errors.length) throw new Error(r.errors.join('; '))
+        const problem = newsProblem(r, state, now)
+        if (problem) throw new Error(problem)
+        if (r.errors.length) log(`news: ${r.errors.join('; ')} - the other sources ran`)
     })
 
     const today = localDate(now)

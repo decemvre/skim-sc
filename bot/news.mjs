@@ -66,8 +66,9 @@ export async function check ({ now = new Date(), queue = loadQueue(), names = lo
     const runs = [['naver', () => Promise.all([sources.naver(today, { names }), sources.naver(yesterday, { names })]).then((a) => a.flat())]]
     // EloBoard's daily paper is all Brood War; a day not yet published is simply empty.
     if (sources.eloboard) runs.push(['eloboard', () => Promise.all([sources.eloboard(today), sources.eloboard(yesterday)]).then((a) => a.flat())])
+    const failed = []
     for (const [name, run] of runs) {
-        try { found.push(...await run()) } catch (error) { errors.push(`${name}: ${error.message}`) }
+        try { found.push(...await run()) } catch (error) { errors.push(`${name}: ${error.message}`); failed.push(name) }
     }
     // Today's and yesterday's lists overlap: one story, one entry.
     const unique = [...new Map(found.map((item) => [item.id, item])).values()]
@@ -76,7 +77,7 @@ export async function check ({ now = new Date(), queue = loadQueue(), names = lo
     // Forget what was seen more than three weeks ago; Naver is only asked for two days anyway.
     for (const [id, at] of Object.entries(queue.seen)) if (now - Date.parse(at) > 21 * 86400000) delete queue.seen[id]
     queue.items = queue.items.filter((i) => !i.done || now - Date.parse(i.queuedAt) < 7 * 86400000)
-    return { queue, fresh, errors }
+    return { queue, fresh, errors, failed, sources: runs.map(([name]) => name) }
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {

@@ -202,3 +202,22 @@ test('a line typed as a list item goes with "▸", bold and dashes inside a line
     assert.equal(unlisted('Top:\n• Rush\n- Flash\n* Soulkey\n  - Light'), 'Top:\n▸ Rush\n▸ Flash\n▸ Soulkey\n  ▸ Light')
     assert.equal(unlisted('*Skim Bot* - what I can do\n-5 °C in Seoul\n/skim yt - the link above'), '*Skim Bot* - what I can do\n-5 °C in Seoul\n/skim yt - the link above')
 })
+
+test('/skim help arrives whole: every part is posted, in order, and the last is the videos and the page (B-355)', async () => {
+    const { send, LIST_MARK } = await import('../post.mjs')
+    for (const ro of [false, true]) {
+        const posted = []
+        const fetchImpl = async (url, { body }) => {
+            posted.push(JSON.parse(body).text)
+            return { ok: true, status: 200, json: async () => ({ sent: true, status: 'sent' }) }
+        }
+        const r = await send(helpText(ro), { group: 'Test group', fetchImpl, asked: true })
+        assert.equal(r.sent, true)
+        assert.equal(posted.length, r.parts ?? 1)
+        assert.ok(posted.length >= 3, `${posted.length} parts`)
+        assert.match(posted.at(-1), ro ? /\*Videoclipuri\*/ : /\*YouTube videos\*/)
+        assert.match(posted.at(-1), /https:\/\/\S+$/)
+        for (const part of posted) assert.doesNotMatch(part, LIST_MARK, 'a list-like line would stop the post')
+        assert.equal(posted.join('\n\n').replace(/\s+/g, ' '), helpText(ro).replace(/\s+/g, ' '), 'nothing lost between the parts')
+    }
+})
