@@ -7,3 +7,4 @@ bot/data/news-queue.json
 bot/data/posted.json
 bot/data/run-state.json
 bot/data/videos.json
+bot/data/members.json

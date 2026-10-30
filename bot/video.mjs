@@ -34,6 +34,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { send } from './post.mjs'
 import { Digi, FOLDER, MissingCredentials } from './lib/digistorage.mjs'
+import { memberName } from './lib/members.mjs'
 
 export const VIDEOS_FILE = fileURLToPath(new URL('./data/videos.json', import.meta.url))
 export const WORK = process.env.SKIM_VIDEO_WORK || join(homedir(), '.cache/skim-bot/videos')
@@ -214,7 +215,7 @@ if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
     const flag = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : undefined }
     const split = args.indexOf('--')
     const url = split >= 0 ? args.slice(split + 1).join(' ') : ''
-    const result = await handle({ url, from: flag('--from') || '', dryPost: args.includes('--no-post'), downloadOnly: args.includes('--download-only') })
+    const result = await handle({ url, from: memberName(flag('--from') || ''), dryPost: args.includes('--no-post'), downloadOnly: args.includes('--download-only') })
     console.log(JSON.stringify(result, null, 2))
     process.exit(result.failed ? 1 : 0)
 }

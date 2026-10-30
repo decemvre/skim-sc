@@ -32,6 +32,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { send, SITE, REMIND_MIN } from './post.mjs'
 import { loadWatchlist } from './watchlist.mjs'
 import { upcomingLines } from './lib/importance.mjs'
+import { memberName } from './lib/members.mjs'
 
 export const MODEL = 'haiku'
 export const ASKED_FILE = fileURLToPath(new URL('./data/asked.json', import.meta.url))
@@ -305,7 +306,7 @@ if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
     // The bridge logs only the last line this prints (B-355: a failed help showed as "Node.js
     // v24.20.0", the version under the stack), so a failure ends with what went wrong.
     try {
-        const result = await ask({ id: flag('--id'), from: flag('--from'), text, dryRun: args.includes('--dry-run') })
+        const result = await ask({ id: flag('--id'), from: memberName(flag('--from')), text, dryRun: args.includes('--dry-run') })
         console.log(JSON.stringify(result, null, 2))
     } catch (error) {
         console.error(error.stack)
