@@ -1,6 +1,158 @@
 {
   "items": [
     {
+      "headline": "Kkonibugging joins star university team Sobyungdae",
+      "summary": "Kkonibugging, a 4-tier Protoss player, officially joined the Sobyungdae star university team, which posted a welcome message on October 29. In his own post he said he was not pushed into joining, thanked the team's fans and promised to work even harder. He also said he would carry many memories from BGM.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Kkonibugging joins the Sobyungdae star university team",
+      "teaser": "Sobyungdae officially welcomed Kkonibugging, a 4-tier Protoss player, on October 29. He said he was not pushed into joining and thanked the team's fans.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2670"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:Kkonibugging joins star university team Sobyungdae",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "BGM leader and members say farewell to the star university",
+      "summary": "The BGM leader posted a long farewell on October 29, looking back on the team's cup runs and saying now was a good time to let go. He plans to spend the coming months streaming on his own and reflecting on himself. Shuu said she had made good friends at the team and would cheer from afar.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "BGM leader and members say goodbye to the star university",
+      "teaser": "The BGM leader, who led the team through its cup runs, wrote a long farewell post. Shuu and other members thanked the team and said they will keep supporting it from afar.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2667"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:BGM leader and members say farewell to the star university",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "J-League 5v5 Proleague match-up on October 29",
+      "summary": "The Gidukk team beat the Rabak team 2:1 in the J-League 5v5 Proleague on October 29. Rabak took the first set 4:2 and Gidukk took the second 5:3, before Vm beat 910 in the super ace decider. a player lost all four of his games to Yapsape, who went 4-0 across the event.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "J-League 5v5 Proleague match on October 29",
+      "teaser": "Two five-player teams played the J-League 5v5 Proleague on October 29, with a super ace decider at the end.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-30"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:J-League 5v5 Proleague match-up on October 29",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Calm MonstarZ face Black Academy in star university clash",
+      "summary": "Calm MonstarZ meet Black Academy in a star university clash at 7 PM on October 30. Calm said he would start his stream at 6 PM and aims to win the match. The stream is run by firebathero and Calm.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Calm MonstarZ vs Black Academy university clash on October 30",
+      "teaser": "Calm MonstarZ meet Black Academy in a star university clash on October 30 at 7 PM, with Calm saying the team is ready to win.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-10-30",
+        "time": "19:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2675"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:Calm MonstarZ face Black Academy in star university clash",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz Doosan CK event set for November 1",
+      "summary": "The Dreamz Doosan CK event is set for Sunday, November 1, from 6 PM to 11 PM. Each player posted a pledge and will compete to collect the most Doosan in the time limit. Oriking asked everyone to be careful, and the schedule now lists the 6 PM broadcast.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreamz Doosan CK event on Sunday, November 1",
+      "teaser": "Dreamz players will take part in a Doosan CK on November 1 from 6 PM to 11 PM, each putting up a pledge to collect the most Doosan.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-01",
+        "time": "18:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2682"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:Dreamz Doosan CK event set for November 1",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "1:1 match between Sharp and Queen",
+      "summary": "Sharp beat Queen 4:3 in a first-to-four 1:1 match on October 29. Queen took sets 1, 3 and 6, while Sharp took sets 2, 4, 5 and 7 on Aiolos.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Sharp and Queen go the distance in a 1:1 match",
+      "teaser": "A 1:1 match between Sharp and Queen went all the way to a seventh set, with the lead changing hands several times.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-30"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:1:1 match between Sharp and Queen",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "1v1 round-up with effOrt and Action in action",
+      "summary": "effOrt beat Mini and Mind 2:0 each on October 29, but lost 0:2 to Stork. Mind came back to win 2:1 against a Zerg player, Action beat Paralyze 2:0, and Paralyze beat Mandu Hoseong 2:0.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1v1 round-up from October 29 with several top players in action",
+      "teaser": "A round-up of 1v1 matches from October 29 featuring effOrt, Mini, Action and Paralyze.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-30"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:1v1 round-up with effOrt and Action in action",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "1v1 round-up from October 29 with Kimoya and Heyoi",
+      "summary": "Kimoya (Terran) beat Mobi and Heyoi 2:0 each on October 29. Heyoi beat Haihyeon 2:0, and a player came back to win 2:1 against Myeonchuga, while a player beat Ia-kkaeng 2:0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Another 1v1 round-up from October 29 featuring Kimoya and Heyoi",
+      "teaser": "More 1v1 matches from October 29, with Kimoya, Heyoi and a player among the players in action.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-30"
+      ],
+      "date": "2026-10-29",
+      "id": "2026-10-29:1v1 round-up from October 29 with Kimoya and Heyoi",
+      "addedAt": "2026-10-30T05:30:28.602Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Streamers meet in Hyehwa to pay off a Civil War bet",
       "summary": "On 28 October a group of Korean streamers gathered at a Hyehwa studio to pay off a bet from the Civil War event. Guests posted group photos, quizzes and a shared meal, and the host said a cold had left the planning short.",
       "spoiler": false,
@@ -2873,124 +3025,6 @@
       "date": "2026-10-16",
       "id": "2026-10-16:Rush and Soulkey meet in the ASL Season 22 final",
       "addedAt": "2026-10-16T07:00:16.531Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "ASL Season 22 final: Soulkey vs Rush on Saturday",
-      "summary": "The Google Play ASL Season 22 final is on Saturday, 17 October, at 15:00 at Lotte World Ice Rink in Seoul. Soulkey, a five-time champion, aims to keep Zerg on top, while Rush returns to the final hoping for his first ASL trophy after two runner-up finishes.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "ASL Season 22 final: Soulkey vs Rush this Saturday",
-      "teaser": "Soulkey goes for a fifth ASL title and to extend Zerg's dominance, while Rush seeks his first ASL trophy after two runner-up finishes.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-17",
-        "time": "15:00",
-        "link": null
-      },
-      "sources": [
-        "https://m.sports.naver.com/esports/article/236/0000257495",
-        "https://m.sports.naver.com/esports/article/442/0000197822"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:ASL Season 22 final: Soulkey vs Rush on Saturday",
-      "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Google Play showdown: Soulkey vs SnOw on Monday night",
-      "summary": "Soulkey and SnOw meet in a Google Play nine-set showdown on Monday, 19 October at 21:00 Korean time, and both play all nine sets even if one leads 8-0. Each set pays 100,000 won, doubled to 200,000 won with a daily double chance, and a whitewash adds 300,000 won, for a maximum of 1.4 million won. Each player removes one of the seven ASL Season 22 maps.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "Google Play showdown: Soulkey vs SnOw on Monday night",
-      "teaser": "A nine-set Google Play showdown with prize money per set, an optional double-chance bonus, and a whitewash reward.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-19",
-        "time": "21:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1405"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Google Play showdown: Soulkey vs SnOw on Monday night",
-      "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "KCM Race Best Season 4, week 1: Zerg 2 points, Protoss 1, Terran 0",
-      "summary": "The first week of KCM Race Best Season 4 finished on 15 October with Zerg on 2 points, Protoss on 1 and Terran on 0. Mini beat Queen and Light in a row, effOrt beat Mini and RoyaL, and soma beat Speed and SnOw to close the week.",
-      "spoiler": true,
-      "relevant": false,
-      "card": null,
-      "teaser": null,
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1405"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:KCM Race Best Season 4, week 1: Zerg 2 points, Protoss 1, Terran 0",
-      "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Dreamz seal their university league win on 15 October",
-      "summary": "Dreamz sealed their star-university match on 15 October and celebrated on the gallery. Yoning said he had won two games against Terran players.",
-      "spoiler": true,
-      "relevant": false,
-      "card": null,
-      "teaser": null,
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1435",
-        "https://eloboard.com/community/posts/1446"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Dreamz seal their university league win on 15 October",
-      "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Trap drops all three series on 15 October",
-      "summary": "Trap (Protoss) lost all three best-of series on 15 October: 1:3 to BTS (Zerg), 2:3 to Shine (Terran) after coming back from 0:2 to 2:2, and 1:2 to Action (Zerg). He won only one game against Action before losing the last two.",
-      "spoiler": true,
-      "relevant": false,
-      "card": null,
-      "teaser": null,
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-16"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:Trap drops all three series on 15 October",
-      "addedAt": "2026-10-16T04:30:49.484Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "huro and SnOw beat effOrt on 15 October",
-      "summary": "huro (Protoss) beat effOrt (Zerg) 2:1 in a best-of-three match on 15 October. SnOw (Protoss) also won 2:0 against effOrt the same day.",
-      "spoiler": true,
-      "relevant": false,
-      "card": null,
-      "teaser": null,
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-16"
-      ],
-      "date": "2026-10-15",
-      "id": "2026-10-15:huro and SnOw beat effOrt on 15 October",
-      "addedAt": "2026-10-16T04:30:49.484Z",
       "by": "claude",
       "posted": false
     }

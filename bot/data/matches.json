@@ -871,7 +871,7 @@
       },
       "competition": {
         "raw": "CK 소윤ck",
-        "name": "",
+        "name": "Soyun CK",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -880,8 +880,8 @@
         "eloboard": true
       },
       "titleSource": "CK 소윤ck",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "Soyun CK",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
