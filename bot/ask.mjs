@@ -209,16 +209,16 @@ export function helpText (ro = false) {
         '/skim când e următorul meci al lui Rush?',
         '/skim ce mâncare să încerc în Seul?',
         '',
-        '• StarCraft coreean mai ales: jucători, meciuri, ASL, KSL, ligile universitare, streamuri pe SOOP; StarCraft de oriunde, Brood War și SC2; și Coreea de Sud în general. Sumele în woni le dau și în dolari.',
-        '• Mă uit întâi în notițele mele, apoi caut în sursele coreene și pe web, și pun cel mult 2 linkuri.',
-        '• Orele le dau în ora Coreei și a Bucureștiului; jucătorii după ID, niciodată după numele real.',
-        '• Fără spoilere: spun cine a câștigat sau scorul doar dacă întrebi asta.',
-        `• Cel mult ${LIMITS.hour} întrebări pe oră și ${LIMITS.day} pe zi.`,
+        '▸ StarCraft coreean mai ales: jucători, meciuri, ASL, KSL, ligile universitare, streamuri pe SOOP; StarCraft de oriunde, Brood War și SC2; și Coreea de Sud în general. Sumele în woni le dau și în dolari.',
+        '▸ Mă uit întâi în notițele mele, apoi caut în sursele coreene și pe web, și pun cel mult 2 linkuri.',
+        '▸ Orele le dau în ora Coreei și a Bucureștiului; jucătorii după ID, niciodată după numele real.',
+        '▸ Fără spoilere: spun cine a câștigat sau scorul doar dacă întrebi asta.',
+        `▸ Cel mult ${LIMITS.hour} întrebări pe oră și ${LIMITS.day} pe zi.`,
         '',
         '*Videoclipuri* de pe YouTube, salvate cu un link care merge pe orice telefon:',
         '/skim <link YouTube> - acel video',
         '/skim yt - cel mai apropiat link YouTube de deasupra',
-        '• Un link de YouTube pus fără /skim rămâne neatins. Cel mult 2 ore, la 720p.',
+        '▸ Un link de YouTube pus fără /skim rămâne neatins. Cel mult 2 ore, la 720p.',
         '',
         `*Singur*, între 08:00 și 16:00 ora României: meciurile zilei dimineața, știri în zilele lucrătoare, un memento cu ${REMIND_MIN} de minute înainte de meciurile mari și rezultatele echipelor universitare.`,
         '',
@@ -233,16 +233,16 @@ export function helpText (ro = false) {
         "/skim when is Rush's next match?",
         '/skim what food should I try in Seoul?',
         '',
-        '• Korean StarCraft most of all: players, matches, the ASL, KSL, university leagues, streams on SOOP; StarCraft anywhere, Brood War and SC2; and South Korea in general. Amounts in won come with rough dollars.',
-        '• I check my own notes first, then search Korean sources and the web, and add at most 2 links.',
-        '• Times in Korea and Bucharest time; players by their ID, never their real name.',
-        '• No spoilers: who won or the score only when that is what you ask.',
-        `• At most ${LIMITS.hour} questions an hour and ${LIMITS.day} a day.`,
+        '▸ Korean StarCraft most of all: players, matches, the ASL, KSL, university leagues, streams on SOOP; StarCraft anywhere, Brood War and SC2; and South Korea in general. Amounts in won come with rough dollars.',
+        '▸ I check my own notes first, then search Korean sources and the web, and add at most 2 links.',
+        '▸ Times in Korea and Bucharest time; players by their ID, never their real name.',
+        '▸ No spoilers: who won or the score only when that is what you ask.',
+        `▸ At most ${LIMITS.hour} questions an hour and ${LIMITS.day} a day.`,
         '',
         '*YouTube videos*, saved with a link that plays on any phone:',
         '/skim <YouTube link> - that video',
         '/skim yt - the nearest YouTube link above it',
-        '• A YouTube link posted without /skim is left alone. Up to 2 h, at 720p.',
+        '▸ A YouTube link posted without /skim is left alone. Up to 2 h, at 720p.',
         '',
         `*On my own*, 08:00-16:00 Bucharest time: the day's matches in the morning, news on weekdays, a reminder ${REMIND_MIN} minutes before a major match, and university team results.`,
         '',
@@ -302,6 +302,14 @@ if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
     const flag = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : undefined }
     const split = args.indexOf('--')
     const text = split >= 0 ? args.slice(split + 1).join(' ') : ''
-    const result = await ask({ id: flag('--id'), from: flag('--from'), text, dryRun: args.includes('--dry-run') })
-    console.log(JSON.stringify(result, null, 2))
+    // The bridge logs only the last line this prints (B-355: a failed help showed as "Node.js
+    // v24.20.0", the version under the stack), so a failure ends with what went wrong.
+    try {
+        const result = await ask({ id: flag('--id'), from: flag('--from'), text, dryRun: args.includes('--dry-run') })
+        console.log(JSON.stringify(result, null, 2))
+    } catch (error) {
+        console.error(error.stack)
+        console.error(`ask failed: ${error.message}`)
+        process.exit(1)
+    }
 }

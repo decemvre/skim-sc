@@ -1,8 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 
-import { ask, overLimit, questionOf, replyText, LIMITS } from '../ask.mjs'
-import { send } from '../post.mjs'
+import { ask, helpText, overLimit, questionOf, replyText, LIMITS } from '../ask.mjs'
+import { send, unlisted, LIST_MARK, POST_MAX } from '../post.mjs'
 
 const NOW = new Date('2026-10-16T20:00:00Z') // 23:00 in Bucharest: outside the posting window
 
@@ -177,4 +177,28 @@ test('/skim yt with no YouTube link above it (the bridge sends only those here) 
     let prompted = false
     await ask({ text: '/skim ytb sau twitch?', now: NOW, asked: {}, save: () => {}, model: async () => { prompted = true; return { language: 'ro', answer: 'SOOP.', links: [] } }, sender })
     assert.ok(prompted, 'a question starting with yt is still a question')
+})
+
+test('the whole help reaches the bridge, in order, in parts WhatsApp sends as typed (B-355)', async () => {
+    for (const ro of [false, true]) {
+        const help = helpText(ro)
+        const typed = []
+        const fetchImpl = async (url, { body }) => { typed.push(JSON.parse(body).text); return { ok: true, json: async () => ({ sent: true, status: 'sent' }) } }
+        const r = await send(help, { group: 'Noobz', fetchImpl, asked: true })
+        assert.equal(r.sent, true)
+        assert.ok(typed.length > 1, 'the help is longer than one message')
+        assert.equal(typed.join('\n\n'), help, 'nothing left out, nothing reordered')
+        for (const part of typed) {
+            assert.ok(part.length <= POST_MAX, `${part.length} characters`)
+            assert.doesNotMatch(part, new RegExp(LIST_MARK.source, 'm'), 'no line WhatsApp would make a list')
+        }
+        assert.match(typed.at(-1), /https:\/\/decemvre\.github\.io\/skim-sc\/$/, 'the site link closes it')
+        assert.ok(typed.some((p) => p.includes(ro ? '*Videoclipuri*' : '*YouTube videos*')))
+        assert.ok(typed.some((p) => p.includes(ro ? '*Singur*' : '*On my own*')))
+    }
+})
+
+test('a line typed as a list item goes with "▸", bold and dashes inside a line stay (B-355)', () => {
+    assert.equal(unlisted('Top:\n• Rush\n- Flash\n* Soulkey\n  - Light'), 'Top:\n▸ Rush\n▸ Flash\n▸ Soulkey\n  ▸ Light')
+    assert.equal(unlisted('*Skim Bot* - what I can do\n-5 °C in Seoul\n/skim yt - the link above'), '*Skim Bot* - what I can do\n-5 °C in Seoul\n/skim yt - the link above')
 })

@@ -191,6 +191,13 @@ export function splitPost (text, max = POST_MAX) {
     return fit(pieces, '\n\n')
 }
 
+// WhatsApp's message box turns a line typed as "• ", "- " or "* " into a list item, and inside a
+// list Enter adds the next item instead of sending (B-355, 28 and 30 Oct: "/skim help" stopped
+// after its first part, every time, at the part whose lines start with "•"). Such a line goes with
+// "▸ ", which the box leaves alone. "*bold*" has no space after its mark and is not touched.
+export const LIST_MARK = /^([ \t]*)[•*+-][ \t]+/gm
+export const unlisted = (text) => String(text).replace(LIST_MARK, '$1▸ ')
+
 // A post that may or may not be in the group: the bridge's answer never came, or it typed the
 // post and could not see it go. Recorded as posted, so the next pass does not post it again
 // (12 Oct: three copies of one morning post), and said in the war room.
@@ -227,7 +234,7 @@ export async function send (text, { group = config().group, fetchImpl = patientF
     if (override !== null && !String(override).trim()) throw new Error('an override needs its reason')
     if (!asked && !video && !override && !inWindow(now)) throw new Error('outside 08:00-16:00 Bucharest: nothing is posted to the group')
     if (override) console.error(`send: outside the window by Silviu's exception - ${override}`)
-    const body = asked || video ? text : safe(text, allowed)
+    const body = unlisted(asked || video ? text : safe(text, allowed))
     const parts = splitPost(body)
     if (!group || dryRun) return { sent: false, printed: parts.join('\n\n--- next message ---\n\n'), parts: parts.length, why: group ? 'dry run' : `no group set in ${CONFIG_FILE}` }
     let status
