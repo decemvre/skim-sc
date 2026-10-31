@@ -1,40 +1,6 @@
 {
-  "updated": "2026-10-31T15:30:18.673Z",
+  "updated": "2026-10-31T16:45:18.681Z",
   "matches": [
-    {
-      "key": "2026-10-02 15:00 eloboard 낭니컵 와일드카드 결정전 와일드카드 결정전",
-      "origin": "eloboard",
-      "date": "2026-10-02",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-02T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-02",
-        "time": "09:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "낭니컵 와일드카드 결정전 와일드카드 결정전",
-        "name": "Nangni Cup Wild Card Qualifier",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "낭니컵 와일드카드 결정전 와일드카드 결정전",
-      "titleEn": "Nangni Cup Wild Card Qualifier",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T13:30:38.232Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-02"
-    },
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
       "origin": "soop",
@@ -131,40 +97,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-06"
     },
     {
-      "key": "2026-10-07 17:00 eloboard 낭니컵 낭니컵 본선",
-      "origin": "eloboard",
-      "date": "2026-10-07",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-07T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-07",
-        "time": "11:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "낭니컵 낭니컵 본선",
-        "name": "Nangni Cup Main Event",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "낭니컵 낭니컵 본선",
-      "titleEn": "Nangni Cup Main Event",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T13:30:38.232Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-07"
-    },
-    {
       "key": "2026-10-07 20:00 우리할매 러브즈 vs 기영이숯불 킹즈",
       "origin": "soop",
       "date": "2026-10-07",
@@ -239,77 +171,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-07"
     },
     {
-      "key": "2026-10-08 18:00 eloboard [신세계] 교수ck",
-      "origin": "eloboard",
-      "date": "2026-10-08",
-      "kst": "18:00",
-      "allDay": false,
-      "at": "2026-10-08T09:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-08",
-        "time": "12:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[신세계] 교수ck",
-        "name": "[New World] Professors' CK",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[신세계] 교수ck",
-      "titleEn": "[New World] Professors' CK",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-10T14:56:17.805Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-08"
-    },
-    {
-      "key": "2026-10-12 05:00 eloboard 극락회 vs 연합팀 (뚜미T 3탕)",
-      "origin": "eloboard",
-      "date": "2026-10-12",
-      "kst": "05:00",
-      "allDay": false,
-      "at": "2026-10-11T20:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-11",
-        "time": "23:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "극락회 vs 연합팀 (뚜미T 3탕)",
-        "name": "Geungnakhoe vs Union Team (Ttumi T, 3-round session)",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "극락회 vs 연합팀 (뚜미T 3탕)",
-      "titleEn": "Geungnakhoe vs Union Team (Ttumi T, 3-round session)",
-      "needsTranslation": false,
-      "duel": [
-        "극락회",
-        "연합팀"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-24T07:15:28.890Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-12"
-    },
-    {
       "key": "2026-10-12 21:00 김민철 vs 김지성",
       "origin": "soop",
       "date": "2026-10-12",
@@ -348,40 +209,6 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-12"
-    },
-    {
-      "key": "2026-10-13 14:00 eloboard [소병대] 실력평가후 JSA와 미니대전 저녁 6시",
-      "origin": "eloboard",
-      "date": "2026-10-13",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-13T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-13",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[소병대] 실력평가후 JSA와 미니대전 저녁 6시",
-        "name": "[Sobyeongdae] After skill evaluation: JSA and Mini battle, 6 PM",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[소병대] 실력평가후 JSA와 미니대전 저녁 6시",
-      "titleEn": "[Sobyeongdae] After skill evaluation: JSA and Mini battle, 6 PM",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-13T09:16:01.005Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-13"
     },
     {
       "key": "2026-10-13 21:00 이재호 vs 박상현",
@@ -506,145 +333,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-17"
     },
     {
-      "key": "2026-10-17 18:00 eloboard 와플대 vs BGM",
-      "origin": "eloboard",
-      "date": "2026-10-17",
-      "kst": "18:00",
-      "allDay": false,
-      "at": "2026-10-17T09:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-17",
-        "time": "12:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "와플대 vs BGM",
-        "name": "Waffle University vs BGM",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "와플대 vs BGM",
-      "titleEn": "Waffle University vs BGM",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-24T07:15:28.890Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-17"
-    },
-    {
-      "key": "2026-10-18 17:00 eloboard 신세계 vs 더블비",
-      "origin": "eloboard",
-      "date": "2026-10-18",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-18T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-18",
-        "time": "11:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "신세계 vs 더블비",
-        "name": "New World vs Double B",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "신세계 vs 더블비",
-      "titleEn": "New World vs Double B",
-      "needsTranslation": false,
-      "duel": [
-        "신세계",
-        "더블비"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-24T07:15:28.890Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-18"
-    },
-    {
-      "key": "2026-10-18 21:00 eloboard [소병대] vs 베트남",
-      "origin": "eloboard",
-      "date": "2026-10-18",
-      "kst": "21:00",
-      "allDay": false,
-      "at": "2026-10-18T12:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-18",
-        "time": "15:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "[소병대] vs 베트남",
-        "name": "[Sobyeongdae] vs Vietnam",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "[소병대] vs 베트남",
-      "titleEn": "[Sobyeongdae] vs Vietnam",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-18T04:01:07.666Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-18"
-    },
-    {
-      "key": "2026-10-19 19:00 eloboard 여캠 끝장전 [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-      "origin": "eloboard",
-      "date": "2026-10-19",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-19T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-19",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "여캠 끝장전 [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-        "name": "Star Female-Cam Showdown: BGM Anna vs FA Darin (Sarang-e Broadcast)",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "여캠 끝장전 [스타여캠 끝장전] BGM 안아 vs FA 다린 사랑e 중계",
-      "titleEn": "Star Female-Cam Showdown: BGM Anna vs FA Darin (Sarang-e Broadcast)",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-17T20:31:07.671Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-19"
-    },
-    {
       "key": "2026-10-19 21:00 김민철 vs 장윤철",
       "origin": "soop",
       "date": "2026-10-19",
@@ -685,213 +373,6 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-19"
     },
     {
-      "key": "2026-10-20 08:00 eloboard CK [흑카데미] 쭈꾸미 낚시",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "08:00",
-      "allDay": false,
-      "at": "2026-10-19T23:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "02:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [흑카데미] 쭈꾸미 낚시",
-        "name": "CK [Heukkademi] Squid Fishing",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [흑카데미] 쭈꾸미 낚시",
-      "titleEn": "CK [Heukkademi] Squid Fishing",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
-      "key": "2026-10-20 14:00 eloboard CK [더블비] 기린삼남매",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-20T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [더블비] 기린삼남매",
-        "name": "CK [Double B] Three Giraffe Siblings",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [더블비] 기린삼남매",
-      "titleEn": "CK [Double B] Three Giraffe Siblings",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
-      "key": "2026-10-20 14:00 eloboard CK [DM] 말랑이의 고추포차 2",
-      "origin": "eloboard",
-      "date": "2026-10-20",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-20T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-20",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [DM] 말랑이의 고추포차 2",
-        "name": "CK [DM] Malangi's Chili Stall 2",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [DM] 말랑이의 고추포차 2",
-      "titleEn": "CK [DM] Malangi's Chili Stall 2",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T03:14:15.670Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-20"
-    },
-    {
-      "key": "2026-10-21 11:00 eloboard CK [뉴캣슬] 밍또의 요리교실",
-      "origin": "eloboard",
-      "date": "2026-10-21",
-      "kst": "11:00",
-      "allDay": false,
-      "at": "2026-10-21T02:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-21",
-        "time": "05:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK [뉴캣슬] 밍또의 요리교실",
-        "name": "CK [Newcastle] Mingtto's Cooking Class",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK [뉴캣슬] 밍또의 요리교실",
-      "titleEn": "CK [Newcastle] Mingtto's Cooking Class",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-20T13:30:38.232Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
-    },
-    {
-      "key": "2026-10-21 14:00 eloboard 신세계 vs 소병대",
-      "origin": "eloboard",
-      "date": "2026-10-21",
-      "kst": "14:00",
-      "allDay": false,
-      "at": "2026-10-21T05:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-21",
-        "time": "08:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "신세계 vs 소병대",
-        "name": "New World vs Sobyeongdae",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "신세계 vs 소병대",
-      "titleEn": "New World vs Sobyeongdae",
-      "needsTranslation": false,
-      "duel": [
-        "신세계",
-        "소병대"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-24T07:15:28.890Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
-    },
-    {
-      "key": "2026-10-21 15:00 eloboard CK 소윤ck",
-      "origin": "eloboard",
-      "date": "2026-10-21",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-21T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-21",
-        "time": "09:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "CK 소윤ck",
-        "name": "",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 소윤ck",
-      "titleEn": null,
-      "needsTranslation": true,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-30T14:45:28.599Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-21"
-    },
-    {
       "key": "2026-10-21 20:00 SOOP 수퍼즈 vs 기영이숯불 킹즈",
       "origin": "soop",
       "date": "2026-10-21",
@@ -922,358 +403,6 @@
       "firstSeen": "2026-10-10T09:31:02.354Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-21"
-    },
-    {
-      "key": "2026-10-22 19:00 eloboard 캄몬스타즈 vs 더블비",
-      "origin": "eloboard",
-      "date": "2026-10-22",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-22T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-22",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "캄몬스타즈 vs 더블비",
-        "name": "Calm MonstarZ vs Double B",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "캄몬스타즈 vs 더블비",
-      "titleEn": "Calm MonstarZ vs Double B",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
-    },
-    {
-      "key": "2026-10-22 19:00 eloboard 대학대전",
-      "origin": "eloboard",
-      "date": "2026-10-22",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-22T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-22",
-        "time": "13:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "대학대전",
-        "name": "University Clash",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "대학대전",
-      "titleEn": "University Clash",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-22"
-    },
-    {
-      "key": "2026-10-23 20:00 eloboard K리그 당수형님배 메펀 8만개 리그",
-      "origin": "eloboard",
-      "date": "2026-10-23",
-      "kst": "20:00",
-      "allDay": false,
-      "at": "2026-10-23T11:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-23",
-        "time": "14:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "K리그 당수형님배 메펀 8만개 리그",
-        "name": "K-League Dangsoo Hyung Cup Mefun 80,000 League",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "K리그 당수형님배 메펀 8만개 리그",
-      "titleEn": "K-League Dangsoo Hyung Cup Mefun 80,000 League",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-22T16:15:44.320Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-23"
-    },
-    {
-      "key": "2026-10-24 17:00 eloboard JSA 교수팀 vs 연합팀",
-      "origin": "eloboard",
-      "date": "2026-10-24",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-24T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-24",
-        "time": "11:00",
-        "zone": "EEST"
-      },
-      "competition": {
-        "raw": "JSA 교수팀 vs 연합팀",
-        "name": "JSA Professors vs Union Team",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "JSA 교수팀 vs 연합팀",
-      "titleEn": "JSA Professors vs Union Team",
-      "needsTranslation": false,
-      "duel": [
-        "교수팀",
-        "연합팀"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-24"
-    },
-    {
-      "key": "2026-10-25 15:00 eloboard 라운이 vs 면추가",
-      "origin": "eloboard",
-      "date": "2026-10-25",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-25T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-25",
-        "time": "08:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "라운이 vs 면추가",
-        "name": "Raunyi vs Myeonchuga",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "라운이 vs 면추가",
-      "titleEn": "Raunyi vs Myeonchuga",
-      "needsTranslation": false,
-      "duel": [
-        "라운이",
-        "면추가"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T17:15:42.485Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
-    },
-    {
-      "key": "2026-10-25 15:30 eloboard 마예준배 마범컵 5,6 티어 대회 마예준배 마범컵 5,6 티어 대회 본선",
-      "origin": "eloboard",
-      "date": "2026-10-25",
-      "kst": "15:30",
-      "allDay": false,
-      "at": "2026-10-25T06:30:00.000Z",
-      "bucharest": {
-        "date": "2026-10-25",
-        "time": "08:30",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "마예준배 마범컵 5,6 티어 대회 마예준배 마범컵 5,6 티어 대회 본선",
-        "name": "a player Cup: Mabeom Cup Tier 5-6 Tournament, Main Event",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "마예준배 마범컵 5,6 티어 대회 마예준배 마범컵 5,6 티어 대회 본선",
-      "titleEn": "a player Cup: Mabeom Cup Tier 5-6 Tournament, Main Event",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T17:15:42.485Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
-    },
-    {
-      "key": "2026-10-25 19:00 eloboard CK 도택혁명CK",
-      "origin": "eloboard",
-      "date": "2026-10-25",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-25T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-25",
-        "time": "12:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "CK 도택혁명CK",
-        "name": "CK: Dotaekhyeokmyeong",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 도택혁명CK",
-      "titleEn": "CK: Dotaekhyeokmyeong",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-22T12:30:44.303Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-25"
-    },
-    {
-      "key": "2026-10-26 17:00 eloboard 여캠 끝장전 갱이다 vs 냥수디",
-      "origin": "eloboard",
-      "date": "2026-10-26",
-      "kst": "17:00",
-      "allDay": false,
-      "at": "2026-10-26T08:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-26",
-        "time": "10:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "여캠 끝장전 갱이다 vs 냥수디",
-        "name": "Female cam endless match: Gaengida vs Nyangsudi",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "여캠 끝장전 갱이다 vs 냥수디",
-      "titleEn": "Female cam endless match: Gaengida vs Nyangsudi",
-      "needsTranslation": false,
-      "duel": [
-        "갱이다",
-        "냥수디"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-26T04:38:50.350Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-26"
-    },
-    {
-      "key": "2026-10-26 19:00 eloboard 김윤환팀 vs 진영화팀",
-      "origin": "eloboard",
-      "date": "2026-10-26",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-26T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-26",
-        "time": "12:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "김윤환팀 vs 진영화팀",
-        "name": "Calm team vs Movie team",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "김윤환팀 vs 진영화팀",
-      "titleEn": "Calm team vs Movie team",
-      "needsTranslation": false,
-      "duel": [
-        "김윤환팀",
-        "진영화팀"
-      ],
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-27T03:45:25.575Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-26"
-    },
-    {
-      "key": "2026-10-26 19:00 eloboard JSA vs 드림즈",
-      "origin": "eloboard",
-      "date": "2026-10-26",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-26T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-26",
-        "time": "12:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "JSA vs 드림즈",
-        "name": "JSA vs Dreamz",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "JSA vs 드림즈",
-      "titleEn": "JSA vs Dreamz",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-30T18:00:28.592Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-26"
     },
     {
       "key": "2026-10-26 21:00 김민철 vs 유영진",
@@ -1351,117 +480,15 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-10-28"
     },
     {
-      "key": "2026-10-29 14:00 eloboard CK 선수배 잭조커리그",
+      "key": "2026-11-01 16:00 eloboard 미니대전",
       "origin": "eloboard",
-      "date": "2026-10-29",
-      "kst": "14:00",
+      "date": "2026-11-01",
+      "kst": "16:00",
       "allDay": false,
-      "at": "2026-10-29T05:00:00.000Z",
+      "at": "2026-11-01T07:00:00.000Z",
       "bucharest": {
-        "date": "2026-10-29",
-        "time": "07:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "CK 선수배 잭조커리그",
-        "name": "CK Player Cup: Jack Joker League",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "CK 선수배 잭조커리그",
-      "titleEn": "CK Player Cup: Jack Joker League",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-28T10:45:20.908Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-29"
-    },
-    {
-      "key": "2026-10-29 19:00 eloboard 대학대전",
-      "origin": "eloboard",
-      "date": "2026-10-29",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-29T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-29",
-        "time": "12:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "대학대전",
-        "name": "University Clash",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "대학대전",
-      "titleEn": "University Clash",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-25T03:06:00.061Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-29"
-    },
-    {
-      "key": "2026-10-30 19:00 eloboard 흑카데미 vs 캄몬스타즈",
-      "origin": "eloboard",
-      "date": "2026-10-30",
-      "kst": "19:00",
-      "allDay": false,
-      "at": "2026-10-30T10:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-30",
-        "time": "12:00",
-        "zone": "EET"
-      },
-      "competition": {
-        "raw": "흑카데미 vs 캄몬스타즈",
-        "name": "Black Academy vs Calm MonstarZ",
-        "big": false,
-        "celebrity": false,
-        "watch": null,
-        "known": false,
-        "liquipedia": null,
-        "eloboard": true
-      },
-      "titleSource": "흑카데미 vs 캄몬스타즈",
-      "titleEn": "Black Academy vs Calm MonstarZ",
-      "needsTranslation": false,
-      "duel": null,
-      "a": null,
-      "b": null,
-      "played": false,
-      "status": null,
-      "onSchedule": true,
-      "firstSeen": "2026-10-30T14:45:28.599Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-30"
-    },
-    {
-      "key": "2026-10-31 15:00 eloboard 미니대전",
-      "origin": "eloboard",
-      "date": "2026-10-31",
-      "kst": "15:00",
-      "allDay": false,
-      "at": "2026-10-31T06:00:00.000Z",
-      "bucharest": {
-        "date": "2026-10-31",
-        "time": "08:00",
+        "date": "2026-11-01",
+        "time": "09:00",
         "zone": "EET"
       },
       "competition": {
@@ -1483,19 +510,19 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-30T14:45:28.599Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-31"
+      "firstSeen": "2026-10-31T16:45:18.681Z",
+      "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-01"
     },
     {
-      "key": "2026-10-31 17:00 eloboard 미니대전",
+      "key": "2026-11-01 19:00 eloboard 미니대전",
       "origin": "eloboard",
-      "date": "2026-10-31",
-      "kst": "17:00",
+      "date": "2026-11-01",
+      "kst": "19:00",
       "allDay": false,
-      "at": "2026-10-31T08:00:00.000Z",
+      "at": "2026-11-01T10:00:00.000Z",
       "bucharest": {
-        "date": "2026-10-31",
-        "time": "10:00",
+        "date": "2026-11-01",
+        "time": "12:00",
         "zone": "EET"
       },
       "competition": {
@@ -1517,8 +544,8 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-10-31T09:30:18.671Z",
-      "source": "https://eloboard.com/schedule?m=2026-10&d=2026-10-31"
+      "firstSeen": "2026-10-31T16:45:18.681Z",
+      "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-01"
     },
     {
       "key": "2026-11-02 21:00 유영진 vs 도재욱",
@@ -1562,6 +589,74 @@
       "firstSeen": "2026-10-29T11:30:20.499Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-02"
+    },
+    {
+      "key": "2026-11-05 19:00 eloboard 대학대전",
+      "origin": "eloboard",
+      "date": "2026-11-05",
+      "kst": "19:00",
+      "allDay": false,
+      "at": "2026-11-05T10:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-05",
+        "time": "12:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "대학대전",
+        "name": "University Clash",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "대학대전",
+      "titleEn": "University Clash",
+      "needsTranslation": false,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-31T16:45:18.681Z",
+      "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-05"
+    },
+    {
+      "key": "2026-11-08 16:00 eloboard CK 냥냥코기배 통베이컵 7티어대회",
+      "origin": "eloboard",
+      "date": "2026-11-08",
+      "kst": "16:00",
+      "allDay": false,
+      "at": "2026-11-08T07:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-08",
+        "time": "09:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "CK 냥냥코기배 통베이컵 7티어대회",
+        "name": "",
+        "big": false,
+        "celebrity": false,
+        "watch": null,
+        "known": false,
+        "liquipedia": null,
+        "eloboard": true
+      },
+      "titleSource": "CK 냥냥코기배 통베이컵 7티어대회",
+      "titleEn": null,
+      "needsTranslation": true,
+      "duel": null,
+      "a": null,
+      "b": null,
+      "played": false,
+      "status": null,
+      "onSchedule": true,
+      "firstSeen": "2026-10-31T16:45:18.681Z",
+      "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-08"
     },
     {
       "key": "2026-11-11 20:00 TBD vs TBD",
