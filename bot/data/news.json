@@ -1,6 +1,230 @@
 {
   "items": [
     {
+      "headline": "Sobyungdae adds a player; Ahnunni returns to MBU",
+      "summary": "Official posts on 31 October and 1 November announce that a player has joined Sobyungdae as an 8-tier Zerg. Ahnunni, a baby-tier player, is back with MBU.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Sobyungdae adds a player; Ahnunni returns to MBU as a baby-tier player",
+      "teaser": "Official posts announce an 8-tier Zerg joining Sobyungdae and the return of baby-tier Ahnunni to MBU, with fans asked to show support.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2859"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Sobyungdae adds a player; Ahnunni returns to MBU",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Nansu returns to broadcasting with JMT",
+      "summary": "Nansu says he has settled in well with his new group and wants to restart his broadcasts with energy. The site lists him under JMT.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Nansu is back to streaming after settling into a new group",
+      "teaser": "Nansu says he has settled in with his new group and will restart broadcasts with energy. The site lists his team as JMT.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2903"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Nansu returns to broadcasting with JMT",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Ssangdi considers starting a new university",
+      "summary": "Ssangdi says he is considering creating a new university and wants people with passion and stamina to join. He admits the university scene and SOOP's current trends make it hard, and asks people to leave contact details by note.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Ssangdi is thinking about starting a new university",
+      "teaser": "The streamer wants passionate, persistent members for a fun new university and asks interested viewers to leave contact details by message.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2905"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Ssangdi considers starting a new university",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Minidaejeon: New World beats JSA 2-0, both sets 3-2",
+      "summary": "New World won the Minidaejeon 2-0 over JSA, taking both best-of-five sets 3-2. Each set was decided in a fifth game.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Minidaejeon: New World and JSA meet in a team match with best-of-five sets",
+      "teaser": "Two streamer teams, New World and JSA, faced off in a Minidaejeon of best-of-five sets, with official results posted.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Minidaejeon: New World beats JSA 2-0, both sets 3-2",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "CK: combined team beats Sobyungdae 4-1",
+      "summary": "The combined team beat Sobyungdae 4-1 in a seven-game CK on 1 November, winning in five games. Sobyungdae's only win came when Remlemi beat Yui.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Sobyungdae faces a combined team in a seven-game CK",
+      "teaser": "A seven-game CK between Sobyungdae and a combined team, in which Sobyungdae's new recruit a player played.",
+      "teamResult": "CK: Combined Team 4-1 Sobyungdae",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:CK: combined team beats Sobyungdae 4-1",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Ttoa beats Mijini 2-1 after losing the first game",
+      "summary": "Ttoa (Zerg) lost the first game to Mijini (Protoss) but came back to win 2-1 on 1 November. Mijini then lost 1-2 to Kimoya (Terran), and Dyudyu came back for a 2-1 win after losing game one.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Ttoa faces Mijini in a best-of-three, with more series the same day",
+      "teaser": "Ttoa, Mijini, Kimoya and Dyudyu played best-of-three series on 1 November, across the Zerg, Protoss and Terran.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Ttoa beats Mijini 2-1 after losing the first game",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "K-League 5v5: Motive's team beats a player's team 2-0",
+      "summary": "Motive's team beat a player's team 2-0 in the K-League 5v5 on 1 November. The seven-game first set ended 4-1 and the nine-game Winner's League set finished 5-3, with Fantasy unbeaten in five games.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "K-League 5v5: Motive's team faces a player's team",
+      "teaser": "A 5v5 K-League team match with seven- and nine-game sets; Fantasy said he would be streaming the match later.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:K-League 5v5: Motive's team beats a player's team 2-0",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Major Proleague: Mini's team beats Bisu's 2-0",
+      "summary": "Mini's team beat Bisu's team 2-0 in the Major Proleague on 1 November, taking the first set 4-2. Mini then won all five games of the Winner's League set 5-0, and is now 6-1.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague: Mini's team faces Bisu's team in a 4v4",
+      "teaser": "A 4v4 Major Proleague match with a Winner's League set, featuring soma, Best and RoyaL.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Major Proleague: Mini's team beats Bisu's 2-0",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Heukunjang opens sign-ups for a 3v3 Yuzmap tournament",
+      "summary": "Heukunjang opened sign-ups for the second Yuzmap Champions event, a 3v3 tournament where three-player teams enter by commenting. The top 16 teams by upvotes will be picked, and the event is set for 6 November at 17:00.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Heukunjang's second Yuzmap Champions event: a 3v3 tournament, 16 teams",
+      "teaser": "Teams of three sign up by commenting, and the top 16 by upvotes are picked. The tournament is on 6 November at 17:00.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-06",
+        "time": "17:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2900"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Heukunjang opens sign-ups for a 3v3 Yuzmap tournament",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Relay showdown: Rush takes first with 7 wins",
+      "summary": "Rush won the winner-stays relay with seven wins, soma had five and Mini had four. soma then beat Mini in the decider for second place.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Rush, soma and Mini in a winner-stays relay to seven wins",
+      "teaser": "The three played until one reached seven wins, with a decider for second place on the same night.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Relay showdown: Rush takes first with 7 wins",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Maennae Hyunjin wins all four best-of-three series",
+      "summary": "Protoss streamer Maennae Hyunjin won all four best-of-three series on 1 November. The first was a 2-1 win over Ppyakppyak, and the other three were 2-0 wins.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Maennae Hyunjin plays four best-of-three series against streamers",
+      "teaser": "Protoss streamer Maennae Hyunjin played four best-of-three series against several streamers on 1 November.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-02"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Maennae Hyunjin wins all four best-of-three series",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz players post pledges ahead of their Doosan CK",
+      "summary": "Dreamz posted a ranking of rewards and penalties for the team's Doosan CK on 1 November at 18:00, along with individual pledges. Shuttle posted the poster, and Minji and Pingping also posted pre-match messages.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreamz players post pledges ahead of their Doosan CK",
+      "teaser": "Team members posted rewards-and-penalties posters and personal pledges before the Doosan CK, which began at 18:00 on 1 November.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-01",
+        "time": "18:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2889"
+      ],
+      "date": "2026-11-01",
+      "id": "2026-11-01:Dreamz players post pledges ahead of their Doosan CK",
+      "addedAt": "2026-11-02T05:45:16.033Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Major Proleague: Rush's team beats Light's team 2-1",
       "summary": "Rush's team beat Light's team 2-1 in the 4v4 Major Proleague on 30 October. The Pro League set went 4-2 to Rush's side, the Winners League set went 5-3 to Light's side with Jaedong winning three in a row, and the super ace decider went to Rush over Jaedong.",
       "spoiler": true,
@@ -2263,155 +2487,6 @@
       "date": "2026-10-19",
       "id": "2026-10-19:Ju Harang comes back from 1:3 down to beat Yeopjip Ppo-nuna 5:4",
       "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Soulkey beats Rush 4-3 to win ASL Season 22",
-      "summary": "Soulkey beat Rush 4-3 in the Season 22 final on Saturday, October 17, winning his fifth ASL title. The final was held at an ice rink in Seoul's Lotte World with about 1,500 fans, and fan posts and videos from the event were shared afterwards.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "ASL Season 22 final at the Lotte World ice rink in Seoul, and fan reactions",
-      "teaser": "SOOP's ASL Season 22 final drew about 1,500 fans to an ice rink in Seoul's Lotte World. Fan videos and posts from the event are included too.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/439/0000033779",
-        "https://m.sports.naver.com/esports/article/076/0004457335",
-        "https://eloboard.com/community/posts/1688",
-        "https://eloboard.com/community/posts/1683",
-        "https://eloboard.com/community/posts/1686",
-        "https://eloboard.com/community/posts/1680"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Soulkey beats Rush 4-3 to win ASL Season 22",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "soma beats RoyaL 4-3 in a 1:1 best-of-seven",
-      "summary": "soma (Zerg) beat RoyaL (Terran) 4-3 in a best-of-seven 1:1 series on October 18. He led 3-1, lost the next two games to make it 3-3, then won the seventh game.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "soma and RoyaL play a best-of-seven 1:1 series",
-      "teaser": "The best-of-seven 1:1 series between soma and RoyaL on October 18 went the full seven games.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-19"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:soma beats RoyaL 4-3 in a 1:1 best-of-seven",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Sharp beats effOrt 2-1 and 2-0 in two 1:1 series",
-      "summary": "Sharp (Terran) beat effOrt (Zerg) 2-1 in their first best-of-three 1:1 series on October 18, then 2-0 in the second. The first series went to a third game.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Sharp and effOrt meet twice in best-of-three 1:1 series",
-      "teaser": "Two best-of-three 1:1 series between Sharp and effOrt were played on October 18. One of them went to a third game.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-19"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Sharp beats effOrt 2-1 and 2-0 in two 1:1 series",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Double B beats New World 2-0 in Sunday's university clash",
-      "summary": "Double B beat New World 2-0 in their Sunday university clash. Before the match, Bbanghun posted the lineup poster and warned about the mini match.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Double B vs New World university clash, with Bbanghun's pre-match lineup poster",
-      "teaser": "Bbanghun posted the lineup poster for the Sunday 5 pm Double B vs New World clash, with a warning about the mini match.",
-      "teamResult": "University Clash: Double B 2-0 New World",
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1675"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Double B beats New World 2-0 in Sunday's university clash",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Individual results from several star university matches on October 18",
-      "summary": "Yoning (Dreamz) beat Jiduudu (Calm MonstarZ) 2-1, then 2-0 in a rematch. Namdeokseon (Calm MonstarZ) beat Tomato 2-0, Gaengidda (Black Academy) beat Meonjin 2-0 and Eunseo 2-1, and Bongsoon (New World) beat Hiueng 2-0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Individual results from several star university matches on October 18",
-      "teaser": "Players from Dreamz, Calm MonstarZ, Black Academy and New World played 1:1 games in star university matches on October 18.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-19"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Individual results from several star university matches on October 18",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Former pro Classic plans a StarCraft 1 streaming comeback",
-      "summary": "Former STX Terran pro Classic says they will start streaming StarCraft 1 next week. They plan to go live on Tuesday at around 7 pm.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Former pro Classic plans a StarCraft 1 streaming comeback",
-      "teaser": "The announcement was posted on the evening of October 18, saying the StarCraft 1 streams start next week.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1725"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Former pro Classic plans a StarCraft 1 streaming comeback",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Danyu holds his last broadcast on October 18, giving away leftover goods",
-      "summary": "Danyu announced that the 6 pm broadcast on October 18 would be the last, with leftover goods and star university items given away. The previous night he did a Reze cosplay as a pledge.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Danyu's last broadcast: giveaways of leftover goods and star university items",
-      "teaser": "The final stream was set for 6 pm on October 18, with giveaways and a drinking segment.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1692"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Danyu holds his last broadcast on October 18, giving away leftover goods",
-      "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "a player posts a farewell notice thanking fans",
-      "summary": "a player posted a farewell notice on the morning of October 18 as a former K-Dae member. The notice thanked the fans who supported them and said a fuller thank-you would follow after getting home.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "a player posts a farewell notice to fans and supporters",
-      "teaser": "The notice was posted on the morning of October 18 and says a fuller thank-you will follow after getting home.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1689"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:a player posts a farewell notice thanking fans",
-      "addedAt": "2026-10-19T05:30:07.677Z",
       "by": "claude",
       "posted": false
     }
