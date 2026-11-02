@@ -1,6 +1,378 @@
 {
   "items": [
     {
+      "headline": "Major Proleague: Rush's team beats Light's team 2-1",
+      "summary": "Rush's team beat Light's team 2-1 in the 4v4 Major Proleague on 30 October. The Pro League set went 4-2 to Rush's side, the Winners League set went 5-3 to Light's side with Jaedong winning three in a row, and the super ace decider went to Rush over Jaedong.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague: Rush's team vs Light's team, with a super ace decider",
+      "teaser": "Two four-player teams led by Rush and Light met in the Major Proleague, with Jaedong and SnOw also in the lineups and a super ace game to settle it.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-31"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:Major Proleague: Rush's team beats Light's team 2-1",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "1:1 heavy battle: Light beats SnOw 4-2",
+      "summary": "Light beat SnOw 4-2 in a seven-game 1:1 heavy battle (first to four) on 30 October, winning the first three games in a row. SnOw took the next two to close to 3-2, but Light won the sixth game to finish it.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1:1 heavy battle between Light and SnOw, first to four in seven games",
+      "teaser": "Two top players meet in a seven-game 1:1 heavy battle, played as first to four on 30 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-31"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:1:1 heavy battle: Light beats SnOw 4-2",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats Light 3-2, loses 1-2 to Mini",
+      "summary": "soma beat Light 3-2 in a five-game series on 30 October, but lost 1-2 to Mini. Rush won 2-0 against both ggaemo and effOrt, and Light beat Queen 2-1.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1:1 matches on 30 October with soma, Light and Rush",
+      "teaser": "soma, Light and Rush each played several 1:1 series that day, including against Mini, ggaemo and effOrt.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-31"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:soma beats Light 3-2, loses 1-2 to Mini",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "soma beats Mini 3-2 in five games",
+      "summary": "soma beat Mini 3-2 in a five-game series on 31 October, winning games one, three and five. He then lost 1-2 to Rush, while SnOw beat effOrt 2-0.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "1:1 matches on 31 October with soma, Mini and SnOw",
+      "teaser": "soma faced Mini in a five-game series and then Rush in a three-game match, while SnOw played effOrt in another three-game series.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:soma beats Mini 3-2 in five games",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Fantasy beats Shine 2-1, loses to n.Die_soO 1-2",
+      "summary": "Fantasy beat Shine 2-1 and nOOB 2-0 on 31 October. He lost 1-2 to n.Die_soO in the third of three best-of-three series.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Fantasy's three best-of-three series on 31 October",
+      "teaser": "Fantasy played three best-of-three series against Shine, nOOB and n.Die_soO on 31 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Fantasy beats Shine 2-1, loses to n.Die_soO 1-2",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "K-League: Byeongyeong team beats Hosun team 2-0",
+      "summary": "The Byeongyeong team beat the Hosun team 2-0 in a 4v4 K-League match on 30 October. ggaemo and BarrackS each won all three of their games, while Yoon lost all three.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "4v4 K-League match between the Byeongyeong and Hosun teams on 30 October",
+      "teaser": "Two four-player teams played a K-League match, with ggaemo, BarrackS and sSak among the players.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-31"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:K-League: Byeongyeong team beats Hosun team 2-0",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer 1v1s on 30 October: Mijimun sweeps Chihyo, Mobi loses two",
+      "summary": "Mobi lost 1-2 to both Kimoya and Jiuri, while Ryeowon-nim beat Eunseo 2-1 before losing 1-2 to Hyojjang. Tamayang came back from 0-1 to beat Ttatjwi 2-1, and Mijimun beat Chihyo 2-0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Streamer 1v1 matches on 30 October featuring Mobi, Tamayang and Mijimun",
+      "teaser": "Several streamer 1v1 matches on 30 October, including Mobi, Ryeowon-nim, Tamayang and Mijimun. None of the players involved are pros.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-10-31"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:Streamer 1v1s on 30 October: Mijimun sweeps Chihyo, Mobi loses two",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamer 1v1s on 31 October: Joeun comes back 2-1, Rahi sweeps Seulduri",
+      "summary": "Joeun, Queenju, Bijaehui and Seulduri each lost game one and then won the next two, all 2-1 wins. Hiyeong beat Ddobongsun 2-1, and Rahi swept Seulduri 2-0.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Streamer 1v1 matches on 31 October, with Joeun, Queenju and Seulduri in action",
+      "teaser": "A batch of streamer 1v1 matches from 31 October, including Joeun, Queenju, Bijaehui, Seulduri, Hiyeong and Rahi.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Streamer 1v1s on 31 October: Joeun comes back 2-1, Rahi sweeps Seulduri",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "University Clash: Calm MonstarZ 5-2 Black Academy",
+      "summary": "Calm MonstarZ beat Black Academy 5-2 in their university clash on 30 October. Players from both sides posted their reactions the next day, with several on the Calm MonstarZ side thanking their coaches and teammates.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Calm MonstarZ and Black Academy's university clash, with reactions from both sides",
+      "teaser": "Players from both universities posted reactions the day after their 30 October clash, sharing stories about practice and their coaches.",
+      "teamResult": "University Clash: Calm MonstarZ 5-2 Black Academy",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2774"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:University Clash: Calm MonstarZ 5-2 Black Academy",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Double final showdown: Mobi and Hyenyang beat Black Academy duo 6-3",
+      "summary": "The joint team of Mobi and Hyenyang beat Jecalchubin and Oseun of Black Academy 6-3 in a nine-game double match on 31 October. The match was tied to a 24-hour punishment broadcast at the Black Academy studio.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Double final showdown on 31 October, with each win cutting a punishment broadcast",
+      "teaser": "A nine-game double match on 31 October, where each win cut 30 minutes from a 24-hour punishment broadcast.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Double final showdown: Mobi and Hyenyang beat Black Academy duo 6-3",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mini-tournament: DM beats JMT 3-2, Haemhee takes the decider",
+      "summary": "DM (Ppangrina, Sooniyang, Eunjo and Haemhee) beat JMT (Pachi, Mingga, Yogjung Neugu-ri and Jjuiy) 3-2 in a five-game mini-tournament on 31 October. JMT led twice, but DM came back to tie it and Haemhee won the fifth game, the Super Ace Match.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Mini-tournament on 31 October, DM vs JMT, with the losers facing a punishment",
+      "teaser": "Two streamer crews met in a five-game mini-tournament on 31 October, with a Super Ace decider and a punishment for the losing side.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01",
+        "https://eloboard.com/community/posts/2730",
+        "https://eloboard.com/community/posts/2844"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Mini-tournament: DM beats JMT 3-2, Haemhee takes the decider",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz Doosan CK on 1 November: players post pledge sheets",
+      "summary": "Dreamz players posted their pledge sheets for the Doosan CK, which runs on 1 November from 6pm to 11pm. 910 asked for support, and BarrackS said the team needed help to avoid finishing last.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreamz Doosan CK on 1 November, with pledge sheets posted by the team",
+      "teaser": "Players from Dreamz put up their pledge sheets ahead of the Doosan CK on 1 November, which runs from 6pm to 11pm and is streamed by Shuttle.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-01",
+        "time": "18:00",
+        "link": "https://www.sooplive.com/station/jk890202"
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2839"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Dreamz Doosan CK on 1 November: players post pledge sheets",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "JSA vs New World mini-tournament on 1 November at 4pm",
+      "summary": "JSA and New World meet in a mini-tournament on 1 November, with a poster that says the loser dies. The schedule also lists a second slot that evening at 7pm.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "JSA vs New World mini-tournament, 1 November, with a 'lose and die' poster",
+      "teaser": "A JSA vs New World mini-tournament on 1 November, listed for 4pm and 7pm.",
+      "teamResult": null,
+      "match": {
+        "date": "2026-11-01",
+        "time": "16:00",
+        "link": null
+      },
+      "sources": [
+        "https://eloboard.com/community/posts/2845",
+        "https://eloboard.com/community/posts/2730"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:JSA vs New World mini-tournament on 1 November at 4pm",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Remi leaves Sobyeongdae, then returns on 31 October",
+      "summary": "Remi left Sobyeongdae on 30 October with a 'GOODBYE' poster, then rejoined the team on 31 October with a 'RETURN' poster. Remi's own post on the return only said thank you.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamer Remi leaves and then returns to Sobyeongdae within two days",
+      "teaser": "A roster move for Sobyeongdae, with Remi's departure and return posted on the official boards on 30 and 31 October.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2735",
+        "https://eloboard.com/community/posts/2832"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:Remi leaves Sobyeongdae, then returns on 31 October",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "A streamer joins Sobyeongdae on 31 October",
+      "summary": "A streamer joined Sobyeongdae on 31 October, posting that they got in after a difficult trip home. They said they would go live before 5pm and asked for chat interaction.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "A streamer joins Sobyeongdae, with a 5pm broadcast planned",
+      "teaser": "The streamer posted their arrival at Sobyeongdae on 31 October and said a broadcast would start before 5pm.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2811"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:A streamer joins Sobyeongdae on 31 October",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mongsun returns to WFU as a 4-tier Zerg",
+      "summary": "Mongsun rejoined WFU on 31 October, with an official poster listing them as a 4-tier Zerg. They thanked the WFU boss for giving them another chance.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Streamer Mongsun returns to WFU, announced on 31 October",
+      "teaser": "An official post on 31 October confirmed that Mongsun is back at WFU as a 4-tier Zerg.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2822"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Mongsun returns to WFU as a 4-tier Zerg",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Darin joins Double B as a playing coach",
+      "summary": "Darin joined Double B on 31 October as a playing coach, and the team posted a welcome poster. Darin said they would be back for the next morning's broadcast.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Darin joins Double B as a playing coach",
+      "teaser": "Double B welcomed Darin as a new member on 31 October, with a broadcast planned for the next morning.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2842"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Darin joins Double B as a playing coach",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Annung moves to MBU on the site roster",
+      "summary": "The site's roster record for Annung changed to MBU on 31 October. No official post or news board item appeared that day.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Annung's site team changes to MBU",
+      "teaser": "The site's roster for Annung now shows MBU, with no matching official post.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-01"
+      ],
+      "date": "2026-10-31",
+      "id": "2026-10-31:Annung moves to MBU on the site roster",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "A streamer announces a 10-15 day break for mid-November",
+      "summary": "A streamer said they would take a short break of about 10 to 15 days in mid-November, and that the dates could still change. They called it their longest break in years of streaming, after about five days off in October.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "A streamer announces a 10-15 day break for mid-November",
+      "teaser": "The streamer posted the notice early, saying the dates may shift and that a break this long is rare for them.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2709"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:A streamer announces a 10-15 day break for mid-November",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Star University: a new poster and call for members",
+      "summary": "On 30 October a streamer posted a 'Star University' poster naming Ssangdi as president and Sandara as preparatory head, and asked people to join from the start.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "A new 'Star University' poster asks for members to help build it",
+      "teaser": "Sandara posted a 'Star University' poster with Ssangdi as president and invited people to join from the start.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2696"
+      ],
+      "date": "2026-10-30",
+      "id": "2026-10-30:Star University: a new poster and call for members",
+      "addedAt": "2026-11-02T05:30:02.284Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Kkonibugging joins star university team Sobyungdae",
       "summary": "Kkonibugging, a 4-tier Protoss player, officially joined the Sobyungdae star university team, which posted a welcome message on October 29. In his own post he said he was not pushed into joining, thanked the team's fans and promised to work even harder. He also said he would carry many memories from BGM.",
       "spoiler": false,
@@ -2040,991 +2412,6 @@
       "date": "2026-10-19",
       "id": "2026-10-19:a player posts a farewell notice thanking fans",
       "addedAt": "2026-10-19T05:30:07.677Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Soulkey beats Rush 4-3 to win ASL Season 22, his fifth title",
-      "summary": "Soulkey won the Google Play ASL Season 22 final 4-3 against Rush at Lotte World Ice Rink in Seoul on 17 October. He came back in the fifth set to take a 3-2 lead, then closed out the series. It is his fifth ASL title, the first time anyone has won five.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "ASL Season 22 final at Lotte World Ice Rink: photos, clips and reports",
-      "teaser": "Full coverage of the Google Play ASL Season 22 final in Seoul: venue photos, video clips from the opening and the decisive set, and match reports.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/445/0000478249",
-        "https://m.sports.naver.com/esports/article/311/0002069758",
-        "https://m.sports.naver.com/esports/article/144/0001144698",
-        "https://m.sports.naver.com/esports/article/109/0005624824",
-        "https://m.sports.naver.com/esports/article/236/0000257536",
-        "https://m.sports.naver.com/esports/article/356/0000086692",
-        "https://m.sports.naver.com/esports/article/031/0001067014",
-        "https://eloboard.com/community/posts/1662",
-        "https://eloboard.com/community/posts/1658",
-        "https://eloboard.com/community/posts/1661"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Soulkey beats Rush 4-3 to win ASL Season 22, his fifth title",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Soulkey sets a 10-title goal and names soma as his rival",
-      "summary": "After the final, Soulkey said his next target is ten ASL titles and that his biggest rival is soma. He also wrote a handwritten letter to fans, asking them to stay by his side for a long time.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Post-final interviews and a fan letter from Soulkey",
-      "teaser": "His next goal, who he sees as his main rival, and a handwritten thank-you to fans after the Season 22 final.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/236/0000257537",
-        "https://m.sports.naver.com/esports/article/311/0002069768",
-        "https://m.sports.naver.com/esports/article/311/0002069945",
-        "https://m.sports.naver.com/esports/article/109/0005625296",
-        "https://eloboard.com/community/posts/1651"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Soulkey sets a 10-title goal and names soma as his rival",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SOOP plans new Brood War-based content, possibly announced this year",
-      "summary": "Two SOOP heads of content spoke to reporters at the Season 22 final. They said they are planning new content built on StarCraft: Brood War, with an announcement possibly coming this year.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "SOOP's plans for new Brood War content after the ASL Season 22 final",
-      "teaser": "Two SOOP executives discuss original e-sports shows and a new Brood War-based project that could be announced this year.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/236/0000257538",
-        "https://m.sports.naver.com/esports/article/311/0002070025"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:SOOP plans new Brood War-based content, possibly announced this year",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Former stars NaDa and Reach watch the ASL Season 22 final",
-      "summary": "NaDa, known as 'Genius Terran', and Reach, known as 'Hero Protoss', came to watch the Season 22 final in person, photo reports say.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Former Brood War stars at the ASL Season 22 final, in person",
-      "teaser": "Photos of two of the game's old legends watching the final at Lotte World Ice Rink.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/311/0002069799"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Former stars NaDa and Reach watch the ASL Season 22 final",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Calm MonstarZ members cheer at the ASL final, then go out for dinner",
-      "summary": "Several Calm MonstarZ members went to Lotte World to cheer on Soulkey for the final on 17 October. Afterwards, some of them joined a team dinner and posted about the day.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Calm MonstarZ members cheer at the ASL final, then a team dinner",
-      "teaser": "Members posted from the venue and from the dinner afterwards, with photos and short notes about the day.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1642"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Calm MonstarZ members cheer at the ASL final, then go out for dinner",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Waffle University beats BGM 2-1 in a mini-match with a super-ace decider",
-      "summary": "Waffle University beat BGM 2-1 in a mini-match on 17 October. BGM took the first round 3-0, Waffle won the second round 3-1, and Waffle took the super-ace decider. A BGM member posted a short reaction afterwards, saying there is still a chance if they do not give up.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Waffle University vs BGM mini-match: three rounds and a super-ace decider",
-      "teaser": "Two eight-player teams met in three rounds, ending with a super-ace decider, and a BGM member posted a reaction afterwards.",
-      "teamResult": "Mini-match: Waffle University 2-1 BGM",
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-18",
-        "https://eloboard.com/community/posts/1667"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Waffle University beats BGM 2-1 in a mini-match with a super-ace decider",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Individual series across several star-university rosters on 17 October",
-      "summary": "Ppiyak-ppiyak beat Ringa 2-1 and Aring 2-0 in individual series, while Mongsun beat Jidudu 2-1 and then 2-0. Many other one-on-one series from the same day were posted too.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Individual series from several star-university rosters, 17 October",
-      "teaser": "A long list of one-on-one series across several rosters, from players of all three races.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-18"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Individual series across several star-university rosters on 17 October",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "effOrt beats Fantasy 2-0 twice in individual series",
-      "summary": "effOrt beat Fantasy 2-0 in two series on 17 October and also beat RoyaL 2-0. Fantasy lost 0-2 to Shinee, but beat BTS 2-0 and beat Hyuk in one game.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Individual series from 17 October featuring effOrt and Fantasy",
-      "teaser": "A batch of one-on-one series from 17 October, with several players winning and losing across best-of-three sets.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-18"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:effOrt beats Fantasy 2-0 twice in individual series",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Hieong sweeps Danachang 4-0 in a best-of-seven; Ringa wins a spawn series 3-1",
-      "summary": "Hieong (Black Academy) beat Danachang 4-0 in a best-of-seven on 17 October and also beat Ttobongsun in one game. Ringa beat Yesl 3-1 in a best-of-five spawn series and later won a rematch 3-2. Melong beat Mingga 2-0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Black Academy and Double B individual series, 17 October",
-      "teaser": "Best-of-seven and best-of-five spawn matches among Black Academy, Double B and other rosters, plus several one-game results.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-18"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Hieong sweeps Danachang 4-0 in a best-of-seven; Ringa wins a spawn series 3-1",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "KD youth prepare for their second-week test, with nerves and late practice",
-      "summary": "KD's youth players had their second evaluation test in person on 17 October at 7 pm. Posts from the night before show nerves and late-night practice, and one player posted a drawing called 'Tomorrow's worry'.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "KD youth's second-week evaluation test on 17 October",
-      "teaser": "Youth players prepare for the test with late-night practice, a bowling session and a drawing called 'Tomorrow's worry'.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1601",
-        "https://eloboard.com/community/posts/1594"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:KD youth prepare for their second-week test, with nerves and late practice",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Double B's Heroa returns to streaming from a new studio",
-      "summary": "Double B's Heroa made a comeback broadcast from a new studio on 17 October. They said they often get sleepy after 7 or 8 pm, and plan to watch Double B's mini-match on 18 October with family.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Double B's Heroa returns to streaming from a new studio",
-      "teaser": "A return broadcast from a new studio, with notes on sleep habits and plans to watch the next Double B mini-match.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1604"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Double B's Heroa returns to streaming from a new studio",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "JSA youth player starts StarCraft from scratch with notes and build practice",
-      "summary": "A JSA youth player turned on StarCraft for the first time on the morning of 17 October and studied the basics live, including worker splits, the 10/12 build and attack-move commands. Because school limits weekday streaming, the player plans to go long on weekends and posted notes from the first session.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "JSA youth player's first StarCraft study stream, with notes",
-      "teaser": "Basics from the first session: worker splits, the 10/12 build, attack-move, and a plan for longer weekend streams.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1631"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:JSA youth player starts StarCraft from scratch with notes and build practice",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Newcastle members post pledge-based maid-café plans and a 24-hour stream",
-      "summary": "A Newcastle streamer posted a poster for a maid-café visit set as a pledge, to be streamed. Another member started a 24-hour stream on 17 October, and the team posted that all Newcastle members had signed up for the tier 5 and 6 tournament.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Newcastle maid-café pledge poster, a 24-hour stream and tournament sign-ups",
-      "teaser": "Plans for a maid-café pledge, a 24-hour broadcast and sign-ups for the tier 5 and 6 tournament.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1606"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Newcastle members post pledge-based maid-café plans and a 24-hour stream",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Black Academy member spends evening at family dinner, watches ASL final",
-      "summary": "A Black Academy member posted photos from a birthday dinner for their father on 17 October, and said they watched the ASL final with their brother, where the Terran player lost 3-4. Other members posted their weekend plans, including a camp stairs challenge.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Black Academy member's birthday dinner and weekend plans",
-      "teaser": "A birthday dinner for a family member, a camp stairs challenge, and short streams planned for the weekend.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1657"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Black Academy member spends evening at family dinner, watches ASL final",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "New World members plan a penalty hike stream and a short evening broadcast",
-      "summary": "A New World member announced a 10:30 am hike broadcast on 17 October as a penalty, and another posted from the stairs before the climb. A third member came back from a relative's wedding in Jeonju and planned a short evening stream, followed by practice at 10 pm.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "New World's penalty hike broadcast and a short evening stream",
-      "teaser": "A penalty hike stream, a wedding trip, and a short evening broadcast with practice to follow.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1605"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:New World members plan a penalty hike stream and a short evening broadcast",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "MBU holds an 'emergency committee' meeting on 18 October at 3 pm",
-      "summary": "MBU posted a poster for an emergency committee meeting on 18 October at 3 pm, showing members around a situation-room table. One member said they would spend 17 October looking for a new home and resting.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "MBU emergency committee meeting on 18 October at 3 pm",
-      "teaser": "A team poster for the meeting on 18 October, with members shown around a situation-room table.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1665"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:MBU holds an 'emergency committee' meeting on 18 October at 3 pm",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "MBU Zerg members thank organisers after a gathering by the sea",
-      "summary": "An MBU member posted thanks after a Zerg-side meetup on the night of 16 October, saying a senior member had covered the fuel money. They shared a group photo taken at the seaside and called it a 'warm Zerg team'.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "MBU Zerg team meetup on 16 October, thanks posted",
-      "teaser": "Thanks to the members who organised the meetup, with a group photo taken by the sea.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1596"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:MBU Zerg members thank organisers after a gathering by the sea",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "JSA members treat new members to a crab and gizzard shad lunch on 17 October",
-      "summary": "A JSA member posted a poster for a lunch on 17 October at 11 am, when a fellow member offered to treat new members to crab and gizzard shad. At noon, a video of members eating crab was posted to the gallery.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "JSA members' seafood lunch on 17 October, with new members",
-      "teaser": "A seafood lunch treat with new members, plus a video from the table.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1592"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:JSA members treat new members to a crab and gizzard shad lunch on 17 October",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Dreamz plan a team 'second part' after the ASL final, on Discord at 7 pm",
-      "summary": "Dreamz members announced a full team get-together after the 17 October ASL final, starting on Discord at 7 pm. One member said the team won its university clash against Calm MonstarZ after losing its early games.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Dreamz team get-together after the ASL final, with a Discord session at 7 pm",
-      "teaser": "Members talk about a first team hangout after the final, with one member heading to Lotte World for behind-the-scenes filming.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1591"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:Dreamz plan a team 'second part' after the ASL final, on Discord at 7 pm",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Brood War keeps going across generations, as the ASL final draws 1,000+ fans",
-      "summary": "More than 1,000 people came to Lotte World Ice Rink to watch the Google Play ASL Season 22 final. The feature looks at Brood War, released in 1998, and how the scene has kept going across generations of players.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "Brood War still draws a crowd: 1,000+ fans at the ASL Season 22 final",
-      "teaser": "A look at how a 28-year-old game still brings players and fans together, from the final at Lotte World Ice Rink.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/144/0001144750"
-      ],
-      "date": "2026-10-18",
-      "id": "2026-10-18:Brood War keeps going across generations, as the ASL final draws 1,000+ fans",
-      "addedAt": "2026-10-19T05:16:07.678Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SoulKey beats Rush 4-3 to win ASL Season 22 and a record fifth title",
-      "summary": "SoulKey won the Google Play ASL Season 22 final 4-3 over Rush at Lotte World Ice Rink in Seoul on 17 October. After Rush levelled the series at 3-3, SoulKey took the seventh and decisive set, giving him his fifth ASL title, a first for the league, and seven straight Zerg titles.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Rush vs SoulKey: the Google Play ASL Season 22 final, set by set",
-      "teaser": "Set-by-set recap of the best-of-seven Terran vs Zerg final between Rush and SoulKey at Lotte World Ice Rink in Seoul.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/442/0000197861",
-        "https://m.sports.naver.com/esports/article/005/0001879240",
-        "https://m.sports.naver.com/esports/article/144/0001144692",
-        "https://m.sports.naver.com/esports/article/236/0000257535",
-        "https://m.sports.naver.com/esports/article/109/0005624807",
-        "https://m.sports.naver.com/esports/article/311/0002069750",
-        "https://m.sports.naver.com/esports/article/347/0000196136",
-        "https://m.sports.naver.com/esports/article/144/0001144687",
-        "https://m.sports.naver.com/esports/article/236/0000257534",
-        "https://m.sports.naver.com/esports/article/109/0005624769",
-        "https://m.sports.naver.com/esports/article/144/0001144682",
-        "https://m.sports.naver.com/esports/article/236/0000257532",
-        "https://m.sports.naver.com/esports/article/109/0005624839",
-        "https://m.sports.naver.com/esports/article/311/0002069759",
-        "https://m.sports.naver.com/esports/article/347/0000196137",
-        "https://m.sports.naver.com/esports/article/109/0005624831",
-        "https://m.sports.naver.com/esports/article/445/0000478258",
-        "https://m.sports.naver.com/esports/article/445/0000478257",
-        "https://m.sports.naver.com/esports/article/445/0000478256",
-        "https://m.sports.naver.com/esports/article/445/0000478253",
-        "https://m.sports.naver.com/esports/article/445/0000478252",
-        "https://m.sports.naver.com/esports/article/445/0000478251",
-        "https://m.sports.naver.com/esports/article/445/0000478250",
-        "https://m.sports.naver.com/esports/article/347/0000196145",
-        "https://m.sports.naver.com/esports/article/347/0000196144",
-        "https://m.sports.naver.com/esports/article/347/0000196143",
-        "https://m.sports.naver.com/esports/article/347/0000196142",
-        "https://m.sports.naver.com/esports/article/347/0000196140",
-        "https://m.sports.naver.com/esports/article/347/0000196139",
-        "https://m.sports.naver.com/esports/article/347/0000196138",
-        "https://m.sports.naver.com/esports/article/311/0002069748",
-        "https://m.sports.naver.com/esports/article/236/0000257533",
-        "https://m.sports.naver.com/esports/article/236/0000257531"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:SoulKey beats Rush 4-3 to win ASL Season 22 and a record fifth title",
-      "addedAt": "2026-10-19T05:01:07.681Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SoulKey wants ten ASL titles after his fifth championship",
-      "summary": "After the final, SoulKey said he has rediscovered his passion for StarCraft and wants to extend his Zerg title run and reach ten ASL titles. In a separate interview he named soma as the player he is most wary of.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "SoulKey on rekindling his passion and his goals after the ASL final",
-      "teaser": "SoulKey on his return to form, his ambition for more ASL titles, and the player he watches most closely.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/144/0001144701",
-        "https://m.sports.naver.com/esports/article/005/0001879241",
-        "https://m.sports.naver.com/esports/article/347/0000196141",
-        "https://m.sports.naver.com/esports/article/442/0000197862"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:SoulKey wants ten ASL titles after his fifth championship",
-      "addedAt": "2026-10-19T05:01:07.681Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SOOP's e-sports chiefs on ASL's 11 years and plans for new leagues",
-      "summary": "At the final, SOOP's e-sports heads a player and a player talked about 11 years of ASL and keeping StarCraft I e-sports alive. SOOP plans new leagues and content, closer ties with streamers, and partnerships with overseas platforms.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "SOOP's e-sports chiefs on 11 years of ASL and plans beyond it",
-      "teaser": "a player and a player look back at the league's history and what comes next: new leagues, new content and overseas partnerships.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/442/0000197860",
-        "https://m.sports.naver.com/esports/article/347/0000196146",
-        "https://m.sports.naver.com/esports/article/445/0000478236"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:SOOP's e-sports chiefs on ASL's 11 years and plans for new leagues",
-      "addedAt": "2026-10-19T05:01:07.681Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "ASL Season 22 final: photo report from the Lotte World ice rink",
-      "summary": "Photo reports from the Google Play ASL Season 22 final, held on the 17th at a special stage on the Lotte World ice rink in Jamsil, Seoul. The pictures show the opening, the announcers, SOOP CVO a player with the trophy, and guests including a player, NaDa and Reach. The final is Rush, going for his first ASL title, against four-time champion Soulkey.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "Photo report from the ASL Season 22 final at Lotte World ice rink",
-      "teaser": "Photos of the stage, the trophy, the crowd and the announcers, with a player and NaDa watching. Rush and Soulkey meet for the title.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/445/0000478230",
-        "https://m.sports.naver.com/esports/article/445/0000478229",
-        "https://m.sports.naver.com/esports/article/445/0000478228",
-        "https://m.sports.naver.com/esports/article/445/0000478227",
-        "https://m.sports.naver.com/esports/article/445/0000478226",
-        "https://m.sports.naver.com/esports/article/445/0000478225",
-        "https://m.sports.naver.com/esports/article/445/0000478224",
-        "https://m.sports.naver.com/esports/article/445/0000478237",
-        "https://m.sports.naver.com/esports/article/347/0000196134",
-        "https://m.sports.naver.com/esports/article/347/0000196133",
-        "https://m.sports.naver.com/esports/article/347/0000196132",
-        "https://m.sports.naver.com/esports/article/347/0000196131",
-        "https://m.sports.naver.com/esports/article/347/0000196130",
-        "https://m.sports.naver.com/esports/article/347/0000196129",
-        "https://m.sports.naver.com/esports/article/347/0000196128",
-        "https://m.sports.naver.com/esports/article/347/0000196127",
-        "https://m.sports.naver.com/esports/article/347/0000196126",
-        "https://m.sports.naver.com/esports/article/347/0000196125",
-        "https://m.sports.naver.com/esports/article/347/0000196124",
-        "https://m.sports.naver.com/esports/article/347/0000196123",
-        "https://m.sports.naver.com/esports/article/347/0000196122",
-        "https://m.sports.naver.com/esports/article/236/0000257530",
-        "https://m.sports.naver.com/esports/article/236/0000257529",
-        "https://m.sports.naver.com/esports/article/236/0000257528",
-        "https://m.sports.naver.com/esports/article/236/0000257527",
-        "https://m.sports.naver.com/esports/article/236/0000257526",
-        "https://m.sports.naver.com/esports/article/236/0000257525",
-        "https://m.sports.naver.com/esports/article/236/0000257522",
-        "https://m.sports.naver.com/esports/article/236/0000257521"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:ASL Season 22 final: photo report from the Lotte World ice rink",
-      "addedAt": "2026-10-19T04:46:07.680Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "ASL Season 22 final: Rush leads Soulkey 2-1 after three sets",
-      "summary": "Rush took the first set on Knockout with an early push, and Soulkey levelled the final 1-1 in set 2 with a Guardian variation and solid Hive play. Rush then won the third set with a timing attack, moving ahead 2-1 after three sets.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Set-by-set reports from the ASL Season 22 final, Rush vs Soulkey",
-      "teaser": "Set-by-set reports from the Google Play ASL Season 22 final at the Lotte World ice rink, with Rush and Soulkey fighting for the title.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/347/0000196121",
-        "https://m.sports.naver.com/esports/article/347/0000196135",
-        "https://m.sports.naver.com/esports/article/144/0001144673",
-        "https://m.sports.naver.com/esports/article/144/0001144676",
-        "https://m.sports.naver.com/esports/article/144/0001144679",
-        "https://m.sports.naver.com/esports/article/236/0000257523",
-        "https://m.sports.naver.com/esports/article/236/0000257524",
-        "https://m.sports.naver.com/esports/article/109/0005624740",
-        "https://m.sports.naver.com/esports/article/109/0005624724",
-        "https://m.sports.naver.com/esports/article/311/0002069722",
-        "https://m.sports.naver.com/esports/article/442/0000197859"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:ASL Season 22 final: Rush leads Soulkey 2-1 after three sets",
-      "addedAt": "2026-10-19T04:46:07.680Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "ASL Season 22 final: Rush takes game 1 over Soulkey",
-      "summary": "The Google Play ASL Season 22 final was held on October 17 on a special stage at Lotte World's ice rink. Rush (Terran) was going for a first ASL title against Soulkey (Zerg), a four-time champion chasing a fifth. In game 1, Rush held off a hydralisk rush with solid defence to take the opener.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "ASL Season 22 final: Rush vs Soulkey at Lotte World Ice Rink",
-      "teaser": "Rush is going for his first ASL title against Soulkey, who is chasing a fifth, on a special stage at Lotte World's ice rink.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/347/0000196119",
-        "https://m.sports.naver.com/esports/article/347/0000196118",
-        "https://m.sports.naver.com/esports/article/347/0000196117",
-        "https://m.sports.naver.com/esports/article/347/0000196116",
-        "https://m.sports.naver.com/esports/article/445/0000478165",
-        "https://m.sports.naver.com/esports/article/347/0000196114",
-        "https://m.sports.naver.com/esports/article/347/0000196113",
-        "https://m.sports.naver.com/esports/article/445/0000478162",
-        "https://m.sports.naver.com/esports/article/445/0000478159",
-        "https://m.sports.naver.com/esports/article/445/0000478158",
-        "https://m.sports.naver.com/esports/article/236/0000257520",
-        "https://m.sports.naver.com/esports/article/445/0000478234",
-        "https://m.sports.naver.com/esports/article/445/0000478233",
-        "https://m.sports.naver.com/esports/article/445/0000478232",
-        "https://m.sports.naver.com/esports/article/445/0000478231"
-      ],
-      "date": "2026-10-17",
-      "id": "2026-10-17:ASL Season 22 final: Rush takes game 1 over Soulkey",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "DM signs Hamhee; poster lists an 8-tier",
-      "summary": "DM posted a 'Welcome Hamhee' poster on its official board on the night of October 16. The poster shows the DM logo and lists the new player as an 8-tier.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "DM welcomes Hamhee with an official poster",
-      "teaser": "DM posted a 'Welcome Hamhee' poster on its official board on October 16, listing the new signing as an 8-tier player.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1578"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:DM signs Hamhee; poster lists an 8-tier",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Ahnnungi leaves MBU youth crew, citing a need to rest",
-      "summary": "Ahnnungi announced on the evening of October 16 that they are leaving the MBU youth crew because they are exhausted and need time to look after their mind. They apologised for a misunderstanding over remarks about being new to streaming, and said it was not aimed at anyone. Guboara also posted an apology for comments that had upset viewers.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Ahnnungi ends MBU youth activities to rest",
-      "teaser": "Ahnnungi is stepping away from the MBU youth crew after a row over a remark on a broadcast, saying they need time to look after their mind.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1563"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Ahnnungi leaves MBU youth crew, citing a need to rest",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "1v1 set: Queen beats Bisu 4:3",
-      "summary": "On October 16, Queen (Zerg) beat Bisu (Protoss) 4:3 in a long-format 1v1 set of up to seven games. Queen led 3:1, Bisu won two games to level it at 3:3, and Queen took the deciding game.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Bisu vs Queen: a long-format 1v1 set of up to seven games",
-      "teaser": "A long 1v1 set between a Protoss and a Zerg, with set-by-set reports posted on the information board.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:1v1 set: Queen beats Bisu 4:3",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "soma beats SnOw 5:2 in a full seven-game set",
-      "summary": "On October 16, soma (Zerg) beat SnOw (Protoss) 5:2 in a seven-game 1v1 set that went the full distance. soma won the first game, SnOw the second, and soma then won four in a row from the third to the sixth. SnOw took the seventh game.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "soma vs SnOw: a full seven-game 1v1 set",
-      "teaser": "A seven-game 1v1 set between a Zerg and a Protoss, with every game covered in the report on the information board.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:soma beats SnOw 5:2 in a full seven-game set",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Best 2:0 Jaedong; effOrt 2:0 Light",
-      "summary": "On October 16, Best (Protoss) beat Jaedong (Zerg) 2:0 in a best-of-three sponsored match. effOrt (Zerg) also won 2:0 against Light (Terran) in the same session.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Best vs Jaedong and effOrt vs Light: sponsored 1v1s",
-      "teaser": "Two best-of-three 1v1 sets from a sponsored match day, with the full game-by-game details on the information board.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Best 2:0 Jaedong; effOrt 2:0 Light",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Major Proleague: Queen's team beats effOrt's team 2:0",
-      "summary": "The five-on-five Major Proleague on October 16 went 2:0 to the team captained by Queen over the team captained by effOrt. The seven-game Proleague set ended 4:2 and the nine-game Winners League set 5:3, with Queen taking the final game. Bisu lost all three of his games.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Major Proleague, October 16: five-on-five team match with top players",
-      "teaser": "The October 16 five-on-five Major Proleague, with teams split by draw and players including Best, Jaedong and Bisu.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Major Proleague: Queen's team beats effOrt's team 2:0",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Aring, Mingttoyam, Ppiyak Ppiyak and Hyahyeon: October 16 1v1 roundup",
-      "summary": "Aring beat Mingttoyam 2:0 and then 2:1 in a rematch, while Ppiyak Ppiyak and Hyahyeon also won their sets. Park Dudu lost 1:2 to Sosim, then won the rematch 2:0 and beat Jiduduu 2:1. Im Joy won a five-game set against Ringa 3:0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "October 16 1v1 roundup: Aring, Mingttoyam, Park Dudu and Im Joy",
-      "teaser": "A streamer 1v1 roundup from the October 16 night, with several rematches and a few single-game matches.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Aring, Mingttoyam, Ppiyak Ppiyak and Hyahyeon: October 16 1v1 roundup",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Bapsae, Mobi, Yeonbulbi and Yesul: October 16 1v1 roundup",
-      "summary": "Bapsae beat Meonjin 2:1 and Sewol 2:0, and Mobi beat Jiuri 2:1. Yeonbulbi took a five-game set against Mori 3:2, and Yesul beat Dudu 2:1.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "October 16 1v1 roundup: Bapsae, Mobi, Yeonbulbi and Yesul",
-      "teaser": "Streamer 1v1 sets from the October 16 night, including a five-game set and several one-game matches.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Bapsae, Mobi, Yeonbulbi and Yesul: October 16 1v1 roundup",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Ryeowonnim beats Arisongi and Meonjin 2:0; Arisongi beats Bijaehui and Ringa",
-      "summary": "Ryeowonnim beat Arisongi and Meonjin 2:0 each on October 16. Arisongi beat Bijaehui and Ringa 2:0, and Minga beat Ppiyak Ppiyak 2:0 and Yeopjip Ppo-Nuna 2:1. Hyahyeon also beat Mijini 2:1 in the same round of matches.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "October 16 1v1 roundup: Ryeowonnim, Arisongi, Minga and Hyahyeon",
-      "teaser": "More streamer 1v1 sets from the October 16 night, including single-game matches and a few two-set wins.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-17"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Ryeowonnim beats Arisongi and Meonjin 2:0; Arisongi beats Bijaehui and Ringa",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Yeojini beats Yogoebus in a seven-game grudge match",
-      "summary": "Waffle Dae's Yeojini (Protoss) won six of seven games against Dreams' Yogoebus (Terran) on October 16. According to the information board, Yeojini won the first four games, lost the fifth, then took the sixth and seventh. Coach Aegong had said the plan was to win 7-0.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Yeojini vs Yogoebus: a seven-game grudge match with a coach preview",
-      "teaser": "A seven-game grudge match between Waffle Dae and Dreams, with a preview from Dreams' coach.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1516"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Yeojini beats Yogoebus in a seven-game grudge match",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Calm MonstarZ plans tier test and an October 24 fan meeting",
-      "summary": "Calm MonstarZ members said the team will split into higher and lower tiers in an evening test on October 16, after a loss in the previous night's university clash. The team also announced a fan meeting on Saturday, October 24, with sign-ups from October 17 to 20.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Calm MonstarZ: tier test after the university clash; fan meeting on October 24",
-      "teaser": "Players say the team will sort into higher and lower tiers in an evening test, and a fan meeting follows on Saturday, October 24.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1580"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Calm MonstarZ plans tier test and an October 24 fan meeting",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Dreams: Juseori rests for hand pain; team reflects on the university clash",
-      "summary": "Dreams' Juseori said on October 16 that their hand pain had got worse and they would rest that day after more than a week without a break. Teammates posted about the team's university clash on the night of October 15, which Dreams won, and about a team trip ahead.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Dreams' Juseori rests with hand pain; team reflects after the university clash",
-      "teaser": "Dreams members post recaps and plans after the October 15 university clash, including a team trip and Juseori's hand injury.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1531"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Dreams: Juseori rests for hand pain; team reflects on the university clash",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "JSA youth Seukging joins team trip two days after signing up",
-      "summary": "JSA youth member Seukging posted a recap of the team trip early on October 16. They said they had only ₩40,000 (about $29) and planned to cook ramen at the office, but their boss fed them before they left. They also planned to sleep at the office after a final part-time shift.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "JSA youth Seukging's first team trip and an overnight at the office",
-      "teaser": "Two days after joining JSA, Seukging recounts a team trip and plans to stream from the office after a final part-time shift.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1482"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:JSA youth Seukging joins team trip two days after signing up",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "K-Dae holds bowling trials before next week's Newcastle match",
-      "summary": "K-Dae announced on the evening of October 16 that it would hold bowling team trials ahead of next week's match against Newcastle. Several members said they had never bowled before but would try, and youth members practised beforehand.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "K-Dae bowling team trials ahead of next week's Newcastle match",
-      "teaser": "Members practise for the bowling trials, and the youth program has its second-week check on October 17.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1541"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:K-Dae holds bowling trials before next week's Newcastle match",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Newcastle Minecraft build project; 8-tier CK set for October 20",
-      "summary": "Newcastle posted a poster for a Minecraft build project at 3 PM on October 16, with several members planning to join. An 8-tier CK hosted by Dansol is set for Tuesday, October 20 at 5 PM, in a seven-game format.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Newcastle's Minecraft build project and an 8-tier CK on October 20",
-      "teaser": "Newcastle members prepare for a build session on October 16 and an 8-tier CK on Tuesday, October 20 at 5 PM.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1488"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Newcastle Minecraft build project; 8-tier CK set for October 20",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "'Gurinses Maker' Ttochi arc wraps up with a horror-game clear",
-      "summary": "Guboara's 'Gurinses Maker' Ttochi arc ended late on October 15. Heyoi said it was their first time clearing the horror game and that they work well with Guboara, and Ttochi announced two days off for family occasions.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "'Gurinses Maker' Ttochi arc wraps up on October 15",
-      "teaser": "Guboara's 'Gurinses Maker' storyline with Ttochi ends with a horror-game clear, followed by a two-day break.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1481"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:'Gurinses Maker' Ttochi arc wraps up with a horror-game clear",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "BGM vs Waffle Dae mini-tournament on Saturday at 6 PM",
-      "summary": "The BGM side posted a poster for a Brood War mini-tournament against Waffle Dae on Saturday, October 17, at 6 PM. A Waffle Dae player said they would practise that evening and rest on the 16th.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "BGM vs Waffle Dae mini-tournament on Saturday at 6 PM",
-      "teaser": "A Brood War mini-tournament between BGM and Waffle Dae, with both sides preparing this week.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-17",
-        "time": "18:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1566"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:BGM vs Waffle Dae mini-tournament on Saturday at 6 PM",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "New World's skill check for Yeonbulbi and Ttobongsun, opponent TBA",
-      "summary": "New World posted a poster on the morning of October 16 for a 4 PM skill check featuring Yeonbulbi and Ttobongsun, with the opponent still unknown. Jiuri returned to streaming after a short break and a wedding this week.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "New World's skill check for Yeonbulbi and Ttobongsun, opponent TBA",
-      "teaser": "A 4 PM skill check on October 16, and Jiuri's return to streaming after a short break.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-16",
-        "time": "16:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1486"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:New World's skill check for Yeonbulbi and Ttobongsun, opponent TBA",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Several streamers rest or see doctors: hand pain, stitches, surgery prep",
-      "summary": "Several Brood War streamers reported injuries and illness on October 16, including hand pain, a stitch that needed another suture, and a surgery check. Trap lost all three of his best-of-three sets on October 15 and slept for 15 hours.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Several streamers rest or see doctors on October 16: hand pain, stitches, surgery prep",
-      "teaser": "Streamers report hand pain, a cold, a pending surgery check and a stitch that kept bleeding, with several taking a day off.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1547"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Several streamers rest or see doctors: hand pain, stitches, surgery prep",
-      "addedAt": "2026-10-19T04:31:07.683Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Brood War takes the Jamsil ice rink stage on the 17th",
-      "summary": "OSEN looks at StarCraft's return to the centre of Korean esports after the closures of pro league teams, a period when the game was often dismissed as a relic. The piece presents the coming event on a Jamsil ice rink as proof that the scene can last.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Brood War takes the Jamsil ice rink stage on the 17th",
-      "teaser": "OSEN looks at how Brood War is proving it can last after pro league team closures, ahead of an event on the 17th on a Jamsil ice rink.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://m.sports.naver.com/esports/article/109/0005624370"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Brood War takes the Jamsil ice rink stage on the 17th",
-      "addedAt": "2026-10-16T10:01:07.682Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SOOP and ASL: ten years together, Season 22 final at Lotte World on 17 Oct",
-      "summary": "StarCraft remains active as an esports game, with tournaments running for nearly ten years since the pro league and major teams disappeared. Online, hundreds of millions of people have watched matches. SOOP will host the Google Play ASL Season 22 final at the Jamsil Lotte World ice rink on 17 October, with a crowd of over 1,000 expected.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "SOOP's ten-year partnership with ASL; Season 22 final at Lotte World Ice Rink on 17 Oct",
-      "teaser": "SOOP extends its ASL partnership, and the Season 22 final goes live from Jamsil Lotte World ice rink with over 1,000 spectators expected.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-17",
-        "time": null,
-        "link": null
-      },
-      "sources": [
-        "https://m.sports.naver.com/esports/article/236/0000257517"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:SOOP and ASL: ten years together, Season 22 final at Lotte World on 17 Oct",
-      "addedAt": "2026-10-16T09:00:42.657Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Rush and Soulkey meet in the ASL Season 22 final",
-      "summary": "Rush, a Terran reaching his first ASL final in eight seasons, faces Soulkey, a veteran chasing the record for most ASL titles. The final is at the Lotte World ice rink in Seoul on Saturday 17 October at 3 p.m., as part of the Google Play ASL Season 22.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "Rush and Soulkey set for the ASL Season 22 final on Saturday",
-      "teaser": "Lotte World ice rink in Seoul, 3 p.m. Saturday. One finalist is going for a first ASL title, the other for the most titles ever won.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-17",
-        "time": "15:00",
-        "link": null
-      },
-      "sources": [
-        "https://m.sports.naver.com/esports/article/347/0000196099"
-      ],
-      "date": "2026-10-16",
-      "id": "2026-10-16:Rush and Soulkey meet in the ASL Season 22 final",
-      "addedAt": "2026-10-16T07:00:16.531Z",
       "by": "claude",
       "posted": false
     }

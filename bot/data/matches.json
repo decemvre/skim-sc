@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T21:15:54.947Z",
+  "updated": "2026-11-02T04:30:02.784Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -527,7 +527,7 @@
       },
       "competition": {
         "raw": "CK 드림즈 두산CK",
-        "name": "",
+        "name": "CK: Dreamz Doosan CK",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -536,8 +536,8 @@
         "eloboard": true
       },
       "titleSource": "CK 드림즈 두산CK",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK: Dreamz Doosan CK",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -604,7 +604,7 @@
       },
       "competition": {
         "raw": "CK 유시리스 CK",
-        "name": "",
+        "name": "CK: Yusiris CK",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -613,8 +613,8 @@
         "eloboard": true
       },
       "titleSource": "CK 유시리스 CK",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK: Yusiris CK",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -672,7 +672,7 @@
       },
       "competition": {
         "raw": "CK 2회 유즈맵 최강자전",
-        "name": "",
+        "name": "CK: 2nd Yuzmap Strongest Battle",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -681,8 +681,8 @@
         "eloboard": true
       },
       "titleSource": "CK 2회 유즈맵 최강자전",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK: 2nd Yuzmap Strongest Battle",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
@@ -706,7 +706,7 @@
       },
       "competition": {
         "raw": "CK 냥냥코기배 통베이컵 7티어대회",
-        "name": "",
+        "name": "CK: Nyangnyang Kogi Cup, Tongbe Cup Tier 7 Tournament",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -715,8 +715,8 @@
         "eloboard": true
       },
       "titleSource": "CK 냥냥코기배 통베이컵 7티어대회",
-      "titleEn": null,
-      "needsTranslation": true,
+      "titleEn": "CK: Nyangnyang Kogi Cup, Tongbe Cup Tier 7 Tournament",
+      "needsTranslation": false,
       "duel": null,
       "a": null,
       "b": null,
