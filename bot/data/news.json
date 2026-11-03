@@ -1,6 +1,349 @@
 {
   "items": [
     {
+      "headline": "Hidaeng joins C9 with a recruitment broadcast on Chulgu's stream",
+      "summary": "An official board post titled '11/2 C9 Hidaeng recruitment' went up with a video on 2 November. Horang2 said the C9 recruitment broadcast would air on Chulgu's stream around 4 pm, and Chulgu said he would start his stream at 3 pm. The site's player affiliation has not been updated yet.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2938"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Hidaeng joins C9 with a recruitment broadcast on Chulgu's stream",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Pbal joins the Waffle team",
+      "summary": "Pbal wrote on the evening of 2 November that he had joined the Waffle team that day. The site now lists him under Waffle, and his line was dropped from the free-agent list.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2952"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Pbal joins the Waffle team",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Remremi listed under the Sobyeong team; collab on a player's stream",
+      "summary": "As of 2 November the site lists Remremi under the Sobyeong team. He announced a collab on a player's broadcast at 2 pm that day.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2928"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Remremi listed under the Sobyeong team; collab on a player's stream",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Heukademy: Yui and Woohing leave; Terran streamer tiers posted",
+      "summary": "Yui and Woohing left Heukademy, with an official goodbye post and replays going up just after midnight on 2 November. A separate post ranked the Terran streamers into tiers and noted that six of the ten top-tier Terrans attend university.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2913",
+        "https://eloboard.com/community/posts/2914"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Heukademy: Yui and Woohing leave; Terran streamer tiers posted",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mini reaches honour rank 1; posts streamer league record",
+      "summary": "Mini moved up to honour rank 1 on 2 November, with one rank per ₩500,000 (about $360) in cumulative donations. A forum post that day gave his record over five streamer league matches as 19 wins and 3 losses in 22 games.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2924"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Mini reaches honour rank 1; posts streamer league record",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz streamers thank fans after the Doosan CK",
+      "summary": "After the Dreamz Doosan CK on 1 November, several streamers posted thanks and plans. Minji said she would make more content, and Origgung, Pingping and Luckywiki posted about upcoming collabs and visits.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2937"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Dreamz streamers thank fans after the Doosan CK",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Queen plans a Tier 6 'Kkeong PL' match for the 19th or 20th",
+      "summary": "A 2 November post from Queen said the match would be on the 19th or 20th, with the final date to be set after a player's break and a check against the university event schedule. The poster lists ten streamers from the old and new sides.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2933"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Queen plans a Tier 6 'Kkeong PL' match for the 19th or 20th",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Najjang team beats Seuldol team 4-1 in the 2nd/3rd-tier PL",
+      "summary": "The results board recorded the Najjang team beating the Seuldol team 4-1 in single sets on 2 November. Naeyeri won two games for Najjang, and Pachi won the Seuldol team's only game by beating Danajjang.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2963"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Najjang team beats Seuldol team 4-1 in the 2nd/3rd-tier PL",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "herO beats Bisu 4-0 in a Jungjang 1v1 set",
+      "summary": "In a 7-map, first-to-four Jungjang 1v1 on 2 November, herO (Zerg) beat Bisu (Protoss) 4-0, according to a results post that includes a photo of herO. Another record from the same day lists a best-of-three between them that Bisu won 2-1, so the two entries conflict.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Jungjang 1v1 between Bisu and herO: results posted",
+      "teaser": "The Jungjang 1v1 between Bisu and herO has been posted with photos, and the same day's records include two conflicting entries for the pair.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-03"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:herO beats Bisu 4-0 in a Jungjang 1v1 set",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Seongdae team beats Byeonggu team 2-1 in K League team match",
+      "summary": "On 2 November the Seongdae team beat the Byeonggu team 2-1 in a 5v5 match, coming back from a 4-0 loss in the first set. The super ace match went to Motive, who beat Shinee.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-03"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Seongdae team beats Byeonggu team 2-1 in K League team match",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "RoyaL wins all three of his best-of-three sets on 2 November",
+      "summary": "On 2 November RoyaL (Terran) won all three of his best-of-three sets: 2-1 over effOrt, 2-0 over huro and 2-1 over Queen. Fantasy lost to Jaedong 1-2 and to Shine 0-2, but beat Hyuk 2-1.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "RoyaL's three best-of-three sets on 2 November, plus a round-up",
+      "teaser": "A round-up of 2 November best-of-three sets, with RoyaL playing three of them and others including Fantasy and Sharp.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-03"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:RoyaL wins all three of his best-of-three sets on 2 November",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Ttoa comes back to beat Ryeoeun 2-1 in a long list of 1v1 results",
+      "summary": "Ttoa came back from 0-1 to beat Ryeoeun 2-1, and Ryowonnim beat Maennae Hyeonjin 2-1 in the same results list. Most of the other sets on the list end 2-0 or 2-1.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-03"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Ttoa comes back to beat Ryeoeun 2-1 in a long list of 1v1 results",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Previews for 3 November: Dalin CK, a Dreamz reveal, MBU vs SBU poster",
+      "summary": "Posters and notes for 3 November include a Dalin CK starting at 5 pm and a Dreamz announcement at 2 pm, when a new member will be revealed in the studio. A mini university event poster, MBU vs SBU, was also posted late on 2 November.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2943"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Previews for 3 November: Dalin CK, a Dreamz reveal, MBU vs SBU poster",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamers post schedules: reserve duty, a Gangneung trip, broadcast times",
+      "summary": "Several streamers posted updates for the week. One is going to Gangneung from 4 to 6 November, one is on reserve duty, and a classic streamer listed his broadcast days and times. Others said they were resting or would stream later.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2941"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Streamers post schedules: reserve duty, a Gangneung trip, broadcast times",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Streamers post breaks and health updates",
+      "summary": "One streamer said he would be away for 2-3 days for a health check and return stronger. Others took a day off or said they would be back on Wednesday or Sunday.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2923"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Streamers post breaks and health updates",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Birthday wishes for a player and Nyangnyang Kogi",
+      "summary": "A photo post on 2 November wished happy birthday to a player, listed as a Protoss 5-tier player, and to Nyangnyang Kogi, a Zerg 7-tier player.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2932"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Birthday wishes for a player and Nyangnyang Kogi",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Imjoy's practice record includes a 3-0 win over Bitaming",
+      "summary": "Imjoy posted a tally of 7 practice games, including a best-of-five against Bitaming that ended 3-0. The post also mentioned a class placement that day and a computer repair.",
+      "spoiler": true,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-03"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Imjoy's practice record includes a 3-0 win over Bitaming",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Replay posted: Maennae Hyeonjin's reaction video",
+      "summary": "A video post on 2 November shared two replays titled 'Maennae Hyeonjin reaction!'.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2930"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Replay posted: Maennae Hyeonjin's reaction video",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Replay posted: Gaengida's Halloween broadcast",
+      "summary": "A video post on 2 November shared two replays of a 'Gaengida Halloween' broadcast.",
+      "spoiler": false,
+      "relevant": false,
+      "card": null,
+      "teaser": null,
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2915"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Replay posted: Gaengida's Halloween broadcast",
+      "addedAt": "2026-11-03T05:30:29.588Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Sobyungdae adds a player; Ahnunni returns to MBU",
       "summary": "Official posts on 31 October and 1 November announce that a player has joined Sobyungdae as an 8-tier Zerg. Ahnunni, a baby-tier player, is back with MBU.",
       "spoiler": false,
@@ -2321,172 +2664,6 @@
       "date": "2026-10-20",
       "id": "2026-10-20:SnOw vs soma: 1:1 best-of-seven on 20 October",
       "addedAt": "2026-10-21T04:30:44.226Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "SOOP to fund a monthly high-tier tournament, announced by Sarang-e",
-      "summary": "On October 19, after his broadcast, Sarang-e announced that SOOP will sponsor a monthly tournament worth ₩1,500,000 (about $1,070). It is a one-day, 16-player bracket for the top applicants by tier, with single games in the early rounds and best-of-three from the semifinals. Prize split and format are still being discussed.",
-      "spoiler": false,
-      "relevant": false,
-      "card": "Sarang-e announces a monthly high-tier tournament sponsored by SOOP",
-      "teaser": "A one-day, 16-player bracket for the top applicants by tier. Broadcast starts at the quarterfinals, and the prize split and format are still being decided.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1843"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:SOOP to fund a monthly high-tier tournament, announced by Sarang-e",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Casters' showmatch: Soulkey beats SnOw 6:3 after trailing 0:2",
-      "summary": "In a casters' showmatch two days after ASL Season 22 ended, Soulkey (Zerg) beat SnOw (Protoss) 6:3. He fell 0:2 behind on Odyssey and Backroom, levelled at 2:2, then won four games in a row. A fan clip from the set was posted to the gallery.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Casters' showmatch between Soulkey and SnOw, two days after ASL Season 22",
-      "teaser": "A casters' showmatch between Soulkey and SnOw, with a fan clip from the set posted to the gallery afterwards.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1791"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Casters' showmatch: Soulkey beats SnOw 6:3 after trailing 0:2",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Next casters' showmatch: Soulkey vs Rush on October 26",
-      "summary": "The next casters' showmatch, a Google Play showmatch between Soulkey and Rush, is set for Monday, October 26 at 9 p.m. Korean time, according to a poster on the news board.",
-      "spoiler": false,
-      "relevant": true,
-      "card": "Next casters' showmatch: Soulkey vs Rush on October 26",
-      "teaser": "A Google Play showmatch between Soulkey and Rush on Monday, October 26 at 9 p.m. Korean time, as posted on the news board.",
-      "teamResult": null,
-      "match": {
-        "date": "2026-10-26",
-        "time": "21:00",
-        "link": null
-      },
-      "sources": [
-        "https://eloboard.com/community/posts/1791"
-      ],
-      "date": "2026-10-20",
-      "id": "2026-10-20:Next casters' showmatch: Soulkey vs Rush on October 26",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "soma beats Bisu 4:2 in a 1:1 seven-game series",
-      "summary": "In a 1:1 seven-game, first-to-four series on October 19, soma (Zerg) beat Bisu (Protoss) 4:2. He won the first three games, lost Odyssey and Aiolos, and closed it out on Backroom. The day before, soma had beaten RoyaL 4:3 in the same event.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "1:1 seven-game series: soma vs Bisu, October 19",
-      "teaser": "A 1:1 seven-game, first-to-four series between soma and Bisu, played the day after soma faced RoyaL in the same event.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-20"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:soma beats Bisu 4:2 in a 1:1 seven-game series",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Major Proleague: Yunjung Team beats Mong Team 2-1; Mini wins four in a row",
-      "summary": "In the Major Proleague on October 19, Yunjung Team beat Mong Team 2-1. Yunjung Team took the seven-game ProLeague set 4-3, while Mong Team won the nine-game Winners League set 5-2, with Mini winning four in a row. Jaedong then took the super-ace decider on Odyssey for Yunjung Team.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Major Proleague: Yunjung Team vs Mong Team, two sets",
-      "teaser": "A Major Proleague team match on October 19, with a seven-game ProLeague set, a nine-game Winners League set and a super-ace decider.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-20"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Major Proleague: Yunjung Team beats Mong Team 2-1; Mini wins four in a row",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "K League: Action wins three straight in Winners League; team wins 2-1",
-      "summary": "On October 19, Action's team beat huro's team 2-1 in K League. huro's team took the seven-game ProLeague set 4-3, but Action won three in a row in the nine-game Winners League to take it 5-1. He then won the super-ace game against Stork.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "K League team match: Action's team vs huro's team",
-      "teaser": "A K League team match between Action's team and huro's team, ending with a super-ace decider.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-20"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:K League: Action wins three straight in Winners League; team wins 2-1",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Rush loses 1:2 to Jaedong, then wins the rematch 2:0",
-      "summary": "On October 19, ASL Season 22 runner-up Rush (Terran) met Jaedong (Zerg) twice in best-of-three series. He lost the first 1:2 on Octagon, then won the rematch 2:0 on Backroom and Octagon. He also beat n.Die_soO 2:1 in a best-of-three.",
-      "spoiler": true,
-      "relevant": true,
-      "card": "Rush plays Jaedong twice, plus a best-of-three vs n.Die_soO, October 19",
-      "teaser": "Rush, the ASL Season 22 runner-up, played Jaedong twice in best-of-three series on October 19, and also faced n.Die_soO.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-20"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Rush loses 1:2 to Jaedong, then wins the rematch 2:0",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Oct 18 league results: Susik team wins 2-0; Yunhwan team beats Kkaemo 2-1",
-      "summary": "The info board posted results of two team league events from October 18. In one, the Taesu team beat the Susik team 2-0, with Stork going 5-0. In the other, the Yunhwan team beat the Kkaemo team 2-1, with Soulkey going 6-2.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Results of two league events from October 18, with the top performers",
-      "teaser": "The info board posted the October 18 results of two team league events, with Stork and Soulkey among the top performers.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/community/posts/1777"
-      ],
-      "date": "2026-10-18",
-      "id": "2026-10-18:Oct 18 league results: Susik team wins 2-0; Yunhwan team beats Kkaemo 2-1",
-      "addedAt": "2026-10-20T04:30:09.045Z",
-      "by": "claude",
-      "posted": false
-    },
-    {
-      "headline": "Ju Harang comes back from 1:3 down to beat Yeopjip Ppo-nuna 5:4",
-      "summary": "On October 19, Calm MonstarZ's Ju Harang (Protoss) beat Yeopjip Ppo-nuna (Terran) 5:4 in a nine-game, first-to-five series. After falling 1:3 behind, he won three in a row to lead 4:3, then lost game eight on Knockout before taking the decider on Knockout.",
-      "spoiler": true,
-      "relevant": false,
-      "card": "Calm MonstarZ's Ju Harang plays a nine-game series vs Yeopjip Ppo-nuna",
-      "teaser": "Ju Harang and Yeopjip Ppo-nuna played a nine-game, first-to-five series on October 19, with the last game on Knockout.",
-      "teamResult": null,
-      "match": null,
-      "sources": [
-        "https://eloboard.com/news/2026-10-20"
-      ],
-      "date": "2026-10-19",
-      "id": "2026-10-19:Ju Harang comes back from 1:3 down to beat Yeopjip Ppo-nuna 5:4",
-      "addedAt": "2026-10-20T04:30:09.045Z",
       "by": "claude",
       "posted": false
     }
