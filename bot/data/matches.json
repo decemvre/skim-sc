@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T18:45:29.599Z",
+  "updated": "2026-11-04T06:30:02.482Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -591,7 +591,7 @@
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-02"
     },
     {
-      "key": "2026-11-03 16:30 eloboard 미니대전",
+      "key": "2026-11-03 16:30 eloboard 마범대 vs 소병대",
       "origin": "eloboard",
       "date": "2026-11-03",
       "kst": "16:30",
@@ -603,8 +603,8 @@
         "zone": "EET"
       },
       "competition": {
-        "raw": "미니대전",
-        "name": "Mini-Match",
+        "raw": "마범대 vs 소병대",
+        "name": "MBU vs Sobyeongdae",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -612,20 +612,23 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "미니대전",
-      "titleEn": "Mini-Match",
+      "titleSource": "마범대 vs 소병대",
+      "titleEn": "MBU vs Sobyeongdae",
       "needsTranslation": false,
-      "duel": null,
+      "duel": [
+        "마범대",
+        "소병대"
+      ],
       "a": null,
       "b": null,
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-11-03T07:30:29.596Z",
+      "firstSeen": "2026-11-04T06:30:02.482Z",
       "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-03"
     },
     {
-      "key": "2026-11-03 17:00 eloboard CK 유시리스 CK",
+      "key": "2026-11-03 17:00 eloboard A팀 vs B팀",
       "origin": "eloboard",
       "date": "2026-11-03",
       "kst": "17:00",
@@ -637,8 +640,8 @@
         "zone": "EET"
       },
       "competition": {
-        "raw": "CK 유시리스 CK",
-        "name": "CK: Yusiris CK",
+        "raw": "A팀 vs B팀",
+        "name": "Team A vs Team B",
         "big": false,
         "celebrity": false,
         "watch": null,
@@ -646,8 +649,8 @@
         "liquipedia": null,
         "eloboard": true
       },
-      "titleSource": "CK 유시리스 CK",
-      "titleEn": "CK: Yusiris CK",
+      "titleSource": "A팀 vs B팀",
+      "titleEn": "Team A vs Team B",
       "needsTranslation": false,
       "duel": null,
       "a": null,
@@ -655,7 +658,7 @@
       "played": false,
       "status": null,
       "onSchedule": true,
-      "firstSeen": "2026-11-01T12:15:13.421Z",
+      "firstSeen": "2026-11-04T06:30:02.482Z",
       "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-03"
     },
     {
