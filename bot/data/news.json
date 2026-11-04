@@ -1,6 +1,114 @@
 {
   "items": [
     {
+      "headline": "SnOw beats Jaedong 4-1 in a 1v1 best-of-seven",
+      "summary": "SnOw (Protoss) beat Jaedong (Zerg) 4-1 in a 1v1 best-of-seven on 3 November. He won the first three games in a row, Jaedong took the fourth, and SnOw closed it out in the fifth.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "SnOw vs Jaedong: 1v1 best-of-seven on 3 November",
+      "teaser": "Two top players met in a 1v1 best-of-seven on 3 November. The source has the full game-by-game account.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-04"
+      ],
+      "date": "2026-11-03",
+      "id": "2026-11-03:SnOw beats Jaedong 4-1 in a 1v1 best-of-seven",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Rush beats Queen 2-0 in a best-of-three",
+      "summary": "Rush (Terran) beat Queen (Zerg) 2-0 in a best-of-three on 3 November. Queen had also beaten RoyaL in a best-of-three that same day.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Rush vs Queen: best-of-three on 3 November",
+      "teaser": "A best-of-three between Rush and a Zerg player on 3 November, one of several series played that day.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-04"
+      ],
+      "date": "2026-11-03",
+      "id": "2026-11-03:Rush beats Queen 2-0 in a best-of-three",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Major Proleague 2 Nov: Ilsang team beats Hyeonje team 2-1",
+      "summary": "Ilsang team beat Hyeonje team 2-1 in the 4-vs-4 Major Proleague match on 2 November. Hyeonje took the first set, and Ilsang won the second set and the super ace decider. In the decider, RoyaL beat Jaedong after a roulette picked the Nara map.",
+      "spoiler": true,
+      "relevant": true,
+      "card": "Major Proleague: 2 November 4-vs-4 team match, set-by-set report",
+      "teaser": "Full recap of the Major Proleague team match, with the sets, the roulette-picked super ace decider and each player's record.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/2990"
+      ],
+      "date": "2026-11-02",
+      "id": "2026-11-02:Major Proleague 2 Nov: Ilsang team beats Hyeonje team 2-1",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "effOrt says his wife and newborn are doing well",
+      "summary": "effOrt (effOrt) posted on the night of 3 November that his wife had given birth and is recovering well. He said he will focus on his family for a while but will bring more good news soon.",
+      "spoiler": false,
+      "relevant": true,
+      "card": "effOrt shares news of his newborn child",
+      "teaser": "A personal update from effOrt: his wife and baby are doing well, and he promises more good news soon.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/3039"
+      ],
+      "date": "2026-11-03",
+      "id": "2026-11-03:effOrt says his wife and newborn are doing well",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Mini Daejeon: Sobyeongdae beats MBU 2-1 in sets",
+      "summary": "Sobyeongdae beat MBU 2-1 in a Mini Daejeon team match on 3 November. MBU took the first set 3-0, Sobyeongdae won the second 3-2, and Sobyeongdae also took the super ace decider.",
+      "spoiler": true,
+      "relevant": false,
+      "card": "Mini Daejeon: Sobyeongdae vs MBU team match on 3 November",
+      "teaser": "Full recap of the Mini Daejeon team match between Sobyeongdae and MBU, with the set-by-set lineups and the super ace decider.",
+      "teamResult": "Mini Daejeon: Sobyeongdae 2-1 MBU",
+      "match": null,
+      "sources": [
+        "https://eloboard.com/news/2026-11-04"
+      ],
+      "date": "2026-11-03",
+      "id": "2026-11-03:Mini Daejeon: Sobyeongdae beats MBU 2-1 in sets",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
+      "headline": "Dreamz signs 7-tier Zerg Daratchu",
+      "summary": "Dreamz announced on 3 November that they had signed 7-tier Zerg Daratchu, who thanked the team's manager and said he would start streaming right away. Dreamz's Shuttle welcomed him on the official board.",
+      "spoiler": false,
+      "relevant": false,
+      "card": "Dreamz signs a 7-tier Zerg player from the free agent list",
+      "teaser": "The Daratchu signing for Dreamz was posted on the official board on 3 November, with a poster and a welcome from the team.",
+      "teamResult": null,
+      "match": null,
+      "sources": [
+        "https://eloboard.com/community/posts/3007"
+      ],
+      "date": "2026-11-03",
+      "id": "2026-11-03:Dreamz signs 7-tier Zerg Daratchu",
+      "addedAt": "2026-11-04T07:30:30.062Z",
+      "by": "claude",
+      "posted": false
+    },
+    {
       "headline": "Hidaeng joins C9 with a recruitment broadcast on Chulgu's stream",
       "summary": "An official board post titled '11/2 C9 Hidaeng recruitment' went up with a video on 2 November. Horang2 said the C9 recruitment broadcast would air on Chulgu's stream around 4 pm, and Chulgu said he would start his stream at 3 pm. The site's player affiliation has not been updated yet.",
       "spoiler": false,
