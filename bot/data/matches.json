@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T07:30:30.062Z",
+  "updated": "2026-11-04T08:30:30.069Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -730,6 +730,46 @@
       "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-06"
     },
     {
+      "key": "2026-11-06 21:00 도재욱 vs 박상현",
+      "origin": "soop",
+      "date": "2026-11-06",
+      "kst": "21:00",
+      "at": "2026-11-06T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-06",
+        "time": "14:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "도재욱",
+        "race": "P",
+        "id": "Best",
+        "nicknames": [
+          "Doh-men"
+        ]
+      },
+      "b": {
+        "korean": "박상현",
+        "race": "Z",
+        "id": "soma",
+        "nicknames": []
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-11-04T08:30:30.069Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-06"
+    },
+    {
       "key": "2026-11-08 16:00 eloboard CK 냥냥코기배 통베이컵 7티어대회",
       "origin": "eloboard",
       "date": "2026-11-08",
@@ -764,6 +804,38 @@
       "source": "https://eloboard.com/schedule?m=2026-11&d=2026-11-08"
     },
     {
+      "key": "2026-11-11 20:00 기영이숯불 킹즈 vs SOOP 수퍼즈",
+      "origin": "soop",
+      "date": "2026-11-11",
+      "kst": "20:00",
+      "at": "2026-11-11T11:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-11",
+        "time": "13:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "HyperX배 연예인 스타리그 시즌2",
+        "name": "Celebrity StarLeague Season 2",
+        "big": false,
+        "celebrity": true,
+        "watch": null,
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "team": "기영이숯불 킹즈"
+      },
+      "b": {
+        "team": "SOOP 수퍼즈"
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-11-04T08:30:30.069Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-11"
+    },
+    {
       "key": "2026-11-11 20:00 TBD vs TBD",
       "origin": "soop",
       "date": "2026-11-11",
@@ -792,7 +864,7 @@
       "played": false,
       "status": "Upcoming",
       "firstSeen": "2026-10-20T16:00:38.226Z",
-      "onSchedule": true,
+      "onSchedule": false,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-11"
     },
     {
