@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T11:45:52.104Z",
+  "updated": "2026-11-06T17:30:06.977Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -556,10 +556,10 @@
         "id": "soma",
         "nicknames": []
       },
-      "played": false,
-      "status": "Upcoming",
+      "played": true,
+      "status": "Replay",
       "firstSeen": "2026-11-04T08:30:30.069Z",
-      "onSchedule": false,
+      "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-06"
     },
     {
