@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:30:06.977Z",
+  "updated": "2026-11-07T05:36:54.525Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -561,6 +561,44 @@
       "firstSeen": "2026-11-04T08:30:30.069Z",
       "onSchedule": true,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-06"
+    },
+    {
+      "key": "2026-11-09 21:00 박상현 vs 김지성",
+      "origin": "soop",
+      "date": "2026-11-09",
+      "kst": "21:00",
+      "at": "2026-11-09T12:00:00.000Z",
+      "bucharest": {
+        "date": "2026-11-09",
+        "time": "14:00",
+        "zone": "EET"
+      },
+      "competition": {
+        "raw": "2026 스타끝장전",
+        "name": "Ultimate Battle",
+        "big": true,
+        "celebrity": false,
+        "watch": "https://www.sooplive.com/station/talent",
+        "known": true,
+        "liquipedia": null
+      },
+      "a": {
+        "korean": "박상현",
+        "race": "Z",
+        "id": "soma",
+        "nicknames": []
+      },
+      "b": {
+        "korean": "김지성",
+        "race": "T",
+        "id": "RoyaL",
+        "nicknames": []
+      },
+      "played": false,
+      "status": "Upcoming",
+      "firstSeen": "2026-11-07T05:36:54.525Z",
+      "onSchedule": true,
+      "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-09"
     },
     {
       "key": "2026-11-11 20:00 기영이숯불 킹즈 vs SOOP 수퍼즈",
