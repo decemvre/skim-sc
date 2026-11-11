@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T10:30:19.353Z",
+  "updated": "2026-11-11T11:45:24.246Z",
   "matches": [
     {
       "key": "2026-10-05 19:00 유영진 vs 이재호",
@@ -629,7 +629,7 @@
       "played": false,
       "status": "Upcoming",
       "firstSeen": "2026-11-04T08:30:30.069Z",
-      "onSchedule": true,
+      "onSchedule": false,
       "source": "https://esports.sooplive.com/schedule/sc1?date=2026-11-11"
     },
     {
